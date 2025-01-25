@@ -181,9 +181,7 @@ const certificates = ref([
           <p class="text-sm text-gray-500 font-normal mb-2">
             Languages: English, German, Arabic
           </p>
-          <p class="text-sm text-gray-500 font-normal mb-2">
-            Education: Bachelor's Degree in Computer Science
-          </p>
+
           <p class="text-sm text-gray-500 font-normal mb-2">
             Hobbies: Coding, Reading, Traveling
           </p>
