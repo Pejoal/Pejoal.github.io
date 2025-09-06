@@ -213,15 +213,15 @@ const languages = ref([
 ]);
 
 const jobs = ref([
-  {
-    id: 1,
-    title: 'Full Stack Developer',
-    company: 'SMEXPAND',
-    startDate: 'March 2023',
-    endDate: 'December 2023',
-    description:
-      'Developed an Enterprise Resource Planning (ERP) and Customer Relationship Management (CRM) system. The ERP module streamlined business processes and operations, including sales, HR, and inventory management. The CRM module improved customer service, marketing, and communication strategies. Technologies used include Vue.js for the frontend, Laravel for the backend, and MySQL for the database.',
-  },
+  // {
+  //   id: 1,
+  //   title: 'Full Stack Developer',
+  //   company: 'SMEXPAND',
+  //   startDate: 'March 2023',
+  //   endDate: 'December 2023',
+  //   description:
+  //     'Developed an Enterprise Resource Planning (ERP) and Customer Relationship Management (CRM) system. The ERP module streamlined business processes and operations, including sales, HR, and inventory management. The CRM module improved customer service, marketing, and communication strategies. Technologies used include Vue.js for the frontend, Laravel for the backend, and MySQL for the database.',
+  // },
   {
     id: 2,
     title: 'Full Stack Developer',
@@ -238,15 +238,15 @@ const jobs = ref([
     description:
       'Assisted in the development of several small to medium scale projects, gaining experience in multiple technologies.',
   },
-  {
-    id: 4,
-    title: 'Full Stack Developer',
-    company: 'Improov',
-    startDate: 'Sep 2022',
-    endDate: 'Feb 2023',
-    description:
-      'As a Full Stack Developer at E-State, I was responsible for developing and maintaining web applications using a variety of technologies including Vue.js, Laravel, and MariaDB. I worked closely with the product team to design and implement new features, and with the QA team to identify and fix bugs. I also played a key role in migrating legacy systems to modern architectures, improving performance and scalability. During my tenure, I contributed to several major projects, including the development of a property management system and an online booking platform.',
-  },
+  // {
+  //   id: 4,
+  //   title: 'Full Stack Developer',
+  //   company: 'Improov',
+  //   startDate: 'Sep 2022',
+  //   endDate: 'Feb 2023',
+  //   description:
+  //     'As a Full Stack Developer at E-State, I was responsible for developing and maintaining web applications using a variety of technologies including Vue.js, Laravel, and MariaDB. I worked closely with the product team to design and implement new features, and with the QA team to identify and fix bugs. I also played a key role in migrating legacy systems to modern architectures, improving performance and scalability. During my tenure, I contributed to several major projects, including the development of a property management system and an online booking platform.',
+  // },
 ]);
 
 const certificates = ref([
@@ -325,7 +325,7 @@ const certificates = ref([
       <!-- Google Play Developer Profile Section -->
       <section class="my-12" data-aos="fade-up">
         <div class="flex items-center justify-center mb-8">
-          <FontAwesomeIcon :icon="faGooglePlay" class="text-3xl text-teal-500 dark:text-teal-400 mr-3" />
+          <FontAwesomeIcon :icon="faGooglePlay" class="w-8 h-8 text-teal-500 dark:text-teal-400 mr-3" />
           <h2 class="font-extrabold text-4xl text-gray-800 dark:text-white relative">
             Google Play Developer Profile
             <span class="absolute -bottom-2 left-0 w-16 h-1 bg-teal-500 rounded"></span>
@@ -358,7 +358,7 @@ const certificates = ref([
       <!-- Mobile Apps Section -->
       <section class="my-12">
         <div class="flex items-center justify-center mb-8">
-          <FontAwesomeIcon :icon="faMobile" class="text-3xl text-teal-500 dark:text-teal-400 mr-3" />
+          <FontAwesomeIcon :icon="faMobile" class="w-8 h-8 text-teal-500 dark:text-teal-400 mr-3" />
           <h2 class="font-extrabold text-4xl text-gray-800 dark:text-white relative">
             Mobile Apps
             <span class="absolute -bottom-2 left-0 w-16 h-1 bg-teal-500 rounded"></span>
@@ -420,7 +420,7 @@ const certificates = ref([
       <!-- Projects Section -->
       <section class="my-12">
         <div class="flex items-center justify-center mb-8">
-          <FontAwesomeIcon :icon="faGlobe" class="text-3xl text-teal-500 dark:text-teal-400 mr-3" />
+          <FontAwesomeIcon :icon="faGlobe" class="w-8 h-8 text-teal-500 dark:text-teal-400 mr-3" />
           <h2 class="font-extrabold text-4xl text-gray-800 dark:text-white relative">
             Web Projects
             <span class="absolute -bottom-2 left-0 w-16 h-1 bg-teal-500 rounded"></span>
@@ -478,7 +478,7 @@ const certificates = ref([
       <!-- Skills Section -->
       <section class="my-12">
         <div class="flex items-center justify-center mb-8">
-          <FontAwesomeIcon :icon="faCode" class="text-3xl text-teal-500 dark:text-teal-400 mr-3" />
+          <FontAwesomeIcon :icon="faCode" class="w-8 h-8 text-teal-500 dark:text-teal-400 mr-3" />
           <h2 class="font-extrabold text-4xl text-gray-800 dark:text-white relative">
             Technical Skills
             <span class="absolute -bottom-2 left-0 w-16 h-1 bg-teal-500 rounded"></span>
@@ -524,7 +524,7 @@ const certificates = ref([
         data-aos="zoom-in"
       >
         <div class="flex items-center justify-center mb-8">
-          <FontAwesomeIcon :icon="faStar" class="text-3xl text-teal-500 dark:text-teal-400 mr-3" />
+          <FontAwesomeIcon :icon="faStar" class="w-8 h-8 text-teal-500 dark:text-teal-400 mr-3" />
           <h2 class="font-extrabold text-4xl text-gray-800 dark:text-white relative">
             Soft Skills
             <span class="absolute -bottom-2 left-0 w-16 h-1 bg-teal-500 rounded"></span>
@@ -553,7 +553,16 @@ const certificates = ref([
       <!-- Professional Experience Section -->
       <section class="my-12">
         <div class="flex items-center justify-center mb-8">
-          <FontAwesomeIcon :icon="faBriefcase" class="text-3xl text-teal-500 dark:text-teal-400 mr-3" />
+          <svg
+            class="w-8 h-8 text-teal-500 dark:text-teal-400 mr-3"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              d="M20 6h-3V4c0-1.1-.9-2-2-2H9c-1.1 0-2 .9-2 2v2H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zM9 4h6v2H9V4zm11 15H4V8h3v2h2V8h6v2h2V8h3v11z"
+            />
+          </svg>
           <h2 class="font-extrabold text-4xl text-gray-800 dark:text-white relative">
             Professional Experience
             <span class="absolute -bottom-2 left-0 w-16 h-1 bg-teal-500 rounded"></span>
@@ -585,7 +594,16 @@ const certificates = ref([
         data-aos="flip-left"
       >
         <div class="flex items-center justify-center mb-8">
-          <FontAwesomeIcon :icon="faLanguage" class="text-3xl text-teal-500 dark:text-teal-400 mr-3" />
+          <svg
+            class="w-8 h-8 text-teal-500 dark:text-teal-400 mr-3"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.22-1.79L9 14v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1h-6v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"
+            />
+          </svg>
           <h2 class="font-extrabold text-4xl text-gray-800 dark:text-white relative">
             Languages
             <span class="absolute -bottom-2 left-0 w-16 h-1 bg-teal-500 rounded"></span>
@@ -616,7 +634,16 @@ const certificates = ref([
         data-aos="fade-up"
       >
         <div class="flex items-center justify-center mb-8">
-          <FontAwesomeIcon :icon="faCertificate" class="text-3xl text-teal-500 dark:text-teal-400 mr-3" />
+          <svg
+            class="w-8 h-8 text-teal-500 dark:text-teal-400 mr-3"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h9v-2H4V8l8 5 8-5v5h2V6c0-1.1-.9-2-2-2zm-8 7L4 6h16l-8 5zm7 4h2v4h-2v-4zm-3 5h6v2h-6v-2z"
+            />
+          </svg>
           <h2 class="font-extrabold text-4xl text-gray-800 dark:text-white relative">
             Certificates
             <span class="absolute -bottom-2 left-0 w-16 h-1 bg-teal-500 rounded"></span>
@@ -646,28 +673,31 @@ const certificates = ref([
       <!-- CV Section -->
       <section class="my-12 text-center">
         <div class="flex items-center justify-center mb-8">
-          <FontAwesomeIcon :icon="faFilePdf" class="text-3xl text-teal-500 dark:text-teal-400 mr-3" />
+          <svg
+            class="w-8 h-8 text-teal-500 dark:text-teal-400 mr-3"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11zM8 16h8v2H8v-2zm0-4h8v2H8v-2z"
+            />
+            <text x="8" y="10" font-size="6" fill="currentColor">PDF</text>
+          </svg>
           <h2 class="font-extrabold text-4xl text-gray-800 dark:text-white relative">
             Curriculum Vitae
             <span class="absolute -bottom-2 left-0 w-16 h-1 bg-teal-500 rounded"></span>
           </h2>
         </div>
-        <a
-          href="Pejoal CV.pdf"
-          download
-          class="inline-block px-8 py-3 text-sm font-bold leading-6 text-center text-white uppercase transition bg-gradient-to-r from-teal-500 to-blue-600 hover:from-teal-600 hover:to-blue-700 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 duration-300"
-        >
-          📄 Download CV
-        </a>
-        <div class="mt-6">
-          <a href="Pejoal CV.pdf" target="_blank" class="inline-block">
-            <img
-              src="assets/cv-preview.png"
-              alt="CV Preview"
-              class="w-64 h-auto rounded-lg shadow-lg border border-teal-200 dark:border-teal-800 mx-auto"
-              loading="lazy"
-            />
+        <div>
+          <a
+            href="Pejoal CV.pdf"
+            download
+            class="mt-2 inline-block px-6 py-2 text-xs font-medium leading-6 text-center text-white uppercase transition bg-blue-700 rounded shadow ripple hover:shadow-lg hover:bg-blue-800 focus:outline-none"
+          >
+            Download CV
           </a>
+          <iframe src="Pejoal CV.pdf" class="h-[400px] w-full" frameborder="1"></iframe>
         </div>
       </section>
     </div>
