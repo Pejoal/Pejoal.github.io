@@ -18,7 +18,7 @@ import {
   faSass,
   faVuejs,
 } from '@fortawesome/free-brands-svg-icons';
-import { faGlobe, faMobile, faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
+import { faCode, faGlobe, faMobile, faMoon, faStar, faSun } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -44,7 +44,9 @@ library.add(
   faSun,
   faMoon,
   faGlobe,
-  faMobile
+  faMobile,
+  faStar,
+  faCode
 );
 
 // Dark mode toggle
@@ -52,63 +54,60 @@ const isDarkMode = ref(false);
 
 const toggleDarkMode = () => {
   isDarkMode.value = !isDarkMode.value;
-  localStorage.setItem('darkMode', isDarkMode.value.toString());
+  localStorage.setItem('darkMode', isDarkMode.value);
   document.documentElement.classList.toggle('dark', isDarkMode.value);
 };
 
 onMounted(() => {
   const savedDarkMode = localStorage.getItem('darkMode');
-  if (savedDarkMode !== null) {
-    isDarkMode.value = savedDarkMode === 'true';
-  } else {
-    isDarkMode.value = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  }
+  isDarkMode.value = savedDarkMode
+    ? savedDarkMode === 'true'
+    : window.matchMedia('(prefers-color-scheme: dark)').matches;
   document.documentElement.classList.toggle('dark', isDarkMode.value);
+  AOS.init({ duration: 800, easing: 'ease-out-cubic' });
 });
 
 const skills = ref({
   Frontend: [
-    { name: 'HTML 5', icon: faHtml5 },
-    { name: 'CSS 3', icon: faCss3Alt },
-    { name: 'Sass', icon: faSass },
-    { name: 'Bootstrap 5', icon: faBootstrap },
-    { name: 'Tailwind CSS' },
-    { name: 'JavaScript', icon: faJs },
-    { name: 'React.js', icon: faReact },
-    { name: 'Vue 3', icon: faVuejs },
-    { name: 'Inertia.js' },
-    { name: 'Cypress' },
-    { name: 'TypeScript' },
+    { name: 'HTML 5', icon: faHtml5, proficiency: 95 },
+    { name: 'CSS 3', icon: faCss3Alt, proficiency: 90 },
+    { name: 'Sass', icon: faSass, proficiency: 85 },
+    { name: 'Bootstrap 5', icon: faBootstrap, proficiency: 80 },
+    { name: 'Tailwind CSS', proficiency: 90 },
+    { name: 'JavaScript', icon: faJs, proficiency: 85 },
+    { name: 'React.js', icon: faReact, proficiency: 80 },
+    { name: 'Vue 3', icon: faVuejs, proficiency: 90 },
+    { name: 'Inertia.js', proficiency: 75 },
+    { name: 'Cypress', proficiency: 70 },
+    { name: 'TypeScript', proficiency: 70 },
   ],
   Backend: [
-    { name: 'PHP 8', icon: faPhp },
-    { name: 'Node.js', icon: faNodeJs },
-    { name: 'Laravel 11', icon: faLaravel },
-    { name: 'MySQL - MariaDB' },
-    { name: 'MongoDB' },
-    { name: 'PostgreSQL' },
+    { name: 'PHP 8', icon: faPhp, proficiency: 85 },
+    { name: 'Node.js', icon: faNodeJs, proficiency: 80 },
+    { name: 'Laravel 11', icon: faLaravel, proficiency: 90 },
+    { name: 'MySQL - MariaDB', proficiency: 85 },
+    { name: 'MongoDB', proficiency: 75 },
+    { name: 'PostgreSQL', proficiency: 70 },
   ],
   Other: [
-    { name: 'Git', icon: faGit },
-    { name: 'GitHub', icon: faGithub },
-    { name: 'Docker', icon: faDocker },
-    { name: 'Linux', icon: faLinux },
-    { name: 'AWS' },
-    { name: 'Google Cloud' },
+    { name: 'Git', icon: faGit, proficiency: 90 },
+    { name: 'GitHub', icon: faGithub, proficiency: 90 },
+    { name: 'Docker', icon: faDocker, proficiency: 80 },
+    { name: 'Linux', icon: faLinux, proficiency: 85 },
+    { name: 'AWS', proficiency: 70 },
+    { name: 'Google Cloud', proficiency: 65 },
   ],
 });
 
 const softSkills = ref({
-  'Soft Skills': ['Communication', 'Teamwork', 'Problem-solving'],
+  'Soft Skills': ['Communication', 'Teamwork', 'Problem-solving', 'Adaptability', 'Time Management'],
 });
-
-AOS.init();
 
 const projects = ref([
   {
     title: 'E-Commerce',
     description:
-      'This is an E-commerce project that I developed using Vue.js and Laravel. It features a user-friendly interface with a responsive design that works well on both desktop and mobile devices. The application includes features such as user authentication, product listing, shopping cart functionality, and secure payment processing. It also has an admin panel for managing products, orders, and users.',
+      'This is an E-commerce project developed using Vue.js and Laravel. It features a user-friendly interface with a responsive design that works well on both desktop and mobile devices. The application includes user authentication, product listing, shopping cart functionality, and secure payment processing. It also has an admin panel for managing products, orders, and users.',
     link: 'https://github.com/Pejoal/ecommerce',
     liveLink: 'https://pejoal.live/home',
     image: 'assets/Screenshot2.png',
@@ -116,7 +115,7 @@ const projects = ref([
   {
     title: 'Appointments App',
     description:
-      'This app was designed to streamline appointment scheduling and coordination for a driving school. It aimed to enhance efficiency and provide a seamless experience for both instructors and students',
+      'This app was designed to streamline appointment scheduling and coordination for a driving school. It aimed to enhance efficiency and provide a seamless experience for both instructors and students.',
     link: 'https://github.com/Pejoal/Termin',
     liveLink: 'https://pejoal.live',
     image: 'assets/appointments.png',
@@ -134,7 +133,7 @@ const projects = ref([
     description:
       'A social media application developed using Vue.js and Laravel. The app includes features like user authentication, real-time chat, post creation and management, likes, comments, and a friend system. It also includes a responsive design for both desktop and mobile devices.',
     link: 'https://github.com/Pejoal/Social-Media-Platform',
-    liveLink: 'https://pejaol.live',
+    liveLink: 'https://pejoal.live',
     image: 'assets/social_media_logo.png',
   },
 ]);
@@ -213,42 +212,42 @@ const languages = ref([
   { language: 'German', proficiency: 'Conversational' },
 ]);
 
-// const jobs = ref([
-//   {
-//     id: 1,
-//     title: 'Full Stack Developer',
-//     company: 'SMEXPAND',
-//     startDate: 'March 2023',
-//     endDate: 'December 2023',
-//     description:
-//       'Developed an Enterprise Resource Planning (ERP) and Customer Relationship Management (CRM) system. The ERP module streamlined business processes and operations, including sales, HR, and inventory management. The CRM module improved customer service, marketing, and communication strategies. Technologies used include Vue.js for the frontend, Laravel for the backend, and MySQL for the database.',
-//   },
-//   {
-//     id: 2,
-//     title: 'Full Stack Developer',
-//     company: 'Freelancer.com',
-//     startDate: 'January 2020',
-//     description:
-//       'Worked on various projects across different domains, primarily focusing on web development and design.',
-//   },
-//   {
-//     id: 3,
-//     title: 'Full Stack Developer',
-//     company: 'Upwork',
-//     startDate: 'January 2021',
-//     description:
-//       'Assisted in the development of several small to medium scale projects, gaining experience in multiple technologies.',
-//   },
-//   {
-//     id: 4,
-//     title: 'Full Stack Developer',
-//     company: 'Improov',
-//     startDate: 'Sep 2022',
-//     endDate: 'Feb 2023',
-//     description:
-//       'As a Full Stack Developer at E-State, I was responsible for developing and maintaining web applications using a variety of technologies including Vue.js, Laravel, and MariaDB. I worked closely with the product team to design and implement new features, and with the QA team to identify and fix bugs. I also played a key role in migrating legacy systems to modern architectures, improving performance and scalability. During my tenure, I contributed to several major projects, including the development of a property management system and an online booking platform.',
-//   },
-// ]);
+const jobs = ref([
+  {
+    id: 1,
+    title: 'Full Stack Developer',
+    company: 'SMEXPAND',
+    startDate: 'March 2023',
+    endDate: 'December 2023',
+    description:
+      'Developed an Enterprise Resource Planning (ERP) and Customer Relationship Management (CRM) system. The ERP module streamlined business processes and operations, including sales, HR, and inventory management. The CRM module improved customer service, marketing, and communication strategies. Technologies used include Vue.js for the frontend, Laravel for the backend, and MySQL for the database.',
+  },
+  {
+    id: 2,
+    title: 'Full Stack Developer',
+    company: 'Freelancer.com',
+    startDate: 'January 2020',
+    description:
+      'Worked on various projects across different domains, primarily focusing on web development and design.',
+  },
+  {
+    id: 3,
+    title: 'Full Stack Developer',
+    company: 'Upwork',
+    startDate: 'January 2021',
+    description:
+      'Assisted in the development of several small to medium scale projects, gaining experience in multiple technologies.',
+  },
+  {
+    id: 4,
+    title: 'Full Stack Developer',
+    company: 'Improov',
+    startDate: 'Sep 2022',
+    endDate: 'Feb 2023',
+    description:
+      'As a Full Stack Developer at E-State, I was responsible for developing and maintaining web applications using a variety of technologies including Vue.js, Laravel, and MariaDB. I worked closely with the product team to design and implement new features, and with the QA team to identify and fix bugs. I also played a key role in migrating legacy systems to modern architectures, improving performance and scalability. During my tenure, I contributed to several major projects, including the development of a property management system and an online booking platform.',
+  },
+]);
 
 const certificates = ref([
   {
@@ -257,57 +256,64 @@ const certificates = ref([
     place: 'Cairo',
     date: 'April 2022',
   },
+  {
+    id: 2,
+    name: 'German B2 TELC DTB',
+    place: 'VHS Wesel',
+    date: 'August 2025',
+  },
 ]);
 </script>
 
 <template>
   <section
-    class="min-h-screen transition-colors duration-300 bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 flex flex-col justify-center items-center overflow-x-hidden relative"
+    class="min-h-screen bg-gradient-to-br from-blue-50 via-teal-50 to-gray-50 dark:from-gray-900 dark:via-teal-900 dark:to-gray-800 flex flex-col justify-center items-center py-12 px-4 transition-colors duration-300"
   >
     <!-- Animated background elements -->
     <div class="absolute inset-0 overflow-hidden pointer-events-none">
       <div
-        class="absolute -top-10 -left-10 w-72 h-72 bg-gradient-to-r from-blue-300 to-purple-300 dark:from-blue-900 dark:to-purple-900 rounded-full mix-blend-multiply dark:mix-blend-overlay filter blur-xl opacity-30 animate-pulse"
+        class="absolute -top-10 -left-10 w-72 h-72 bg-gradient-to-r from-teal-200 to-blue-200 dark:from-teal-800 dark:to-blue-800 rounded-full mix-blend-multiply dark:mix-blend-overlay filter blur-xl opacity-20 animate-pulse"
       ></div>
       <div
-        class="absolute top-1/2 -right-10 w-96 h-96 bg-gradient-to-r from-yellow-300 to-pink-300 dark:from-yellow-900 dark:to-pink-900 rounded-full mix-blend-multiply dark:mix-blend-overlay filter blur-xl opacity-30 animate-pulse animation-delay-2000"
+        class="absolute top-1/2 -right-10 w-96 h-96 bg-gradient-to-r from-blue-200 to-teal-200 dark:from-blue-800 dark:to-teal-800 rounded-full mix-blend-multiply dark:mix-blend-overlay filter blur-xl opacity-20 animate-pulse animation-delay-2000"
       ></div>
       <div
-        class="absolute -bottom-10 left-1/3 w-80 h-80 bg-gradient-to-r from-green-300 to-blue-300 dark:from-green-900 dark:to-blue-900 rounded-full mix-blend-multiply dark:mix-blend-overlay filter blur-xl opacity-30 animate-pulse animation-delay-4000"
+        class="absolute -bottom-10 left-1/3 w-80 h-80 bg-gradient-to-r from-teal-200 to-gray-200 dark:from-teal-800 dark:to-gray-800 rounded-full mix-blend-multiply dark:mix-blend-overlay filter blur-xl opacity-20 animate-pulse animation-delay-4000"
       ></div>
     </div>
 
     <!-- Dark mode toggle -->
     <button
       @click="toggleDarkMode"
-      class="fixed top-4 right-4 z-50 p-3 rounded-full bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 dark:border-gray-700 hover:scale-110"
+      aria-label="Toggle dark mode"
+      class="fixed top-6 right-6 z-50 p-3 rounded-full bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 dark:border-gray-600 hover:scale-110"
       data-aos="zoom-in"
     >
-      <FontAwesomeIcon :icon="isDarkMode ? faSun : faMoon" class="text-xl text-gray-600 dark:text-gray-300" />
+      <FontAwesomeIcon :icon="isDarkMode ? faSun : faMoon" class="text-xl text-teal-600 dark:text-teal-400" />
     </button>
 
     <div
-      class="bg-white dark:bg-gray-800 shadow-2xl rounded-3xl w-full sm:max-w-4xl p-6 m-4 transition-colors duration-300 relative z-10"
+      class="bg-white dark:bg-gray-800 shadow-2xl rounded-3xl w-full max-w-6xl p-8 transition-colors duration-300 relative z-10"
     >
       <!-- Header Section -->
       <section
-        class="p-6 bg-gradient-to-r from-blue-500 to-purple-600 dark:from-blue-600 dark:to-purple-700 text-white shadow-lg rounded-2xl mb-6"
+        class="p-8 bg-gradient-to-r from-teal-500 to-blue-600 dark:from-teal-600 dark:to-blue-700 text-white shadow-lg rounded-2xl mb-12"
         data-aos="zoom-out-left"
       >
-        <h1 class="font-bold text-4xl mb-4 animate-bounce">Pejoal Hanna (22)</h1>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <h1 class="font-extrabold text-4xl mb-6">Pejoal Hanna (22)</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
-            <p class="text-lg font-semibold mb-2">🚀 Full Stack Developer</p>
-            <p class="text-sm mb-2">📍 Rees, Germany</p>
-            <p class="text-sm mb-2">🗣️ Languages: English, German, Arabic</p>
-            <p class="text-sm mb-2">🎯 Hobbies: Coding, Reading, Traveling</p>
+            <p class="text-lg font-semibold mb-3">🚀 Full Stack Developer</p>
+            <p class="text-sm mb-3">📍 Rees, Germany</p>
+            <p class="text-sm mb-3">🗣️ Languages: English, German, Arabic</p>
+            <p class="text-sm mb-3">🎯 Hobbies: Coding, Reading, Traveling</p>
           </div>
           <div class="flex items-center justify-center md:justify-end">
             <div class="text-center">
               <p class="text-lg font-bold">📧 Contact me at</p>
               <a
                 href="mailto:pejoal.business@gmail.com"
-                class="text-yellow-300 hover:text-yellow-100 transition-colors duration-300 text-lg font-semibold underline"
+                class="text-teal-200 hover:text-teal-100 transition-colors duration-300 text-lg font-semibold underline"
               >
                 pejoal.business@gmail.com
               </a>
@@ -316,25 +322,61 @@ const certificates = ref([
         </div>
       </section>
 
-      <!-- Mobile Apps Section -->
-      <section class="mb-8">
-        <div class="flex items-center mb-6">
-          <FontAwesomeIcon :icon="faMobile" class="text-3xl text-blue-500 dark:text-blue-400 mr-3" />
-          <h2 class="font-bold text-3xl text-gray-800 dark:text-white">Mobile Apps</h2>
+      <!-- Google Play Developer Profile Section -->
+      <section class="my-12" data-aos="fade-up">
+        <div class="flex items-center justify-center mb-8">
+          <FontAwesomeIcon :icon="faGooglePlay" class="text-3xl text-teal-500 dark:text-teal-400 mr-3" />
+          <h2 class="font-extrabold text-4xl text-gray-800 dark:text-white relative">
+            Google Play Developer Profile
+            <span class="absolute -bottom-2 left-0 w-16 h-1 bg-teal-500 rounded"></span>
+          </h2>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div
+          class="bg-gradient-to-br from-teal-50 to-blue-50 dark:from-teal-900 dark:to-blue-900 rounded-xl shadow-lg p-6 text-center border border-teal-200 dark:border-teal-800"
+        >
+          <p class="text-gray-600 dark:text-gray-300 mb-4">
+            Explore all my mobile apps on my Google Play Developer profile.
+          </p>
+          <a
+            href="https://play.google.com/store/apps/dev?id=7584224843331524823"
+            class="inline-flex items-center px-6 py-3 bg-teal-500 hover:bg-teal-600 text-white rounded-lg transition-colors duration-300"
+            target="_blank"
+          >
+            <FontAwesomeIcon :icon="faGooglePlay" class="mr-2" />
+            Visit Google Play Profile
+          </a>
+        </div>
+      </section>
+
+      <!-- Section Divider -->
+      <div class="flex items-center justify-center my-12">
+        <div class="flex-1 h-px bg-gradient-to-r from-transparent via-teal-300 dark:via-teal-600 to-transparent"></div>
+        <FontAwesomeIcon :icon="faStar" class="mx-4 text-teal-500 dark:text-teal-400" />
+        <div class="flex-1 h-px bg-gradient-to-r from-teal-300 dark:via-teal-600 to-transparent"></div>
+      </div>
+
+      <!-- Mobile Apps Section -->
+      <section class="my-12">
+        <div class="flex items-center justify-center mb-8">
+          <FontAwesomeIcon :icon="faMobile" class="text-3xl text-teal-500 dark:text-teal-400 mr-3" />
+          <h2 class="font-extrabold text-4xl text-gray-800 dark:text-white relative">
+            Mobile Apps
+            <span class="absolute -bottom-2 left-0 w-16 h-1 bg-teal-500 rounded"></span>
+          </h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div
             v-for="app in mobileApps"
             :key="app.id"
-            class="bg-gradient-to-br from-white to-gray-50 dark:from-gray-700 dark:to-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 p-6 border border-gray-200 dark:border-gray-600 hover:scale-105"
+            class="bg-gradient-to-br from-teal-50 to-blue-50 dark:from-teal-900 dark:to-blue-900 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 border border-teal-200 dark:border-teal-800 hover:scale-105"
             data-aos="flip-up"
             data-aos-duration="600"
           >
             <div class="text-center mb-4">
               <div class="text-4xl mb-3">{{ app.icon }}</div>
-              <h3 class="font-bold text-lg text-gray-800 dark:text-white mb-2">{{ app.name }}</h3>
+              <h3 class="font-bold text-xl text-gray-800 dark:text-white mb-2">{{ app.name }}</h3>
               <span
-                class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200"
+                class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-teal-100 dark:bg-teal-800 text-teal-800 dark:text-teal-200"
               >
                 {{ app.category }}
               </span>
@@ -343,7 +385,7 @@ const certificates = ref([
             <div class="space-y-2">
               <a
                 :href="`https://play.google.com/store/apps/details?id=${app.id}`"
-                class="flex items-center justify-center w-full px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-lg transition-colors duration-300"
+                class="flex items-center justify-center w-full px-4 py-2 bg-teal-500 hover:bg-teal-600 text-white rounded-lg transition-colors duration-300"
                 target="_blank"
               >
                 <FontAwesomeIcon :icon="faGooglePlay" class="mr-2" />
@@ -351,13 +393,13 @@ const certificates = ref([
               </a>
               <div class="flex space-x-2">
                 <div
-                  class="flex-1 px-4 py-2 bg-gray-300 dark:bg-gray-600 text-gray-600 dark:text-gray-300 rounded-lg text-center cursor-not-allowed"
+                  class="flex-1 px-4 py-2 bg-gray-200 dark:bg-gray-600 text-gray-600 dark:text-gray-300 rounded-lg text-center cursor-not-allowed"
                 >
                   <FontAwesomeIcon :icon="faApple" class="mr-2" />
                   Coming Soon
                 </div>
                 <div
-                  class="flex-1 px-4 py-2 bg-gray-300 dark:bg-gray-600 text-gray-600 dark:text-gray-300 rounded-lg text-center cursor-not-allowed"
+                  class="flex-1 px-4 py-2 bg-gray-200 dark:bg-gray-600 text-gray-600 dark:text-gray-300 rounded-lg text-center cursor-not-allowed"
                 >
                   <FontAwesomeIcon :icon="faGlobe" class="mr-2" />
                   Coming Soon
@@ -368,25 +410,42 @@ const certificates = ref([
         </div>
       </section>
 
+      <!-- Section Divider -->
+      <div class="flex items-center justify-center my-12">
+        <div class="flex-1 h-px bg-gradient-to-r from-transparent via-teal-300 dark:via-teal-600 to-transparent"></div>
+        <FontAwesomeIcon :icon="faCode" class="mx-4 text-teal-500 dark:text-teal-400" />
+        <div class="flex-1 h-px bg-gradient-to-r from-teal-300 dark:via-teal-600 to-transparent"></div>
+      </div>
+
       <!-- Projects Section -->
-      <section class="mb-8">
-        <h2 class="font-bold text-3xl mb-6 text-gray-800 dark:text-white">🌐 Web Projects</h2>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <section class="my-12">
+        <div class="flex items-center justify-center mb-8">
+          <FontAwesomeIcon :icon="faGlobe" class="text-3xl text-teal-500 dark:text-teal-400 mr-3" />
+          <h2 class="font-extrabold text-4xl text-gray-800 dark:text-white relative">
+            Web Projects
+            <span class="absolute -bottom-2 left-0 w-16 h-1 bg-teal-500 rounded"></span>
+          </h2>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <section
             v-for="project in projects"
             :key="project.title"
-            class="bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden hover:scale-105"
+            class="bg-white dark:bg-gray-700 border border-teal-200 dark:border-teal-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden hover:scale-105"
             data-aos="fade-up"
             data-aos-duration="600"
-            data-aos-easing="linear"
           >
-            <img :src="project.image" :alt="project.title" class="w-full h-48 object-cover" />
+            <img
+              :src="project.image"
+              :alt="`Screenshot of ${project.title} project`"
+              class="w-full h-48 object-cover"
+              loading="lazy"
+            />
             <div class="p-6">
-              <h3 class="text-blue-500 dark:text-blue-400 text-xl font-bold mb-3">
+              <h3 class="text-teal-500 dark:text-teal-400 text-xl font-bold mb-3">
                 {{ project.title }}
               </h3>
               <p class="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">{{ project.description }}</p>
-              <div class="flex flex-wrap gap-2">
+              <div class="flex flex-wrap gap-3">
                 <a
                   :href="project.link"
                   class="inline-flex items-center px-4 py-2 bg-gray-800 dark:bg-gray-600 hover:bg-gray-900 dark:hover:bg-gray-500 text-white rounded-lg transition-colors duration-300"
@@ -397,10 +456,11 @@ const certificates = ref([
                 </a>
                 <a
                   :href="project.liveLink"
-                  class="inline-flex items-center px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-colors duration-300"
+                  class="inline-flex items-center px-4 py-2 bg-teal-500 hover:bg-teal-600 text-white rounded-lg transition-colors duration-300"
                   target="_blank"
                 >
-                  🔗 Live Demo
+                  <FontAwesomeIcon :icon="faGlobe" class="mr-2" />
+                  Live Demo
                 </a>
               </div>
             </div>
@@ -408,36 +468,50 @@ const certificates = ref([
         </div>
       </section>
 
-      <!-- Skills Section -->
-      <hr class="h-px my-8 bg-gradient-to-r from-transparent via-gray-300 dark:via-gray-600 to-transparent border-0" />
+      <!-- Section Divider -->
+      <div class="flex items-center justify-center my-12">
+        <div class="flex-1 h-px bg-gradient-to-r from-transparent via-teal-300 dark:via-teal-600 to-transparent"></div>
+        <FontAwesomeIcon :icon="faStar" class="mx-4 text-teal-500 dark:text-teal-400" />
+        <div class="flex-1 h-px bg-gradient-to-r from-teal-300 dark:via-teal-600 to-transparent"></div>
+      </div>
 
-      <section class="mb-8">
-        <h2 class="font-bold text-3xl mb-6 text-gray-800 dark:text-white">💻 Technical Skills</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Skills Section -->
+      <section class="my-12">
+        <div class="flex items-center justify-center mb-8">
+          <FontAwesomeIcon :icon="faCode" class="text-3xl text-teal-500 dark:text-teal-400 mr-3" />
+          <h2 class="font-extrabold text-4xl text-gray-800 dark:text-white relative">
+            Technical Skills
+            <span class="absolute -bottom-2 left-0 w-16 h-1 bg-teal-500 rounded"></span>
+          </h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div
             v-for="(skillGroup, groupName) in skills"
             :key="groupName"
-            class="bg-gradient-to-br from-white to-gray-50 dark:from-gray-700 dark:to-gray-800 rounded-xl shadow-lg p-6 border border-gray-200 dark:border-gray-600"
+            class="bg-gradient-to-br from-teal-50 to-blue-50 dark:from-teal-900 dark:to-blue-900 rounded-xl shadow-lg p-6 border border-teal-200 dark:border-teal-800"
             data-aos="zoom-out"
-            data-aos-duration="500"
-            data-aos-easing="linear"
+            data-aos-duration="600"
           >
-            <h3 class="text-blue-500 dark:text-blue-400 font-bold text-xl mb-4">
+            <h3 class="text-teal-500 dark:text-teal-400 font-bold text-xl mb-4">
               {{ groupName }}
             </h3>
-            <ul class="space-y-2">
-              <li
-                v-for="skill in skillGroup"
-                :key="skill.name"
-                class="flex items-center text-gray-700 dark:text-gray-300"
-              >
-                <FontAwesomeIcon
-                  v-if="skill.icon"
-                  :icon="skill.icon"
-                  class="mr-3 text-lg text-blue-500 dark:text-blue-400"
-                />
-                <span v-else class="mr-6"></span>
-                {{ skill.name }}
+            <ul class="space-y-4">
+              <li v-for="skill in skillGroup" :key="skill.name" class="flex flex-col text-gray-700 dark:text-gray-300">
+                <div class="flex items-center mb-1">
+                  <FontAwesomeIcon
+                    v-if="skill.icon"
+                    :icon="skill.icon"
+                    class="mr-3 text-lg text-teal-500 dark:text-teal-400"
+                  />
+                  <span v-else class="mr-6"></span>
+                  <span class="font-medium">{{ skill.name }}</span>
+                </div>
+                <div class="w-full bg-gray-200 dark:bg-gray-600 rounded-full h-2.5">
+                  <div
+                    class="bg-teal-500 h-2.5 rounded-full transition-all duration-500"
+                    :style="{ width: `${skill.proficiency}%` }"
+                  ></div>
+                </div>
               </li>
             </ul>
           </div>
@@ -446,16 +520,22 @@ const certificates = ref([
 
       <!-- Soft Skills Section -->
       <section
-        class="mb-8 bg-gradient-to-r from-purple-100 to-pink-100 dark:from-purple-900 dark:to-pink-900 rounded-xl shadow-lg p-6"
+        class="my-12 bg-gradient-to-r from-teal-50 to-blue-50 dark:from-teal-900 dark:to-blue-900 rounded-xl shadow-lg p-6"
         data-aos="zoom-in"
       >
+        <div class="flex items-center justify-center mb-8">
+          <FontAwesomeIcon :icon="faStar" class="text-3xl text-teal-500 dark:text-teal-400 mr-3" />
+          <h2 class="font-extrabold text-4xl text-gray-800 dark:text-white relative">
+            Soft Skills
+            <span class="absolute -bottom-2 left-0 w-16 h-1 bg-teal-500 rounded"></span>
+          </h2>
+        </div>
         <div v-for="(skillGroup, groupName) in softSkills" :key="groupName">
-          <h3 class="text-purple-600 dark:text-purple-300 font-bold text-xl mb-4">🎯 {{ groupName }}</h3>
-          <ul class="flex flex-wrap gap-3">
+          <ul class="flex flex-wrap gap-4 justify-center">
             <li
               v-for="skill in skillGroup"
               :key="skill"
-              class="px-4 py-2 bg-white dark:bg-gray-700 rounded-full shadow-md text-gray-700 dark:text-gray-300 font-medium"
+              class="px-4 py-2 bg-white dark:bg-gray-700 rounded-full shadow-md text-gray-700 dark:text-gray-300 font-medium hover:bg-teal-100 dark:hover:bg-teal-800 transition-colors duration-300"
             >
               {{ skill }}
             </li>
@@ -463,20 +543,59 @@ const certificates = ref([
         </div>
       </section>
 
+      <!-- Section Divider -->
+      <div class="flex items-center justify-center my-12">
+        <div class="flex-1 h-px bg-gradient-to-r from-transparent via-teal-300 dark:via-teal-600 to-transparent"></div>
+        <FontAwesomeIcon :icon="faCode" class="mx-4 text-teal-500 dark:text-teal-400" />
+        <div class="flex-1 h-px bg-gradient-to-r from-teal-300 dark:via-teal-600 to-transparent"></div>
+      </div>
+
+      <!-- Professional Experience Section -->
+      <section class="my-12">
+        <div class="flex items-center justify-center mb-8">
+          <FontAwesomeIcon :icon="faBriefcase" class="text-3xl text-teal-500 dark:text-teal-400 mr-3" />
+          <h2 class="font-extrabold text-4xl text-gray-800 dark:text-white relative">
+            Professional Experience
+            <span class="absolute -bottom-2 left-0 w-16 h-1 bg-teal-500 rounded"></span>
+          </h2>
+        </div>
+        <div class="relative border-l-4 border-teal-500 pl-8">
+          <div v-for="job in jobs" :key="job.id" class="mb-8 relative" data-aos="fade-right" data-aos-duration="600">
+            <div class="absolute w-4 h-4 bg-teal-500 rounded-full -left-2 mt-2"></div>
+            <div class="bg-white dark:bg-gray-700 rounded-xl shadow-lg p-6 border border-teal-200 dark:border-teal-800">
+              <h3 class="text-xl font-bold text-gray-800 dark:text-white">{{ job.title }}</h3>
+              <p class="text-teal-500 dark:text-teal-400 font-semibold">{{ job.company }}</p>
+              <p class="text-gray-600 dark:text-gray-400 mb-3">{{ job.startDate }} - {{ job.endDate || 'Present' }}</p>
+              <p class="text-gray-600 dark:text-gray-300 leading-relaxed">{{ job.description }}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Divider -->
+      <div class="flex items-center justify-center my-12">
+        <div class="flex-1 h-px bg-gradient-to-r from-transparent via-teal-300 dark:via-teal-600 to-transparent"></div>
+        <FontAwesomeIcon :icon="faStar" class="mx-4 text-teal-500 dark:text-teal-400" />
+        <div class="flex-1 h-px bg-gradient-to-r from-teal-300 dark:via-teal-600 to-transparent"></div>
+      </div>
+
       <!-- Languages Section -->
-      <hr class="h-px my-8 bg-gradient-to-r from-transparent via-gray-300 dark:via-gray-600 to-transparent border-0" />
       <section
-        class="mb-8 bg-gradient-to-r from-green-100 to-blue-100 dark:from-green-900 dark:to-blue-900 rounded-xl shadow-lg p-6"
+        class="my-12 bg-gradient-to-r from-teal-50 to-blue-50 dark:from-teal-900 dark:to-blue-900 rounded-xl shadow-lg p-6"
         data-aos="flip-left"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="500"
       >
-        <h2 class="font-bold text-2xl mb-4 text-gray-800 dark:text-white">🗣️ Languages</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="flex items-center justify-center mb-8">
+          <FontAwesomeIcon :icon="faLanguage" class="text-3xl text-teal-500 dark:text-teal-400 mr-3" />
+          <h2 class="font-extrabold text-4xl text-gray-800 dark:text-white relative">
+            Languages
+            <span class="absolute -bottom-2 left-0 w-16 h-1 bg-teal-500 rounded"></span>
+          </h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div
             v-for="language in languages"
             :key="language.language"
-            class="bg-white dark:bg-gray-700 rounded-lg p-4 shadow-md border-l-4 border-green-500"
+            class="bg-white dark:bg-gray-700 rounded-lg p-4 shadow-md border-l-4 border-teal-500"
           >
             <p class="font-bold text-gray-800 dark:text-white">{{ language.language }}</p>
             <p class="text-gray-600 dark:text-gray-300">{{ language.proficiency }}</p>
@@ -484,42 +603,32 @@ const certificates = ref([
         </div>
       </section>
 
-      <!-- Jobs Section -->
-      <!-- <hr class="h-px my-8 bg-gradient-to-r from-transparent via-gray-300 dark:via-gray-600 to-transparent border-0" />
-      <section class="mb-8">
-        <h2 class="font-bold text-3xl mb-6 text-gray-800 dark:text-white">💼 Professional Experience</h2>
-        <div class="space-y-6">
-          <div
-            v-for="job in jobs"
-            :key="job.id"
-            class="bg-white dark:bg-gray-700 rounded-xl shadow-lg p-6 border-l-4 border-blue-500 hover:shadow-xl transition-all duration-300"
-            data-aos="fade-right"
-            data-aos-easing="linear"
-            data-aos-duration="500"
-          >
-            <h3 class="text-xl font-bold text-gray-800 dark:text-white">{{ job.title }}</h3>
-            <p class="text-blue-500 dark:text-blue-400 font-semibold">{{ job.company }}</p>
-            <p class="text-gray-500 dark:text-gray-400 mb-3">
-              {{ job.startDate }} - {{ job.endDate || 'Present' }}
-            </p>
-            <p class="text-gray-600 dark:text-gray-300 leading-relaxed">{{ job.description }}</p>
-          </div>
-        </div>
-      </section> -->
+      <!-- Section Divider -->
+      <div class="flex items-center justify-center my-12">
+        <div class="flex-1 h-px bg-gradient-to-r from-transparent via-teal-300 dark:via-teal-600 to-transparent"></div>
+        <FontAwesomeIcon :icon="faCode" class="mx-4 text-teal-500 dark:text-teal-400" />
+        <div class="flex-1 h-px bg-gradient-to-r from-teal-300 dark:via-teal-600 to-transparent"></div>
+      </div>
 
       <!-- Certificates Section -->
       <section
-        class="mb-8 bg-gradient-to-r from-yellow-100 to-orange-100 dark:from-yellow-900 dark:to-orange-900 rounded-xl shadow-lg p-6"
+        class="my-12 bg-gradient-to-r from-teal-50 to-blue-50 dark:from-teal-900 dark:to-blue-900 rounded-xl shadow-lg p-6"
         data-aos="fade-up"
       >
-        <h2 class="font-bold text-2xl mb-4 text-gray-800 dark:text-white">🏆 Certificates</h2>
-        <div class="space-y-4">
+        <div class="flex items-center justify-center mb-8">
+          <FontAwesomeIcon :icon="faCertificate" class="text-3xl text-teal-500 dark:text-teal-400 mr-3" />
+          <h2 class="font-extrabold text-4xl text-gray-800 dark:text-white relative">
+            Certificates
+            <span class="absolute -bottom-2 left-0 w-16 h-1 bg-teal-500 rounded"></span>
+          </h2>
+        </div>
+        <div class="space-y-6">
           <div
             v-for="certificate in certificates"
             :key="certificate.id"
-            class="bg-white dark:bg-gray-700 rounded-lg p-4 shadow-md border-l-4 border-yellow-500"
+            class="bg-white dark:bg-gray-700 rounded-lg p-4 shadow-md border-l-4 border-teal-500"
           >
-            <h3 class="text-lg font-bold text-yellow-600 dark:text-yellow-400">
+            <h3 class="text-lg font-bold text-teal-500 dark:text-teal-400">
               {{ certificate.name }}
             </h3>
             <p class="text-gray-600 dark:text-gray-300">{{ certificate.place }} - {{ certificate.date }}</p>
@@ -527,21 +636,40 @@ const certificates = ref([
         </div>
       </section>
 
+      <!-- Section Divider -->
+      <div class="flex items-center justify-center my-12">
+        <div class="flex-1 h-px bg-gradient-to-r from-transparent via-teal-300 dark:via-teal-600 to-transparent"></div>
+        <FontAwesomeIcon :icon="faStar" class="mx-4 text-teal-500 dark:text-teal-400" />
+        <div class="flex-1 h-px bg-gradient-to-r from-teal-300 dark:via-teal-600 to-transparent"></div>
+      </div>
+
       <!-- CV Section -->
-      <div class="text-center">
+      <section class="my-12 text-center">
+        <div class="flex items-center justify-center mb-8">
+          <FontAwesomeIcon :icon="faFilePdf" class="text-3xl text-teal-500 dark:text-teal-400 mr-3" />
+          <h2 class="font-extrabold text-4xl text-gray-800 dark:text-white relative">
+            Curriculum Vitae
+            <span class="absolute -bottom-2 left-0 w-16 h-1 bg-teal-500 rounded"></span>
+          </h2>
+        </div>
         <a
           href="Pejoal CV.pdf"
           download
-          class="inline-block px-8 py-3 text-sm font-bold leading-6 text-center text-white uppercase transition bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 duration-300"
+          class="inline-block px-8 py-3 text-sm font-bold leading-6 text-center text-white uppercase transition bg-gradient-to-r from-teal-500 to-blue-600 hover:from-teal-600 hover:to-blue-700 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 duration-300"
         >
           📄 Download CV
         </a>
-        <iframe
-          src="Pejoal CV.pdf"
-          class="h-96 w-full mt-6 rounded-lg shadow-lg border border-gray-200 dark:border-gray-600"
-          frameborder="0"
-        ></iframe>
-      </div>
+        <div class="mt-6">
+          <a href="Pejoal CV.pdf" target="_blank" class="inline-block">
+            <img
+              src="assets/cv-preview.png"
+              alt="CV Preview"
+              class="w-64 h-auto rounded-lg shadow-lg border border-teal-200 dark:border-teal-800 mx-auto"
+              loading="lazy"
+            />
+          </a>
+        </div>
+      </section>
     </div>
   </section>
 </template>
