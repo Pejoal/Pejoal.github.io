@@ -293,7 +293,7 @@ const certificates = ref([
     </button>
 
     <div
-      class="bg-white dark:bg-gray-800 shadow-2xl rounded-3xl w-full max-w-6xl p-8 transition-colors duration-300 relative z-10"
+      class="bg-white dark:bg-gray-800 shadow-2xl rounded-3xl w-full max-w-6xl p-4 transition-colors duration-300 relative z-10"
     >
       <!-- Header Section -->
       <section
