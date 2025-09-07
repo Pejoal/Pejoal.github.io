@@ -109,7 +109,7 @@ const projects = ref([
     description:
       'This is an E-commerce project developed using Vue.js and Laravel. It features a user-friendly interface with a responsive design that works well on both desktop and mobile devices. The application includes user authentication, product listing, shopping cart functionality, and secure payment processing. It also has an admin panel for managing products, orders, and users.',
     link: 'https://github.com/Pejoal/ecommerce',
-    liveLink: 'https://pejoal.live/home',
+    liveLink: '#',
     image: 'assets/Screenshot2.png',
   },
   {
@@ -117,7 +117,7 @@ const projects = ref([
     description:
       'This app was designed to streamline appointment scheduling and coordination for a driving school. It aimed to enhance efficiency and provide a seamless experience for both instructors and students.',
     link: 'https://github.com/Pejoal/Termin',
-    liveLink: 'https://pejoal.live',
+    liveLink: '#',
     image: 'assets/appointments.png',
   },
   {
@@ -125,7 +125,7 @@ const projects = ref([
     description:
       'A multiplayer card game with features such as card deck management (shuffling, dealing, etc.), animations for card movements, responsive design for different devices, and real-time playing. Developed using Laravel, Inertia, Vue 3, TailwindCSS, Docker, and MySQL.',
     link: 'https://github.com/Pejoal/Game',
-    liveLink: 'https://pejoal.live',
+    liveLink: '#',
     image: 'assets/game1.png',
   },
   {
@@ -133,7 +133,7 @@ const projects = ref([
     description:
       'A social media application developed using Vue.js and Laravel. The app includes features like user authentication, real-time chat, post creation and management, likes, comments, and a friend system. It also includes a responsive design for both desktop and mobile devices.',
     link: 'https://github.com/Pejoal/Social-Media-Platform',
-    liveLink: 'https://pejoal.live',
+    liveLink: '#',
     image: 'assets/social_media_logo.png',
   },
 ]);
