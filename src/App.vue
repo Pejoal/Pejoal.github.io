@@ -18,7 +18,31 @@ import {
   faSass,
   faVuejs,
 } from '@fortawesome/free-brands-svg-icons';
-import { faCode, faGlobe, faMobile, faMoon, faStar, faSun } from '@fortawesome/free-solid-svg-icons';
+import {
+  faAward,
+  faBookOpen,
+  faBrain,
+  faBriefcase,
+  faChevronRight,
+  faCode,
+  faDownload,
+  faEnvelope,
+  faExternalLinkAlt,
+  faFilePdf,
+  faGamepad,
+  faGlobe,
+  faGraduationCap,
+  faHeart,
+  faLanguage,
+  faMapMarkerAlt,
+  faMobile,
+  faMoon,
+  faQuestionCircle,
+  faStar,
+  faSun,
+  faUserCircle,
+  faUsers,
+} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -46,7 +70,24 @@ library.add(
   faGlobe,
   faMobile,
   faStar,
-  faCode
+  faCode,
+  faBrain,
+  faUserCircle,
+  faQuestionCircle,
+  faAward,
+  faMapMarkerAlt,
+  faEnvelope,
+  faLanguage,
+  faBriefcase,
+  faGraduationCap,
+  faDownload,
+  faFilePdf,
+  faChevronRight,
+  faExternalLinkAlt,
+  faUsers,
+  faHeart,
+  faBookOpen,
+  faGamepad
 );
 
 // Dark mode toggle
@@ -143,66 +184,122 @@ const mobileApps = ref([
     id: 'com.pejoal.myapp',
     name: 'German Learning App',
     description:
-      'Comprehensive German language learning app with interactive lessons, vocabulary building, and pronunciation practice.',
+      'Comprehensive German language learning app with interactive lessons, vocabulary building, pronunciation practice, and cultural insights. Features adaptive learning algorithms, speech recognition, and progress tracking to help users master the German language effectively.',
     icon: '🇩🇪',
     category: 'Education',
+    features: ['Interactive Lessons', 'Speech Recognition', 'Progress Tracking', 'Cultural Insights'],
+    downloads: '10K+',
+    rating: 4.5,
   },
   {
     id: 'com.pejoal.learn_english_app',
     name: 'English Learning App',
-    description: 'Master English with engaging lessons, grammar exercises, and real-world conversation practice.',
+    description:
+      'Master English with engaging lessons, comprehensive grammar exercises, vocabulary building, and real-world conversation practice. Includes business English modules, pronunciation guides, and interactive speaking exercises.',
     icon: '🇺🇸',
     category: 'Education',
+    features: ['Business English', 'Grammar Exercises', 'Conversation Practice', 'Pronunciation Guide'],
+    downloads: '25K+',
+    rating: 4.7,
   },
   {
     id: 'com.pejoal.learn_french_app',
     name: 'French Learning App',
-    description: 'Learn French from basics to advanced with cultural insights and pronunciation guides.',
+    description:
+      'Learn French from basics to advanced with cultural insights, pronunciation guides, and immersive content. Features French literature excerpts, regional dialects, and conversation scenarios.',
     icon: '🇫🇷',
     category: 'Education',
+    features: ['Cultural Insights', 'Regional Dialects', 'Literature Excerpts', 'Conversation Scenarios'],
+    downloads: '15K+',
+    rating: 4.4,
   },
   {
     id: 'com.pejoal.learn_spanish_app',
     name: 'Spanish Learning App',
-    description: 'Dive into Spanish language and culture with interactive content and speech recognition.',
+    description:
+      'Dive into Spanish language and culture with interactive content, speech recognition, and comprehensive lessons covering Latin American and European Spanish variations.',
     icon: '🇪🇸',
     category: 'Education',
+    features: ['Latin American Spanish', 'European Spanish', 'Cultural Content', 'Interactive Exercises'],
+    downloads: '20K+',
+    rating: 4.6,
   },
   {
     id: 'com.pejoal.learn_italian_app',
     name: 'Italian Learning App',
-    description: 'Experience the beauty of Italian language through immersive learning modules.',
+    description:
+      "Experience the beauty of Italian language through immersive learning modules, authentic audio content, and cultural exploration of Italy's rich heritage.",
     icon: '🇮🇹',
     category: 'Education',
+    features: ['Authentic Audio', 'Cultural Heritage', 'Immersive Modules', 'Native Speakers'],
+    downloads: '12K+',
+    rating: 4.3,
   },
   {
     id: 'com.pejoal.learn_russian',
     name: 'Russian Learning App',
-    description: 'Master Cyrillic script and Russian language with step-by-step progression.',
+    description:
+      'Master Cyrillic script and Russian language with step-by-step progression, interactive writing practice, and comprehensive grammar lessons covering all cases and verb aspects.',
     icon: '🇷🇺',
     category: 'Education',
+    features: ['Cyrillic Script', 'Grammar Cases', 'Verb Aspects', 'Writing Practice'],
+    downloads: '8K+',
+    rating: 4.2,
   },
   {
     id: 'com.pejoal.iq_test',
     name: 'IQ Test Pro',
-    description: 'Challenge your mind with comprehensive IQ tests and cognitive assessments.',
+    description:
+      'Challenge your mind with comprehensive IQ tests, cognitive assessments, and brain training exercises. Features multiple test categories, detailed analytics, and personalized improvement recommendations.',
     icon: '🧠',
     category: 'Entertainment',
+    features: ['Multiple Test Types', 'Detailed Analytics', 'Brain Training', 'Progress Reports'],
+    downloads: '50K+',
+    rating: 4.8,
   },
   {
     id: 'com.pejoal.german_for_nurses',
     name: 'German for Nurses',
-    description: 'Specialized German language app designed for healthcare professionals and nursing students.',
+    description:
+      'Specialized German language app designed for healthcare professionals and nursing students. Covers medical terminology, patient communication, and professional healthcare scenarios specific to German healthcare system.',
     icon: '👩‍⚕️',
     category: 'Medical',
+    features: ['Medical Terminology', 'Patient Communication', 'Healthcare Scenarios', 'Professional Vocabulary'],
+    downloads: '5K+',
+    rating: 4.9,
   },
   {
     id: 'com.pejoal.videoplayer',
     name: 'Advanced Video Player',
     description:
-      'Feature-rich video player with subtitle support, playback controls, and multiple format compatibility.',
+      'Feature-rich video player with subtitle support, multiple format compatibility, advanced playback controls, and streaming capabilities. Supports 4K playback, gesture controls, and playlist management.',
     icon: '🎬',
     category: 'Media',
+    features: ['4K Playback', 'Subtitle Support', 'Gesture Controls', 'Playlist Management'],
+    downloads: '100K+',
+    rating: 4.6,
+  },
+  {
+    id: 'com.pejoal.trivia_quiz',
+    name: 'Ultimate Trivia Quiz',
+    description:
+      'Test your knowledge across multiple categories with thousands of questions covering history, science, sports, entertainment, and more. Features multiplayer mode, daily challenges, and global leaderboards.',
+    icon: '🎯',
+    category: 'Entertainment',
+    features: ['Multiplayer Mode', 'Daily Challenges', 'Global Leaderboards', 'Multiple Categories'],
+    downloads: '75K+',
+    rating: 4.7,
+  },
+  {
+    id: 'com.pejoal.personality_test',
+    name: 'Personality Insights',
+    description:
+      'Discover your personality type with scientifically-based assessments including MBTI, Big Five, and Enneagram tests. Get detailed reports, career recommendations, and relationship compatibility insights.',
+    icon: '🔮',
+    category: 'Lifestyle',
+    features: ['MBTI Assessment', 'Big Five Test', 'Career Recommendations', 'Compatibility Insights'],
+    downloads: '30K+',
+    rating: 4.5,
   },
 ]);
 
