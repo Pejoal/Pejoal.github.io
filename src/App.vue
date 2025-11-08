@@ -364,7 +364,7 @@ const certificates = ref([
 
 <template>
   <section
-    class="min-h-screen bg-gradient-to-br from-blue-50 via-teal-50 to-gray-50 dark:from-gray-900 dark:via-teal-900 dark:to-gray-800 flex flex-col justify-center items-center py-12 px-4 transition-colors duration-300"
+    class="min-h-screen overflow-hidden bg-gradient-to-br from-blue-50 via-teal-50 to-gray-50 dark:from-gray-900 dark:via-teal-900 dark:to-gray-800 flex flex-col justify-center items-center py-12 px-4 transition-colors duration-300"
   >
     <!-- Animated background elements -->
     <div class="absolute inset-0 overflow-hidden pointer-events-none">
@@ -416,6 +416,21 @@ const certificates = ref([
               </a>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="my-12" data-aos="fade-up">
+        <div class="text-center mb-6">
+          <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">Hey there :)</p>
+          <a
+            href="my-project"
+            target="_self"
+            class="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-medium rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300"
+          >
+            <Icon name="heroicons:rocket-launch" class="w-5 h-5" />
+            Check out my new portfolio
+            <Icon name="heroicons:arrow-top-right-on-square" class="w-4 h-4" />
+          </a>
         </div>
       </section>
 
