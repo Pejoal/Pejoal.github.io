@@ -781,37 +781,6 @@ const certificates = ref([
         <FontAwesomeIcon :icon="faStar" class="mx-4 text-teal-500 dark:text-teal-400" />
         <div class="flex-1 h-px bg-gradient-to-r from-teal-300 dark:via-teal-600 to-transparent"></div>
       </div>
-
-      <!-- CV Section -->
-      <section class="my-12 text-center">
-        <div class="flex items-center justify-center mb-8">
-          <svg
-            class="w-8 h-8 text-teal-500 dark:text-teal-400 mr-3"
-            fill="currentColor"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-          >
-            <path
-              d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11zM8 16h8v2H8v-2zm0-4h8v2H8v-2z"
-            />
-            <text x="8" y="10" font-size="6" fill="currentColor">PDF</text>
-          </svg>
-          <h2 class="font-extrabold text-4xl text-gray-800 dark:text-white relative">
-            Curriculum Vitae
-            <span class="absolute -bottom-2 left-0 w-16 h-1 bg-teal-500 rounded"></span>
-          </h2>
-        </div>
-        <div>
-          <a
-            href="Pejoal CV.pdf"
-            download
-            class="mt-2 inline-block px-6 py-2 text-xs font-medium leading-6 text-center text-white uppercase transition bg-blue-700 rounded shadow ripple hover:shadow-lg hover:bg-blue-800 focus:outline-none"
-          >
-            Download CV
-          </a>
-          <iframe src="Pejoal CV.pdf" class="h-[400px] w-full" frameborder="1"></iframe>
-        </div>
-      </section>
     </div>
   </section>
 </template>

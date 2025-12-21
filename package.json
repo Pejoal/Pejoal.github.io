@@ -1,4 +1,6 @@
 {
+  "version": "0.2.9",
+  "private": true,
   "name": "pejoal-hanna",
   "displayName": "Pejoal Hanna (Pejoal Dev Studio)",
   "description": "Personal portfolio website of Pejoal Hanna, a full stack developer.",
@@ -17,8 +19,6 @@
       "email": "pejoal.business@gmail.com"
     }
   ],
-  "version": "0.2.8",
-  "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
