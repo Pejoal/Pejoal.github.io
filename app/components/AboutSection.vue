@@ -15,7 +15,7 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- Card 1: Mobile Development -->
         <div
-          class="text-center p-6 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-2xl shadow-md hover:shadow-lg transition-shadow"
+          class="text-center p-6 bg-linear-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-2xl shadow-md hover:shadow-lg transition-shadow"
           data-aos="fade-right"
           data-aos-delay="300"
         >
@@ -30,7 +30,7 @@
 
         <!-- Card 2: Language Learning -->
         <div
-          class="text-center p-6 bg-gradient-to-br from-purple-50 to-violet-50 dark:from-purple-900/20 dark:to-violet-900/20 rounded-2xl shadow-md hover:shadow-lg transition-shadow"
+          class="text-center p-6 bg-linear-to-br from-purple-50 to-violet-50 dark:from-purple-900/20 dark:to-violet-900/20 rounded-2xl shadow-md hover:shadow-lg transition-shadow"
           data-aos="fade-up"
           data-aos-delay="400"
         >
@@ -45,7 +45,7 @@
 
         <!-- Card 3: Utilities, Quizzes & Games -->
         <div
-          class="text-center p-6 bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 rounded-2xl shadow-md hover:shadow-lg transition-shadow"
+          class="text-center p-6 bg-linear-to-br from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 rounded-2xl shadow-md hover:shadow-lg transition-shadow"
           data-aos="fade-left"
           data-aos-delay="500"
         >

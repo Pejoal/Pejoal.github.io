@@ -1,7 +1,7 @@
 <!-- pages/404.vue -->
 <template>
   <div
-    class="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-blue-900 dark:to-indigo-900 flex items-center justify-center px-4"
+    class="min-h-screen bg-linear-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-blue-900 dark:to-indigo-900 flex items-center justify-center px-4"
   >
     <div class="max-w-md w-full text-center" data-aos="fade-up">
       <!-- 404 Illustration -->

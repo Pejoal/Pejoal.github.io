@@ -3,7 +3,7 @@
     <div class="max-w-7xl mx-auto">
       <div class="text-center mb-16" data-aos="fade-up">
         <div
-          class="inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-3 rounded-2xl mb-6"
+          class="inline-flex items-center gap-3 bg-linear-to-r from-purple-600 to-pink-600 text-white px-6 py-3 rounded-2xl mb-6"
         >
           <Icon name="heroicons:code-bracket" class="w-6 h-6" />
           <span class="font-bold">Web Projects</span>
@@ -43,7 +43,7 @@
               class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
             />
             <div
-              class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              class="absolute inset-0 bg-linear-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             ></div>
           </div>
           <div class="p-6">

@@ -2,7 +2,7 @@
   <div>
     <!-- Category Header -->
     <div class="flex items-center gap-3 mb-6" data-aos="fade-up">
-      <div :class="`w-10 h-10 rounded-lg bg-gradient-to-r ${color} flex items-center justify-center shadow-md`">
+      <div :class="`w-10 h-10 rounded-lg bg-linear-to-r ${color} flex items-center justify-center shadow-md`">
         <Icon :name="icon" class="w-5 h-5 text-white" />
       </div>
       <h3 class="text-xl font-bold text-gray-800 dark:text-white">{{ title }}</h3>
@@ -31,7 +31,7 @@
                 if (el) progressRef[i] = el;
               }
             "
-            :class="`h-full bg-gradient-to-r ${color} rounded-full transition-all duration-1400 ease-out`"
+            :class="`h-full bg-linear-to-r ${color} rounded-full transition-all duration-1400 ease-out`"
             :style="{ width: '0%' }"
           ></div>
         </div>
