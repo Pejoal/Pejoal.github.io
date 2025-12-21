@@ -52,5 +52,6 @@ useSeoMeta({
     'Professional full-stack developer specializing in cross-platform mobile applications and web systems/apps. Experienced in CSS, React Native, Expo, PHP, Laravel, MongoDB, MariaDB/MySQL, and Node.js with published apps on major app stores.',
   // ogImage: '/og-image.png',
   twitterCard: 'summary_large_image',
+  'facebook-domain-verification': 'cwfbsf6is7ynmsykzih3z7m4mwf21c',
 });
 </script>
