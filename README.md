@@ -46,7 +46,6 @@ pnpm install
 
 3. Add your assets:
    - Add your project screenshots to `public/assets/`
-   - Add your CV/Resume as `public/assets/Pejoal_CV.pdf`
    - Update image paths in components if needed
 
 ## 🔧 Development
