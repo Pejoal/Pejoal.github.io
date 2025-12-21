@@ -114,7 +114,6 @@ const frontendSkills = [
 const mobileSkills = [
   { name: 'React Native', level: 95, icon: 'simple-icons:react' },
   { name: 'Expo', level: 92, icon: 'simple-icons:expo' },
-  { name: 'Flutter (Basic)', level: 15, icon: 'simple-icons:flutter' },
 ];
 
 const backendSkills = [
@@ -140,7 +139,7 @@ const testingToolsSkills = [
   { name: 'Jest', level: 85, icon: 'simple-icons:jest' },
   { name: 'Cypress', level: 78, icon: 'simple-icons:cypress' },
   { name: 'Git & GitHub', level: 93, icon: 'simple-icons:git' },
-  { name: 'Figma', level: 40, icon: 'simple-icons:figma' },
+  { name: 'Figma', level: 77, icon: 'simple-icons:figma' },
   { name: 'Postman', level: 90, icon: 'simple-icons:postman' },
 ];
 
