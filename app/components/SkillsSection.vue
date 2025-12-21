@@ -1,5 +1,5 @@
 <template>
-  <section id="skills" class="py-20 px-4 bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
+  <section id="skills" class="py-20 px-4 bg-linear-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
     <div class="max-w-7xl mx-auto">
       <!-- Header -->
       <div class="text-center mb-16" data-aos="fade-up">
@@ -74,7 +74,7 @@
             :data-aos-delay="i * 100"
           >
             <div
-              class="w-16 h-16 mb-4 rounded-full bg-gradient-to-br from-emerald-400 to-teal-500 flex items-center justify-center shadow-lg"
+              class="w-16 h-16 mb-4 rounded-full bg-linear-to-br from-emerald-400 to-teal-500 flex items-center justify-center shadow-lg"
             >
               <Icon :name="skill.icon" class="w-8 h-8 text-white" />
             </div>
@@ -83,7 +83,7 @@
             <div class="w-full h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
               <div
                 ref="softProgress"
-                class="h-full bg-gradient-to-r from-emerald-400 to-teal-500 rounded-full transition-all duration-1200 ease-out"
+                class="h-full bg-linear-to-r from-emerald-400 to-teal-500 rounded-full transition-all duration-1200 ease-out"
                 :style="{ width: '0%' }"
               ></div>
             </div>
@@ -105,6 +105,7 @@ const frontendSkills = [
   { name: 'Vue / Nuxt.js', level: 88, icon: 'simple-icons:nuxtdotjs' },
   { name: 'React', level: 92, icon: 'simple-icons:react' },
   { name: 'Next.js', level: 85, icon: 'simple-icons:nextdotjs' },
+  { name: 'Svelte', level: 80, icon: 'simple-icons:svelte' },
   { name: 'Tailwind CSS', level: 96, icon: 'simple-icons:tailwindcss' },
   { name: 'HTML / CSS / JS', level: 98, icon: 'simple-icons:html5' },
   { name: 'TypeScript', level: 87, icon: 'simple-icons:typescript' },
@@ -113,7 +114,7 @@ const frontendSkills = [
 const mobileSkills = [
   { name: 'React Native', level: 95, icon: 'simple-icons:react' },
   { name: 'Expo', level: 92, icon: 'simple-icons:expo' },
-  { name: 'Flutter (Basic)', level: 65, icon: 'simple-icons:flutter' },
+  { name: 'Flutter (Basic)', level: 15, icon: 'simple-icons:flutter' },
 ];
 
 const backendSkills = [
@@ -139,7 +140,7 @@ const testingToolsSkills = [
   { name: 'Jest', level: 85, icon: 'simple-icons:jest' },
   { name: 'Cypress', level: 78, icon: 'simple-icons:cypress' },
   { name: 'Git & GitHub', level: 93, icon: 'simple-icons:git' },
-  { name: 'Figma', level: 80, icon: 'simple-icons:figma' },
+  { name: 'Figma', level: 40, icon: 'simple-icons:figma' },
   { name: 'Postman', level: 90, icon: 'simple-icons:postman' },
 ];
 

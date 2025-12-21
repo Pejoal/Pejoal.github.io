@@ -80,7 +80,7 @@
               </li>
               <li class="flex items-start gap-3 text-gray-700 dark:text-gray-300">
                 <Icon name="heroicons:check-circle" class="w-5 h-5 text-indigo-500 mt-0.5" />
-                <span>Modern Frameworks (Vue, Nuxt, React)</span>
+                <span>Modern Frameworks (Vue, Nuxt, React, Svelte, Next.js)</span>
               </li>
               <li class="flex items-start gap-3 text-gray-700 dark:text-gray-300">
                 <Icon name="heroicons:check-circle" class="w-5 h-5 text-indigo-500 mt-0.5" />
