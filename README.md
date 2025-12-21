@@ -34,8 +34,8 @@ A modern, responsive portfolio website built with Nuxt 3, Vue 3, and TailwindCSS
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/my-project.git
-cd my-project
+git clone https://github.com/pejoal/pejoal.github.io.git
+cd pejoal.github.io
 ```
 
 2. Install dependencies:
