@@ -1,7 +1,7 @@
 <!-- error.vue -->
 <template>
   <div
-    class="min-h-screen bg-gradient-to-br from-red-50 to-pink-50 dark:from-gray-900 dark:to-gray-800 flex items-center justify-center px-4"
+    class="min-h-screen bg-linear-to-br from-red-50 to-pink-50 dark:from-gray-900 dark:to-gray-800 flex items-center justify-center px-4"
   >
     <div class="max-w-md w-full text-center" data-aos="fade-up">
       <div class="text-8xl font-bold text-red-200 dark:text-red-800 mb-6">
