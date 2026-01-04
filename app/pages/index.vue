@@ -17,6 +17,7 @@
     :utility-apps="utilityApps"
     :test-apps="testApps"
     :game-apps="gameApps"
+    :programming-apps="programmingApps"
   />
 
   <WebProjectsSection />
@@ -39,8 +40,17 @@ onMounted(() => {
 });
 
 // Use composables for app data and dark mode
-const { germanApps, englishApps, spanishApps, italianApps, otherLanguageApps, utilityApps, testApps, gameApps } =
-  useAppData();
+const {
+  germanApps,
+  englishApps,
+  spanishApps,
+  italianApps,
+  otherLanguageApps,
+  utilityApps,
+  testApps,
+  gameApps,
+  programmingApps,
+} = useAppData();
 
 // SEO
 useSeoMeta({

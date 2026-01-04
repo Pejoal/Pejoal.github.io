@@ -78,6 +78,14 @@
         :apps="gameApps"
         color="pink"
       />
+
+      <!-- Programming Apps -->
+      <AppSection
+        title="Programming"
+        description="Learn programming languages and concepts with interactive tutorials"
+        :apps="programmingApps"
+        color="blue"
+      />
     </div>
   </section>
 </template>
@@ -92,5 +100,6 @@ defineProps({
   utilityApps: Array,
   testApps: Array,
   gameApps: Array,
+  programmingApps: Array,
 });
 </script>

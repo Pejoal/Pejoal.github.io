@@ -205,7 +205,7 @@ export const useAppData = () => {
     },
     {
       id: 'connect_2048',
-      iosId: null,
+      iosId: 'connect-merge-2048-puzzle/id6755743095',
       title: 'Connect 2048',
       description: 'Connect & Chain tiles to reach 2048',
       icon: 'https://play-lh.googleusercontent.com/Q27uTfFvmdvtQ3Hue3ZkrUofhiA9-6WvXcRmZC1yf0lWDXlvxh6BbUtWgwoPap7TnCHoBL4y076BIIu9lruHzA=w480-h960-rw',
@@ -263,6 +263,7 @@ export const useAppData = () => {
   const utilityApps = computed(() => allApps.value.filter((app) => app.category === 'utility'));
   const testApps = computed(() => allApps.value.filter((app) => app.category === 'test'));
   const gameApps = computed(() => allApps.value.filter((app) => app.category === 'game'));
+  const programmingApps = computed(() => allApps.value.filter((app) => app.category === 'programming'));
 
   return {
     allApps,
@@ -274,6 +275,7 @@ export const useAppData = () => {
     utilityApps,
     testApps,
     gameApps,
+    programmingApps,
   };
 };
 
