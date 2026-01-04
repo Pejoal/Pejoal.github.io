@@ -61,6 +61,7 @@ const getIcon = (title) => {
   if (title.includes('🛠️') || title.includes('Utility')) return '🛠️';
   if (title.includes('🧠') || title.includes('Test')) return '🧠';
   if (title.includes('🎮') || title.includes('Games')) return '🎮';
+  if (title.includes('📚') || title.includes('Programming')) return '📚';
   return '📱';
 };
 

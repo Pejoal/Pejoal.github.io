@@ -22,7 +22,7 @@ export const useAppData = () => {
     },
     {
       id: 'german_for_nurses',
-      iosId: 'https://apps.apple.com/us/app/german-for-nurses/id6756078684',
+      iosId: 'german-for-nurses/id6756078684',
       title: 'German for Nurses',
       description: 'Specialized German course for healthcare professionals',
       icon: 'https://play-lh.googleusercontent.com/zl3uC30SnfKJlxAXGbn4-gm5NWTQwfWQOTRw17FqUBADnErYWfp16SZXlO_ja4n6SBIzQm2CCCJDkdi7K_5Iqg=w480-h960-rw',
@@ -34,6 +34,14 @@ export const useAppData = () => {
       title: 'German Stories',
       description: 'Learn German through engaging stories',
       icon: 'https://play-lh.googleusercontent.com/kKaYxO8ads0_4VCsyQ7-KMWvaOyOwOuuPVLRNdIwgTxnR6U2YZVz6gLdlZzuge7T5N61BTiEZHduZR9-dOdZ4Qw=w480-h960-rw',
+      category: 'german',
+    },
+    {
+      id: 'einbuergerungstest',
+      iosId: null,
+      title: 'Einbürgerungstest Trainer',
+      description: 'Prepare for the German naturalization test',
+      icon: 'https://play-lh.googleusercontent.com/WwkfRo7VfrVPy-oVvGU_sENVDFFc_3xmDdXZuznYTRdwmn-a-8d2z7eglihmuorOxNZJMSyU4NFXtafI5ebiybg=w480-h960-rw',
       category: 'german',
     },
     // English Learning Apps
@@ -148,8 +156,16 @@ export const useAppData = () => {
     // Test Apps
     {
       id: 'iq_test',
-      iosId: 'app/pro-iq-test/id6754533659',
-      title: 'Pro IQ Test',
+      iosId: 'iq-test-pro-brain-training/id6756730514',
+      title: 'IQ Test Pro',
+      description: 'Comprehensive IQ testing app',
+      icon: 'https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/10/d4/d4/10d4d4ad-3f33-cc91-f5e2-4682b0a02091/Placeholder.mill/200x200bb-75.webp',
+      category: 'test',
+    },
+    {
+      id: null,
+      iosId: 'pro-iq-test/id6754533659',
+      title: 'IQ Test',
       description: 'Professional IQ assessment tool',
       icon: 'https://play-lh.googleusercontent.com/oP1gSDk8iA_s_IFQ22s8hRLjd6F47bciCwEBq-ZumbgHbZY5UhnOLzNdk3kn64rYoU4u_rqiXTPxK43hJJSr6Q=w480-h960-rw',
       category: 'test',
@@ -210,6 +226,31 @@ export const useAppData = () => {
       description: 'Control a robot to discover new worlds',
       icon: 'https://lh3.googleusercontent.com/CrRf5lllZFEkOk42Se_Dq9MFrobc78SZu3Kln-soflN6lC0E6iGMc5WrUWCKsC41rhLvvTTUBgWrIHKtqmfY',
       category: 'game',
+    },
+
+    {
+      id: 'learn_html',
+      iosId: null,
+      title: 'Learn HTML',
+      description: 'Learn HTML with interactive lessons',
+      icon: 'https://play-lh.googleusercontent.com/KHlgIeWhFe9TTY5iAzo0lcItjpCBQlz5a8sA-KKKt_Kl67RPnFsw26YlUi4PoTAUSTclceFlHhMHOT-2ZGiq=w480-h960-rw',
+      category: 'programming',
+    },
+    {
+      id: 'learn_css',
+      iosId: null,
+      title: 'Learn CSS',
+      description: 'Learn CSS with practical examples',
+      icon: 'https://play-lh.googleusercontent.com/0c2nn_XAuT-A4_0rKuUEMVjQk34eTJhU5dJL9QePQYVkXEU4CEQno5XVJgeLDYoNL4BE_ceXVclZx2R1OySH=w480-h960-rw',
+      category: 'programming',
+    },
+    {
+      id: 'learn_js',
+      iosId: null,
+      title: 'Learn JavaScript',
+      description: 'Comprehensive JavaScript tutorials',
+      icon: '',
+      category: 'programming',
     },
   ]);
 
