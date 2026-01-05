@@ -249,7 +249,7 @@ export const useAppData = () => {
       iosId: null,
       title: 'Learn JavaScript',
       description: 'Comprehensive JavaScript tutorials',
-      icon: '',
+      icon: 'https://expo.dev/_next/image?url=https%3A%2F%2Fexpo.dev%2Fcdn-cgi%2Fimage%2Fwidth%3D160%2Fhttps%3A%2F%2Fstorage.googleapis.com%2Fprofile-image-storage-production%2F9e52c900-46a0-4db7-a7f7-66c65f32c370.png&w=256&q=75',
       category: 'programming',
     },
   ]);
