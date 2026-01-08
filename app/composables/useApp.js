@@ -230,7 +230,7 @@ export const useAppData = () => {
 
     {
       id: 'learn_html',
-      iosId: null,
+      iosId: 'learn-html-interactive-course/id6757127735',
       title: 'Learn HTML',
       description: 'Learn HTML with interactive lessons',
       icon: 'https://play-lh.googleusercontent.com/KHlgIeWhFe9TTY5iAzo0lcItjpCBQlz5a8sA-KKKt_Kl67RPnFsw26YlUi4PoTAUSTclceFlHhMHOT-2ZGiq=w480-h960-rw',
@@ -238,7 +238,7 @@ export const useAppData = () => {
     },
     {
       id: 'learn_css',
-      iosId: null,
+      iosId: 'learn-css-web-design/id6757161168',
       title: 'Learn CSS',
       description: 'Learn CSS with practical examples',
       icon: 'https://play-lh.googleusercontent.com/0c2nn_XAuT-A4_0rKuUEMVjQk34eTJhU5dJL9QePQYVkXEU4CEQno5XVJgeLDYoNL4BE_ceXVclZx2R1OySH=w480-h960-rw',
@@ -246,7 +246,7 @@ export const useAppData = () => {
     },
     {
       id: 'learn_js',
-      iosId: null,
+      iosId: 'learn-js/id6757395492',
       title: 'Learn JavaScript',
       description: 'Comprehensive JavaScript tutorials',
       icon: 'https://expo.dev/_next/image?url=https%3A%2F%2Fexpo.dev%2Fcdn-cgi%2Fimage%2Fwidth%3D160%2Fhttps%3A%2F%2Fstorage.googleapis.com%2Fprofile-image-storage-production%2F9e52c900-46a0-4db7-a7f7-66c65f32c370.png&w=256&q=75',
