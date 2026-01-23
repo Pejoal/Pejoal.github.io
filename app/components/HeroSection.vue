@@ -5,7 +5,7 @@
         <div
           class="w-32 h-32 mx-auto mb-8 bg-linear-to-r from-blue-600 to-indigo-600 rounded-full flex items-center justify-center shadow-2xl"
         >
-          <span class="text-white font-bold text-5xl">P</span>
+          <span class="text-white font-bold text-5xl">PH</span>
         </div>
 
         <h1 class="text-5xl sm:text-6xl font-bold text-gray-900 dark:text-white mb-6">
@@ -14,9 +14,9 @@
         </h1>
 
         <p class="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
-          Professional full-stack developer specializing in cross-platform mobile applications and web systems/apps.
-          Experienced in CSS, React Native, Expo, PHP, Laravel, MongoDB, MariaDB/MySQL, and Node.js with published apps
-          on major app stores.
+          A seasoned full-stack developer with expertise in building cross-platform mobile applications and dynamic web
+          systems. Proficient in technologies like CSS, React Native, Expo, PHP, Laravel, MongoDB, MariaDB/MySQL, and
+          Node.js, with a proven track record of delivering high-quality apps featured on major app stores.
         </p>
 
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
@@ -48,11 +48,11 @@
         <!-- Stats -->
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-2xl mx-auto">
           <div class="text-center">
-            <div class="text-3xl font-bold text-gray-900 dark:text-white">50+</div>
+            <div class="text-3xl font-bold text-gray-900 dark:text-white">30+</div>
             <div class="text-gray-600 dark:text-gray-300">Published Apps</div>
           </div>
           <div class="text-center">
-            <div class="text-3xl font-bold text-gray-900 dark:text-white">30,000+</div>
+            <div class="text-3xl font-bold text-gray-900 dark:text-white">70,000+</div>
             <div class="text-gray-600 dark:text-gray-300">Downloads</div>
           </div>
           <div class="text-center">

@@ -88,8 +88,8 @@
           <p class="dark:text-gray-300">
             Have questions about this policy or a specific app?<br />
             Contact <strong>Pejoal Dev Studio</strong> at:
-            <a href="mailto:pejoal.business@gmail.com" class="text-blue-600 hover:underline font-medium">
-              pejoal.business@gmail.com
+            <a href="mailto:business@pejoal.dpdns.org" class="text-blue-600 hover:underline font-medium">
+              business@pejoal.dpdns.org
             </a>
           </p>
         </section>

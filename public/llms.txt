@@ -28,5 +28,5 @@ Crawl-delay: 10
 
 # === CONTACT ===
 # For licensing, partnerships, or data usage:
-# Email: pejoal.business@gmail.com
+# Email: business@pejoal.dpdns.org
 # Website: https://pejoal.github.io

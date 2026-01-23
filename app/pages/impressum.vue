@@ -28,8 +28,8 @@
             </p>
             <p class="mb-2">
               Contact:
-              <a href="mailto:pejoal.business@gmail.com" class="text-blue-600 hover:underline">
-                pejoal.business@gmail.com
+              <a href="mailto:business@pejoal.dpdns.org" class="text-blue-600 hover:underline">
+                business@pejoal.dpdns.org
               </a>
             </p>
           </div>
