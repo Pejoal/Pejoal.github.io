@@ -38,13 +38,21 @@ export const useAppData = () => {
     },
     {
       id: 'einbuergerungstest',
-      iosId: null,
+      iosId: 'einbürgerungstest-2026/id6757009848',
       title: 'Einbürgerungstest Trainer',
       description: 'Prepare for the German naturalization test',
       icon: 'https://play-lh.googleusercontent.com/WwkfRo7VfrVPy-oVvGU_sENVDFFc_3xmDdXZuznYTRdwmn-a-8d2z7eglihmuorOxNZJMSyU4NFXtafI5ebiybg=w480-h960-rw',
       category: 'german',
     },
     // English Learning Apps
+    {
+      id: 'english_master',
+      iosId: null,
+      title: 'English Master',
+      description: 'All-in-one English learning app',
+      icon: 'https://play-lh.googleusercontent.com/5wGsQAGHTGGh5oyGSDr-ytVUKf9hGuqRclKrJE5D-Lq4jpp8YtWPlZgX3FkvyVlgilNAio995608-opjJBH8JZM=w480-h960-rw',
+      category: 'english',
+    },
     {
       id: 'learn_english_app',
       iosId: 'learn-english-a1-c2/id6754513056',
@@ -72,7 +80,7 @@ export const useAppData = () => {
     },
     {
       id: 'a1_a2_spanish_grammar',
-      iosId: null,
+      iosId: 'a1-a2-spanish-grammar/id6754800627',
       title: 'A1-A2 Spanish Grammar',
       description: 'Spanish grammar fundamentals',
       icon: 'https://play-lh.googleusercontent.com/H6VC2opj0_aYspEvyTQ_j1KE6b8D1WbeQmkZgYYUqO3dAjwSWb-_NOwMsF7jxB6iqgBSusalcqI78t57TUSp=w480-h960-rw',
@@ -228,6 +236,14 @@ export const useAppData = () => {
       category: 'game',
     },
 
+    {
+      id: 'learn_programming',
+      iosId: 'learn-programming-code/id6757622162',
+      title: 'Learn Programming',
+      description: 'Learn programming with interactive lessons',
+      icon: 'https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3a/bd/43/3abd437a-de9d-bc46-5841-b6d180359c8a/Placeholder.mill/400x400bb-75.webp',
+      category: 'programming',
+    },
     {
       id: 'learn_html',
       iosId: 'learn-html-interactive-course/id6757127735',
