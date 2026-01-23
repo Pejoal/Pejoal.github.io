@@ -3,7 +3,7 @@
   <div
     class="min-h-screen bg-linear-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-blue-900 dark:to-indigo-900 flex items-center justify-center px-4"
   >
-    <div class="max-w-md w-full text-center" data-aos="fade-up">
+    <div class="max-w-md w-full text-center">
       <!-- 404 Illustration -->
       <div class="mb-8">
         <div class="text-9xl font-bold text-gray-200 dark:text-gray-700 select-none">
