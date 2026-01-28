@@ -33,7 +33,7 @@ export const useAppData = () => {
       id: 'german_master',
       iosId: null,
       title: 'Master German',
-      description: 'Comprehensive German learning app with offline support',
+      description: 'Master German with comprehensive offline lessons',
       icon: 'https://play-lh.googleusercontent.com/vVt6kkHdwgj_X33_3vS5RjgK4xwrdaAuEYb63qLG64JZfFIhFWOYaKpjofUn4uWLF33BVnlwZ_NqtOwKIA3c=w480-h960-rw',
       category: 'german',
     },
