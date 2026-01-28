@@ -3,7 +3,40 @@ import { computed, onUnmounted, ref } from 'vue';
 export const useAppData = () => {
   // Apps data based on your React Native code
   const allApps = ref([
+    // AI
+    // {
+    //   id: 'autoscribe.chat',
+    //   iosId: null,
+    //   title: 'AutoScribe',
+    //   description: 'AI-powered transcription and note-taking app',
+    //   icon: 'https://play-lh.googleusercontent.com/3V7mvPWiBa7He7Py049qyggabyha4SaobU_DKsCa02sZ2J1jTcMlQ21Ao3tEa45NYZ_5bXdkx60RCT2Ql2_oSg=w480-h960-rw',
+    //   category: 'AI',
+    // },
+    {
+      id: 'learn_arabic_app',
+      iosId: null,
+      title: 'Learn Arabic A1-C2 Offline',
+      description: 'Master Arabic with comprehensive offline lessons',
+      icon: 'https://play-lh.googleusercontent.com/_xR7I4X8tIzSmcP4AjM7nj3VwNcOm3iVpsOa292nfkGpar1WpZ-feNxKethWIhfT7_rOswGR9TLzmMSTDwRTxNA=w480-h960-rw',
+      category: 'arabic',
+    },
+    {
+      id: 'arabic_master',
+      iosId: null,
+      title: 'Master arabic',
+      description: 'Comprehensive arabic learning app with offline support',
+      icon: 'https://play-lh.googleusercontent.com/ThsOBiAssmzNjuuF7O2jgck7ArW9hmJfO_oEY7sU-yRqdabsqJssltH6-zVVWKz-1BYjaln8g8GFU5_fNTvITQ=w480-h960-rw',
+      category: 'arabic',
+    },
     // German Learning Apps
+    {
+      id: 'german_master',
+      iosId: null,
+      title: 'Master German',
+      description: 'Comprehensive German learning app with offline support',
+      icon: 'https://play-lh.googleusercontent.com/vVt6kkHdwgj_X33_3vS5RjgK4xwrdaAuEYb63qLG64JZfFIhFWOYaKpjofUn4uWLF33BVnlwZ_NqtOwKIA3c=w480-h960-rw',
+      category: 'german',
+    },
     {
       id: 'myapp',
       iosId: 'deutschlernen-a1-c2-offline/id6754511381',
@@ -48,6 +81,14 @@ export const useAppData = () => {
     {
       id: 'english_master',
       iosId: null,
+      title: 'Master English',
+      description: 'Master English with comprehensive offline lessons',
+      icon: 'https://play-lh.googleusercontent.com/5wGsQAGHTGGh5oyGSDr-ytVUKf9hGuqRclKrJE5D-Lq4jpp8YtWPlZgX3FkvyVlgilNAio995608-opjJBH8JZM=w480-h960-rw',
+      category: 'english',
+    },
+    {
+      id: 'english_master',
+      iosId: null,
       title: 'English Master',
       description: 'All-in-one English learning app',
       icon: 'https://play-lh.googleusercontent.com/5wGsQAGHTGGh5oyGSDr-ytVUKf9hGuqRclKrJE5D-Lq4jpp8YtWPlZgX3FkvyVlgilNAio995608-opjJBH8JZM=w480-h960-rw',
@@ -70,6 +111,14 @@ export const useAppData = () => {
       category: 'english',
     },
     // Spanish Learning Apps
+    {
+      id: 'spanish_master',
+      iosId: null,
+      title: 'Master Spanish',
+      description: 'Master Spanish with comprehensive offline lessons',
+      icon: 'https://play-lh.googleusercontent.com/cod3BlejErCZSRFAaNExCRfdI2SzirJjaqS97k19IDd1agtwnmseCROCLAvi6buvNA8hjfAZRya-qFTIK5dFApI=w480-h960-rw',
+      category: 'spanish',
+    },
     {
       id: 'learn_spanish_app',
       iosId: 'تعلم-الإسبانية/id6754511440',
@@ -96,6 +145,14 @@ export const useAppData = () => {
     },
     // Italian Learning Apps
     {
+      id: 'italian_master',
+      iosId: null,
+      title: 'Master Italian',
+      description: 'Master Italian with comprehensive offline lessons',
+      icon: 'https://play-lh.googleusercontent.com/T7w6t6WoQDRJ6rhX-A09MzH1sfh8XouXV9LRs-m6YwJhFHOvXCtGeTdijWwngxj0JkHE8eHuwCWNS93h_k1S=w480-h960-rw',
+      category: 'italian',
+    },
+    {
       id: 'learn_italian_app',
       iosId: 'تعلم-الإيطالية/id6754513406',
       title: 'Learn Italian',
@@ -121,12 +178,20 @@ export const useAppData = () => {
     },
     // Other Languages
     {
+      id: 'french_master',
+      iosId: null,
+      title: 'Master French',
+      description: 'Master French with comprehensive offline lessons',
+      icon: 'https://play-lh.googleusercontent.com/w8v7NIoVPSbsI8XxBj4Dk59SRGqpMRdQOuFsd9wDpZZara0diX2SWCoRbUQay3AcXiR9tSBWsLrAR6IuA6NYHg=w480-h960-rw',
+      category: 'french',
+    },
+    {
       id: 'learn_french_app',
       iosId: 'apprendre-le-français/id6754800257',
       title: 'Learn French',
       description: 'Master French language with ease',
       icon: 'https://play-lh.googleusercontent.com/FTg1fGLFqAQR0YbkHb03xubut-H5Fy5L92o36MJOVdrLpgVOmQXshPr2FnYdBpytg9djJxjIrUMfMKcf8c0-SdI=w480-h960-rw',
-      category: 'other',
+      category: 'french',
     },
     {
       id: 'learn_russian',
