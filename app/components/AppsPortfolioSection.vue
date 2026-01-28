@@ -23,6 +23,13 @@
         color="blue"
       />
 
+      <AppSection
+        title="French Learning Apps"
+        description="Comprehensive French language learning suite from A1 to C2 level"
+        :apps="frenchApps"
+        color="yellow"
+      />
+
       <!-- English Learning Apps -->
       <AppSection
         title="English Learning Apps"
@@ -50,7 +57,7 @@
       <!-- Other Language Apps -->
       <AppSection
         title="Other Languages"
-        description="Explore French, Russian and more languages"
+        description="Explore Russian and more languages"
         :apps="otherLanguageApps"
         color="purple"
       />
@@ -93,6 +100,7 @@
 <script setup>
 defineProps({
   germanApps: Array,
+  frenchApps: Array,
   englishApps: Array,
   spanishApps: Array,
   italianApps: Array,

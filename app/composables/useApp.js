@@ -329,6 +329,7 @@ export const useAppData = () => {
 
   // Computed properties for filtered apps
   const germanApps = computed(() => allApps.value.filter((app) => app.category === 'german'));
+  const frenchApps = computed(() => allApps.value.filter((app) => app.category === 'french'));
   const englishApps = computed(() => allApps.value.filter((app) => app.category === 'english'));
   const spanishApps = computed(() => allApps.value.filter((app) => app.category === 'spanish'));
   const italianApps = computed(() => allApps.value.filter((app) => app.category === 'italian'));
@@ -341,6 +342,7 @@ export const useAppData = () => {
   return {
     allApps,
     germanApps,
+    frenchApps,
     englishApps,
     spanishApps,
     italianApps,
