@@ -81,14 +81,6 @@ export const useAppData = () => {
     {
       id: 'english_master',
       iosId: null,
-      title: 'Master English',
-      description: 'Master English with comprehensive offline lessons',
-      icon: 'https://play-lh.googleusercontent.com/5wGsQAGHTGGh5oyGSDr-ytVUKf9hGuqRclKrJE5D-Lq4jpp8YtWPlZgX3FkvyVlgilNAio995608-opjJBH8JZM=w480-h960-rw',
-      category: 'english',
-    },
-    {
-      id: 'english_master',
-      iosId: null,
       title: 'English Master',
       description: 'All-in-one English learning app',
       icon: 'https://play-lh.googleusercontent.com/5wGsQAGHTGGh5oyGSDr-ytVUKf9hGuqRclKrJE5D-Lq4jpp8YtWPlZgX3FkvyVlgilNAio995608-opjJBH8JZM=w480-h960-rw',
