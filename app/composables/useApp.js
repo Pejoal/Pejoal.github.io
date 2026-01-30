@@ -333,6 +333,7 @@ export const useAppData = () => {
   const englishApps = computed(() => allApps.value.filter((app) => app.category === 'english'));
   const spanishApps = computed(() => allApps.value.filter((app) => app.category === 'spanish'));
   const italianApps = computed(() => allApps.value.filter((app) => app.category === 'italian'));
+  const arabicApps = computed(() => allApps.value.filter((app) => app.category === 'arabic'));
   const otherLanguageApps = computed(() => allApps.value.filter((app) => app.category === 'other'));
   const utilityApps = computed(() => allApps.value.filter((app) => app.category === 'utility'));
   const testApps = computed(() => allApps.value.filter((app) => app.category === 'test'));
@@ -346,6 +347,7 @@ export const useAppData = () => {
     englishApps,
     spanishApps,
     italianApps,
+    arabicApps,
     otherLanguageApps,
     utilityApps,
     testApps,

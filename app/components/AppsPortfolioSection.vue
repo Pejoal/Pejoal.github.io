@@ -23,13 +23,6 @@
         color="blue"
       />
 
-      <AppSection
-        title="French Learning Apps"
-        description="Comprehensive French language learning suite from A1 to C2 level"
-        :apps="frenchApps"
-        color="yellow"
-      />
-
       <!-- English Learning Apps -->
       <AppSection
         title="English Learning Apps"
@@ -46,12 +39,27 @@
         color="red"
       />
 
+      <AppSection
+        title="French Learning Apps"
+        description="Comprehensive French language learning suite from A1 to C2 level"
+        :apps="frenchApps"
+        color="yellow"
+      />
+
       <!-- Italian Learning Apps -->
       <AppSection
         title="Italian Learning Apps"
         description="Discover the beauty of Italian language through interactive lessons"
         :apps="italianApps"
         color="green"
+      />
+
+      <!-- Arabic Learning Apps -->
+      <AppSection
+        title="Arabic Learning Apps"
+        description="Discover the beauty of Arabic language through interactive lessons"
+        :apps="arabicApps"
+        color="orange"
       />
 
       <!-- Other Language Apps -->
@@ -104,6 +112,7 @@ defineProps({
   englishApps: Array,
   spanishApps: Array,
   italianApps: Array,
+  arabicApps: Array,
   otherLanguageApps: Array,
   utilityApps: Array,
   testApps: Array,

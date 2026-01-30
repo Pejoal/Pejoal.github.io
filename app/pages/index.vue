@@ -10,10 +10,11 @@
 
   <AppsPortfolioSection
     :german-apps="germanApps"
-    :french-apps="frenchApps"
     :english-apps="englishApps"
     :spanish-apps="spanishApps"
+    :french-apps="frenchApps"
     :italian-apps="italianApps"
+    :arabic-apps="arabicApps"
     :other-language-apps="otherLanguageApps"
     :utility-apps="utilityApps"
     :test-apps="testApps"
@@ -47,6 +48,7 @@ const {
   englishApps,
   spanishApps,
   italianApps,
+  arabicApps,
   otherLanguageApps,
   utilityApps,
   testApps,
