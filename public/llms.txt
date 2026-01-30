@@ -1,6 +1,6 @@
 # llms.txt for Pejoal Dev Studio
 # Website: https://pejoal.github.io/
-# Updated: December 21, 2025
+# Updated: January 30, 2026
 
 # === ALLOWED ===
 User-Agent: *
