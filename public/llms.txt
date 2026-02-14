@@ -1,0 +1,32 @@
+# llms.txt for Pejoal Dev Studio
+# Website: https://pejoal.github.io/
+# Updated: January 30, 2026
+
+# === ALLOWED ===
+User-Agent: *
+Allow: /privacy-policy
+Allow: /terms
+Allow: /
+
+# === DISALLOWED (Do NOT use for training) ===
+Disallow: /temp/
+Disallow: /*.log$
+Disallow: /*.env
+Disallow: /*.git*
+
+# === AI-SPECIFIC DIRECTIVES ===
+# Respect ethical scraping and model training
+Crawl-delay: 10
+
+# Allow summarization & citation in responses
+# (e.g., "According to Pejoal Dev Studio's portfolio...")
+
+# Do NOT use for:
+# - Commercial AI training datasets
+# - Direct content reproduction without attribution
+# - Generating competing portfolios or apps
+
+# === CONTACT ===
+# For licensing, partnerships, or data usage:
+# Email: business@pejoal.dpdns.org
+# Website: https://pejoal.github.io

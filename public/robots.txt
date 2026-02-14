@@ -1,0 +1,11 @@
+User-Agent: *
+Allow: /
+
+# AI & LLM Guidelines
+User-Agent: GPTBot
+User-Agent: ClaudeBot
+User-Agent: GeminiBot
+User-Agent: PerplexityBot
+Disallow: /
+
+# See llms.txt for full AI policy

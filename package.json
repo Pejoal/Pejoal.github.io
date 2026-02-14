@@ -1,0 +1,41 @@
+{
+  "name": "pejoal-portfolio",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^7.1.0",
+    "@fortawesome/free-brands-svg-icons": "^7.1.0",
+    "@fortawesome/free-solid-svg-icons": "^7.1.0",
+    "@fortawesome/vue-fontawesome": "^3.1.2",
+    "@nuxt/content": "3.8.0",
+    "@nuxt/eslint": "1.10.0",
+    "@nuxt/image": "2.0.0",
+    "@nuxt/scripts": "0.13.0",
+    "@nuxt/test-utils": "3.20.1",
+    "@nuxt/ui": "4.1.0",
+    "@tailwindcss/vite": "^4.1.17",
+    "@unhead/vue": "^2.0.3",
+    "aos": "^2.3.4",
+    "better-sqlite3": "^12.4.1",
+    "eslint": "^9.0.0",
+    "nuxt": "^4.2.1",
+    "tailwindcss": "^4.1.17",
+    "typescript": "^5.6.3",
+    "vue": "^3.5.22",
+    "vue-router": "^4.6.3"
+  },
+  "devDependencies": {
+    "@iconify-json/heroicons": "^1.2.3",
+    "@iconify-json/simple-icons": "^1.2.57",
+    "cross-env": "^10.1.0",
+    "gh-pages": "^6.3.0"
+  }
+}
