@@ -1,3 +1,5 @@
+google.com, pub-5458294017442467, DIRECT, f08c47fec0942fa0
+google.com, pub-1237542798124815, DIRECT, f08c47fec0942fa0
 # CAS.ai Updated Feb 04, 2026
 OwnerDomain=cas.ai
 cas.ai, 922e6092, DIRECT
