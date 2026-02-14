@@ -20,11 +20,10 @@
 
         <div class="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg border border-blue-100 dark:border-blue-800">
           <p class="text-sm text-blue-800 dark:text-blue-200 m-0">
-            <strong>Note:</strong> The following policy represents our standard privacy commitment. However, some
-            specific apps may have unique features (such as online capabilities or optional data usage) that require
-            exceptions to this policy. In such cases, these exceptions will be
-            <strong>explicitly enabled and explained within the app itself</strong>. Unless such features are present
-            and disclosed, the standard policy below applies.
+            <strong>Standard Privacy Commitment:</strong> This document outlines our baseline privacy practices. Because
+            our portfolio includes diverse tools, certain applications may require specific data handling disclosures.
+            For the most accurate information regarding a particular app's data usage, please refer to the
+            <strong>"Data Safety" section on its official store listing page</strong>.
           </p>
         </div>
 
@@ -41,10 +40,11 @@
 
         <!-- 2. Internet Access -->
         <section>
-          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-3">2. Internet Access</h2>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-3">2. Connectivity</h2>
           <p class="dark:text-gray-300">
-            Our apps work <strong>entirely offline</strong> and <strong>do not connect to the internet</strong> or any
-            external servers.
+            While many of our applications operate <strong>entirely offline</strong>, some may require internet
+            connectivity for core features. Any such requirement, including the nature of the connection, is detailed
+            within the app's technical specifications in the store listing.
           </p>
         </section>
 
@@ -65,11 +65,16 @@
 
         <!-- 4. Ads & Analytics -->
         <section>
-          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-3">4. Ads and Analytics</h2>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-3">4. Advertising and Analytics</h2>
           <ul class="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
-            <li>Our apps show <strong>no advertisements</strong>.</li>
-            <li>We <strong>do not use analytics or tracking tools</strong>.</li>
-            <li>No third-party services are integrated that collect user data.</li>
+            <li>
+              We prioritize an ad-free experience; however, some apps may utilize
+              <strong>third-party advertising networks or basic analytics</strong> to support development.
+            </li>
+            <li>
+              If an app uses these services, they are <strong>explicitly listed in the store listing</strong> under the
+              "Data Collection" or "Ads" labels.
+            </li>
           </ul>
         </section>
 

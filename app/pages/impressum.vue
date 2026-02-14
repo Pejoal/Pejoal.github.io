@@ -34,6 +34,16 @@
             </p>
           </div>
         </section>
+
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">Product Documentation</h2>
+          <p class="dark:text-gray-300">
+            For comprehensive legal, privacy, and technical disclosures regarding individual mobile
+            applications—including specific details on data collection, advertising, or analytics—please consult the
+            <strong>official product page on the Apple App Store or Google Play Store</strong>. The store listing serves
+            as the primary source for per-app regulatory and compliance information.
+          </p>
+        </section>
       </div>
 
       <div class="mt-10 pb-4 text-center space-x-4">

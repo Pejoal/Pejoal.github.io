@@ -16,11 +16,24 @@
       <p class="text-sm text-gray-500 dark:text-gray-400 mb-10">Last updated: <strong>February 14, 2026</strong></p>
 
       <div class="max-w-none space-y-8 prose prose-lg dark:prose-invert">
+        <div class="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg border border-blue-100 dark:border-blue-800">
+          <p class="text-sm text-blue-800 dark:text-blue-200 m-0">
+            <strong>Application-Specific Terms:</strong> These general terms apply to all our services. Please note that
+            individual mobile applications may be subject to
+            <strong>supplemental terms or End User License Agreements (EULA)</strong>, which are provided directly on
+            the App Store or Google Play Store.
+          </p>
+        </div>
+
         <section>
           <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">1. Acceptance of Terms</h2>
           <p class="dark:text-gray-300">
             By using any app or website created by <strong>Pejoal Dev Studio</strong> (the "Services"), you agree to
-            these Terms, <em>unless a specific app provides its own terms</em>.
+            these Terms.
+            <em
+              >Usage of specific mobile applications constitutes agreement to both these general terms and any
+              app-specific disclosures found in the store listing.</em
+            >
           </p>
         </section>
 
