@@ -10,7 +10,7 @@
       </NuxtLink>
 
       <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-6">Privacy Policy</h1>
-      <p class="text-sm text-gray-500 dark:text-gray-400 mb-8">Last updated: January 30, 2026</p>
+      <p class="text-sm text-gray-500 dark:text-gray-400 mb-8">Last updated: February 14, 2026</p>
 
       <div class="max-w-none space-y-7 prose prose-lg dark:prose-invert">
         <p class="dark:text-gray-300">
