@@ -89,7 +89,17 @@
         </section>
 
         <section>
-          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">6. Limitation of Liability</h2>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">6. AI Content Disclaimer</h2>
+          <p class="dark:text-gray-300">
+            Some content within our applications, including text, translations, and educational materials, may be
+            generated or assisted by Artificial Intelligence (AI) technologies. While we strive for high accuracy and
+            quality, AI-generated content may occasionally contain errors or inaccuracies. Users are encouraged to
+            verify critical information.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">7. Limitation of Liability</h2>
           <p class="dark:text-gray-300">
             To the fullest extent permitted by law, <strong>Pejoal Dev Studio</strong> is not liable for any damages
             from use of the Services.
@@ -97,17 +107,17 @@
         </section>
 
         <section>
-          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">7. Changes to Terms</h2>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">8. Changes to Terms</h2>
           <p class="dark:text-gray-300">We may update these Terms. Continued use after changes means acceptance.</p>
         </section>
 
         <section>
-          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">8. Governing Law</h2>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">9. Governing Law</h2>
           <p class="dark:text-gray-300">Governed by the laws of <strong>Germany</strong>.</p>
         </section>
 
         <section>
-          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">9. Contact</h2>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">10. Contact</h2>
           <p class="dark:text-gray-300">
             Questions? Contact <strong>Pejoal Dev Studio</strong> at:<br />
             <a href="mailto:business@pejoal.dpdns.org" class="text-blue-600 hover:underline font-medium">
