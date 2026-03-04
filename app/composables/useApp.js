@@ -220,6 +220,22 @@ export const useAppData = () => {
     },
     // Test Apps
     {
+      id: 'new_iq_test',
+      iosId: 'iq-master-brain-games-test/id6759578114',
+      title: 'IQ Master',
+      description: 'Advanced IQ test and brain training app',
+      icon: 'https://play-lh.googleusercontent.com/iSJ0xZ-eD3IfGmW5qRioojcIkYyG6lk8KRCePjDbXvxHPlUIONlnIJ3K2A7C5rbV79NpfBe4z2tzdIujDDXJ=s512-rw',
+      category: 'test',
+    },
+    {
+      id: 'brain_test',
+      iosId: null,
+      title: 'Brain Test',
+      description: 'Comprehensive brain training app',
+      icon: 'https://play-lh.googleusercontent.com/Kaoc-4uYxfOH7WO3IFnq6Sz-yc5Mt64zF_oPRDiyeJK3eB9oPpacpwDKrhB0XdV8GnG5gdnEnpAxX4DgVY7m=w480-h960-rw',
+      category: 'test',
+    },
+    {
       id: 'iq_test',
       iosId: 'iq-test-pro-brain-training/id6756730514',
       title: 'IQ Test Pro',
