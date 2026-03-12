@@ -14,15 +14,15 @@ export const useAppData = () => {
     // },
     {
       id: 'learn_arabic_app',
-      iosId: null,
-      title: 'Learn Arabic A1-C2 Offline',
-      description: 'Master Arabic with comprehensive offline lessons',
+      iosId: 'arabic-master-traveler-guide/id6758959436',
+      title: 'Arabic Traveler Guide',
+      description: 'Essential Arabic phrases and offline dictionary for travelers',
       icon: 'https://play-lh.googleusercontent.com/_xR7I4X8tIzSmcP4AjM7nj3VwNcOm3iVpsOa292nfkGpar1WpZ-feNxKethWIhfT7_rOswGR9TLzmMSTDwRTxNA=w480-h960-rw',
       category: 'arabic',
     },
     {
       id: 'arabic_master',
-      iosId: null,
+      iosId: 'arabic-master-learn-arabic/id6758888839',
       title: 'Master arabic',
       description: 'Comprehensive arabic learning app with offline support',
       icon: 'https://play-lh.googleusercontent.com/ThsOBiAssmzNjuuF7O2jgck7ArW9hmJfO_oEY7sU-yRqdabsqJssltH6-zVVWKz-1BYjaln8g8GFU5_fNTvITQ=w480-h960-rw',
@@ -31,7 +31,7 @@ export const useAppData = () => {
     // German Learning Apps
     {
       id: 'german_master',
-      iosId: null,
+      iosId: 'german-master-learn-speak/id6758893821',
       title: 'Master German',
       description: 'Master German with comprehensive offline lessons',
       icon: 'https://play-lh.googleusercontent.com/vVt6kkHdwgj_X33_3vS5RjgK4xwrdaAuEYb63qLG64JZfFIhFWOYaKpjofUn4uWLF33BVnlwZ_NqtOwKIA3c=w480-h960-rw',
@@ -80,7 +80,7 @@ export const useAppData = () => {
     // English Learning Apps
     {
       id: 'english_master',
-      iosId: null,
+      iosId: 'english-master-learn-speak/id6758529075',
       title: 'English Master',
       description: 'All-in-one English learning app',
       icon: 'https://play-lh.googleusercontent.com/5wGsQAGHTGGh5oyGSDr-ytVUKf9hGuqRclKrJE5D-Lq4jpp8YtWPlZgX3FkvyVlgilNAio995608-opjJBH8JZM=w480-h960-rw',
@@ -105,7 +105,7 @@ export const useAppData = () => {
     // Spanish Learning Apps
     {
       id: 'spanish_master',
-      iosId: null,
+      iosId: 'spanish-master-learn-speak/id6758916638',
       title: 'Master Spanish',
       description: 'Master Spanish with comprehensive offline lessons',
       icon: 'https://play-lh.googleusercontent.com/cod3BlejErCZSRFAaNExCRfdI2SzirJjaqS97k19IDd1agtwnmseCROCLAvi6buvNA8hjfAZRya-qFTIK5dFApI=w480-h960-rw',
@@ -138,7 +138,7 @@ export const useAppData = () => {
     // Italian Learning Apps
     {
       id: 'italian_master',
-      iosId: null,
+      iosId: 'italian-master-learn-speak/id6758920172',
       title: 'Master Italian',
       description: 'Master Italian with comprehensive offline lessons',
       icon: 'https://play-lh.googleusercontent.com/T7w6t6WoQDRJ6rhX-A09MzH1sfh8XouXV9LRs-m6YwJhFHOvXCtGeTdijWwngxj0JkHE8eHuwCWNS93h_k1S=w480-h960-rw',
@@ -171,7 +171,7 @@ export const useAppData = () => {
     // Other Languages
     {
       id: 'french_master',
-      iosId: null,
+      iosId: 'french-master-apprendre/id6758897535',
       title: 'Master French',
       description: 'Master French with comprehensive offline lessons',
       icon: 'https://play-lh.googleusercontent.com/w8v7NIoVPSbsI8XxBj4Dk59SRGqpMRdQOuFsd9wDpZZara0diX2SWCoRbUQay3AcXiR9tSBWsLrAR6IuA6NYHg=w480-h960-rw',
@@ -268,6 +268,14 @@ export const useAppData = () => {
       category: 'test',
     },
     // Games
+    {
+      id: 'stack_ball',
+      iosId: null,
+      title: 'Stack Ball 3D',
+      description: 'Smash through platforms in this addictive 3D game',
+      icon: 'https://play-lh.googleusercontent.com/x9lIjbqk6GNcRerihotAlUj1iolf23okAhnXwzTGkxze6Hgqyx5Ndg8OUKxweGxzMcAYymDLLvKN9QQZjhIhrbU=w480-h960-rw',
+      category: 'game',
+    },
     {
       id: 'puzzle',
       iosId: 'slides-puzzle/id6754782354',
