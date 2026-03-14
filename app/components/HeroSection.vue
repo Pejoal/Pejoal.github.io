@@ -21,7 +21,7 @@
 
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
           <a
-            href="https://apps.apple.com/developer/pejoal-nagy-nageep-hanna/id1848573493"
+            href="https://apps.apple.com/developer/pejoal-hanna/id1848573493"
             target="_blank"
             class="flex items-center gap-3 bg-black text-white px-8 py-4 rounded-2xl hover:bg-gray-800 transition-colors shadow-lg"
           >
