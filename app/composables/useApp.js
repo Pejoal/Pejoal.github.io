@@ -229,7 +229,7 @@ export const useAppData = () => {
     },
     {
       id: 'brain_test',
-      iosId: null,
+      iosId: 'brain-test-iq-pairs-games/id6759935676',
       title: 'Brain Test',
       description: 'Comprehensive brain training app',
       icon: 'https://play-lh.googleusercontent.com/Kaoc-4uYxfOH7WO3IFnq6Sz-yc5Mt64zF_oPRDiyeJK3eB9oPpacpwDKrhB0XdV8GnG5gdnEnpAxX4DgVY7m=w480-h960-rw',
@@ -270,7 +270,7 @@ export const useAppData = () => {
     // Games
     {
       id: 'stack_ball',
-      iosId: null,
+      iosId: 'gravity-smash-helix-tower-3d/id6759876378',
       title: 'Stack Ball 3D',
       description: 'Smash through platforms in this addictive 3D game',
       icon: 'https://play-lh.googleusercontent.com/x9lIjbqk6GNcRerihotAlUj1iolf23okAhnXwzTGkxze6Hgqyx5Ndg8OUKxweGxzMcAYymDLLvKN9QQZjhIhrbU=w480-h960-rw',
