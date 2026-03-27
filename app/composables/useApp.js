@@ -220,6 +220,14 @@ export const useAppData = () => {
     },
     // Test Apps
     {
+      id: 'genius',
+      iosId: null,
+      title: 'Cortexa: IQ Genius',
+      description: 'Adaptive IQ tests and Laboratory for cognitive training',
+      icon: 'https://play-lh.googleusercontent.com/ppTKNTQJo1EBB7p5aZ1aSdIkFd0UK5R8uOhtmiZyJSLcnmAFd0I9GIJayTdjb9opA7dFLY4UQbq8nZjv-Wex=w480-h960-rw',
+      category: 'test',
+    },
+    {
       id: 'new_iq_test',
       iosId: 'iq-master-brain-games-test/id6759578114',
       title: 'IQ Master',
