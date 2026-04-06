@@ -221,7 +221,7 @@ export const useAppData = () => {
     // Test Apps
     {
       id: 'genius',
-      iosId: 'id6760778618',
+      iosId: 'cortexa-adaptive-braintraining/id6760778618',
       title: 'Cortexa: IQ Genius',
       description: 'Adaptive IQ tests and Laboratory for cognitive training',
       icon: 'https://play-lh.googleusercontent.com/ppTKNTQJo1EBB7p5aZ1aSdIkFd0UK5R8uOhtmiZyJSLcnmAFd0I9GIJayTdjb9opA7dFLY4UQbq8nZjv-Wex=w480-h960-rw',
