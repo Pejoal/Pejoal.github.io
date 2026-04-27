@@ -13,7 +13,7 @@
       </NuxtLink>
 
       <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">Terms and Conditions</h1>
-      <p class="text-sm text-gray-500 dark:text-gray-400 mb-10">Last updated: <strong>February 14, 2026</strong></p>
+      <p class="text-sm text-gray-500 dark:text-gray-400 mb-10">Last updated: <strong>April 27, 2026</strong></p>
 
       <div class="max-w-none space-y-8 prose prose-lg dark:prose-invert">
         <div class="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg border border-blue-100 dark:border-blue-800">

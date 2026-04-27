@@ -48,11 +48,11 @@
         <!-- Stats -->
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-2xl mx-auto">
           <div class="text-center">
-            <div class="text-3xl font-bold text-gray-900 dark:text-white">35+</div>
+            <div class="text-3xl font-bold text-gray-900 dark:text-white">40+</div>
             <div class="text-gray-600 dark:text-gray-300">Published Apps/Games</div>
           </div>
           <div class="text-center">
-            <div class="text-3xl font-bold text-gray-900 dark:text-white">100,000+</div>
+            <div class="text-3xl font-bold text-gray-900 dark:text-white">150,000+</div>
             <div class="text-gray-600 dark:text-gray-300">Downloads</div>
           </div>
           <div class="text-center">
