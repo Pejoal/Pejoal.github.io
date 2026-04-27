@@ -277,6 +277,22 @@ export const useAppData = () => {
     },
     // Games
     {
+      id: 'onestroke',
+      iosId: 'id6763643669',
+      title: 'Draw Single Path to Win',
+      description: 'Draw a single continuous path to solve puzzles',
+      icon: 'https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5d/03/ff/5d03ff4a-ff8f-1153-de94-dcbcee608ff3/Placeholder.mill/200x200bb-75.webp',
+      category: 'game',
+    },
+    {
+      id: 'drawanddrop',
+      iosId: 'id6763411198',
+      title: 'Draw & Drop Puzzle',
+      description: 'Brain Games: Physics-based drawing and dropping puzzle game',
+      icon: 'https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/76/08/e1/7608e15b-c7b3-00d7-88b2-5401df0ca314/Placeholder.mill/200x200bb-75.webp',
+      category: 'game',
+    },
+    {
       id: 'stack_ball',
       iosId: 'gravity-smash-helix-tower-3d/id6759876378',
       title: 'Stack Ball 3D',
