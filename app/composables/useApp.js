@@ -277,6 +277,22 @@ export const useAppData = () => {
     },
     // Games
     {
+      id: 'colorring',
+      iosId: '6764321842',
+      title: 'Color Ring Puzzle',
+      description: 'Order the rings by color to solve puzzles',
+      icon: 'https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0c/cb/7e/0ccb7e4a-09a7-8290-677a-eab9abab16a9/Placeholder.mill/400x400bb-75.webp',
+      category: 'game',
+    },
+    {
+      id: 'soliten',
+      iosId: '6764611257',
+      title: 'Soliten Puzzle',
+      description: 'Connect and merge tiles to solve puzzles',
+      icon: 'https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e8/18/df/e818df09-f1ff-87df-092f-1e05fe7e919a/Placeholder.mill/400x400bb-75.webp',
+      category: 'game',
+    },
+    {
       id: 'onestroke',
       iosId: '6763643669',
       title: 'Draw Single Path to Win',
