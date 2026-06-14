@@ -125,7 +125,7 @@ The portfolio includes links to:
 
 - **Live Demo**: [Your GitHub Pages URL]
 - **Google Play Profile**: https://play.google.com/store/apps/dev?id=7584224843331524823
-- **Email**: business@pejoal.dpdns.org
+- **Email**: business@pejoal.us.kg
 
 ## 📄 License
 

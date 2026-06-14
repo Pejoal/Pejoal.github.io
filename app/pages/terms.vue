@@ -120,8 +120,8 @@
           <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">10. Contact</h2>
           <p class="dark:text-gray-300">
             Questions? Contact <strong>Pejoal Dev Studio</strong> at:<br />
-            <a href="mailto:business@pejoal.dpdns.org" class="text-blue-600 hover:underline font-medium">
-              business@pejoal.dpdns.org
+            <a href="mailto:business@pejoal.us.kg" class="text-blue-600 hover:underline font-medium">
+              business@pejoal.us.kg
             </a>
           </p>
         </section>

@@ -27,9 +27,7 @@
             </p>
             <p class="mb-2">
               Contact:
-              <a href="mailto:business@pejoal.dpdns.org" class="text-blue-600 hover:underline">
-                business@pejoal.dpdns.org
-              </a>
+              <a href="mailto:business@pejoal.us.kg" class="text-blue-600 hover:underline"> business@pejoal.us.kg </a>
             </p>
           </div>
         </section>
