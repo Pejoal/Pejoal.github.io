@@ -61,9 +61,10 @@
       <!-- App Grid -->
       <transition-group name="list" tag="div" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative min-h-[400px]">
         <AppCard
-          v-for="app in filteredApps"
+          v-for="(app, idx) in filteredApps"
           :key="app.id"
           :app="app"
+          :index="idx + 1"
           :color="app.color"
           @open-modal="handleOpenModal"
         />

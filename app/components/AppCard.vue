@@ -9,6 +9,11 @@
     `"
     @click="$emit('open-modal', app)"
   >
+    <!-- Ranking Badge -->
+    <div v-if="index" class="absolute -top-3 -left-3 z-10 flex items-center justify-center w-9 h-9 bg-linear-to-br from-gray-900 to-gray-800 dark:from-white dark:to-gray-200 text-white dark:text-black font-bold rounded-full shadow-lg text-sm border-2 border-white dark:border-gray-800 group-hover:scale-110 transition-transform">
+      #{{ index }}
+    </div>
+
     <!-- Horizontal Layout -->
     <div v-if="horizontal" class="text-center">
       <div
@@ -138,6 +143,7 @@ const props = defineProps({
   app: Object,
   color: { type: String, default: 'blue' },
   horizontal: { type: Boolean, default: false },
+  index: { type: Number, default: null },
 });
 
 const emit = defineEmits(['open-modal']);
