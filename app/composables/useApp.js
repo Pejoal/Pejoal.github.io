@@ -252,7 +252,7 @@ export const useAppData = () => {
       category: 'test',
     },
     {
-      id: 'com.pejoal.intelligence_test',
+      id: 'com.pejoal.intelligencetest',
       iosId: 'id6782981607',
       title: 'Intelligence Test',
       description: 'Assess your intelligence with a variety of tests',
