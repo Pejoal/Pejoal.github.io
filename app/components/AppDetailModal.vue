@@ -21,70 +21,81 @@
                 <Icon name="heroicons:x-mark" class="w-6 h-6" />
               </button>
               
-              <div class="p-6 sm:p-8 flex flex-col sm:flex-row gap-6 items-start sm:items-center bg-linear-to-r from-blue-50/50 to-indigo-50/50 dark:from-blue-900/10 dark:to-indigo-900/10">
-                <div class="w-24 h-24 sm:w-32 sm:h-32 shrink-0 rounded-3xl overflow-hidden shadow-lg border border-gray-200/50 dark:border-gray-700/50 bg-white dark:bg-gray-800">
-                  <NuxtImg v-if="isUrl(app.icon)" :src="app.icon" :alt="app.title" class="w-full h-full object-cover" format="webp" referrerpolicy="no-referrer" />
-                  <span v-else class="w-full h-full flex items-center justify-center text-5xl">{{ app.icon }}</span>
+              <div class="p-5 sm:p-8 flex flex-col sm:flex-row gap-4 sm:gap-6 bg-linear-to-r from-blue-50/50 to-indigo-50/50 dark:from-blue-900/10 dark:to-indigo-900/10">
+                <!-- Mobile Top Row: Icon + Title/Desc -->
+                <div class="flex flex-row gap-4 items-center sm:items-start w-full sm:w-auto">
+                  <div class="w-20 h-20 sm:w-32 sm:h-32 shrink-0 rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg border border-gray-200/50 dark:border-gray-700/50 bg-white dark:bg-gray-800">
+                    <NuxtImg v-if="isUrl(app.icon)" :src="app.icon" :alt="app.title" class="w-full h-full object-cover" format="webp" referrerpolicy="no-referrer" />
+                    <span v-else class="w-full h-full flex items-center justify-center text-4xl sm:text-5xl">{{ app.icon }}</span>
+                  </div>
+                  
+                  <div class="flex-1 sm:hidden">
+                    <h2 class="text-lg font-bold text-gray-900 dark:text-white leading-tight mb-1 line-clamp-2">{{ app.title }}</h2>
+                    <p class="text-xs text-gray-600 dark:text-gray-300 line-clamp-2">{{ app.description }}</p>
+                  </div>
                 </div>
                 
-                <div class="flex-1 space-y-3">
-                  <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white">{{ app.title }}</h2>
-                  <p class="text-lg text-gray-600 dark:text-gray-300">{{ app.description }}</p>
+                <div class="flex-1 space-y-2 sm:space-y-3 flex flex-col justify-center min-w-0">
+                  <div class="hidden sm:block">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-2">{{ app.title }}</h2>
+                    <p class="text-base sm:text-lg text-gray-600 dark:text-gray-300">{{ app.description }}</p>
+                  </div>
                   
-                  <div class="flex flex-wrap items-center gap-3 pt-2">
-                    <span v-if="rating" class="flex items-center gap-1.5 px-3 py-1 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400 rounded-full text-sm font-semibold">
-                      <Icon name="heroicons:star-solid" class="w-4 h-4" />
+                  <!-- Badges - Scrollable horizontally on mobile, wrapped on desktop -->
+                  <div class="flex sm:flex-wrap overflow-x-auto sm:overflow-visible items-center gap-2 pt-1 pb-2 sm:pb-0 hide-scrollbar-touch w-full">
+                    <span v-if="rating" class="shrink-0 flex items-center gap-1 px-2.5 py-1 sm:px-3 sm:py-1 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400 rounded-full text-xs sm:text-sm font-semibold">
+                      <Icon name="heroicons:star-solid" class="w-3 h-3 sm:w-4 sm:h-4" />
                       {{ rating }}
                     </span>
-                    <span v-if="downloads" class="flex items-center gap-1.5 px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 rounded-full text-sm font-medium">
-                      <Icon name="heroicons:arrow-down-tray" class="w-4 h-4" />
+                    <span v-if="downloads" class="shrink-0 flex items-center gap-1 px-2.5 py-1 sm:px-3 sm:py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 rounded-full text-xs sm:text-sm font-medium">
+                      <Icon name="heroicons:arrow-down-tray" class="w-3 h-3 sm:w-4 sm:h-4" />
                       {{ downloads }}
                     </span>
-                    <span v-if="version" class="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 rounded-full text-sm font-medium">
+                    <span v-if="version" class="shrink-0 px-2.5 py-1 sm:px-3 sm:py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 rounded-full text-xs sm:text-sm font-medium">
                       v{{ version }}
                     </span>
-                    <span v-if="size" class="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 rounded-full text-sm font-medium">
+                    <span v-if="size" class="shrink-0 px-2.5 py-1 sm:px-3 sm:py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 rounded-full text-xs sm:text-sm font-medium">
                       {{ size }}
                     </span>
-                    <span v-if="updatedDate" class="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 rounded-full text-sm font-medium">
+                    <span v-if="updatedDate" class="shrink-0 px-2.5 py-1 sm:px-3 sm:py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 rounded-full text-xs sm:text-sm font-medium">
                       Updated {{ updatedDate }}
                     </span>
-                    <span v-if="releasedDate" class="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 rounded-full text-sm font-medium">
+                    <span v-if="releasedDate" class="shrink-0 px-2.5 py-1 sm:px-3 sm:py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 rounded-full text-xs sm:text-sm font-medium">
                       Released {{ releasedDate }}
                     </span>
-                    <span v-if="adSupported === true" class="flex items-center gap-1.5 px-3 py-1 bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-400 rounded-full text-sm font-medium">
-                      <Icon name="heroicons:speaker-wave" class="w-4 h-4" /> Contains Ads
+                    <span v-if="adSupported === true" class="shrink-0 flex items-center gap-1 px-2.5 py-1 sm:px-3 sm:py-1 bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-400 rounded-full text-xs sm:text-sm font-medium">
+                      <Icon name="heroicons:speaker-wave" class="w-3 h-3 sm:w-4 sm:h-4" /> Ads
                     </span>
-                    <span v-if="adSupported === false" class="flex items-center gap-1.5 px-3 py-1 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 rounded-full text-sm font-medium">
-                      <Icon name="heroicons:shield-check" class="w-4 h-4" /> Ad-Free
+                    <span v-if="adSupported === false" class="shrink-0 flex items-center gap-1 px-2.5 py-1 sm:px-3 sm:py-1 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 rounded-full text-xs sm:text-sm font-medium">
+                      <Icon name="heroicons:shield-check" class="w-3 h-3 sm:w-4 sm:h-4" /> Ad-Free
                     </span>
                   </div>
                 </div>
                 
-                <!-- Badges -->
-                <div class="flex flex-row sm:flex-col gap-3 shrink-0 mt-4 sm:mt-0 w-full sm:w-auto">
+                <!-- Store Links -->
+                <div class="flex flex-row sm:flex-col gap-2 sm:gap-3 shrink-0 w-full sm:w-auto mt-2 sm:mt-0">
                    <a
                     v-if="app.iosId"
                     :href="`https://apps.apple.com/app/id${app.iosId.match(/id(\d+)/) ? app.iosId.match(/id(\d+)/)[1] : app.iosId}`"
                     target="_blank"
-                    class="flex-1 sm:flex-none flex items-center justify-center gap-2 px-6 py-3 bg-black dark:bg-white text-white dark:text-black rounded-xl hover:scale-105 transition shadow-md"
+                    class="flex-1 sm:flex-none flex items-center justify-center gap-2 px-4 py-2 sm:px-6 sm:py-3 bg-black dark:bg-white text-white dark:text-black rounded-xl hover:scale-105 transition shadow-md"
                   >
-                    <Icon name="simple-icons:apple" class="w-6 h-6" />
+                    <Icon name="simple-icons:apple" class="w-5 h-5 sm:w-6 sm:h-6" />
                     <div class="flex flex-col items-start leading-none">
-                      <span class="text-[10px] uppercase font-medium opacity-80">Download on the</span>
-                      <span class="font-bold">App Store</span>
+                      <span class="text-[8px] sm:text-[10px] uppercase font-medium opacity-80">Download</span>
+                      <span class="font-bold text-xs sm:text-base">App Store</span>
                     </div>
                   </a>
                   <a
                     v-if="app.id"
                     :href="`https://play.google.com/store/apps/details?id=com.pejoal.${app.id}`"
                     target="_blank"
-                    class="flex-1 sm:flex-none flex items-center justify-center gap-2 px-6 py-3 bg-[#01875F] text-white rounded-xl hover:scale-105 transition shadow-md"
+                    class="flex-1 sm:flex-none flex items-center justify-center gap-2 px-4 py-2 sm:px-6 sm:py-3 bg-[#01875F] text-white rounded-xl hover:scale-105 transition shadow-md"
                   >
-                    <Icon name="simple-icons:googleplay" class="w-5 h-5" />
+                    <Icon name="simple-icons:googleplay" class="w-4 h-4 sm:w-5 sm:h-5" />
                     <div class="flex flex-col items-start leading-none">
-                      <span class="text-[10px] uppercase font-medium opacity-90">GET IT ON</span>
-                      <span class="font-bold tracking-wide">Google Play</span>
+                      <span class="text-[8px] sm:text-[10px] uppercase font-medium opacity-90">GET IT ON</span>
+                      <span class="font-bold text-xs sm:text-base tracking-wide">Google Play</span>
                     </div>
                   </a>
                 </div>
