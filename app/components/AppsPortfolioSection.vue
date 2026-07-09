@@ -21,6 +21,7 @@
         description="Comprehensive German language learning suite from A1 to C2 level"
         :apps="germanApps"
         color="blue"
+        @open-modal="handleOpenModal"
       />
 
       <!-- English Learning Apps -->
@@ -29,6 +30,7 @@
         description="Master English with our interactive learning platform"
         :apps="englishApps"
         color="indigo"
+        @open-modal="handleOpenModal"
       />
 
       <!-- Spanish Learning Apps -->
@@ -37,6 +39,7 @@
         description="Learn Spanish effectively with our comprehensive course"
         :apps="spanishApps"
         color="red"
+        @open-modal="handleOpenModal"
       />
 
       <AppSection
@@ -44,6 +47,7 @@
         description="Comprehensive French language learning suite from A1 to C2 level"
         :apps="frenchApps"
         color="yellow"
+        @open-modal="handleOpenModal"
       />
 
       <!-- Italian Learning Apps -->
@@ -52,6 +56,7 @@
         description="Discover the beauty of Italian language through interactive lessons"
         :apps="italianApps"
         color="green"
+        @open-modal="handleOpenModal"
       />
 
       <!-- Arabic Learning Apps -->
@@ -60,6 +65,7 @@
         description="Discover the beauty of Arabic language through interactive lessons"
         :apps="arabicApps"
         color="orange"
+        @open-modal="handleOpenModal"
       />
 
       <!-- Other Language Apps -->
@@ -68,6 +74,7 @@
         description="Explore Russian and more languages"
         :apps="otherLanguageApps"
         color="purple"
+        @open-modal="handleOpenModal"
       />
 
       <!-- Utility Apps -->
@@ -76,6 +83,7 @@
         description="Powerful tools for productivity and daily tasks"
         :apps="utilityApps"
         color="emerald"
+        @open-modal="handleOpenModal"
       />
 
       <!-- Test & Assessment Apps -->
@@ -84,6 +92,7 @@
         description="Challenge yourself with IQ tests, personality assessments, and trivia"
         :apps="testApps"
         color="violet"
+        @open-modal="handleOpenModal"
       />
 
       <!-- Games -->
@@ -92,6 +101,7 @@
         description="Fun and engaging puzzle games for entertainment"
         :apps="gameApps"
         color="pink"
+        @open-modal="handleOpenModal"
       />
 
       <!-- Programming Apps -->
@@ -100,12 +110,22 @@
         description="Learn programming languages and concepts with interactive tutorials"
         :apps="programmingApps"
         color="blue"
+        @open-modal="handleOpenModal"
       />
     </div>
+
+    <!-- App Detail Modal -->
+    <AppDetailModal
+      :is-open="isModalOpen"
+      :app="selectedApp"
+      @close="isModalOpen = false"
+    />
   </section>
 </template>
 
 <script setup>
+import { ref } from 'vue';
+
 defineProps({
   germanApps: Array,
   frenchApps: Array,
@@ -119,4 +139,12 @@ defineProps({
   gameApps: Array,
   programmingApps: Array,
 });
+
+const isModalOpen = ref(false);
+const selectedApp = ref(null);
+
+const handleOpenModal = (app) => {
+  selectedApp.value = app;
+  isModalOpen.value = true;
+};
 </script>

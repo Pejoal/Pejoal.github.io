@@ -13,12 +13,12 @@
 
     <!-- Apps Grid for vertical layout -->
     <div v-if="apps.length > 0 && layout === 'grid'" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <AppCard v-for="app in apps" :key="app.id" :app="app" :color="color" />
+      <AppCard v-for="app in apps" :key="app.id" :app="app" :color="color" @open-modal="$emit('open-modal', app)" />
     </div>
 
     <!-- Apps Horizontal Scroll for horizontal layout -->
-    <div v-else-if="apps.length > 0" class="flex overflow-x-auto gap-4 pb-4 scrollbar-hide">
-      <AppCard v-for="app in apps" :key="app.id" :app="app" :color="color" :horizontal="true" class="min-w-[280px]" />
+    <div v-else-if="apps.length > 0" class="flex overflow-x-auto gap-4 pb-4 custom-scrollbar">
+      <AppCard v-for="app in apps" :key="app.id" :app="app" :color="color" :horizontal="true" class="min-w-[280px]" @open-modal="$emit('open-modal', app)" />
     </div>
 
     <!-- Empty State -->
@@ -51,6 +51,8 @@ const props = defineProps({
     default: 'horizontal', // 'horizontal' or 'grid'
   },
 });
+
+defineEmits(['open-modal']);
 
 const getIcon = (title) => {
   if (title.includes('🇩🇪') || title.includes('German')) return '🇩🇪';
@@ -113,11 +115,36 @@ const getColorClasses = (color) => {
 </script>
 
 <style scoped>
-.scrollbar-hide {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  height: 6px;
 }
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 8px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 8px;
+}
+.dark .custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #475569;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #94a3b8;
+}
+.dark .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #64748b;
+}
+
+/* For Firefox */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 transparent;
+}
+@media (prefers-color-scheme: dark) {
+  .custom-scrollbar {
+    scrollbar-color: #475569 transparent;
+  }
 }
 </style>

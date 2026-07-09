@@ -2,11 +2,12 @@
 <template>
   <div
     :class="`
-      group transition-all duration-300 hover:scale-105 hover:shadow-xl relative
+      group transition-all duration-300 hover:scale-105 hover:shadow-xl relative cursor-pointer
       ${horizontal ? 'w-[280px] shrink-0' : 'w-full'}
       bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700
       p-6 shadow-lg hover:shadow-2xl
     `"
+    @click="$emit('open-modal', app)"
   >
     <!-- Horizontal Layout -->
     <div v-if="horizontal" class="text-center">
@@ -110,6 +111,8 @@ defineProps({
   color: { type: String, default: 'blue' },
   horizontal: { type: Boolean, default: false },
 });
+
+defineEmits(['open-modal']);
 
 const isUrl = (str) => {
   if (!str) return false;
