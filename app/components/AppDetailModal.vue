@@ -49,6 +49,15 @@
                     <span v-if="updatedDate" class="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 rounded-full text-sm font-medium">
                       Updated {{ updatedDate }}
                     </span>
+                    <span v-if="releasedDate" class="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 rounded-full text-sm font-medium">
+                      Released {{ releasedDate }}
+                    </span>
+                    <span v-if="adSupported === true" class="flex items-center gap-1.5 px-3 py-1 bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-400 rounded-full text-sm font-medium">
+                      <Icon name="heroicons:speaker-wave" class="w-4 h-4" /> Contains Ads
+                    </span>
+                    <span v-if="adSupported === false" class="flex items-center gap-1.5 px-3 py-1 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 rounded-full text-sm font-medium">
+                      <Icon name="heroicons:shield-check" class="w-4 h-4" /> Ad-Free
+                    </span>
                   </div>
                 </div>
                 
@@ -214,14 +223,28 @@ const downloads = computed(() => {
 });
 
 const updatedDate = computed(() => {
-  const timestamp = appStoreData.value?.updated || playData.value?.updated;
-  if (!timestamp) return null;
-  const date = new Date(timestamp);
+  const playTime = playData.value?.updated ? new Date(playData.value.updated).getTime() : 0;
+  const appTime = appStoreData.value?.updated ? new Date(appStoreData.value.updated).getTime() : 0;
+  const maxTime = Math.max(playTime, appTime);
+  
+  if (maxTime === 0) return null;
+  const date = new Date(maxTime);
   return isNaN(date.getTime()) ? null : date.toLocaleDateString(undefined, {
     year: 'numeric',
     month: 'short',
     day: 'numeric'
   });
+});
+
+const releasedDate = computed(() => {
+  return playData.value?.released || null;
+});
+
+const adSupported = computed(() => {
+  if (playData.value && typeof playData.value.adSupported === 'boolean') {
+    return playData.value.adSupported;
+  }
+  return null;
 });
 
 const recentChanges = computed(() => {

@@ -16,9 +16,16 @@
             v-for="link in navLinks"
             :key="link.to"
             :to="link.to"
-            class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors"
-            active-class="text-blue-600 dark:text-blue-400 font-bold"
-            @click.prevent="scrollToSection(link.to)"
+            :class="[
+              'font-medium transition-colors',
+              activeSection === link.to 
+                ? 'text-blue-600 dark:text-blue-400 font-bold' 
+                : 'text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400'
+            ]"
+            @click.prevent="
+              scrollToSection(link.to);
+              activeSection = link.to;
+            "
           >
             {{ link.label }}
           </NuxtLink>
@@ -96,18 +103,24 @@
     <!-- Mobile Menu -->
     <div v-if="mobileOpen" class="md:hidden border-t border-gray-200 dark:border-gray-700">
       <div class="px-4 py-3 space-y-2">
-        <NuxtLink
-          v-for="link in navLinks"
-          :key="link.to"
-          :to="link.to"
-          class="block py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium"
-          @click.prevent="
-            scrollToSection(link.to);
-            mobileOpen = false;
-          "
-        >
-          {{ link.label }}
-        </NuxtLink>
+          <NuxtLink
+            v-for="link in navLinks"
+            :key="link.to"
+            :to="link.to"
+            :class="[
+              'block py-2 font-medium',
+              activeSection === link.to 
+                ? 'text-blue-600 dark:text-blue-400 font-bold' 
+                : 'text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400'
+            ]"
+            @click.prevent="
+              scrollToSection(link.to);
+              activeSection = link.to;
+              mobileOpen = false;
+            "
+          >
+            {{ link.label }}
+          </NuxtLink>
         <ClientOnly>
           <button
             @click="
@@ -161,6 +174,7 @@ defineProps({
 defineEmits(['toggle-dark-mode']);
 
 const mobileOpen = ref(false);
+const activeSection = ref('#home');
 
 const navLinks = [
   { label: 'Home', to: '#home' },
@@ -171,6 +185,32 @@ const navLinks = [
   { label: 'Skills', to: '#skills' },
   { label: 'Contact', to: '#contact' },
 ];
+
+onMounted(() => {
+  if (process.client) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            activeSection.value = '#' + entry.target.id;
+          }
+        });
+      },
+      { rootMargin: '-20% 0px -60% 0px', threshold: 0 }
+    );
+
+    // Give it a tiny delay to ensure elements are rendered
+    setTimeout(() => {
+      navLinks.forEach((link) => {
+        const targetId = link.to.substring(1);
+        const element = document.getElementById(targetId);
+        if (element) {
+          observer.observe(element);
+        }
+      });
+    }, 100);
+  }
+});
 
 const scrollToSection = (to) => {
   if (to.startsWith('#')) {

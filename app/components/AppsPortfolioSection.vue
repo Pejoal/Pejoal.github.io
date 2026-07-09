@@ -32,12 +32,23 @@
               <option value="relevance">Default (Relevance)</option>
               <option value="installs">Most Installs</option>
               <option value="rating">Highest Rated</option>
+              <option value="released">Newest Releases</option>
               <option value="updated">Recently Updated</option>
             </select>
             <div class="absolute inset-y-0 right-0 pr-5 flex items-center pointer-events-none">
               <Icon name="heroicons:chevron-down" class="w-4 h-4 text-gray-400" />
             </div>
           </div>
+          <button 
+            @click="filterNoAds = !filterNoAds"
+            :class="[
+              'cursor-pointer shrink-0 px-6 py-4 rounded-full font-semibold transition-all duration-300 shadow-sm hover:shadow-md border flex items-center gap-2', 
+              filterNoAds ? 'bg-emerald-100 text-emerald-700 border-emerald-300 dark:bg-emerald-900/40 dark:text-emerald-300 dark:border-emerald-800' : 'bg-white text-gray-600 border-gray-200 dark:bg-gray-800 dark:text-gray-300 dark:border-gray-700 hover:border-emerald-300 dark:hover:border-gray-500'
+            ]"
+          >
+            <Icon name="heroicons:shield-check" class="w-5 h-5" />
+            Ad-Free Only
+          </button>
         </div>
 
         <!-- Filter Pills -->
@@ -116,6 +127,7 @@ const handleOpenModal = (app) => {
 // Search and Filter State
 const searchQuery = ref('');
 const activeCategory = ref('All');
+const filterNoAds = ref(false);
 const sortOrder = ref('relevance');
 
 const categories = computed(() => {
@@ -162,6 +174,15 @@ const filteredApps = computed(() => {
     );
   }
 
+  if (filterNoAds.value) {
+    result = result.filter(app => {
+      if (app.playStoreData && typeof app.playStoreData.adSupported === 'boolean') {
+        return !app.playStoreData.adSupported;
+      }
+      return true; // Keep if we don't know
+    });
+  }
+
   // Sorting Logic
   if (sortOrder.value === 'installs') {
     result.sort((a, b) => {
@@ -175,12 +196,20 @@ const filteredApps = computed(() => {
       const bScore = b.appStoreData?.score || b.playStoreData?.score || 0;
       return bScore - aScore;
     });
+  } else if (sortOrder.value === 'released') {
+    result.sort((a, b) => {
+      const getReleaseDate = (app) => {
+        if (app.playStoreData?.released) return new Date(app.playStoreData.released).getTime();
+        return 0;
+      };
+      return getReleaseDate(b) - getReleaseDate(a);
+    });
   } else if (sortOrder.value === 'updated') {
     result.sort((a, b) => {
       const getTimestamp = (app) => {
-        if (app.playStoreData?.updated) return new Date(app.playStoreData.updated).getTime();
-        if (app.appStoreData?.updated) return new Date(app.appStoreData.updated).getTime();
-        return 0;
+        const pDate = app.playStoreData?.updated ? new Date(app.playStoreData.updated).getTime() : 0;
+        const aDate = app.appStoreData?.updated ? new Date(app.appStoreData.updated).getTime() : 0;
+        return Math.max(pDate, aDate);
       };
       return getTimestamp(b) - getTimestamp(a);
     });
