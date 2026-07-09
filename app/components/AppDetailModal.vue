@@ -16,7 +16,7 @@
             <div class="relative shrink-0 border-b border-gray-100 dark:border-gray-800">
               <button 
                 @click="close"
-                class="absolute top-4 right-4 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-gray-100/80 dark:bg-gray-800/80 text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700 transition"
+                class="absolute cursor-pointer top-4 right-4 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-gray-100/80 dark:bg-gray-800/80 text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700 transition"
               >
                 <Icon name="heroicons:x-mark" class="w-6 h-6" />
               </button>
