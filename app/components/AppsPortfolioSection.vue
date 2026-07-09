@@ -8,17 +8,36 @@
           An extensive showcase of published, high-impact mobile applications serving thousands of users worldwide.
         </p>
 
-        <!-- Search Bar -->
-        <div class="relative max-w-xl mx-auto mb-10">
-          <div class="absolute inset-y-0 left-0 pl-5 flex items-center pointer-events-none">
-            <Icon name="heroicons:magnifying-glass" class="w-6 h-6 text-gray-400" />
+        <!-- Search and Sort Bar -->
+        <div class="flex flex-col md:flex-row gap-4 max-w-3xl mx-auto mb-10">
+          <div class="relative flex-1">
+            <div class="absolute inset-y-0 left-0 pl-5 flex items-center pointer-events-none">
+              <Icon name="heroicons:magnifying-glass" class="w-6 h-6 text-gray-400" />
+            </div>
+            <input 
+              v-model="searchQuery" 
+              type="text" 
+              class="block w-full pl-14 pr-4 py-4 rounded-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:text-white transition-all outline-none" 
+              placeholder="Search for apps, categories, or keywords..." 
+            />
           </div>
-          <input 
-            v-model="searchQuery" 
-            type="text" 
-            class="block w-full pl-14 pr-4 py-4 rounded-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:text-white transition-all outline-none" 
-            placeholder="Search for apps, categories, or keywords..." 
-          />
+          <div class="relative w-full md:w-56 shrink-0">
+            <div class="absolute inset-y-0 left-0 pl-5 flex items-center pointer-events-none">
+              <Icon name="heroicons:arrows-up-down" class="w-5 h-5 text-gray-400" />
+            </div>
+            <select 
+              v-model="sortOrder"
+              class="block w-full pl-12 pr-10 py-4 rounded-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:text-white transition-all outline-none appearance-none cursor-pointer text-sm font-medium"
+            >
+              <option value="relevance">Default (Relevance)</option>
+              <option value="installs">Most Installs</option>
+              <option value="rating">Highest Rated</option>
+              <option value="updated">Recently Updated</option>
+            </select>
+            <div class="absolute inset-y-0 right-0 pr-5 flex items-center pointer-events-none">
+              <Icon name="heroicons:chevron-down" class="w-4 h-4 text-gray-400" />
+            </div>
+          </div>
         </div>
 
         <!-- Filter Pills -->
@@ -96,6 +115,7 @@ const handleOpenModal = (app) => {
 // Search and Filter State
 const searchQuery = ref('');
 const activeCategory = ref('All');
+const sortOrder = ref('relevance');
 
 const categories = computed(() => {
   return [
@@ -127,7 +147,7 @@ const allApps = computed(() => {
 });
 
 const filteredApps = computed(() => {
-  let result = allApps.value;
+  let result = [...allApps.value];
   
   if (activeCategory.value !== 'All') {
     result = result.filter(app => app.category === activeCategory.value);
@@ -139,6 +159,30 @@ const filteredApps = computed(() => {
       (app.title && app.title.toLowerCase().includes(q)) || 
       (app.description && app.description.toLowerCase().includes(q))
     );
+  }
+
+  // Sorting Logic
+  if (sortOrder.value === 'installs') {
+    result.sort((a, b) => {
+      const aInstalls = a.playStoreData?.maxInstalls || 0;
+      const bInstalls = b.playStoreData?.maxInstalls || 0;
+      return bInstalls - aInstalls;
+    });
+  } else if (sortOrder.value === 'rating') {
+    result.sort((a, b) => {
+      const aScore = a.appStoreData?.score || a.playStoreData?.score || 0;
+      const bScore = b.appStoreData?.score || b.playStoreData?.score || 0;
+      return bScore - aScore;
+    });
+  } else if (sortOrder.value === 'updated') {
+    result.sort((a, b) => {
+      const getTimestamp = (app) => {
+        if (app.playStoreData?.updated) return new Date(app.playStoreData.updated).getTime();
+        if (app.appStoreData?.updated) return new Date(app.appStoreData.updated).getTime();
+        return 0;
+      };
+      return getTimestamp(b) - getTimestamp(a);
+    });
   }
   
   return result;

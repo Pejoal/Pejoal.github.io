@@ -24,9 +24,22 @@
         >
           {{ app.title }}
         </h4>
-        <p class="text-sm text-gray-600 dark:text-gray-300 line-clamp-3 leading-relaxed">
+        <p class="text-sm text-gray-600 dark:text-gray-300 line-clamp-3 leading-relaxed mb-3">
           {{ app.description }}
         </p>
+
+        <!-- Metrics -->
+        <div class="flex flex-wrap items-center justify-center gap-2">
+          <span v-if="rating && rating !== '0.0'" class="flex items-center gap-1 text-[10px] px-2 py-0.5 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400 rounded font-medium">
+            <Icon name="heroicons:star-solid" class="w-3 h-3" /> {{ rating }}
+          </span>
+          <span v-if="installs" class="flex items-center gap-1 text-[10px] px-2 py-0.5 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 rounded font-medium">
+            <Icon name="heroicons:arrow-down-tray" class="w-3 h-3" /> {{ installs }}
+          </span>
+          <span v-if="size" class="text-[10px] px-2 py-0.5 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 rounded font-medium">
+            {{ size }}
+          </span>
+        </div>
       </div>
 
       <!-- Store Links -->
@@ -67,11 +80,24 @@
         >
           {{ app.title }}
         </h4>
-        <p class="text-gray-600 dark:text-gray-300 line-clamp-2 leading-relaxed">
+        <p class="text-gray-600 dark:text-gray-300 line-clamp-2 leading-relaxed mb-3">
           {{ app.description }}
         </p>
 
-        <div class="flex gap-2 mt-3">
+        <!-- Metrics -->
+        <div class="flex flex-wrap items-center gap-2 mb-3">
+          <span v-if="rating && rating !== '0.0'" class="flex items-center gap-1 text-xs px-2 py-0.5 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400 rounded font-medium">
+            <Icon name="heroicons:star-solid" class="w-3 h-3" /> {{ rating }}
+          </span>
+          <span v-if="installs" class="flex items-center gap-1 text-xs px-2 py-0.5 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 rounded font-medium">
+            <Icon name="heroicons:arrow-down-tray" class="w-3 h-3" /> {{ installs }}
+          </span>
+          <span v-if="size" class="text-xs px-2 py-0.5 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 rounded font-medium">
+            {{ size }}
+          </span>
+        </div>
+
+        <div class="flex gap-2">
           <a
             v-if="app.iosId"
             :href="`https://apps.apple.com/app/id${app.iosId}`"
@@ -106,13 +132,32 @@
 </template>
 
 <script setup>
-defineProps({
+import { computed } from 'vue';
+
+const props = defineProps({
   app: Object,
   color: { type: String, default: 'blue' },
   horizontal: { type: Boolean, default: false },
 });
 
-defineEmits(['open-modal']);
+const emit = defineEmits(['open-modal']);
+
+const rating = computed(() => {
+  if (props.app?.appStoreData?.score) return Number(props.app.appStoreData.score).toFixed(1);
+  if (props.app?.playStoreData?.scoreText) return props.app.playStoreData.scoreText;
+  return null;
+});
+
+const installs = computed(() => {
+  if (props.app?.playStoreData?.installs) return props.app.playStoreData.installs;
+  return null;
+});
+
+const size = computed(() => {
+  if (props.app?.appStoreData?.size) return props.app.appStoreData.size;
+  if (props.app?.playStoreData?.size) return props.app.playStoreData.size;
+  return null;
+});
 
 const isUrl = (str) => {
   if (!str) return false;
