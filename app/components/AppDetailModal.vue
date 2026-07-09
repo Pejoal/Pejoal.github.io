@@ -23,7 +23,7 @@
               
               <div class="p-6 sm:p-8 flex flex-col sm:flex-row gap-6 items-start sm:items-center bg-linear-to-r from-blue-50/50 to-indigo-50/50 dark:from-blue-900/10 dark:to-indigo-900/10">
                 <div class="w-24 h-24 sm:w-32 sm:h-32 shrink-0 rounded-3xl overflow-hidden shadow-lg border border-gray-200/50 dark:border-gray-700/50 bg-white dark:bg-gray-800">
-                  <img v-if="isUrl(app.icon)" :src="app.icon" :alt="app.title" class="w-full h-full object-cover" />
+                  <img v-if="isUrl(app.icon)" :src="app.icon" :alt="app.title" class="w-full h-full object-cover" referrerpolicy="no-referrer" />
                   <span v-else class="w-full h-full flex items-center justify-center text-5xl">{{ app.icon }}</span>
                 </div>
                 
@@ -36,11 +36,18 @@
                       <Icon name="heroicons:star-solid" class="w-4 h-4" />
                       {{ rating }}
                     </span>
+                    <span v-if="downloads" class="flex items-center gap-1.5 px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 rounded-full text-sm font-medium">
+                      <Icon name="heroicons:arrow-down-tray" class="w-4 h-4" />
+                      {{ downloads }}
+                    </span>
                     <span v-if="version" class="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 rounded-full text-sm font-medium">
                       v{{ version }}
                     </span>
                     <span v-if="size" class="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 rounded-full text-sm font-medium">
                       {{ size }}
+                    </span>
+                    <span v-if="updatedDate" class="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 rounded-full text-sm font-medium">
+                      Updated {{ updatedDate }}
                     </span>
                   </div>
                 </div>
@@ -77,6 +84,16 @@
             
             <!-- Content Scroll Area -->
             <div class="flex-1 overflow-y-auto p-6 sm:p-8 custom-scrollbar">
+              <!-- Feature Graphic -->
+              <div v-if="featureGraphic" class="mb-10 rounded-2xl overflow-hidden shadow-md border border-gray-200 dark:border-gray-700 relative">
+                <img 
+                  :src="featureGraphic" 
+                  alt="Feature Graphic" 
+                  class="w-full h-auto aspect-[1024/500] object-cover"
+                  referrerpolicy="no-referrer"
+                />
+              </div>
+
               <!-- Screenshots -->
               <div v-if="screenshots && screenshots.length > 0" class="mb-10">
                 <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
@@ -90,7 +107,7 @@
                     :src="img" 
                     alt="Screenshot" 
                     class="h-64 sm:h-80 object-cover rounded-2xl border border-gray-200 dark:border-gray-700 shadow-xs snap-center shrink-0"
-                    loading="lazy"
+                    referrerpolicy="no-referrer"
                   />
                 </div>
               </div>
@@ -154,6 +171,11 @@ const screenshots = computed(() => {
   return [];
 });
 
+const featureGraphic = computed(() => {
+  if (playData.value?.headerImage) return playData.value.headerImage;
+  return null;
+});
+
 const longDescription = computed(() => {
   if (playData.value?.descriptionHTML) return playData.value.descriptionHTML;
   if (appStoreData.value?.description) return appStoreData.value.description;
@@ -176,6 +198,22 @@ const size = computed(() => {
   if (appStoreData.value?.size) return appStoreData.value.size;
   if (playData.value?.size) return playData.value.size;
   return null;
+});
+
+const downloads = computed(() => {
+  if (playData.value?.installs) return playData.value.installs;
+  return null;
+});
+
+const updatedDate = computed(() => {
+  const timestamp = appStoreData.value?.updated || playData.value?.updated;
+  if (!timestamp) return null;
+  const date = new Date(timestamp);
+  return isNaN(date.getTime()) ? null : date.toLocaleDateString(undefined, {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric'
+  });
 });
 
 const recentChanges = computed(() => {

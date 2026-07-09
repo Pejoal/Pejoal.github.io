@@ -20,6 +20,8 @@ async function fetchPlayStoreData(appId) {
       ratings: data.ratings || 0,
       reviews: data.reviews || 0,
       histogram: data.histogram || { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 },
+      installs: data.installs || '',
+      maxInstalls: data.maxInstalls || 0,
       priceText: data.priceText || 'Free',
       currency: data.currency || 'USD',
       size: data.size || '',
