@@ -1,5 +1,7 @@
 # Pejoal Hanna - Professional Portfolio
 
+> **🔒 Private Repository**: This repository contains proprietary code and data. It is strictly private and not open source.
+
 A modern, responsive portfolio website built with Nuxt 3, Vue 3, and TailwindCSS. Features a clean design with dark mode support, smooth animations, and professional sections showcasing web projects, mobile apps, technical skills, and experience.
 
 ## 🚀 Features
@@ -121,15 +123,36 @@ The portfolio includes links to:
 - **Apple App Store**: Placeholder links (marked as "Coming Soon")
 - **Web Versions**: Placeholder links for future web versions
 
+## 📱 How to Add a New App
+
+The portfolio uses an automated scraper script to pull the latest app data (title, description, icon, screenshots, rating, installs, size, etc.) directly from the Google Play Store and Apple App Store.
+
+To add a new app to the portfolio:
+
+1. Open `app/data/appsData.json`.
+2. Locate the appropriate category list (e.g., `"germanApps"`, `"gameApps"`).
+3. Add a new object containing only the required IDs. **You do not need to add the title or description manually!**
+   ```json
+   {
+     "id": "your_android_app_id",
+     "iosId": "your-ios-slug/id123456789"
+   }
+   ```
+4. Run the data fetch script in your terminal:
+   ```bash
+   npm run fetch-apps
+   ```
+5. The script will automatically fetch all store data and update `appsData.json`. 
+
 ## 🔗 Links
 
 - **Live Demo**: [Your GitHub Pages URL]
 - **Google Play Profile**: https://play.google.com/store/apps/dev?id=7584224843331524823
 - **Email**: business@pejoal.us.kg
 
-## 📄 License
+## 🔒 License
 
-This project is open source and available under the [MIT License](LICENSE).
+This repository is **private** and contains proprietary code. Unauthorized copying, modification, distribution, or use is strictly prohibited.
 
 ---
 

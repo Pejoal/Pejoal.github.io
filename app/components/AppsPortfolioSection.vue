@@ -47,7 +47,7 @@
             :key="cat.id"
             @click="activeCategory = cat.id"
             :class="[
-              'px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 shadow-xs hover:shadow-md border',
+              'cursor-pointer px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 shadow-xs hover:shadow-md border',
               activeCategory === cat.id 
                 ? 'bg-blue-600 text-white border-blue-600 dark:border-blue-500' 
                 : 'bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-gray-500'
