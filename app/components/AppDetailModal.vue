@@ -25,20 +25,20 @@
                 <!-- Mobile Top Row: Icon + Title/Desc -->
                 <div class="flex flex-row gap-4 items-center sm:items-start w-full sm:w-auto">
                   <div class="w-20 h-20 sm:w-32 sm:h-32 shrink-0 rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg border border-gray-200/50 dark:border-gray-700/50 bg-white dark:bg-gray-800">
-                    <NuxtImg v-if="isUrl(app.icon)" :src="app.icon" :alt="app.title" class="w-full h-full object-cover" format="webp" referrerpolicy="no-referrer" />
-                    <span v-else class="w-full h-full flex items-center justify-center text-4xl sm:text-5xl">{{ app.icon }}</span>
+                    <NuxtImg v-if="isUrl(app?.icon)" :src="app?.icon" :alt="app?.title" class="w-full h-full object-cover" format="webp" referrerpolicy="no-referrer" />
+                    <span v-else class="w-full h-full flex items-center justify-center text-4xl sm:text-5xl">{{ app?.icon }}</span>
                   </div>
                   
                   <div class="flex-1 sm:hidden">
-                    <h2 class="text-lg font-bold text-gray-900 dark:text-white leading-tight mb-1 line-clamp-2">{{ app.title }}</h2>
-                    <p class="text-xs text-gray-600 dark:text-gray-300 line-clamp-2">{{ app.description }}</p>
+                    <h2 class="text-lg font-bold text-gray-900 dark:text-white leading-tight mb-1 line-clamp-2">{{ app?.title }}</h2>
+                    <p class="text-xs text-gray-600 dark:text-gray-300 line-clamp-2">{{ app?.description }}</p>
                   </div>
                 </div>
                 
                 <div class="flex-1 space-y-2 sm:space-y-3 flex flex-col justify-center min-w-0">
                   <div class="hidden sm:block">
-                    <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-2">{{ app.title }}</h2>
-                    <p class="text-base sm:text-lg text-gray-600 dark:text-gray-300">{{ app.description }}</p>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-2">{{ app?.title }}</h2>
+                    <p class="text-base sm:text-lg text-gray-600 dark:text-gray-300">{{ app?.description }}</p>
                   </div>
                   
                   <!-- Badges - Scrollable horizontally on mobile, wrapped on desktop -->
@@ -75,7 +75,7 @@
                 <!-- Store Links -->
                 <div class="flex flex-row sm:flex-col gap-2 sm:gap-3 shrink-0 w-full sm:w-auto mt-2 sm:mt-0">
                    <a
-                    v-if="app.iosId"
+                    v-if="app?.iosId"
                     :href="`https://apps.apple.com/app/id${app.iosId.match(/id(\d+)/) ? app.iosId.match(/id(\d+)/)[1] : app.iosId}`"
                     target="_blank"
                     class="flex-1 sm:flex-none flex items-center justify-center gap-2 px-4 py-2 sm:px-6 sm:py-3 bg-black dark:bg-white text-white dark:text-black rounded-xl hover:scale-105 transition shadow-md"
@@ -87,7 +87,7 @@
                     </div>
                   </a>
                   <a
-                    v-if="app.id"
+                    v-if="app?.id"
                     :href="`https://play.google.com/store/apps/details?id=com.pejoal.${app.id}`"
                     target="_blank"
                     class="flex-1 sm:flex-none flex items-center justify-center gap-2 px-4 py-2 sm:px-6 sm:py-3 bg-[#01875F] text-white rounded-xl hover:scale-105 transition shadow-md"
