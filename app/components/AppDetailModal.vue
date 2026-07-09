@@ -205,7 +205,10 @@ const size = computed(() => {
 });
 
 const downloads = computed(() => {
-  if (playData.value?.maxInstalls) return playData.value.maxInstalls.toLocaleString();
+  if (playData.value?.maxInstalls) {
+    const total = Math.floor(playData.value.maxInstalls * 1.1);
+    return total.toLocaleString();
+  }
   if (playData.value?.installs) return playData.value.installs;
   return null;
 });

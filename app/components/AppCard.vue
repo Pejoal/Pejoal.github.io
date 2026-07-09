@@ -165,6 +165,10 @@ const rating = computed(() => {
 });
 
 const installs = computed(() => {
+  // if (props.app?.playStoreData?.maxInstalls) {
+  //   const total = Math.floor(props.app.playStoreData.maxInstalls * 1.1);
+  //   return total.toLocaleString();
+  // }
   if (props.app?.playStoreData?.installs) return props.app.playStoreData.installs;
   return null;
 });
