@@ -106,11 +106,10 @@
             <div class="flex-1 overflow-y-auto p-6 sm:p-8 custom-scrollbar">
               <!-- Feature Graphic -->
               <div v-if="featureGraphic" class="mb-10 rounded-2xl overflow-hidden shadow-md border border-gray-200 dark:border-gray-700 relative">
-                <NuxtImg 
+                <img 
                   :src="featureGraphic" 
                   alt="Feature Graphic" 
                   class="w-full h-auto aspect-[1024/500] object-cover"
-                  format="webp"
                   loading="lazy"
                   referrerpolicy="no-referrer"
                 />
@@ -123,13 +122,12 @@
                   Screenshots
                 </h3>
                 <div class="flex overflow-x-auto gap-4 pb-4 snap-x snap-mandatory custom-scrollbar hide-scrollbar-touch">
-                  <NuxtImg 
+                  <img 
                     v-for="(img, idx) in screenshots" 
                     :key="idx" 
                     :src="img" 
                     alt="Screenshot" 
                     class="h-64 sm:h-80 object-cover rounded-2xl border border-gray-200 dark:border-gray-700 shadow-xs snap-center shrink-0"
-                    format="webp"
                     loading="lazy"
                     referrerpolicy="no-referrer"
                   />
