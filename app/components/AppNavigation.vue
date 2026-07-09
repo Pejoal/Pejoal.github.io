@@ -26,7 +26,7 @@
           <ClientOnly>
             <button
               @click="$emit('toggle-dark-mode')"
-              class="p-2 cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+              class="p-2 cursor-pointer rounded-lg text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition"
               aria-label="Toggle dark mode"
             >
               <svg
@@ -114,7 +114,7 @@
               $emit('toggle-dark-mode');
               mobileOpen = false;
             "
-            class="w-full cursor-pointer text-left py-2 flex items-center gap-2 text-gray-700 dark:text-gray-300"
+            class="w-full cursor-pointer text-left py-2 flex items-center gap-2 text-gray-700 dark:text-white"
           >
             <svg
               v-if="isDark"

@@ -2,17 +2,17 @@
 <template>
   <div
     :class="`
-      group transition-all duration-300 hover:scale-105 hover:shadow-xl relative cursor-pointer
+      group transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] dark:hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.4)] relative cursor-pointer
       ${horizontal ? 'w-[280px] shrink-0' : 'w-full'}
-      bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700
-      p-6 shadow-lg hover:shadow-2xl
+      bg-white/70 dark:bg-gray-800/70 backdrop-blur-lg rounded-2xl border border-gray-200/50 dark:border-gray-700/50
+      p-6 shadow-lg hover:border-blue-300 dark:hover:border-blue-700
     `"
     @click="$emit('open-modal', app)"
   >
     <!-- Horizontal Layout -->
     <div v-if="horizontal" class="text-center">
       <div
-        :class="`w-20 h-20 rounded-3xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 ${getColorClasses(color).bg} group-hover:scale-110 overflow-hidden`"
+        :class="`w-20 h-20 rounded-3xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 ${getColorClasses(color).bg} text-white shadow-lg group-hover:scale-110 overflow-hidden`"
       >
         <img v-if="isUrl(app.icon)" :src="app.icon" :alt="app.title" class="w-full h-full object-cover" />
         <span v-else class="text-4xl">{{ app.icon }}</span>
@@ -55,7 +55,7 @@
     <!-- Vertical Layout -->
     <div v-else class="flex items-center space-x-4">
       <div
-        :class="`w-16 h-16 rounded-2xl flex items-center justify-center shrink-0 transition-all duration-300 ${getColorClasses(color).bg} group-hover:scale-110 overflow-hidden`"
+        :class="`w-16 h-16 rounded-2xl flex items-center justify-center shrink-0 transition-all duration-300 ${getColorClasses(color).bg} text-white shadow-lg group-hover:scale-110 overflow-hidden`"
       >
         <img v-if="isUrl(app.icon)" :src="app.icon" :alt="app.title" class="w-full h-full object-cover" />
         <span v-else class="text-3xl">{{ app.icon }}</span>
@@ -121,14 +121,16 @@ const isUrl = (str) => {
 
 const getColorClasses = (color) => {
   const colors = {
-    blue: { bg: 'bg-blue-100 dark:bg-blue-900/30' },
-    indigo: { bg: 'bg-indigo-100 dark:bg-indigo-900/30' },
-    red: { bg: 'bg-red-100 dark:bg-red-900/30' },
-    green: { bg: 'bg-green-100 dark:bg-green-900/30' },
-    purple: { bg: 'bg-purple-100 dark:bg-purple-900/30' },
-    emerald: { bg: 'bg-emerald-100 dark:bg-emerald-900/30' },
-    violet: { bg: 'bg-violet-100 dark:bg-violet-900/30' },
-    pink: { bg: 'bg-pink-100 dark:bg-pink-900/30' },
+    blue: { bg: 'bg-linear-to-br from-blue-500 to-cyan-400 shadow-blue-500/30' },
+    indigo: { bg: 'bg-linear-to-br from-indigo-500 to-purple-400 shadow-indigo-500/30' },
+    red: { bg: 'bg-linear-to-br from-red-500 to-orange-400 shadow-red-500/30' },
+    green: { bg: 'bg-linear-to-br from-green-500 to-emerald-400 shadow-green-500/30' },
+    purple: { bg: 'bg-linear-to-br from-purple-500 to-pink-400 shadow-purple-500/30' },
+    emerald: { bg: 'bg-linear-to-br from-emerald-500 to-teal-400 shadow-emerald-500/30' },
+    violet: { bg: 'bg-linear-to-br from-violet-500 to-fuchsia-400 shadow-violet-500/30' },
+    pink: { bg: 'bg-linear-to-br from-pink-500 to-rose-400 shadow-pink-500/30' },
+    orange: { bg: 'bg-linear-to-br from-orange-500 to-yellow-400 shadow-orange-500/30' },
+    yellow: { bg: 'bg-linear-to-br from-yellow-500 to-amber-400 shadow-yellow-500/30' },
   };
   return colors[color] || colors.blue;
 };
