@@ -23,7 +23,7 @@
               
               <div class="p-6 sm:p-8 flex flex-col sm:flex-row gap-6 items-start sm:items-center bg-linear-to-r from-blue-50/50 to-indigo-50/50 dark:from-blue-900/10 dark:to-indigo-900/10">
                 <div class="w-24 h-24 sm:w-32 sm:h-32 shrink-0 rounded-3xl overflow-hidden shadow-lg border border-gray-200/50 dark:border-gray-700/50 bg-white dark:bg-gray-800">
-                  <img v-if="isUrl(app.icon)" :src="app.icon" :alt="app.title" class="w-full h-full object-cover" referrerpolicy="no-referrer" />
+                  <NuxtImg v-if="isUrl(app.icon)" :src="app.icon" :alt="app.title" class="w-full h-full object-cover" format="webp" referrerpolicy="no-referrer" />
                   <span v-else class="w-full h-full flex items-center justify-center text-5xl">{{ app.icon }}</span>
                 </div>
                 
@@ -86,10 +86,12 @@
             <div class="flex-1 overflow-y-auto p-6 sm:p-8 custom-scrollbar">
               <!-- Feature Graphic -->
               <div v-if="featureGraphic" class="mb-10 rounded-2xl overflow-hidden shadow-md border border-gray-200 dark:border-gray-700 relative">
-                <img 
+                <NuxtImg 
                   :src="featureGraphic" 
                   alt="Feature Graphic" 
                   class="w-full h-auto aspect-[1024/500] object-cover"
+                  format="webp"
+                  loading="lazy"
                   referrerpolicy="no-referrer"
                 />
               </div>
@@ -101,12 +103,14 @@
                   Screenshots
                 </h3>
                 <div class="flex overflow-x-auto gap-4 pb-4 snap-x snap-mandatory custom-scrollbar hide-scrollbar-touch">
-                  <img 
+                  <NuxtImg 
                     v-for="(img, idx) in screenshots" 
                     :key="idx" 
                     :src="img" 
                     alt="Screenshot" 
                     class="h-64 sm:h-80 object-cover rounded-2xl border border-gray-200 dark:border-gray-700 shadow-xs snap-center shrink-0"
+                    format="webp"
+                    loading="lazy"
                     referrerpolicy="no-referrer"
                   />
                 </div>

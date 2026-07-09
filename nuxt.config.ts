@@ -54,4 +54,12 @@ export default defineNuxtConfig({
   },
 
   modules: ['@nuxt/eslint', '@nuxt/image', '@nuxt/scripts', '@nuxt/test-utils', '@nuxt/ui'],
+
+  // Nuxt Image Configuration
+  image: {
+    domains: [
+      'play-lh.googleusercontent.com',
+      'is1-ssl.mzstatic.com'
+    ],
+  },
 });

@@ -68,19 +68,64 @@
         <!-- Stats -->
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-3xl mx-auto pt-8 border-t border-gray-200 dark:border-gray-800" data-aos="fade-up" data-aos-delay="400">
           <div class="text-center group">
-            <div class="text-4xl font-black text-transparent bg-clip-text bg-linear-to-br from-gray-900 to-gray-500 dark:from-white dark:to-gray-400 mb-1 group-hover:scale-110 transition-transform">40+</div>
+            <div class="text-4xl font-black text-transparent bg-clip-text bg-linear-to-br from-gray-900 to-gray-500 dark:from-white dark:to-gray-400 mb-1 group-hover:scale-110 transition-transform">{{ totalApps }}+</div>
             <div class="text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-widest">Published Apps</div>
           </div>
           <div class="text-center group">
-            <div class="text-4xl font-black text-transparent bg-clip-text bg-linear-to-br from-blue-600 to-indigo-500 mb-1 group-hover:scale-110 transition-transform">250K+</div>
+            <div class="text-4xl font-black text-transparent bg-clip-text bg-linear-to-br from-blue-600 to-indigo-500 mb-1 group-hover:scale-110 transition-transform">{{ totalDownloads }}</div>
             <div class="text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-widest">Global Downloads</div>
           </div>
           <div class="text-center group">
-            <div class="text-4xl font-black text-transparent bg-clip-text bg-linear-to-br from-purple-600 to-pink-500 mb-1 group-hover:scale-110 transition-transform">8</div>
-            <div class="text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-widest">Languages Supported</div>
+            <div class="flex items-center justify-center gap-1 text-4xl font-black text-transparent bg-clip-text bg-linear-to-br from-yellow-500 to-orange-400 mb-1 group-hover:scale-110 transition-transform">
+              {{ averageRating }} <Icon name="heroicons:star-solid" class="w-8 h-8 text-yellow-400" />
+            </div>
+            <div class="text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-widest">Average Rating</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 </template>
+
+<script setup>
+import { computed } from 'vue';
+import appsData from '~/app/data/appsData.json';
+
+const totalApps = computed(() => {
+  let count = 0;
+  Object.values(appsData).forEach(category => {
+    count += category.length;
+  });
+  return count;
+});
+
+const totalDownloads = computed(() => {
+  let count = 0;
+  Object.values(appsData).forEach(category => {
+    category.forEach(app => {
+      if (app.playStoreData?.maxInstalls) count += app.playStoreData.maxInstalls;
+    });
+  });
+  
+  if (count >= 1000000) return (count / 1000000).toFixed(1).replace(/\.0$/, '') + 'M+';
+  if (count >= 1000) return (count / 1000).toFixed(1).replace(/\.0$/, '') + 'K+';
+  return count + '+';
+});
+
+const averageRating = computed(() => {
+  let totalScore = 0;
+  let scoreCount = 0;
+  
+  Object.values(appsData).forEach(category => {
+    category.forEach(app => {
+      const score = app.appStoreData?.score || app.playStoreData?.score;
+      if (score && score > 0) {
+        totalScore += Number(score);
+        scoreCount++;
+      }
+    });
+  });
+  
+  return scoreCount > 0 ? (totalScore / scoreCount).toFixed(1) : '0.0';
+});
+</script>

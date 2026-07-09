@@ -10,7 +10,17 @@
     @click="$emit('open-modal', app)"
   >
     <!-- Ranking Badge -->
-    <div v-if="index" class="absolute -top-3 -left-3 z-10 flex items-center justify-center w-9 h-9 bg-linear-to-br from-gray-900 to-gray-800 dark:from-white dark:to-gray-200 text-white dark:text-black font-bold rounded-full shadow-lg text-sm border-2 border-white dark:border-gray-800 group-hover:scale-110 transition-transform">
+    <div 
+      v-if="index" 
+      :class="[
+        'absolute z-20 flex items-center justify-center font-black rounded-full shadow-lg border-2 transition-transform group-hover:scale-110 group-hover:rotate-3',
+        index === 1 ? '-top-4 -left-4 w-12 h-12 bg-linear-to-br from-yellow-400 to-amber-500 text-white border-yellow-100 text-xl shadow-yellow-500/50 ring-4 ring-yellow-400/30' : 
+        index === 2 ? '-top-3 -left-3 w-10 h-10 bg-linear-to-br from-gray-300 to-gray-500 text-white border-white text-lg shadow-gray-400/50 ring-4 ring-gray-300/30' : 
+        index === 3 ? '-top-3 -left-3 w-10 h-10 bg-linear-to-br from-orange-400 to-orange-700 text-white border-orange-100 text-lg shadow-orange-500/50 ring-4 ring-orange-500/30' : 
+        '-top-3 -left-3 w-9 h-9 bg-linear-to-br from-gray-900 to-gray-800 dark:from-white dark:to-gray-200 text-white dark:text-black text-sm border-white dark:border-gray-800'
+      ]"
+    >
+      <span v-if="index === 1" class="absolute -top-4 -right-3 text-2xl drop-shadow-md rotate-12 origin-bottom-left animate-bounce" style="animation-duration: 2s;">👑</span>
       #{{ index }}
     </div>
 
@@ -19,7 +29,7 @@
       <div
         :class="`w-20 h-20 rounded-3xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 ${getColorClasses(color).bg} text-white shadow-lg group-hover:scale-110 overflow-hidden`"
       >
-        <img v-if="isUrl(app.icon)" :src="app.icon" :alt="app.title" class="w-full h-full object-cover" />
+        <NuxtImg v-if="isUrl(app.icon)" :src="app.icon" :alt="app.title" class="w-full h-full object-cover" format="webp" loading="lazy" referrerpolicy="no-referrer" />
         <span v-else class="text-4xl">{{ app.icon }}</span>
       </div>
 
@@ -75,7 +85,7 @@
       <div
         :class="`w-16 h-16 rounded-2xl flex items-center justify-center shrink-0 transition-all duration-300 ${getColorClasses(color).bg} text-white shadow-lg group-hover:scale-110 overflow-hidden`"
       >
-        <img v-if="isUrl(app.icon)" :src="app.icon" :alt="app.title" class="w-full h-full object-cover" />
+        <NuxtImg v-if="isUrl(app.icon)" :src="app.icon" :alt="app.title" class="w-full h-full object-cover" format="webp" loading="lazy" referrerpolicy="no-referrer" />
         <span v-else class="text-3xl">{{ app.icon }}</span>
       </div>
 
