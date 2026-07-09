@@ -1,17 +1,11 @@
 <template>
   <section id="apps" class="py-16 px-4 sm:px-6 lg:px-8">
     <div class="max-w-7xl mx-auto">
-      <!-- Header -->
-      <div class="text-center mb-16">
-        <div
-          class="inline-flex items-center gap-3 bg-linear-to-r from-blue-600 to-indigo-600 text-white px-6 py-3 rounded-2xl mb-6"
-        >
-          <Icon name="heroicons:rocket-launch" class="w-6 h-6" />
-          <span class="font-semibold">My Apps Portfolio</span>
-        </div>
-        <h2 class="text-4xl font-bold text-gray-900 dark:text-white mb-6">Discover My Apps</h2>
-        <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-          Explore my collection of educational and utility apps that have helped thousands of users worldwide.
+      <!-- Section Header -->
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-linear-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300 mb-6 tracking-tight">Global Mobile Portfolio</h2>
+        <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto font-light leading-relaxed">
+          An extensive showcase of published, high-impact mobile applications serving thousands of users worldwide.
         </p>
       </div>
 

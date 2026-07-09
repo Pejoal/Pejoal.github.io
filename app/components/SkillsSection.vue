@@ -1,19 +1,18 @@
 <template>
   <section id="skills" class="py-20 px-4 bg-linear-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
     <div class="max-w-7xl mx-auto">
-      <!-- Header -->
       <div class="text-center mb-16" data-aos="fade-up">
-        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">Skills & Expertise</h2>
-        <p class="text-xl text-gray-600 dark:text-gray-300">Full-stack, DevOps, and human-centered soft skills</p>
+        <h2 class="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-linear-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300 mb-6 tracking-tight">Technical Arsenal & Leadership</h2>
+        <p class="text-xl text-gray-600 dark:text-gray-300 font-light max-w-2xl mx-auto">A comprehensive blend of modern engineering practices, cloud infrastructure, and strategic problem-solving.</p>
       </div>
 
       <!-- ==================== TECHNICAL SKILLS ==================== -->
       <div class="space-y-16 mb-20">
         <!-- Frontend -->
         <SkillCategory
-          title="Frontend"
+          title="Frontend Architecture"
           icon="heroicons:code-bracket"
-          color="from-blue-500 to-cyan-500"
+          color="from-fuchsia-500 to-cyan-500"
           :skills="frontendSkills"
           :progress-ref="frontendProgress"
           data-aos="fade-right"
@@ -21,9 +20,9 @@
 
         <!-- Mobile -->
         <SkillCategory
-          title="Mobile"
+          title="Mobile Ecosystems"
           icon="heroicons:device-phone-mobile"
-          color="from-indigo-500 to-purple-500"
+          color="from-indigo-500 via-purple-500 to-pink-500"
           :skills="mobileSkills"
           :progress-ref="mobileProgress"
           data-aos="fade-left"
@@ -31,9 +30,9 @@
 
         <!-- Backend -->
         <SkillCategory
-          title="Backend"
+          title="Backend Engineering"
           icon="heroicons:server"
-          color="from-green-500 to-emerald-500"
+          color="from-blue-600 to-cyan-400"
           :skills="backendSkills"
           :progress-ref="backendProgress"
           data-aos="fade-right"
@@ -41,9 +40,9 @@
 
         <!-- Database & DevOps -->
         <SkillCategory
-          title="Database & DevOps"
+          title="Database & Cloud Infrastructure"
           icon="heroicons:cog-6-tooth"
-          color="from-orange-500 to-red-500"
+          color="from-orange-500 to-rose-500"
           :skills="dbDevOpsSkills"
           :progress-ref="dbDevOpsProgress"
           data-aos="fade-left"
@@ -51,9 +50,9 @@
 
         <!-- Testing & Tools -->
         <SkillCategory
-          title="Testing & Tools"
+          title="Testing & Dev Workflow"
           icon="heroicons:beaker"
-          color="from-pink-500 to-rose-500"
+          color="from-emerald-400 to-teal-500"
           :skills="testingToolsSkills"
           :progress-ref="testingToolsProgress"
           data-aos="fade-right"
@@ -62,8 +61,8 @@
 
       <!-- ==================== SOFT SKILLS ==================== -->
       <div>
-        <h3 class="text-2xl font-bold text-center text-gray-800 dark:text-white mb-10" data-aos="fade-up">
-          Soft Skills
+        <h3 class="text-3xl font-extrabold text-center text-transparent bg-clip-text bg-linear-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300 mb-12 tracking-tight" data-aos="fade-up">
+          Strategic Leadership
         </h3>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           <div
@@ -74,11 +73,12 @@
             :data-aos-delay="i * 100"
           >
             <div
-              class="w-16 h-16 mb-4 rounded-full bg-linear-to-br from-emerald-400 to-teal-500 flex items-center justify-center shadow-lg"
+              class="w-20 h-20 mb-6 rounded-2xl bg-linear-to-br from-gray-900 to-gray-800 dark:from-gray-700 dark:to-gray-600 flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300 relative"
             >
-              <Icon :name="skill.icon" class="w-8 h-8 text-white" />
+              <div class="absolute inset-0 rounded-2xl bg-linear-to-br from-emerald-400 to-teal-500 opacity-0 group-hover:opacity-20 transition-opacity blur-md"></div>
+              <Icon :name="skill.icon" class="w-10 h-10 text-white relative z-10" />
             </div>
-            <h4 class="font-bold text-gray-900 dark:text-white mb-2">{{ skill.name }}</h4>
+            <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-2">{{ skill.name }}</h4>
             <p class="text-sm text-gray-600 dark:text-gray-400 mb-3">{{ skill.desc }}</p>
             <div class="w-full h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
               <div
@@ -147,22 +147,12 @@ const testingToolsSkills = [
 // Soft Skills
 // ──────────────────────────────────────
 const softSkills = [
-  { name: 'Problem Solving', level: 94, desc: 'Breaking down complex challenges', icon: 'heroicons:puzzle-piece' },
-  {
-    name: 'Communication',
-    level: 90,
-    desc: 'Clear, concise, and empathetic',
-    icon: 'heroicons:chat-bubble-left-right',
-  },
-  { name: 'Team Collaboration', level: 88, desc: 'Thriving in cross-functional teams', icon: 'heroicons:user-group' },
-  { name: 'Time Management', level: 91, desc: 'Delivering on time, every time', icon: 'heroicons:clock' },
-  {
-    name: 'Adaptability',
-    level: 89,
-    desc: 'Quick learner in dynamic environments',
-    icon: 'heroicons:arrows-up-down',
-  },
-  { name: 'Creativity', level: 87, desc: 'Innovative UX & feature ideas', icon: 'heroicons:light-bulb' },
+  { name: 'Architectural Vision', level: 94, desc: 'Designing resilient, scalable systems from the ground up.', icon: 'heroicons:puzzle-piece' },
+  { name: 'Executive Communication', level: 90, desc: 'Translating complex technical concepts for stakeholders.', icon: 'heroicons:chat-bubble-left-right' },
+  { name: 'Cross-Functional Leadership', level: 88, desc: 'Driving alignment between product, design, and engineering.', icon: 'heroicons:user-group' },
+  { name: 'Agile Delivery', level: 91, desc: 'Iterative, rapid shipping without compromising quality.', icon: 'heroicons:clock' },
+  { name: 'Strategic Adaptability', level: 89, desc: 'Pivoting effectively in fast-paced tech environments.', icon: 'heroicons:arrows-up-down' },
+  { name: 'UX-Driven Engineering', level: 87, desc: 'Engineering with a relentless focus on the end-user.', icon: 'heroicons:light-bulb' },
 ];
 
 // ──────────────────────────────────────
