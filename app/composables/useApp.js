@@ -252,6 +252,14 @@ export const useAppData = () => {
       category: 'test',
     },
     {
+      id: 'com.pejoal.intelligence_test',
+      iosId: 'id6782981607',
+      title: 'Intelligence Test',
+      description: 'Assess your intelligence with a variety of tests',
+      icon: 'https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6e/72/f9/6e72f9fd-0015-0c9d-dc18-6ba7e5da5f79/Placeholder.mill/400x400bb-75.webp',
+      category: 'test',
+    },
+    {
       id: null,
       iosId: 'pro-iq-test/id6754533659',
       title: 'IQ Test',
