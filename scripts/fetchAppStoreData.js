@@ -110,10 +110,16 @@ async function main() {
       console.log(`  Fetching Android data for com.pejoal.${app.id}...`);
       playData = await fetchPlayStoreData(`com.pejoal.${app.id}`);
       if (playData) {
-        app.playStoreData = playData;
         app.title = playData.title || app.title;
         app.description = playData.summary || app.description;
         app.icon = playData.icon || app.icon;
+
+        delete playData.title;
+        delete playData.summary;
+        delete playData.icon;
+        delete playData.description;
+
+        app.playStoreData = playData;
       }
     }
 
@@ -121,12 +127,16 @@ async function main() {
       console.log(`  Fetching iOS data for ${app.iosId}...`);
       const iosData = await fetchAppStoreData(app.iosId);
       if (iosData) {
-        app.appStoreData = iosData;
         if (!playData) {
           app.title = iosData.title || app.title;
           app.description = iosData.description || app.description;
           app.icon = iosData.icon || app.icon;
         }
+
+        delete iosData.title;
+        delete iosData.icon;
+
+        app.appStoreData = iosData;
       }
     }
     
