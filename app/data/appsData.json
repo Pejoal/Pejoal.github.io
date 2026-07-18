@@ -2,7 +2,7 @@
   {
     "id": "learn_arabic_app",
     "iosId": "arabic-master-traveler-guide/id6758959436",
-    "title": "Learn Arabic offline no ads",
+    "title": "Learn Arabic offline",
     "description": "Learn to speak Arabic offline! Master travel phrases, pronunciation &amp; culture",
     "icon": "https://play-lh.googleusercontent.com/p_lruHlLYUMt7KoiEYd-5OyGYJFiPmd288g1YNeubvCUf_Ysikmm6HKOAWG0zQz-gslNPAEXIPz0mas2z49x",
     "category": "arabic",
@@ -44,8 +44,8 @@
         "4": 0,
         "5": 0
       },
-      "installs": "50+",
-      "maxInstalls": 71,
+      "installs": "100+",
+      "maxInstalls": 104,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -136,7 +136,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 1077,
+      "maxInstalls": 1462,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -226,8 +226,8 @@
         "4": 0,
         "5": 0
       },
-      "installs": "500+",
-      "maxInstalls": 935,
+      "installs": "1,000+",
+      "maxInstalls": 1138,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -275,7 +275,7 @@
   {
     "id": "myapp",
     "iosId": "deutschlernen-a1-c2-offline/id6754511381",
-    "title": "Learn German offline",
+    "title": "Learn German offline beginners",
     "description": "Vocabulary, grammar &amp; dialogues interactively from A1 to C2",
     "icon": "https://play-lh.googleusercontent.com/jrwjSzmgTwGp53FL42py4dUtcg8gX9Eb4555mans05JPEKs59IoVfWPj9wgeHgAV1jhpSxEd1NTXklvFR6f36Xc",
     "category": "german",
@@ -318,7 +318,7 @@
         "5": 0
       },
       "installs": "10,000+",
-      "maxInstalls": 13208,
+      "maxInstalls": 13483,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -409,7 +409,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 2405,
+      "maxInstalls": 2456,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -500,7 +500,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 1434,
+      "maxInstalls": 1498,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -591,7 +591,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 3113,
+      "maxInstalls": 3304,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -682,7 +682,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 184,
+      "maxInstalls": 197,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -761,19 +761,19 @@
         "https://play-lh.googleusercontent.com/rlcMNseQneItD3R4Hb-g0rWGn2Q02KWDf-NEk0gv7QI-d-lJijQWe1A4SiBGN8MZohc3swNrLara_kUL3AC-h8o",
         "https://play-lh.googleusercontent.com/0uZw6VxxUimevoMYCuQM9029XMKYvjnl3zv-7_pd83_2tE-TciLvhucxkzIf_KurtNd_o8Jl55DLzDDwyj6FZA"
       ],
-      "score": 5,
-      "scoreText": "5.0",
-      "ratings": 178,
+      "score": 4.714286,
+      "scoreText": "4.7",
+      "ratings": 216,
       "reviews": 0,
       "histogram": {
         "1": 0,
         "2": 0,
-        "3": 0,
+        "3": 30,
         "4": 0,
-        "5": 178
+        "5": 185
       },
       "installs": "10,000+",
-      "maxInstalls": 17149,
+      "maxInstalls": 22862,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -852,19 +852,19 @@
         "https://play-lh.googleusercontent.com/SaMJYbPQwHunphxrqq9nW8HWF3mZUiEvQ01dayTunQjUSdRUEkMgR9cwEhDfg7wmgkf2WZJLhtwiPl1cLRM9qLk",
         "https://play-lh.googleusercontent.com/vSN6yNuRq0GYd6onRdXUk_OdATkLcVcq5JBAEkvQbhGIs4nC1My8lzIk71NTLJvop559LLwuvJvoIAGbWPj9"
       ],
-      "score": 0,
-      "scoreText": "0.0",
-      "ratings": 0,
-      "reviews": 0,
+      "score": 5,
+      "scoreText": "5.0",
+      "ratings": 477,
+      "reviews": 1,
       "histogram": {
         "1": 0,
         "2": 0,
         "3": 0,
         "4": 0,
-        "5": 0
+        "5": 477
       },
       "installs": "10,000+",
-      "maxInstalls": 38494,
+      "maxInstalls": 41287,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -955,7 +955,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 2938,
+      "maxInstalls": 3065,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1046,7 +1046,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 1429,
+      "maxInstalls": 1744,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1137,7 +1137,7 @@
         "5": 0
       },
       "installs": "10,000+",
-      "maxInstalls": 25197,
+      "maxInstalls": 26573,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1228,7 +1228,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 2149,
+      "maxInstalls": 2278,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1319,7 +1319,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 2958,
+      "maxInstalls": 3208,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1409,8 +1409,8 @@
         "4": 0,
         "5": 0
       },
-      "installs": "500+",
-      "maxInstalls": 947,
+      "installs": "1,000+",
+      "maxInstalls": 1083,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1501,7 +1501,7 @@
         "5": 0
       },
       "installs": "10,000+",
-      "maxInstalls": 11398,
+      "maxInstalls": 11814,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1592,7 +1592,7 @@
         "5": 0
       },
       "installs": "5,000+",
-      "maxInstalls": 6628,
+      "maxInstalls": 6786,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1612,8 +1612,8 @@
       "contentRatingDescription": "",
       "adSupported": true,
       "released": "Oct 28, 2025",
-      "updated": 1782398140000,
-      "version": "2.2.1",
+      "updated": 1784142459000,
+      "version": "2.2.4",
       "recentChanges": "",
       "comments": [],
       "descriptionHTML": "Discover Italian grammar with this app designed specifically for A1 and A2 learners. Build a strong foundation by mastering essential grammar topics such as verb conjugations, sentence structure, articles, pronouns, adjectives, and common everyday expressions. Each lesson provides clear explanations and practical examples, making it easy and enjoyable to learn.Interactive exercises and quizzes help reinforce your understanding and enable you to confidently use grammar in conversation and writing. Track your progress through structured lessons, motivating you to learn step-by-step and build your skills effectively.Whether you’re just starting Italian or want to improve your elementary grammar, this app offers a simple, user-friendly interface with offline access so you can study anytime, anywhere. Prepare yourself for real-world communication with solid Italian grammar skills. Start your Italian grammar journey today!"
@@ -1683,7 +1683,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 3889,
+      "maxInstalls": 4222,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1774,7 +1774,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 1387,
+      "maxInstalls": 1869,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1865,7 +1865,7 @@
         "5": 0
       },
       "installs": "10,000+",
-      "maxInstalls": 22773,
+      "maxInstalls": 24762,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1956,7 +1956,7 @@
         "5": 0
       },
       "installs": "10,000+",
-      "maxInstalls": 12138,
+      "maxInstalls": 12718,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2047,7 +2047,7 @@
         "5": 0
       },
       "installs": "10+",
-      "maxInstalls": 39,
+      "maxInstalls": 40,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2138,7 +2138,7 @@
         "5": 0
       },
       "installs": "500+",
-      "maxInstalls": 865,
+      "maxInstalls": 912,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2229,7 +2229,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 125,
+      "maxInstalls": 127,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2308,19 +2308,19 @@
         "https://play-lh.googleusercontent.com/hg6Sl7rLDke9WQhvklMUhoddhXGIso96RK3cO-ZPTQbHjwR2eMqNMqewT_GHJrczmKMJ0Qe6IevzXHTmd-tXF3k",
         "https://play-lh.googleusercontent.com/88tR80nxW2id-XgpKBqKIxDw1Kpu11A4ugiTXb9DhFmko4rYYrCypu2z3Zy_LopMip8e__e4KWcEnwnje2wv"
       ],
-      "score": 0,
-      "scoreText": "0.0",
-      "ratings": 0,
-      "reviews": 0,
+      "score": 4.714286,
+      "scoreText": "4.7",
+      "ratings": 54,
+      "reviews": 3,
       "histogram": {
         "1": 0,
         "2": 0,
         "3": 0,
-        "4": 0,
-        "5": 0
+        "4": 15,
+        "5": 38
       },
       "installs": "1,000+",
-      "maxInstalls": 1933,
+      "maxInstalls": 2501,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2368,7 +2368,7 @@
   {
     "id": "new_iq_test",
     "iosId": "iq-master-brain-games-test/id6759578114",
-    "title": "IQ Logic Test offline",
+    "title": "Brain Training offline",
     "description": "Test your IQ score with brain training games, logic puzzles &amp; memory challenges.",
     "icon": "https://play-lh.googleusercontent.com/Qw9woLtzMqoQFKB1FBHnkRrmDJP79BTYOvW2NajwB14tS-5cQSLxHcU_i7nI5XQP3BRuCesnsM_l8AGJx466WQ",
     "category": "test",
@@ -2410,7 +2410,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 1808,
+      "maxInstalls": 1903,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2458,7 +2458,7 @@
   {
     "id": "brain_test",
     "iosId": "brain-test-iq-pairs-games/id6759935676",
-    "title": "Brain Test: IQ offline no ads",
+    "title": "IQ Cognitive Test offline",
     "description": "nice brain test with IQ score. Memory, logic, reaction time &amp; spatial games.",
     "icon": "https://play-lh.googleusercontent.com/Kaoc-4uYxfOH7WO3IFnq6Sz-yc5Mt64zF_oPRDiyeJK3eB9oPpacpwDKrhB0XdV8GnG5gdnEnpAxX4DgVY7m",
     "category": "test",
@@ -2489,19 +2489,19 @@
         "https://play-lh.googleusercontent.com/hQKyd7ywesB2A5TGpjdsA4YEio3oGbzh2DeOu9QpZCdRpNLzUjFI0lZerY_lwmFOZ7N0vHiT4hRini1fu2C3",
         "https://play-lh.googleusercontent.com/CxBaSthJFQvuTqoWWpAZUEYGn4rXhAFotY1Jz6ih_PZZt1HHRAo5eMeJxo4Rsmm-g-ctSrsBrIdJJgUgCJ9JZQ"
       ],
-      "score": 0,
-      "scoreText": "0.0",
-      "ratings": 0,
-      "reviews": 0,
+      "score": 5,
+      "scoreText": "5.0",
+      "ratings": 55,
+      "reviews": 1,
       "histogram": {
         "1": 0,
         "2": 0,
         "3": 0,
         "4": 0,
-        "5": 0
+        "5": 55
       },
       "installs": "1,000+",
-      "maxInstalls": 2750,
+      "maxInstalls": 3030,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2549,8 +2549,8 @@
   {
     "id": "iq_test",
     "iosId": "iq-test-pro-brain-training/id6756730514",
-    "title": "IQ Test - Brain Training",
-    "description": "Boost IQ with scientific tests, puzzles, and detailed performance analysis.",
+    "title": "IQ Test Brain Training",
+    "description": "Solve logic puzzles, test your intelligence quotient, and improve mental focus",
     "icon": "https://play-lh.googleusercontent.com/S03KZk-g_m9z5JxcScuPLGb07bbNPDF_5EK7BIokQSJuacwM8ZMRa4ZTzSGX9GFHI7Iw-Coc3n0fE63mupPHog",
     "category": "test",
     "playStoreData": {
@@ -2580,19 +2580,19 @@
         "https://play-lh.googleusercontent.com/c5Dtld0Iw_a6GhmBD60Qi2lmmSKmf_pbl2pLDeoMvX7qlJgK7TgPLWzYLkAawxTUEKLpfrjyHNbtffQRH8wbJA",
         "https://play-lh.googleusercontent.com/EMLe45d5chxE5wWog6XQXWJ7XIVVC3qPd7Cho-_wQpm_RDzSfxsBv08Pw8rTAT-JW0QXc8V2qOfs9TzT4CMUuw"
       ],
-      "score": 3.5714285,
-      "scoreText": "3.6",
-      "ratings": 176,
+      "score": 3.25,
+      "scoreText": "3.2",
+      "ratings": 182,
       "reviews": 4,
       "histogram": {
-        "1": 50,
+        "1": 68,
         "2": 0,
         "3": 0,
-        "4": 50,
-        "5": 75
+        "4": 45,
+        "5": 68
       },
       "installs": "10,000+",
-      "maxInstalls": 15447,
+      "maxInstalls": 15983,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2612,11 +2612,11 @@
       "contentRatingDescription": "",
       "adSupported": true,
       "released": "Sep 5, 2025",
-      "updated": 1780495030000,
-      "version": "3.4.0",
+      "updated": 1784119438000,
+      "version": "3.5.1",
       "recentChanges": "",
       "comments": [],
-      "descriptionHTML": "Unlock Your Potential with the Ultimate IQ Test, Brain Training &amp; One‑Stroke Puzzle App!<br><br>Are you ready to challenge your mind and discover your true intellectual potential? IQ Test: Brain Training &amp; Logic offers a comprehensive suite of scientifically designed tests—plus a fun One‑Stroke mode—to evaluate and improve your cognitive abilities.  Whether you&#39;re preparing for an assessment, love solving puzzles, or want a quick daily brain workout, this app is your perfect mental gym.<br><br>## Key Features<br>🧠 Diverse Test Categories:<br>- Quick Logic: Sharpen your critical thinking with rapid-fire logic puzzles.<br>- Pattern Recognition: Test your ability to spot complex visual patterns and sequences.<br>- Spatial Reasoning: Enhance your ability to visualize and manipulate 2D and 3D shapes.<br>- Verbal Reasoning: Improve your vocabulary, analogy skills, and verbal logic.<br>- Shape Builder: Unique memory and spatial reconstruction challenges.<br>- One‑Stroke Puzzles: Draw the entire shape in a single stroke—no lifting your finger—to train planning, focus, and spatial thinking.<br><br>## Detailed Analysis &amp; Explanations<br>Don&#39;t just get a score—understand it! Every question comes with a detailed explanation of the correct answer, helping you learn and improve.  Track your progress over time with intuitive charts and history logs.<br><br>## Gamified Experience<br>- Earn XP for every correct answer.<br>- Level up and unlock achievements as you master different cognitive skills.<br>- Stay motivated with a sleek, modern interface designed for focus.<br><br>## Multi-Language Support<br>Fully localized in English, German (Deutsch), Spanish (Español), French (Français), and Russian (Русский).  Test yourself in your native language for the most accurate results.<br><br>## Why Choose IQ Test: Brain Training &amp; Logic?<br>Unlike other apps that offer random riddles, our tests are structured to mimic real standardized IQ assessments while still keeping training fun with modes like One‑Stroke.  We focus on measurable improvement, providing you with the tools to train your brain effectively.<br><br>Download now and start your journey to a sharper mind!"
+      "descriptionHTML": "Ready to discover your true cognitive potential? IQ Test &amp; Brain Training is the ultimate app designed to challenge your mind, measure your intelligence quotient, and improve your mental sharpness every single day.<br>​Whether you are preparing for a Mensa practice test, looking for a daily cognitive workout, or just love solving complex logic puzzles, this app provides a scientifically backed approach to testing your brain power. Our adaptive algorithms ensure that every question matches your skill level, giving you the most accurate cognitive assessment possible.<br>​🧠 Comprehensive IQ Testing<br>​Take our standardized intelligence test to evaluate your capabilities across multiple domains. Our assessment includes:<br>​Spatial reasoning tests: Visualize and manipulate complex 3D shapes.<br>​Logical deduction: Solve pattern recognition challenges and Raven matrices.<br>​Mathematical aptitude: Boost your mental math and number-crunching speed.<br>​Memory games: Test both short-term recall and working memory.<br>​⚡ Daily Cognitive Workout<br>​Don&#39;t just test your intelligence—improve it! Use our daily brain games to build a consistent mental habit. Regular neuroplasticity games have been shown to help adults and students improve focus, enhance problem-solving skills, and keep the mind agile. Track your progress over time and watch your brain age improve.<br>​🎯 Key Features:<br>​Accurate IQ Score: Get a detailed breakdown of your mental strengths and weaknesses.<br>​Offline Brain Games: No internet? No problem. Practice your logic puzzles offline anywhere, anytime.<br>​Personalized Analytics: Track your cognitive development with detailed charts and history.<br>​Interview &amp; Exam Prep: An excellent tool for aptitude test practice and spatial reasoning exams.<br>​Fun for All Ages: From students testing their brain power to adults seeking a mental workout.<br>​Unlock your inner genius today. Download IQ Test &amp; Brain Training and start your journey toward a sharper, faster, and more focused mind!"
     },
     "appStoreData": {
       "screenshots": [],
@@ -2683,7 +2683,7 @@
         "5": 0
       },
       "installs": "10+",
-      "maxInstalls": 15,
+      "maxInstalls": 33,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2800,7 +2800,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 167,
+      "maxInstalls": 170,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2881,17 +2881,17 @@
       ],
       "score": 4.5625,
       "scoreText": "4.6",
-      "ratings": 95,
+      "ratings": 99,
       "reviews": 13,
       "histogram": {
-        "1": 5,
+        "1": 6,
         "2": 0,
-        "3": 5,
-        "4": 5,
-        "5": 77
+        "3": 6,
+        "4": 6,
+        "5": 80
       },
-      "installs": "1,000+",
-      "maxInstalls": 4896,
+      "installs": "5,000+",
+      "maxInstalls": 5071,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3000,7 +3000,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 114,
+      "maxInstalls": 155,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3073,7 +3073,7 @@
         "5": 0
       },
       "installs": "10+",
-      "maxInstalls": 20,
+      "maxInstalls": 22,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3164,7 +3164,7 @@
         "5": 0
       },
       "installs": "10+",
-      "maxInstalls": 15,
+      "maxInstalls": 18,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3255,7 +3255,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 100,
+      "maxInstalls": 112,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3346,7 +3346,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 108,
+      "maxInstalls": 118,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3419,7 +3419,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 208,
+      "maxInstalls": 214,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3510,7 +3510,7 @@
         "5": 0
       },
       "installs": "500+",
-      "maxInstalls": 527,
+      "maxInstalls": 529,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3601,7 +3601,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 164,
+      "maxInstalls": 165,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3649,7 +3649,7 @@
   {
     "id": "connect_2048",
     "iosId": "connect-merge-2048-puzzle/id6755743095",
-    "title": "2048 connect offline no ads",
+    "title": "2048 connect offline",
     "description": "Swipe, connect &amp; merge numbers up to 2048! Relaxing offline logic puzzle game.",
     "icon": "https://play-lh.googleusercontent.com/g15x-qR_nY7PDmFxY4G21RlTHz8Mk53aPqwFHC9eZfEfgpsswjkHeEgrWDPfNI3AY5JYdDG3n7UGKLJtoPAQ",
     "category": "game",
@@ -3692,7 +3692,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 316,
+      "maxInstalls": 370,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3783,7 +3783,7 @@
         "5": 0
       },
       "installs": "50+",
-      "maxInstalls": 57,
+      "maxInstalls": 61,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3874,7 +3874,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 112,
+      "maxInstalls": 117,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3953,19 +3953,19 @@
         "https://play-lh.googleusercontent.com/iLr1FCjNo47opKAkHyeAvlGOphtQLo8tZj0pKSyIpVHXldFmLTUk00deFxyDkVj_V5osYjfx8QmYSIvbekWR",
         "https://play-lh.googleusercontent.com/NHB7RaRs5nalrfvU_EkPOJqTtsQuUnn32lY_EgTUBgcM9oU0Ole-I81LYnKrb9469co083vaW-YCh0jqyyMh"
       ],
-      "score": 4.8,
+      "score": 4.8333335,
       "scoreText": "4.8",
-      "ratings": 180,
+      "ratings": 217,
       "reviews": 0,
       "histogram": {
         "1": 0,
         "2": 0,
         "3": 0,
         "4": 36,
-        "5": 144
+        "5": 180
       },
       "installs": "5,000+",
-      "maxInstalls": 5560,
+      "maxInstalls": 7104,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -4056,7 +4056,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 3262,
+      "maxInstalls": 3927,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -4089,14 +4089,14 @@
       "price": 0,
       "free": true,
       "currency": "USD",
-      "version": "1.3",
+      "version": "2.1.0",
       "recentChanges": "",
       "description": "Unlock the world of web development with Learn HTML! Whether you're a complete beginner or looking to sharpen your coding skills, our app provides a structured, interactive, and fun way to master HTML5.\n\nFrom basic tags to semantic structures, Learn HTML guides you through every step with bite-sized lessons and instant feedback from our helpful coding mascot.\n\nWHY YOU'LL LOVE LEARN HTML:\n- Interactive Lessons: Learn by doing with step-by-step HTML tutorials.\n- Real-Time Playground: Write code and see results instantly in our live editor.\n- Asset Manager: Easily insert images and media to build stunning web UI mockups.\n- Mascot Tips & Jokes: Stay motivated with friendly advice and dev humor.\n- Gamified Learning: Earn XP, unlock achievements, and maintain your coding streak!\n- Dark Mode Support: Code comfortably day or night with a premium interface.\n- 100% Offline Access: Learn anytime, anywhere—no internet required for lessons.\n\nWHAT YOU'LL MASTER:\n- HTML5 Fundamentals: Elements, attributes, and document structure.\n- Semantic HTML: Using tags correctly for SEO and accessibility.\n- Web Forms & Inputs: Building interactive user data collection.\n- Responsive Structure: Organizing content for any screen size.\n\nDownload Learn HTML now and transform your creative ideas into professional web structures!",
       "developer": "Pejoal Hanna",
       "genre": "Education",
       "released": "2026-01-05T08:00:00Z",
-      "updated": "2026-05-19T19:39:27Z",
-      "size": "53.2 MB",
+      "updated": "2026-07-10T06:52:27Z",
+      "size": "121.5 MB",
       "requiredOsVersion": "15.1",
       "contentRating": "4+"
     }
@@ -4147,7 +4147,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 2222,
+      "maxInstalls": 2544,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -4180,14 +4180,14 @@
       "price": 0,
       "free": true,
       "currency": "USD",
-      "version": "1.3",
+      "version": "2.1.0",
       "recentChanges": "",
       "description": "Unlock the world of web design with Learn CSS! Whether you're a complete beginner or looking to sharpen your styling skills, our app provides a structured, interactive, and fun way to master Cascading Style Sheets.\n\nFrom basic selectors to advanced layouts with Flexbox and Grid, Learn CSS guides you through every step with bite-sized lessons and instant feedback.\n\nWHY YOU'LL LOVE LEARN CSS:\n- Interactive Lessons: Learn by doing with step-by-step CSS tutorials.\n- CSS Playground: Write code and see results instantly in our real-time editor.\n- Daily Tips & Quizzes: Stay sharp with daily coding insights and knowledge checks.\n- Gamified Learning: Earn XP, unlock achievements, and maintain your coding streak!\n- Professional Assets: Access built-in images and media to build stunning UI mockups.\n- Dark Mode Support: Code comfortably day or night with a premium dark interface.\n- Offline Access: Learn anytime, anywhere—no internet connection required for core lessons.\n\nWHAT YOU'LL MASTER:\n- CSS Fundamentals: Selectors, colors, fonts, and box model.\n- Responsive Design: Making websites look great on any screen.\n- Modern Layouts: Flexbox and CSS Grid made easy.\n- Animations & Transitions: Adding life to your web projects.\n\nDownload Learn CSS now and transform your creative ideas into professional web designs!",
       "developer": "Pejoal Hanna",
       "genre": "Education",
       "released": "2026-01-05T08:00:00Z",
-      "updated": "2026-05-19T16:12:04Z",
-      "size": "47.4 MB",
+      "updated": "2026-07-10T06:47:57Z",
+      "size": "115.7 MB",
       "requiredOsVersion": "15.1",
       "contentRating": "4+"
     }
@@ -4238,7 +4238,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 2432,
+      "maxInstalls": 2841,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -4266,19 +4266,19 @@
     },
     "appStoreData": {
       "screenshots": [],
-      "score": 5,
-      "reviews": 1,
+      "score": 3,
+      "reviews": 2,
       "price": 0,
       "free": true,
       "currency": "USD",
-      "version": "1.3",
+      "version": "2.1.0",
       "recentChanges": "",
       "description": "Master the Language of the Web\n\nYour complete learning companion for JavaScript - from absolute beginner to confident developer!\n\n Why Choose Learn JavaScript?\nTransform your career and unlock endless opportunities in web development. Whether you're starting from scratch or sharpening your skills, our app makes learning JavaScript engaging, effective, and fun!\n\n Key Features\n Comprehensive Interactive Lessons\nLearn at your own pace with bite-sized, structured lessons covering everything from the basics to advanced concepts. Each lesson is designed to be clear, practical, and immediately applicable.\n\n Interactive Quizzes\nTest your understanding after every lesson with carefully crafted quizzes. Get instant feedback and reinforce what you've learned.\n\n Built-in Code Playground\nPractice makes perfect! Write and run real JavaScript code directly in the app. Experiment, make mistakes, and learn by doing - all in a safe environment.\n\n Daily Coding Challenges\nBuild a consistent learning habit with fresh challenges every day. Keep your skills sharp and your mind engaged.\n\n Achievement System\nCelebrate your progress! Earn XP points, level up, unlock badges, and track your learning streaks. Stay motivated with visible milestones.\n\n Dark Mode\nLearn comfortably day or night with our beautiful dark mode interface. Easy on the eyes, perfect for any environment.\n\n Multi-Language Support\nLearn JavaScript in your preferred language - available in English, German, and Arabic.\n\n What You'll Master\nFoundations: Variables, data types, operators, and basic syntax\nControl Flow: Make decisions and create loops in your code\nFunctions: Write reusable, modular code\nData Structures: Master arrays and objects\nModern JavaScript: ES6+ features and best practices\nAsync Programming: Promises, async/await, and handling asynchronous operations\nDOM Manipulation: Bring websites to life with interactive elements\nEvent Handling: Respond to user interactions\nError Handling: Write robust, bug-free code\nObject-Oriented Programming: Build scalable applications\n Learn Through Play\nOur gamification system makes learning addictive in the best way:\n\nLevel Up: Watch yourself grow from beginner to expert\nEarn Badges: Collect achievements for major milestones\nStreak Tracking: Build momentum with daily learning habits\nXP Rewards: Get rewarded for every lesson and quiz completed\n Perfect For\nComplete Beginners: Never written a line of code? Start here!\nCareer Changers: Break into the tech industry\nStudents: Supplement your computer science studies\nProfessionals: Add JavaScript to your skill set\nHobbyists: Build your own websites and web apps\n Start Your Journey Today\nJoin thousands of learners worldwide who are mastering JavaScript. Whether you want to build websites, create web applications, or start a career in tech - your journey begins here.\n\nDownload now and write your first line of code in minutes!",
       "developer": "Pejoal Hanna",
       "genre": "Education",
       "released": "2026-01-06T08:00:00Z",
-      "updated": "2026-05-19T05:57:20Z",
-      "size": "53.6 MB",
+      "updated": "2026-07-10T06:47:58Z",
+      "size": "121.9 MB",
       "requiredOsVersion": "15.1",
       "contentRating": "4+"
     }
