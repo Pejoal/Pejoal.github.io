@@ -45,7 +45,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 104,
+      "maxInstalls": 201,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -136,7 +136,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 1462,
+      "maxInstalls": 1760,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -227,7 +227,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 1138,
+      "maxInstalls": 1342,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -318,7 +318,7 @@
         "5": 0
       },
       "installs": "10,000+",
-      "maxInstalls": 13483,
+      "maxInstalls": 13835,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -409,7 +409,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 2456,
+      "maxInstalls": 2559,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -500,7 +500,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 1498,
+      "maxInstalls": 1560,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -591,7 +591,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 3304,
+      "maxInstalls": 3501,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -682,7 +682,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 197,
+      "maxInstalls": 206,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -761,19 +761,19 @@
         "https://play-lh.googleusercontent.com/rlcMNseQneItD3R4Hb-g0rWGn2Q02KWDf-NEk0gv7QI-d-lJijQWe1A4SiBGN8MZohc3swNrLara_kUL3AC-h8o",
         "https://play-lh.googleusercontent.com/0uZw6VxxUimevoMYCuQM9029XMKYvjnl3zv-7_pd83_2tE-TciLvhucxkzIf_KurtNd_o8Jl55DLzDDwyj6FZA"
       ],
-      "score": 4.714286,
-      "scoreText": "4.7",
-      "ratings": 216,
+      "score": 4.7777777,
+      "scoreText": "4.8",
+      "ratings": 243,
       "reviews": 0,
       "histogram": {
         "1": 0,
         "2": 0,
-        "3": 30,
+        "3": 27,
         "4": 0,
-        "5": 185
+        "5": 216
       },
       "installs": "10,000+",
-      "maxInstalls": 22862,
+      "maxInstalls": 28433,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -852,19 +852,19 @@
         "https://play-lh.googleusercontent.com/SaMJYbPQwHunphxrqq9nW8HWF3mZUiEvQ01dayTunQjUSdRUEkMgR9cwEhDfg7wmgkf2WZJLhtwiPl1cLRM9qLk",
         "https://play-lh.googleusercontent.com/vSN6yNuRq0GYd6onRdXUk_OdATkLcVcq5JBAEkvQbhGIs4nC1My8lzIk71NTLJvop559LLwuvJvoIAGbWPj9"
       ],
-      "score": 5,
-      "scoreText": "5.0",
-      "ratings": 477,
-      "reviews": 1,
+      "score": 0,
+      "scoreText": "0.0",
+      "ratings": 0,
+      "reviews": 0,
       "histogram": {
         "1": 0,
         "2": 0,
         "3": 0,
         "4": 0,
-        "5": 477
+        "5": 0
       },
       "installs": "10,000+",
-      "maxInstalls": 41287,
+      "maxInstalls": 44810,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -955,7 +955,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 3065,
+      "maxInstalls": 3200,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1046,7 +1046,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 1744,
+      "maxInstalls": 2068,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1125,19 +1125,19 @@
         "https://play-lh.googleusercontent.com/44zvES7tSHG8I6Xddt4g3lDkePlh8tS8sMsJdfd-azygX6SaMvuxC30z7UsYZPqvIaP82a3gTZNHyViiZ9aoRQ",
         "https://play-lh.googleusercontent.com/VLPTAMei37sh2Azc22J5MhnKq4PZH2E4gbMQVxxk7x7e_fIfSLNYrcPevTogPMVbqNH8F2QA5mJ_joDSpzK4ww"
       ],
-      "score": 0,
-      "scoreText": "0.0",
-      "ratings": 0,
-      "reviews": 0,
+      "score": 5,
+      "scoreText": "5.0",
+      "ratings": 312,
+      "reviews": 2,
       "histogram": {
         "1": 0,
         "2": 0,
         "3": 0,
         "4": 0,
-        "5": 0
+        "5": 312
       },
       "installs": "10,000+",
-      "maxInstalls": 26573,
+      "maxInstalls": 28180,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1165,8 +1165,8 @@
     },
     "appStoreData": {
       "screenshots": [],
-      "score": 4.83333,
-      "reviews": 6,
+      "score": 4.57143,
+      "reviews": 7,
       "price": 0,
       "free": true,
       "currency": "USD",
@@ -1228,7 +1228,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 2278,
+      "maxInstalls": 2347,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1319,7 +1319,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 3208,
+      "maxInstalls": 3413,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1410,7 +1410,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 1083,
+      "maxInstalls": 1243,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1501,7 +1501,7 @@
         "5": 0
       },
       "installs": "10,000+",
-      "maxInstalls": 11814,
+      "maxInstalls": 12117,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1592,7 +1592,7 @@
         "5": 0
       },
       "installs": "5,000+",
-      "maxInstalls": 6786,
+      "maxInstalls": 6945,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1683,7 +1683,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 4222,
+      "maxInstalls": 4477,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1774,7 +1774,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 1869,
+      "maxInstalls": 2103,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1865,7 +1865,7 @@
         "5": 0
       },
       "installs": "10,000+",
-      "maxInstalls": 24762,
+      "maxInstalls": 26064,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1956,7 +1956,7 @@
         "5": 0
       },
       "installs": "10,000+",
-      "maxInstalls": 12718,
+      "maxInstalls": 13223,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2047,7 +2047,7 @@
         "5": 0
       },
       "installs": "10+",
-      "maxInstalls": 40,
+      "maxInstalls": 41,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2138,7 +2138,7 @@
         "5": 0
       },
       "installs": "500+",
-      "maxInstalls": 912,
+      "maxInstalls": 973,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2277,20 +2277,20 @@
   {
     "id": "genius",
     "iosId": "cortexa-adaptive-braintraining/id6760778618",
-    "title": "Brain Training: IQ Test",
+    "title": "IQ Test offline",
     "description": "Adaptive IQ brain training w/ Elo: logic, math, memory &amp; spatial drills.",
-    "icon": "https://play-lh.googleusercontent.com/8I21Wlke3s3KrPdNSm7Qo613GPf4w1vbNwPZQG28QiEpfybSPO03j-80IDn7E1ZVdoNBR5M-5xH83wdb7i8ruw",
+    "icon": "https://play-lh.googleusercontent.com/ppTKNTQJo1EBB7p5aZ1aSdIkFd0UK5R8uOhtmiZyJSLcnmAFd0I9GIJayTdjb9opA7dFLY4UQbq8nZjv-Wex",
     "category": "test",
     "playStoreData": {
       "screenshots": [
-        "https://play-lh.googleusercontent.com/RxobFGfR3zkiSlMFPa85y6t2YA0zZy60w3XsMubElGFXKSYWWSVdCgjiiqvvs23vzVKs59I4ATQ7ibY_kUikWg",
-        "https://play-lh.googleusercontent.com/FA2iuUaAKFQqZc7OPK1s9scz-inpo7eafooX38NKP5D78WOyuYspm009qGL88oBqz0TJi4XnzQXZnIrKSihsADk",
-        "https://play-lh.googleusercontent.com/EKBKFyAmws-CcWJWJ39EubAynsA3CjN4IXJaK13eVNw_guEwsca9ZfZ_P5Yh683BGUMxGGmIC3eYpRtqoKxyAQ",
-        "https://play-lh.googleusercontent.com/e9kD-Hzv5WYMJp9jIXdfR1GlYg7V-61PK2h6pFNlCC6E_wUhqszdLWBSWmxZKLRue-lSRzkJB4OB8-oq-kBW",
-        "https://play-lh.googleusercontent.com/p32_Q6zYHOFdwBh5xDa9KiOIHS3sy73-4gT9KfXw3r5HzhxuJHM4WCcR5GiyeNDs2WlNAHUdyiyFL04lDmz5qGY",
-        "https://play-lh.googleusercontent.com/e4c6X_BcbRcaWyUglPpEDe7KTYBI6_eqvCDcrzYcecisnwUwCXMfU8P6XoBiLFvCIQogskuK5XCtR-1LkrOHGg",
-        "https://play-lh.googleusercontent.com/CbQFL5fIgslgBgrR46bbR3f7IyJ7Pb8r2lhE-qXs_MvQvLJm65XHRPdkbc9dOT2d2f6f4g3NbIa422qJoz_ceA",
-        "https://play-lh.googleusercontent.com/-pbGKcBWp5QWygsex6a9CFAeh-2zpR5dBO_Q0QS9AN-o9hoz8H_QnBdEVt1g7ixQ4zc1yuXQBeC0WHbdTlX2G4Y",
+        "https://play-lh.googleusercontent.com/q2iebCyu4-w7hcJ9WFaRDObdJBrwyfs4HnpY7BWJqVY_iEk3qmXZwVFtdXWEgkT8BhuDOSEqp_MFOxoTwJ7DCA",
+        "https://play-lh.googleusercontent.com/f1utXEIHKrh6_6K2_1D-rC9Rugh_39_jx7fSvYQMsE-D4C5ySfKoKLA5mAPBYRtRG9xqhI7Zx7JQS73mi8k4nA",
+        "https://play-lh.googleusercontent.com/7nAsYYEWSFV6_nImqzd29A_jieYF0FC3i1yDGNv9ozMp5AjIXiNF3f2TGV0MoZjqs8Adrl0Rp1-ijV16-3g8",
+        "https://play-lh.googleusercontent.com/4gn2J01P0IJeSXzBMsXCeQAuTpoaMj9wol4YtumtX00oWIJVr6KscfvZUMjgabqbo47ZqsqrdY_GfyhSEhf_5Q",
+        "https://play-lh.googleusercontent.com/ZfxDnyw6Yh4P_QTuT-OyOOy0sBsCUKZsWW9gh8oYTMG9oqAVRLHFOfa0drN7-6pUvtyoeCC2SOtrDg5j7vWM5g",
+        "https://play-lh.googleusercontent.com/8WklnWzFf_qkQ-jtGGyVc_rAf0Vlm92YjLk663fZuZuhgZbB7Bs3odcJ6nN05j-sgJyCrDY33KiBz5lKJCC-",
+        "https://play-lh.googleusercontent.com/QVBwYuAZRtjZ614PzKwtet5Xx39wq8cSWWW2myG2RQ83DFOdoAEEOVQI5G4u41h_0t8H8uhT3qyhnQOcpO2R2A",
+        "https://play-lh.googleusercontent.com/aDEjJ_95mqxsXg1v4g2n25Ayk3eHZBxAF_qHHIssvQq3aBEx1PfjMmOI7XJ581rCj-FiQXT1Eqnl3fIDiNaI",
         "https://play-lh.googleusercontent.com/wZE8UepGt5sZOpZXLL70zwiWDJt-anJxhVcbnwIT7laK4AoYKwD2fT2KLg4ukshKzK6N5mjfM7lWNWTXP0XMOQ",
         "https://play-lh.googleusercontent.com/BjiuJwbAuSt_8ZCg7o2qSeCAXasTB-IRcyDqbpfh9CdXOTfJboYxVIw8KngjOFUsTJZcs9vT69EIS6M9ZxOiJA",
         "https://play-lh.googleusercontent.com/juNKL8V_R6pXpj0FvwIVEj5ID03pK2XbkczOXuTBomhh29JaVp-g7uGQkRWPvufvO2S1722BlMvX3W7htPG1AVA",
@@ -2308,19 +2308,19 @@
         "https://play-lh.googleusercontent.com/hg6Sl7rLDke9WQhvklMUhoddhXGIso96RK3cO-ZPTQbHjwR2eMqNMqewT_GHJrczmKMJ0Qe6IevzXHTmd-tXF3k",
         "https://play-lh.googleusercontent.com/88tR80nxW2id-XgpKBqKIxDw1Kpu11A4ugiTXb9DhFmko4rYYrCypu2z3Zy_LopMip8e__e4KWcEnwnje2wv"
       ],
-      "score": 4.714286,
-      "scoreText": "4.7",
-      "ratings": 54,
+      "score": 4.75,
+      "scoreText": "4.8",
+      "ratings": 57,
       "reviews": 3,
       "histogram": {
         "1": 0,
         "2": 0,
         "3": 0,
-        "4": 15,
-        "5": 38
+        "4": 14,
+        "5": 42
       },
       "installs": "1,000+",
-      "maxInstalls": 2501,
+      "maxInstalls": 2659,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2368,7 +2368,7 @@
   {
     "id": "new_iq_test",
     "iosId": "iq-master-brain-games-test/id6759578114",
-    "title": "Brain Training offline",
+    "title": "IQ test",
     "description": "Test your IQ score with brain training games, logic puzzles &amp; memory challenges.",
     "icon": "https://play-lh.googleusercontent.com/Qw9woLtzMqoQFKB1FBHnkRrmDJP79BTYOvW2NajwB14tS-5cQSLxHcU_i7nI5XQP3BRuCesnsM_l8AGJx466WQ",
     "category": "test",
@@ -2410,7 +2410,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 1903,
+      "maxInstalls": 1973,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2491,17 +2491,17 @@
       ],
       "score": 5,
       "scoreText": "5.0",
-      "ratings": 55,
+      "ratings": 58,
       "reviews": 1,
       "histogram": {
         "1": 0,
         "2": 0,
         "3": 0,
         "4": 0,
-        "5": 55
+        "5": 58
       },
       "installs": "1,000+",
-      "maxInstalls": 3030,
+      "maxInstalls": 3194,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2582,7 +2582,7 @@
       ],
       "score": 3.25,
       "scoreText": "3.2",
-      "ratings": 182,
+      "ratings": 183,
       "reviews": 4,
       "histogram": {
         "1": 68,
@@ -2592,7 +2592,7 @@
         "5": 68
       },
       "installs": "10,000+",
-      "maxInstalls": 15983,
+      "maxInstalls": 16379,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2682,8 +2682,8 @@
         "4": 0,
         "5": 0
       },
-      "installs": "10+",
-      "maxInstalls": 33,
+      "installs": "50+",
+      "maxInstalls": 77,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2800,7 +2800,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 170,
+      "maxInstalls": 175,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2891,7 +2891,7 @@
         "5": 80
       },
       "installs": "5,000+",
-      "maxInstalls": 5071,
+      "maxInstalls": 5178,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3000,7 +3000,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 155,
+      "maxInstalls": 266,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3164,7 +3164,7 @@
         "5": 0
       },
       "installs": "10+",
-      "maxInstalls": 18,
+      "maxInstalls": 20,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3255,7 +3255,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 112,
+      "maxInstalls": 124,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3346,7 +3346,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 118,
+      "maxInstalls": 126,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3419,7 +3419,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 214,
+      "maxInstalls": 225,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3510,7 +3510,7 @@
         "5": 0
       },
       "installs": "500+",
-      "maxInstalls": 529,
+      "maxInstalls": 534,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3601,7 +3601,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 165,
+      "maxInstalls": 168,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3692,7 +3692,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 370,
+      "maxInstalls": 401,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3783,7 +3783,7 @@
         "5": 0
       },
       "installs": "50+",
-      "maxInstalls": 61,
+      "maxInstalls": 64,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3874,7 +3874,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 117,
+      "maxInstalls": 122,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3955,17 +3955,17 @@
       ],
       "score": 4.8333335,
       "scoreText": "4.8",
-      "ratings": 217,
+      "ratings": 253,
       "reviews": 0,
       "histogram": {
         "1": 0,
         "2": 0,
         "3": 0,
-        "4": 36,
-        "5": 180
+        "4": 42,
+        "5": 210
       },
       "installs": "5,000+",
-      "maxInstalls": 7104,
+      "maxInstalls": 8536,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3994,7 +3994,7 @@
     "appStoreData": {
       "screenshots": [],
       "score": 5,
-      "reviews": 2,
+      "reviews": 3,
       "price": 0,
       "free": true,
       "currency": "USD",
@@ -4056,7 +4056,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 3927,
+      "maxInstalls": 4435,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -4085,7 +4085,7 @@
     "appStoreData": {
       "screenshots": [],
       "score": 5,
-      "reviews": 1,
+      "reviews": 2,
       "price": 0,
       "free": true,
       "currency": "USD",
@@ -4147,7 +4147,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 2544,
+      "maxInstalls": 2919,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -4238,7 +4238,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 2841,
+      "maxInstalls": 3208,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -4258,8 +4258,8 @@
       "contentRatingDescription": "",
       "adSupported": true,
       "released": "Jan 26, 2026",
-      "updated": 1783604063000,
-      "version": "2.1.0",
+      "updated": 1784915248000,
+      "version": "2.1.1",
       "recentChanges": "",
       "comments": [],
       "descriptionHTML": "Master the Language of the Web<br><br>Your complete learning companion for JavaScript - from absolute beginner to confident developer!<br><br>🌟 Why Choose Learn JavaScript?<br>Transform your career and unlock endless opportunities in web development. Whether you&#39;re starting from scratch or sharpening your skills, our app makes learning JavaScript engaging, effective, and fun!<br><br>✨ Key Features<br>📚 Comprehensive Interactive Lessons<br>Learn at your own pace with bite-sized, structured lessons covering everything from the basics to advanced concepts. Each lesson is designed to be clear, practical, and immediately applicable.<br><br>✅ Interactive Quizzes<br>Test your understanding after every lesson with carefully crafted quizzes. Get instant feedback and reinforce what you&#39;ve learned.<br><br>💻 Built-in Code Playground<br>Practice makes perfect! Write and run real JavaScript code directly in the app. Experiment, make mistakes, and learn by doing - all in a safe environment.<br><br>🎯 Daily Coding Challenges<br>Build a consistent learning habit with fresh challenges every day. Keep your skills sharp and your mind engaged.<br><br>🏆 Achievement System<br>Celebrate your progress! Earn XP points, level up, unlock badges, and track your learning streaks. Stay motivated with visible milestones.<br><br>🌙 Dark Mode<br>Learn comfortably day or night with our beautiful dark mode interface. Easy on the eyes, perfect for any environment.<br><br>🌍 Multi-Language Support<br>Learn JavaScript in your preferred language - available in English, German, and Arabic.<br><br> What You&#39;ll Master<br>Foundations: Variables, data types, operators, and basic syntax<br>Control Flow: Make decisions and create loops in your code<br>Functions: Write reusable, modular code<br>Data Structures: Master arrays and objects<br>Modern JavaScript: ES6+ features and best practices<br>Async Programming: Promises, async/await, and handling asynchronous operations<br>DOM Manipulation: Bring websites to life with interactive elements<br>Event Handling: Respond to user interactions<br>Error Handling: Write robust, bug-free code<br>Object-Oriented Programming: Build scalable applications<br>🎮 Learn Through Play<br>Our gamification system makes learning addictive in the best way:<br><br>Level Up: Watch yourself grow from beginner to expert<br>Earn Badges: Collect achievements for major milestones<br>Streak Tracking: Build momentum with daily learning habits<br>XP Rewards: Get rewarded for every lesson and quiz completed<br> Perfect For<br>Complete Beginners: Never written a line of code? Start here!<br>Career Changers: Break into the tech industry<br>Students: Supplement your computer science studies<br>Professionals: Add JavaScript to your skill set<br>Hobbyists: Build your own websites and web apps<br>🚀 Start Your Journey Today<br>Whether you want to build websites, create web applications, or start a career in tech - your journey begins here.<br><br>Download now and write your first line of code in minutes!"
