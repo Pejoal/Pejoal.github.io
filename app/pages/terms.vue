@@ -13,7 +13,7 @@
       </NuxtLink>
 
       <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">Terms and Conditions</h1>
-      <p class="text-sm text-gray-500 dark:text-gray-400 mb-10">Last updated: <strong>July 07, 2026</strong></p>
+      <p class="text-sm text-gray-500 dark:text-gray-400 mb-10">Last updated: <strong>July 28, 2026</strong></p>
 
       <div class="max-w-none space-y-8 prose prose-lg dark:prose-invert">
         <div class="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg border border-blue-100 dark:border-blue-800">
@@ -112,14 +112,24 @@
         </section>
 
         <section>
-          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">9. Governing Law</h2>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">9. Data Deletion Requests</h2>
+          <p class="dark:text-gray-300">
+            You have the right to request the deletion of your personal data collected or stored by our Services. If you
+            find your data in our systems and wish to have it removed, please contact us using the information provided
+            below to submit a data deletion request. We will process your request promptly in accordance with applicable
+            privacy laws.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">10. Governing Law</h2>
           <p class="dark:text-gray-300">Governed by the laws of <strong>Egypt</strong>.</p>
         </section>
 
         <section>
-          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">10. Contact</h2>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">11. Contact</h2>
           <p class="dark:text-gray-300">
-            Questions? Contact <strong>Pejoal Dev Studio</strong> at:<br />
+            Questions or data deletion requests? Contact <strong>Pejoal Dev Studio</strong> at:<br />
             <a href="mailto:business@pejoal.us.kg" class="text-blue-600 hover:underline font-medium">
               business@pejoal.us.kg
             </a>
