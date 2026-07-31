@@ -9,6 +9,7 @@
   <ServicesSection />
 
   <AppsPortfolioSection
+    :ai-apps="aiApps"
     :german-apps="germanApps"
     :english-apps="englishApps"
     :spanish-apps="spanishApps"
@@ -43,6 +44,7 @@ onMounted(() => {
 
 // Use composables for app data and dark mode
 const {
+  aiApps,
   germanApps,
   frenchApps,
   englishApps,

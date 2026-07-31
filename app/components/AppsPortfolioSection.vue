@@ -94,15 +94,17 @@
     <AppDetailModal
       :is-open="isModalOpen"
       :app="selectedApp"
-      @close="isModalOpen = false"
+      @close="handleCloseModal"
     />
   </section>
 </template>
 
 <script setup>
-import { ref, computed } from 'vue';
+import { ref, computed, onMounted, watch } from 'vue';
+import { useRoute, useRouter } from 'vue-router';
 
 const props = defineProps({
+  aiApps: Array,
   germanApps: Array,
   frenchApps: Array,
   englishApps: Array,
@@ -116,12 +118,29 @@ const props = defineProps({
   programmingApps: Array,
 });
 
+const route = useRoute();
+const router = useRouter();
+
 const isModalOpen = ref(false);
 const selectedApp = ref(null);
 
 const handleOpenModal = (app) => {
   selectedApp.value = app;
   isModalOpen.value = true;
+  if (route.query.app !== app.id && route.query.id !== app.id && route.query.appId !== app.id) {
+    router.replace({ query: { ...route.query, app: app.id } });
+  }
+};
+
+const handleCloseModal = () => {
+  isModalOpen.value = false;
+  if (route.query.app || route.query.id || route.query.appId) {
+    const newQuery = { ...route.query };
+    delete newQuery.app;
+    delete newQuery.id;
+    delete newQuery.appId;
+    router.replace({ query: newQuery });
+  }
 };
 
 // Search and Filter State
@@ -133,6 +152,7 @@ const sortOrder = ref('relevance');
 const categories = computed(() => {
   return [
     { id: 'All', name: 'All Apps', color: 'blue' },
+    { id: 'AI', name: 'AI Apps', apps: props.aiApps || [], color: 'purple' },
     { id: 'German', name: 'German', apps: props.germanApps || [], color: 'blue' },
     { id: 'English', name: 'English', apps: props.englishApps || [], color: 'indigo' },
     { id: 'Spanish', name: 'Spanish', apps: props.spanishApps || [], color: 'red' },
@@ -158,6 +178,33 @@ const allApps = computed(() => {
   });
   return all;
 });
+
+const checkUrlParam = () => {
+  const targetId = String(route.query.app || route.query.id || route.query.appId || '').toLowerCase().trim();
+  if (targetId && allApps.value.length > 0) {
+    const found = allApps.value.find(app => 
+      app.id.toLowerCase() === targetId || 
+      (app.iosId && app.iosId.toLowerCase() === targetId) ||
+      app.id.toLowerCase().replace(/\.chat$/, '') === targetId ||
+      targetId.includes(app.id.toLowerCase())
+    );
+    if (found) {
+      selectedApp.value = found;
+      isModalOpen.value = true;
+    }
+  }
+};
+
+onMounted(() => {
+  checkUrlParam();
+});
+
+watch(
+  () => [route.query.app, route.query.id, route.query.appId],
+  () => {
+    checkUrlParam();
+  }
+);
 
 const filteredApps = computed(() => {
   let result = [...allApps.value];

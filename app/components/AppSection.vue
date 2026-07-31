@@ -55,6 +55,7 @@ const props = defineProps({
 defineEmits(['open-modal']);
 
 const getIcon = (title) => {
+  if (title.includes('🤖') || title.includes('AI')) return '🤖';
   if (title.includes('🇩🇪') || title.includes('German')) return '🇩🇪';
   if (title.includes('🇺🇸') || title.includes('English')) return '🇺🇸';
   if (title.includes('🇪🇸') || title.includes('Spanish')) return '🇪🇸';

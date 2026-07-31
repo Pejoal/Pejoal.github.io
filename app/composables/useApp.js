@@ -7,6 +7,7 @@ export const useAppData = () => {
   const allApps = ref(appsData);
 
   // Computed properties for filtered apps
+  const aiApps = computed(() => allApps.value.filter((app) => app.category === 'ai'));
   const germanApps = computed(() => allApps.value.filter((app) => app.category === 'german'));
   const frenchApps = computed(() => allApps.value.filter((app) => app.category === 'french'));
   const englishApps = computed(() => allApps.value.filter((app) => app.category === 'english'));
@@ -21,6 +22,7 @@ export const useAppData = () => {
 
   return {
     allApps,
+    aiApps,
     germanApps,
     frenchApps,
     englishApps,
