@@ -43,6 +43,8 @@ When visiting the URL with a valid app ID parameter, the portfolio will automati
 ## 🛠️ Tech Stack
 
 - **Framework**: Nuxt 4 & Vue 3 (Composition API)
+- **Internationalization**: `@nuxtjs/i18n` with English (`en`) & German (`de`) support and extensible locale structure (`app/locales/`)
+- **SEO & Structured Data**: OpenGraph, Twitter Cards, Hreflang alternates, Canonical links, and JSON-LD (`Person`, `WebSite`, `ItemList`, `SoftwareApplication`) schemas
 - **Styling**: TailwindCSS 4
 - **Automation**: Node.js (`google-play-scraper`, `app-store-scraper`)
 - **Icons**: Heroicons & Simple Icons

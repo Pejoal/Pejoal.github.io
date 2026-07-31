@@ -1,0 +1,64 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "about": "Über mich",
+    "services": "Leistungen",
+    "apps": "Apps",
+    "webProjects": "Webprojekte",
+    "skills": "Fähigkeiten",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "badge": "Verfügbar für erstklassige Mobile- & Webprojekte",
+    "greeting": "Hallo, ich bin",
+    "name": "Pejoal Hanna",
+    "role": "Full-Stack-Entwickler & Mobile-App-Ingenieur",
+    "bio": "Entwicklung leistungsstarker plattformübergreifender mobiler Apps und Websysteme für Tausende von Nutzern weltweit.",
+    "ctaExplore": "Portfolio erkunden",
+    "ctaContact": "Kontakt aufnehmen",
+    "appsPublished": "Veröffentlichte Apps",
+    "activeUsers": "Gesamtdownloads",
+    "ratingAverage": "Durchschnittsbewertung"
+  },
+  "about": {
+    "title": "Über mich",
+    "subtitle": "Leidenschaftlicher Entwickler für skalierbare Mobil- und Weblösungen.",
+    "heading": "Hervorragende Software-Erlebnisse schaffen",
+    "p1": "Mit Expertise in plattformübergreifender mobiler Entwicklung und Full-Stack-Webarchitektur erstelle ich Anwendungen, die elegantes UI-Design mit robuster Backend-Performance verbinden.",
+    "p2": "Mein veröffentlichtes Portfolio umfasst über 48 Produktionsanwendungen im Google Play Store und Apple App Store – von Sprachlernplattformen bis hin zu Produktivitätswerkzeugen."
+  },
+  "apps": {
+    "title": "Globales App-Portfolio",
+    "subtitle": "Eine umfangreiche Präsentation veröffentlichter, hochwirksamer mobiler Anwendungen.",
+    "searchPlaceholder": "Nach Apps, Kategorien oder Begriffen suchen...",
+    "sortBy": "Sortieren nach",
+    "relevance": "Standard (Relevanz)",
+    "installs": "Meiste Installationen",
+    "rating": "Höchste Bewertung",
+    "released": "Neueste Veröffentlichungen",
+    "updated": "Kürzlich aktualisiert",
+    "adFreeOnly": "Nur werbefrei",
+    "allApps": "Alle Apps",
+    "noAppsFound": "Keine Apps gefunden",
+    "clearFilters": "Filter zurücksetzen"
+  },
+  "modal": {
+    "downloadAppStore": "App Store",
+    "getItOnGooglePlay": "Google Play",
+    "aboutThisApp": "Über diese App",
+    "screenshots": "Screenshots",
+    "whatsNew": "Was gibt's Neues",
+    "updated": "Aktualisiert",
+    "released": "Veröffentlicht",
+    "adFree": "Werbefrei",
+    "ads": "Enthält Werbung"
+  },
+  "contact": {
+    "title": "Lass uns etwas zusammen bauen",
+    "subtitle": "Haben Sie ein Projekt im Sinn oder Interesse an einer Zusammenarbeit?",
+    "email": "E-Mail",
+    "github": "GitHub",
+    "googlePlay": "Google Play",
+    "sendMessage": "Nachricht senden"
+  }
+}

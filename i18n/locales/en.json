@@ -1,0 +1,64 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "apps": "Apps",
+    "webProjects": "Web Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Available for High-Impact Mobile & Web Projects",
+    "greeting": "Hi, I'm",
+    "name": "Pejoal Hanna",
+    "role": "Full-Stack Developer & Mobile App Engineer",
+    "bio": "Building high-performance cross-platform mobile apps and web systems serving thousands of users worldwide.",
+    "ctaExplore": "Explore Portfolio",
+    "ctaContact": "Get In Touch",
+    "appsPublished": "Published Apps",
+    "activeUsers": "Total Downloads",
+    "ratingAverage": "Average Rating"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Passionate developer dedicated to crafting scalable mobile & web solutions.",
+    "heading": "Crafting Exceptional Software Experiences",
+    "p1": "With expertise in cross-platform mobile development and full-stack web architecture, I build applications that blend sleek UI design with robust backend performance.",
+    "p2": "My published portfolio spans over 48 production applications on Google Play and Apple App Store, ranging from language learning platforms to productivity tools."
+  },
+  "apps": {
+    "title": "Global Mobile Portfolio",
+    "subtitle": "An extensive showcase of published, high-impact mobile applications serving thousands of users worldwide.",
+    "searchPlaceholder": "Search for apps, categories, or keywords...",
+    "sortBy": "Sort By",
+    "relevance": "Default (Relevance)",
+    "installs": "Most Installs",
+    "rating": "Highest Rated",
+    "released": "Newest Releases",
+    "updated": "Recently Updated",
+    "adFreeOnly": "Ad-Free Only",
+    "allApps": "All Apps",
+    "noAppsFound": "No apps found",
+    "clearFilters": "Clear Filters"
+  },
+  "modal": {
+    "downloadAppStore": "App Store",
+    "getItOnGooglePlay": "Google Play",
+    "aboutThisApp": "About this app",
+    "screenshots": "Screenshots",
+    "whatsNew": "What's New",
+    "updated": "Updated",
+    "released": "Released",
+    "adFree": "Ad-Free",
+    "ads": "Ads"
+  },
+  "contact": {
+    "title": "Let's Build Something Together",
+    "subtitle": "Have a project in mind or interested in collaboration? Feel free to reach out.",
+    "email": "Email",
+    "github": "GitHub",
+    "googlePlay": "Google Play",
+    "sendMessage": "Send Message"
+  }
+}
