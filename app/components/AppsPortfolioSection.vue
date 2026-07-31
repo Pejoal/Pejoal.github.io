@@ -149,7 +149,7 @@ const handleCloseModal = () => {
 const searchQuery = ref('');
 const activeCategory = ref('All');
 const filterNoAds = ref(false);
-const sortOrder = ref('relevance');
+const sortOrder = ref('installs');
 
 const categories = computed(() => {
   return [
