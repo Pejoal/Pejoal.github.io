@@ -109,10 +109,10 @@
         </NuxtLink>
         <span class="text-gray-400">|</span>
         <NuxtLink
-          to="/impressum"
+          to="/imprint"
           class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium"
         >
-          Impressum
+          Imprint
         </NuxtLink>
       </div>
     </div>

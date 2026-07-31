@@ -27,10 +27,10 @@
           Terms of Service
         </NuxtLink>
         <NuxtLink
-          to="/impressum"
+          to="/imprint"
           class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition"
         >
-          Impressum
+          Imprint
         </NuxtLink>
       </div>
 

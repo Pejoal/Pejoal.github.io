@@ -1,4 +1,4 @@
-<!-- pages/impressum.vue -->
+<!-- pages/imprint.vue -->
 <template>
   <div
     class="min-h-screen bg-linear-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-blue-900 dark:to-indigo-900 pt-24 px-4"
@@ -12,7 +12,7 @@
         Back to Portfolio
       </NuxtLink>
 
-      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">Impressum</h1>
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">Imprint</h1>
       <p class="text-sm text-gray-500 dark:text-gray-400 mb-10">Last updated: <strong>July 07, 2026</strong></p>
 
       <div class="max-w-none space-y-8 prose prose-lg dark:prose-invert">
@@ -64,8 +64,8 @@
 
 <script setup>
 useSeoMeta({
-  title: 'Impressum - Pejoal Dev Studio',
-  description: 'Legal Notice / Impressum for Pejoal Dev Studio.',
+  title: 'Imprint - Pejoal Dev Studio',
+  description: 'Legal Notice / Imprint for Pejoal Dev Studio.',
   robots: 'noindex',
 });
 </script>

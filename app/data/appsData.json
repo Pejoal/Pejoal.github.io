@@ -45,7 +45,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 201,
+      "maxInstalls": 244,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -136,7 +136,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 1760,
+      "maxInstalls": 1996,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -227,7 +227,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 1342,
+      "maxInstalls": 1488,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -318,7 +318,7 @@
         "5": 0
       },
       "installs": "10,000+",
-      "maxInstalls": 13835,
+      "maxInstalls": 13884,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -409,7 +409,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 2559,
+      "maxInstalls": 2578,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -500,7 +500,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 1560,
+      "maxInstalls": 1600,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -591,7 +591,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 3501,
+      "maxInstalls": 3613,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -682,7 +682,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 206,
+      "maxInstalls": 209,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -763,17 +763,17 @@
       ],
       "score": 4.7777777,
       "scoreText": "4.8",
-      "ratings": 243,
+      "ratings": 250,
       "reviews": 0,
       "histogram": {
         "1": 0,
         "2": 0,
         "3": 27,
         "4": 0,
-        "5": 216
+        "5": 222
       },
       "installs": "10,000+",
-      "maxInstalls": 28433,
+      "maxInstalls": 29625,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -864,7 +864,7 @@
         "5": 0
       },
       "installs": "10,000+",
-      "maxInstalls": 44810,
+      "maxInstalls": 45606,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -955,7 +955,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 3200,
+      "maxInstalls": 3296,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1046,7 +1046,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 2068,
+      "maxInstalls": 2277,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1127,17 +1127,17 @@
       ],
       "score": 5,
       "scoreText": "5.0",
-      "ratings": 312,
+      "ratings": 321,
       "reviews": 2,
       "histogram": {
         "1": 0,
         "2": 0,
         "3": 0,
         "4": 0,
-        "5": 312
+        "5": 321
       },
       "installs": "10,000+",
-      "maxInstalls": 28180,
+      "maxInstalls": 29358,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1228,7 +1228,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 2347,
+      "maxInstalls": 2444,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1319,7 +1319,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 3413,
+      "maxInstalls": 3564,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1410,7 +1410,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 1243,
+      "maxInstalls": 1295,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1501,7 +1501,7 @@
         "5": 0
       },
       "installs": "10,000+",
-      "maxInstalls": 12117,
+      "maxInstalls": 12298,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1592,7 +1592,7 @@
         "5": 0
       },
       "installs": "5,000+",
-      "maxInstalls": 6945,
+      "maxInstalls": 6977,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1683,7 +1683,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 4477,
+      "maxInstalls": 4659,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1774,7 +1774,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 2103,
+      "maxInstalls": 2333,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1865,7 +1865,7 @@
         "5": 0
       },
       "installs": "10,000+",
-      "maxInstalls": 26064,
+      "maxInstalls": 26891,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1893,8 +1893,8 @@
     },
     "appStoreData": {
       "screenshots": [],
-      "score": 0,
-      "reviews": 0,
+      "score": 5,
+      "reviews": 1,
       "price": 0,
       "free": true,
       "currency": "USD",
@@ -1956,7 +1956,7 @@
         "5": 0
       },
       "installs": "10,000+",
-      "maxInstalls": 13223,
+      "maxInstalls": 13543,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2047,7 +2047,7 @@
         "5": 0
       },
       "installs": "10+",
-      "maxInstalls": 41,
+      "maxInstalls": 42,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2137,8 +2137,8 @@
         "4": 0,
         "5": 0
       },
-      "installs": "500+",
-      "maxInstalls": 973,
+      "installs": "1,000+",
+      "maxInstalls": 1026,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2229,7 +2229,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 127,
+      "maxInstalls": 131,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2308,19 +2308,19 @@
         "https://play-lh.googleusercontent.com/hg6Sl7rLDke9WQhvklMUhoddhXGIso96RK3cO-ZPTQbHjwR2eMqNMqewT_GHJrczmKMJ0Qe6IevzXHTmd-tXF3k",
         "https://play-lh.googleusercontent.com/88tR80nxW2id-XgpKBqKIxDw1Kpu11A4ugiTXb9DhFmko4rYYrCypu2z3Zy_LopMip8e__e4KWcEnwnje2wv"
       ],
-      "score": 4.75,
+      "score": 4.7777777,
       "scoreText": "4.8",
-      "ratings": 57,
+      "ratings": 59,
       "reviews": 3,
       "histogram": {
         "1": 0,
         "2": 0,
         "3": 0,
-        "4": 14,
-        "5": 42
+        "4": 13,
+        "5": 45
       },
       "installs": "1,000+",
-      "maxInstalls": 2659,
+      "maxInstalls": 2831,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2410,7 +2410,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 1973,
+      "maxInstalls": 2161,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2501,7 +2501,7 @@
         "5": 58
       },
       "installs": "1,000+",
-      "maxInstalls": 3194,
+      "maxInstalls": 3242,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2592,7 +2592,7 @@
         "5": 68
       },
       "installs": "10,000+",
-      "maxInstalls": 16379,
+      "maxInstalls": 16640,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2683,7 +2683,7 @@
         "5": 0
       },
       "installs": "50+",
-      "maxInstalls": 77,
+      "maxInstalls": 84,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2800,7 +2800,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 175,
+      "maxInstalls": 180,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2891,7 +2891,7 @@
         "5": 80
       },
       "installs": "5,000+",
-      "maxInstalls": 5178,
+      "maxInstalls": 5246,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3000,7 +3000,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 266,
+      "maxInstalls": 284,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3164,7 +3164,7 @@
         "5": 0
       },
       "installs": "10+",
-      "maxInstalls": 20,
+      "maxInstalls": 21,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3255,7 +3255,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 124,
+      "maxInstalls": 128,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3346,7 +3346,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 126,
+      "maxInstalls": 127,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3419,7 +3419,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 225,
+      "maxInstalls": 227,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3510,7 +3510,7 @@
         "5": 0
       },
       "installs": "500+",
-      "maxInstalls": 534,
+      "maxInstalls": 536,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3601,7 +3601,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 168,
+      "maxInstalls": 169,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3692,7 +3692,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 401,
+      "maxInstalls": 425,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3874,7 +3874,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 122,
+      "maxInstalls": 123,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3955,17 +3955,17 @@
       ],
       "score": 4.8333335,
       "scoreText": "4.8",
-      "ratings": 253,
+      "ratings": 263,
       "reviews": 0,
       "histogram": {
         "1": 0,
         "2": 0,
         "3": 0,
-        "4": 42,
-        "5": 210
+        "4": 43,
+        "5": 219
       },
       "installs": "5,000+",
-      "maxInstalls": 8536,
+      "maxInstalls": 8923,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -4056,7 +4056,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 4435,
+      "maxInstalls": 4778,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -4147,7 +4147,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 2919,
+      "maxInstalls": 3000,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -4238,7 +4238,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 3208,
+      "maxInstalls": 3444,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -4281,6 +4281,74 @@
       "size": "121.9 MB",
       "requiredOsVersion": "15.1",
       "contentRating": "4+"
+    }
+  },
+  {
+    "id": "autoscribe.chat",
+    "iosId": "6757652791",
+    "title": "AutoScribe: AI Voice Scribe",
+    "description": "AI voice scribe &amp; meeting note taker. Transcribe audio to structured summaries.",
+    "icon": "https://play-lh.googleusercontent.com/11NpPpp1EtkNZNMnrQDTJaaeS6uPag9MMcMGtSK_DamLviJLYwYwPReQZq66T3N6hmx6qgMw0Aghwhpyj5XB-g",
+    "playStoreData": {
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/_DrM2NsznFnRBjgcDpzrtXTTk5P50gQmFAcnIDc4coP7725Kc0fvX7OVB9nvyy_qShoj22PJWv5x9r2m1HYY3Q",
+        "https://play-lh.googleusercontent.com/1XMyuD5H_RFv37ElNLznUf4ZbHxsQAZSomk-kgimogrvwGuRqEtRvWGfXNkTrkvO8nTFH1l4WyIB7gfvTczZ_A",
+        "https://play-lh.googleusercontent.com/XXEEEK1AHzuLWRa0f7WkhmiU5Wem5pyatAj7iDdhnnHLzcrps7npCbBLUhXyQit6oAX9rA7n1C6xBp9dB_d7070",
+        "https://play-lh.googleusercontent.com/HVSEwsqn0fNYAohphtQ-vY7VlWW0tNAYqGs_yzigtvnVWQWsxjYEEwiiPqihEtiGvF8VuztOS7YoApY85-dqxQ",
+        "https://play-lh.googleusercontent.com/RjdQR8zEdpPXnTMIv17CmQNTkWfI754xYgx5RqGyKp3D3E0EpzR_8J5OfCSos69SbylyT_kkLall_gbtRvwpAQ",
+        "https://play-lh.googleusercontent.com/O_1qOSzjNqymukIPC50dmxucoE_6xoZGu2DRKLQqxbZwClAaQ0VzOV8cI2Uxz7Dnmhu8IYjL1v9kq3muTFnfUQ",
+        "https://play-lh.googleusercontent.com/Lp5dnk-Vb2sTeQS3U_ngnxPmYZDQtZW7XbqlCX4w5jhv6Ja1ARssIoFQ-8V8FnN881Ur1cy7Lrw9vVtv_E1L",
+        "https://play-lh.googleusercontent.com/ReJ6YkZgJGtjTCumXpvkZutwKzxZfDMS__bqMYNNQPETaMBu_ntEMO0cGpUPrInMzU0OnTeDKi6MKZ-D4UPB3Q",
+        "https://play-lh.googleusercontent.com/_DrM2NsznFnRBjgcDpzrtXTTk5P50gQmFAcnIDc4coP7725Kc0fvX7OVB9nvyy_qShoj22PJWv5x9r2m1HYY3Q",
+        "https://play-lh.googleusercontent.com/1XMyuD5H_RFv37ElNLznUf4ZbHxsQAZSomk-kgimogrvwGuRqEtRvWGfXNkTrkvO8nTFH1l4WyIB7gfvTczZ_A",
+        "https://play-lh.googleusercontent.com/XXEEEK1AHzuLWRa0f7WkhmiU5Wem5pyatAj7iDdhnnHLzcrps7npCbBLUhXyQit6oAX9rA7n1C6xBp9dB_d7070",
+        "https://play-lh.googleusercontent.com/HVSEwsqn0fNYAohphtQ-vY7VlWW0tNAYqGs_yzigtvnVWQWsxjYEEwiiPqihEtiGvF8VuztOS7YoApY85-dqxQ",
+        "https://play-lh.googleusercontent.com/RjdQR8zEdpPXnTMIv17CmQNTkWfI754xYgx5RqGyKp3D3E0EpzR_8J5OfCSos69SbylyT_kkLall_gbtRvwpAQ",
+        "https://play-lh.googleusercontent.com/O_1qOSzjNqymukIPC50dmxucoE_6xoZGu2DRKLQqxbZwClAaQ0VzOV8cI2Uxz7Dnmhu8IYjL1v9kq3muTFnfUQ",
+        "https://play-lh.googleusercontent.com/Lp5dnk-Vb2sTeQS3U_ngnxPmYZDQtZW7XbqlCX4w5jhv6Ja1ARssIoFQ-8V8FnN881Ur1cy7Lrw9vVtv_E1L",
+        "https://play-lh.googleusercontent.com/ReJ6YkZgJGtjTCumXpvkZutwKzxZfDMS__bqMYNNQPETaMBu_ntEMO0cGpUPrInMzU0OnTeDKi6MKZ-D4UPB3Q",
+        "https://play-lh.googleusercontent.com/1XMyuD5H_RFv37ElNLznUf4ZbHxsQAZSomk-kgimogrvwGuRqEtRvWGfXNkTrkvO8nTFH1l4WyIB7gfvTczZ_A",
+        "https://play-lh.googleusercontent.com/HVSEwsqn0fNYAohphtQ-vY7VlWW0tNAYqGs_yzigtvnVWQWsxjYEEwiiPqihEtiGvF8VuztOS7YoApY85-dqxQ",
+        "https://play-lh.googleusercontent.com/Lp5dnk-Vb2sTeQS3U_ngnxPmYZDQtZW7XbqlCX4w5jhv6Ja1ARssIoFQ-8V8FnN881Ur1cy7Lrw9vVtv_E1L",
+        "https://play-lh.googleusercontent.com/ReJ6YkZgJGtjTCumXpvkZutwKzxZfDMS__bqMYNNQPETaMBu_ntEMO0cGpUPrInMzU0OnTeDKi6MKZ-D4UPB3Q"
+      ],
+      "score": 0,
+      "scoreText": "0.0",
+      "ratings": 0,
+      "reviews": 0,
+      "histogram": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0
+      },
+      "installs": "5+",
+      "maxInstalls": 6,
+      "priceText": "Free",
+      "currency": "USD",
+      "size": "",
+      "androidVersionText": "7.0",
+      "developer": "Pejoal Dev Studio",
+      "developerEmail": "business@pejoal.dpdns.org",
+      "developerWebsite": "https://pejoal.github.io/",
+      "privacyPolicy": "https://pejoal.github.io/privacy-policy",
+      "genre": "Medical",
+      "genreId": "MEDICAL",
+      "familyGenre": "",
+      "familyGenreId": "",
+      "headerImage": "https://play-lh.googleusercontent.com/POH4otUdQHtxYbMYzGDULbUB6IFyawGP_cMPhIRm2r_eEe-AU2gNVSyHRnEqRDPF4Q6F_LxCPescAozkk6I2zQ",
+      "video": "",
+      "videoImage": "",
+      "contentRating": "Everyone",
+      "contentRatingDescription": "",
+      "adSupported": false,
+      "released": "Jul 26, 2026",
+      "updated": 1785424780000,
+      "version": "2.2.0",
+      "recentChanges": "• Welcome to AutoScribe 2.0! AI-powered audio scribe &amp; smart meeting summaries.<br>• 8 Specialized Workspaces: Medical SOAP notes, Sales discovery, Legal proceedings, Content repurposing, Education, UX Research, Real Estate &amp; General.<br>• 65+ Built-In AI System Templates with 1:1 English &amp; German parity.<br>• Custom Onboarding Workflows: Personalize your transcription output for your domain.<br>• Private &amp; Secure: Offline-first storage with local database sync.",
+      "comments": [],
+      "descriptionHTML": "AutoScribe is the ultimate AI voice scribe and intelligent note-taking platform designed for professionals, teams, and students. Powered by advanced transcription and domain-aware AI models, AutoScribe turns lectures, sales calls, consultations, and brain dumps into crystal-clear structured documentation.<br>​CONTINUOUS BACKGROUND RECORDING<br>Never miss a word, even when you are multitasking. AutoScribe safely continues to record and transcribe audio in the background. You can start recording a meeting or lecture, minimize the app to check your emails, or lock your phone screen to save battery—AutoScribe will keep capturing your audio uninterrupted.<br>​9 SPECIALIZED AI WORKSPACES<br>​POPULAR &amp; TRENDING ⭐: Cross-domain quick notes, executive summaries, and smart meeting minutes.<br>​Generate compliant SOAP, BIRP, and DAP clinical notes from consultations.<br>​SALES &amp; MEETINGS: Extract key buyer pain points, action items, and follow-ups from calls.<br>​LEGAL &amp; COMPLIANCE: Structure depositions, witness testimonies, and risk logs.<br>​CONTENT CREATION: Repurpose audio into blog posts, LinkedIn captions, and show notes.<br>​EDUCATION &amp; STUDY: Create Cornell study guides, summaries, and flashcards.<br>​UX RESEARCH &amp; INTERVIEWS: Capture user friction, direct quotes, and feature requests.<br>​REAL ESTATE &amp; PROPERTY: Dictate property walk-throughs, defect logs, and lead notes.<br>​GENERAL BUSINESS: Instant meeting summaries and bulleted task lists.<br>​BIOMETRIC SECURITY &amp; PRIVACY<br>​Fingerprint &amp; Face ID Biometric Login for instant, secure access.<br>​Offline-First Architecture: Local database storage — works without internet.<br>​GDPR &amp; HIPAA Aligned: Transcripts can be automatically purged after AI processing. Zero data selling, zero AI training on your data.<br>​<br>​65+ BUILT-IN SYSTEM TEMPLATES<br>Switch between English and German templates seamlessly. Create custom templates tailored to your team&#39;s workflow.<br>​NOTIFICATIONS CENTER<br>Stay informed with in-app system announcements, legal notices, and feature updates via the built-in notifications center.<br>​Download AutoScribe today and master your daily productivity!"
     }
   }
 ]
