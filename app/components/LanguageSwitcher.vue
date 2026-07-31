@@ -25,12 +25,12 @@
         class="absolute right-0 mt-2 w-36 rounded-2xl shadow-xl bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 py-1 z-50 overflow-hidden"
       >
         <button
-          v-for="loc in localesList"
+          v-for="loc in availableLocales"
           :key="loc.code"
           @click="selectLocale(loc.code)"
           :class="[
             'w-full cursor-pointer text-left px-4 py-2 text-xs font-medium flex items-center gap-2 transition-colors',
-            currentLocaleCode === loc.code
+            locale === loc.code
               ? 'bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 font-bold'
               : 'text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700/50'
           ]"
@@ -49,32 +49,17 @@ import { ref, computed, onMounted, onUnmounted } from 'vue';
 const isOpen = ref(false);
 const dropdownRef = ref(null);
 
+const { locale, setLocale } = useI18n();
+
 const availableLocales = [
   { code: 'en', name: 'English', flag: '🇺🇸' },
   { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
 ];
 
-let i18n = null;
-try {
-  // Gracefully attempt useI18n if module is installed
-  const nuxtApp = useNuxtApp();
-  if (nuxtApp.$i18n) {
-    i18n = nuxtApp.$i18n;
-  }
-} catch {
-  // Fallback for pre-install state
-}
-
-const currentLocaleCode = ref('en');
-
 onMounted(() => {
   if (process.client) {
-    const saved = localStorage.getItem('user_locale');
-    if (saved) {
-      currentLocaleCode.value = saved;
-    }
+    document.addEventListener('click', handleClickOutside);
   }
-  document.addEventListener('click', handleClickOutside);
 });
 
 onUnmounted(() => {
@@ -89,21 +74,12 @@ const handleClickOutside = (event) => {
   }
 };
 
-const localesList = computed(() => availableLocales);
-
 const currentLocaleObj = computed(() => {
-  return availableLocales.find((l) => l.code === currentLocaleCode.value) || availableLocales[0];
+  return availableLocales.find((l) => l.code === locale.value) || availableLocales[0];
 });
 
 const selectLocale = (code) => {
-  currentLocaleCode.value = code;
-  if (process.client) {
-    localStorage.setItem('user_locale', code);
-    document.documentElement.lang = code;
-  }
-  if (i18n && i18n.setLocale) {
-    i18n.setLocale(code);
-  }
+  setLocale(code);
   isOpen.value = false;
 };
 </script>

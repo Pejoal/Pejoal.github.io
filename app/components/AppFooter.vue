@@ -10,7 +10,7 @@
         <span class="font-bold text-xl text-gray-900 dark:text-white">Pejoal</span>
       </div>
 
-      <p class="text-gray-600 dark:text-gray-300">Crafting exceptional digital experiences for mobile and web.</p>
+      <p class="text-gray-600 dark:text-gray-300">{{ t('hero.bio') }}</p>
 
       <!-- Legal Links -->
       <div class="flex justify-center gap-6 text-sm">
@@ -18,25 +18,23 @@
           to="/privacy-policy"
           class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition"
         >
-          Privacy Policy
-        </NuxtLink>
-        <NuxtLink
-          to="/terms"
-          class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition"
-        >
-          Terms of Service
+          {{ t('footer.privacy') }}
         </NuxtLink>
         <NuxtLink
           to="/imprint"
           class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition"
         >
-          Imprint
+          {{ t('footer.imprint') }}
         </NuxtLink>
       </div>
 
       <p class="text-xs text-gray-500 dark:text-gray-400">
-        © {{ new Date().getFullYear() }} Pejoal Hanna @ Pejoal Dev Studio. All rights reserved.
+        © {{ new Date().getFullYear() }} {{ t('footer.copyright') }}
       </p>
     </div>
   </footer>
 </template>
+
+<script setup>
+const { t } = useI18n();
+</script>

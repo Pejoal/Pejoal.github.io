@@ -17,15 +17,30 @@
     "ctaExplore": "Explore Portfolio",
     "ctaContact": "Get In Touch",
     "appsPublished": "Published Apps",
-    "activeUsers": "Total Downloads",
-    "ratingAverage": "Average Rating"
+    "totalDownloads": "Total Downloads",
+    "averageRating": "Average Rating"
   },
   "about": {
-    "title": "About Me",
-    "subtitle": "Passionate developer dedicated to crafting scalable mobile & web solutions.",
-    "heading": "Crafting Exceptional Software Experiences",
-    "p1": "With expertise in cross-platform mobile development and full-stack web architecture, I build applications that blend sleek UI design with robust backend performance.",
-    "p2": "My published portfolio spans over 48 production applications on Google Play and Apple App Store, ranging from language learning platforms to productivity tools."
+    "title": "Engineering with Purpose",
+    "subtitle": "I am driven by the intersection of sophisticated design and robust architecture. My core focus lies in architecting intuitive mobile ecosystems—particularly immersive educational platforms—while also engineering high-utility tools and interactive digital experiences.",
+    "card1Title": "Mobile Architecture",
+    "card1Desc": "Expertly crafted native and cross-platform applications, optimized for performance, scalability, and seamless user interaction.",
+    "card2Title": "EdTech Platforms",
+    "card2Desc": "Designing comprehensive language learning solutions with interactive quizzes, native audio, spaced repetition, and gamified progress tracking.",
+    "card3Title": "Full-Stack Systems",
+    "card3Desc": "Building scalable backend APIs, web dashboards, and web automation tools using modern stacks like Vue, Nuxt, Laravel, and Node.js."
+  },
+  "services": {
+    "title": "What I Do",
+    "subtitle": "Comprehensive software engineering services from mobile app development to scalable web systems.",
+    "s1Title": "Cross-Platform Mobile Apps",
+    "s1Desc": "Building iOS & Android applications with React Native, Expo, and Flutter, featuring offline capability, store optimization, and biometrics.",
+    "s2Title": "Full-Stack Web Systems",
+    "s2Desc": "Developing modern web apps with Vue, Nuxt, Node.js, PHP/Laravel, TailwindCSS, and REST/GraphQL APIs.",
+    "s3Title": "Store Automation & Data Pipelines",
+    "s3Desc": "Automated app store scrapers, CI/CD deployment pipelines, store optimization, and data synchronization engines.",
+    "s4Title": "AI & Voice Scribing Integration",
+    "s4Desc": "Integrating advanced AI models, continuous voice transcription, biometrics, and domain-aware document generation."
   },
   "apps": {
     "title": "Global Mobile Portfolio",
@@ -53,12 +68,62 @@
     "adFree": "Ad-Free",
     "ads": "Ads"
   },
+  "webProjects": {
+    "title": "Web Projects & Systems",
+    "subtitle": "A collection of full-stack web applications, landing pages, and administrative systems.",
+    "viewProject": "View Live Project",
+    "sourceCode": "Source Code",
+    "p1Title": "Enterprise Payroll & ERP",
+    "p1Desc": "A comprehensive ERP architecture developed with Laravel and Vue 3. Features highly secure role-based access, automated payroll processing, and deep analytics.\n\nNote: Cold-start deployment may take ~1 min.\nAdmin Credentials: pejoal / password",
+    "p2Title": "Modern E-Commerce Engine",
+    "p2Desc": "A scalable e-commerce platform built with Vue.js and Laravel. Engineered for high conversion with real-time cart synchronization, secure payment gateways, and a comprehensive admin inventory management panel.",
+    "p3Title": "Automated Scheduling App",
+    "p3Desc": "A streamlined appointment coordination system designed specifically for educational institutions. Reduces administrative overhead by synchronizing instructor availability with student bookings in real-time.",
+    "p4Title": "Real-Time Multiplayer Hub",
+    "p4Desc": "A highly concurrent multiplayer environment utilizing Laravel, Inertia, Vue 3, and WebSockets. Features sophisticated state-management for real-time card shuffling, dealing, and responsive animations across devices.",
+    "p5Title": "Social Connectivity Platform",
+    "p5Desc": "A fully-featured social media ecosystem. Implements real-time messaging, dynamic news feeds, and intricate relational databases to support complex friend networking and content engagement."
+  },
+  "skills": {
+    "title": "Technical Arsenal & Leadership",
+    "subtitle": "A comprehensive blend of modern engineering practices, cloud infrastructure, and strategic problem-solving.",
+    "frontend": "Frontend Architecture",
+    "mobile": "Mobile Ecosystems",
+    "backend": "Backend Engineering",
+    "database": "Database & Cloud Infrastructure",
+    "testing": "Testing & Dev Workflow",
+    "leadership": "Strategic Leadership"
+  },
+  "softSkills": {
+    "s1Name": "Architectural Vision",
+    "s1Desc": "Designing resilient, scalable systems from the ground up.",
+    "s2Name": "Executive Communication",
+    "s2Desc": "Translating complex technical concepts for stakeholders.",
+    "s3Name": "Cross-Functional Leadership",
+    "s3Desc": "Driving alignment between product, design, and engineering.",
+    "s4Name": "Agile Delivery",
+    "s4Desc": "Iterative, rapid shipping without compromising quality.",
+    "s5Name": "Strategic Adaptability",
+    "s5Desc": "Pivoting effectively in fast-paced tech environments.",
+    "s6Name": "UX-Driven Engineering",
+    "s6Desc": "Engineering with a relentless focus on the end-user."
+  },
   "contact": {
     "title": "Let's Build Something Together",
     "subtitle": "Have a project in mind or interested in collaboration? Feel free to reach out.",
     "email": "Email",
     "github": "GitHub",
-    "googlePlay": "Google Play",
-    "sendMessage": "Send Message"
+    "googlePlay": "Google Play Store",
+    "location": "Location",
+    "locationValue": "Menia, Egypt / Worldwide",
+    "nameLabel": "Your Name",
+    "emailLabel": "Your Email",
+    "messageLabel": "Your Message",
+    "sendButton": "Send Message"
+  },
+  "footer": {
+    "copyright": "Pejoal Dev Studio. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "imprint": "Imprint"
   }
 }

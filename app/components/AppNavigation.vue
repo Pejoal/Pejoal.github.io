@@ -174,6 +174,10 @@
 </template>
 
 <script setup>
+import { ref, computed, onMounted } from 'vue';
+
+const { t } = useI18n();
+
 defineProps({
   isDark: Boolean,
 });
@@ -182,15 +186,15 @@ defineEmits(['toggle-dark-mode']);
 const mobileOpen = ref(false);
 const activeSection = ref('#home');
 
-const navLinks = [
-  { label: 'Home', to: '#home' },
-  { label: 'About', to: '#about' },
-  { label: 'Services', to: '#services' },
-  { label: 'Apps', to: '#apps' },
-  { label: 'Web Projects', to: '#web-projects' },
-  { label: 'Skills', to: '#skills' },
-  { label: 'Contact', to: '#contact' },
-];
+const navLinks = computed(() => [
+  { label: t('nav.home'), to: '#home' },
+  { label: t('nav.about'), to: '#about' },
+  { label: t('nav.services'), to: '#services' },
+  { label: t('nav.apps'), to: '#apps' },
+  { label: t('nav.webProjects'), to: '#web-projects' },
+  { label: t('nav.skills'), to: '#skills' },
+  { label: t('nav.contact'), to: '#contact' },
+]);
 
 onMounted(() => {
   if (process.client) {

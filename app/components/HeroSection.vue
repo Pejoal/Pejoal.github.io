@@ -17,9 +17,9 @@
           data-aos="fade-up" 
           data-aos-delay="100"
         >
-          Crafting Exceptional<br class="hidden sm:block" />
+          {{ t('hero.greeting') }}<br class="hidden sm:block" />
           <span class="text-transparent bg-clip-text bg-linear-to-r from-blue-600 via-purple-500 to-indigo-600">
-            Digital Experiences
+            {{ t('hero.name') }}
           </span>
         </h1>
 
@@ -28,7 +28,7 @@
           data-aos="fade-up" 
           data-aos-delay="200"
         >
-          I am <span class="font-semibold text-gray-900 dark:text-white">Pejoal Hanna</span>, a Senior Full-Stack Engineer specializing in scalable web systems and high-performance cross-platform mobile applications. I transform complex requirements into elegant, user-centric solutions.
+          <span class="font-semibold text-gray-900 dark:text-white">{{ t('hero.role') }}</span> — {{ t('hero.bio') }}
         </p>
 
         <div class="flex flex-col sm:flex-row items-center justify-center gap-5 mb-16" data-aos="fade-up" data-aos-delay="300">
@@ -69,17 +69,17 @@
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-3xl mx-auto pt-8 border-t border-gray-200 dark:border-gray-800" data-aos="fade-up" data-aos-delay="400">
           <div class="text-center group">
             <div class="text-4xl font-black text-transparent bg-clip-text bg-linear-to-br from-gray-900 to-gray-500 dark:from-white dark:to-gray-400 mb-1 group-hover:scale-110 transition-transform">{{ totalApps }}+</div>
-            <div class="text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-widest">Published Apps</div>
+            <div class="text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-widest">{{ t('hero.appsPublished') }}</div>
           </div>
           <div class="text-center group">
             <div class="text-4xl font-black text-transparent bg-clip-text bg-linear-to-br from-blue-600 to-indigo-500 mb-1 group-hover:scale-110 transition-transform">{{ totalDownloads }}</div>
-            <div class="text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-widest">Global Downloads</div>
+            <div class="text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-widest">{{ t('hero.totalDownloads') }}</div>
           </div>
           <div class="text-center group">
             <div class="flex items-center justify-center gap-1 text-4xl font-black text-transparent bg-clip-text bg-linear-to-br from-yellow-500 to-orange-400 mb-1 group-hover:scale-110 transition-transform">
               {{ averageRating }} <Icon name="heroicons:star-solid" class="w-8 h-8 text-yellow-400" />
             </div>
-            <div class="text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-widest">Average Rating</div>
+            <div class="text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-widest">{{ t('hero.averageRating') }}</div>
           </div>
         </div>
       </div>
@@ -90,6 +90,8 @@
 <script setup>
 import { computed } from 'vue';
 import appsData from '../data/appsData.json';
+
+const { t } = useI18n();
 
 const totalApps = computed(() => {
   return appsData.length;

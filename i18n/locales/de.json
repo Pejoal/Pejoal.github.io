@@ -17,15 +17,30 @@
     "ctaExplore": "Portfolio erkunden",
     "ctaContact": "Kontakt aufnehmen",
     "appsPublished": "Veröffentlichte Apps",
-    "activeUsers": "Gesamtdownloads",
-    "ratingAverage": "Durchschnittsbewertung"
+    "totalDownloads": "Gesamtdownloads",
+    "averageRating": "Durchschnittsbewertung"
   },
   "about": {
-    "title": "Über mich",
-    "subtitle": "Leidenschaftlicher Entwickler für skalierbare Mobil- und Weblösungen.",
-    "heading": "Hervorragende Software-Erlebnisse schaffen",
-    "p1": "Mit Expertise in plattformübergreifender mobiler Entwicklung und Full-Stack-Webarchitektur erstelle ich Anwendungen, die elegantes UI-Design mit robuster Backend-Performance verbinden.",
-    "p2": "Mein veröffentlichtes Portfolio umfasst über 48 Produktionsanwendungen im Google Play Store und Apple App Store – von Sprachlernplattformen bis hin zu Produktivitätswerkzeugen."
+    "title": "Softwareentwicklung mit Zweck",
+    "subtitle": "Mich begeistert die Verbindung von anspruchsvollem Design und robuster Architektur. Mein Kernfokus liegt in der Entwicklung intuitiver mobiler Ökosysteme – insbesondere interaktiver Lernplattformen – sowie nützlicher Werkzeuge und digitaler Erlebnisse.",
+    "card1Title": "Mobile Architektur",
+    "card1Desc": "Meisterhaft entwickelte native und plattformübergreifende Anwendungen, optimiert für Leistung, Skalierbarkeit und nahtlose Benutzerinteraktion.",
+    "card2Title": "Lernplattformen & EdTech",
+    "card2Desc": "Entwurf umfassender Sprachlernlösungen mit interaktiven Quizzes, Muttersprachler-Audio, Spaced-Repetition und spielerischer Fortschrittsverfolgung.",
+    "card3Title": "Full-Stack Systeme",
+    "card3Desc": "Entwicklung skalierbarer Backend-APIs, Web-Dashboards und Automatisierungswerkzeuge mit modernen Stacks wie Vue, Nuxt, Laravel und Node.js."
+  },
+  "services": {
+    "title": "Was ich tue",
+    "subtitle": "Umfassende Software-Engineering-Dienstleistungen von der mobilen App-Entwicklung bis hin zu skalierbaren Websystemen.",
+    "s1Title": "Plattformübergreifende Mobile Apps",
+    "s1Desc": "Erstellung von iOS- & Android-Anwendungen mit React Native, Expo und Flutter, inklusive Offline-Fähigkeit, Store-Optimierung und Biometrie.",
+    "s2Title": "Full-Stack Websysteme",
+    "s2Desc": "Entwicklung moderner Web-Apps mit Vue, Nuxt, Node.js, PHP/Laravel, TailwindCSS und REST/GraphQL APIs.",
+    "s3Title": "Store-Automatisierung & Daten-Pipelines",
+    "s3Desc": "Automatisierte App-Store-Scraper, CI/CD-Deployment-Pipelines, App-Store-Optimierung und Datensynchronisations-Engines.",
+    "s4Title": "KI & Sprach-Transkription Integration",
+    "s4Desc": "Einbindung fortschrittlicher KI-Modelle, kontinuierlicher Sprachtranskription, Biometrie und domänenspezifischer Dokumentengenerierung."
   },
   "apps": {
     "title": "Globales App-Portfolio",
@@ -53,12 +68,62 @@
     "adFree": "Werbefrei",
     "ads": "Enthält Werbung"
   },
+  "webProjects": {
+    "title": "Webprojekte & Systeme",
+    "subtitle": "Eine Sammlung von Full-Stack-Webanwendungen, Landingpages und Verwaltungssystemen.",
+    "viewProject": "Live-Projekt ansehen",
+    "sourceCode": "Quellcode",
+    "p1Title": "Unternehmens-Personalabrechnung & ERP",
+    "p1Desc": "Eine umfassende ERP-Architektur, entwickelt mit Laravel und Vue 3. Bietet hochsicheren rollenbasierten Zugriff, automatisierte Gehaltsabrechnung und detaillierte Analysen.\n\nHinweis: Kaltstart-Deployment kann ca. 1 Min. dauern.\nAdmin-Zugangsdaten: pejoal / password",
+    "p2Title": "Moderne E-Commerce-Engine",
+    "p2Desc": "Eine skalierbare E-Commerce-Plattform, entwickelt mit Vue.js und Laravel. Für hohe Konvertierung entwickelt mit Echtzeit-Warenkorbsynchronisation, sicheren Zahlungs-Gateways und umfassendem Inventar-Verwaltungspanel.",
+    "p3Title": "Automatisierte Terminplanungs-App",
+    "p3Desc": "Ein optimiertes Terminkoordinationssystem speziell für Bildungseinrichtungen. Reduziert den Verwaltungsaufwand durch Echtzeit-Synchronisation der Dozentenverfügbarkeit mit Studentenbuchungen.",
+    "p4Title": "Echtzeit-Multiplayer-Hub",
+    "p4Desc": "Eine hochgradig simultane Multiplayer-Umgebung unter Verwendung von Laravel, Inertia, Vue 3 und WebSockets. Bietet anspruchsvolles Zustandsmanagement für Echtzeit-Kartenmischen, Geben und responsive Animationen.",
+    "p5Title": "Soziale Vernetzungsplattform",
+    "p5Desc": "Ein voll ausgestattetes Social-Media-Ökosystem. Implementiert Echtzeit-Messaging, dynamische Newsfeeds und komplexe relationale Datenbanken zur Unterstützung komplexer Vernetzungen und Interaktionen."
+  },
+  "skills": {
+    "title": "Technische Arsenal & Führungskompetenz",
+    "subtitle": "Eine umfassende Mischung aus modernen Entwicklungsmethoden, Cloud-Infrastruktur und strategischer Problemlösung.",
+    "frontend": "Frontend-Architektur",
+    "mobile": "Mobile Ökosysteme",
+    "backend": "Backend-Engineering",
+    "database": "Datenbank & Cloud-Infrastruktur",
+    "testing": "Testing & Dev-Workflow",
+    "leadership": "Strategische Führung"
+  },
+  "softSkills": {
+    "s1Name": "Architektonische Vision",
+    "s1Desc": "Entwurf belastbarer, skalierbarer Systeme von Grund auf.",
+    "s2Name": "Führungskommunikation",
+    "s2Desc": "Übersetzung komplexer technischer Konzepte für Stakeholder.",
+    "s3Name": "Fächerübergreifende Führung",
+    "s3Desc": "Förderung der Abstimmung zwischen Produkt, Design und Entwicklung.",
+    "s4Name": "Agile Bereitstellung",
+    "s4Desc": "Iterative, schnelle Auslieferung ohne Kompromisse bei der Qualität.",
+    "s5Name": "Strategische Anpassungsfähigkeit",
+    "s5Desc": "Effektives Agieren in schnelllebigen Technologieumgebungen.",
+    "s6Name": "UX-Orientiertes Engineering",
+    "s6Desc": "Softwareentwicklung mit kompromisslosem Fokus auf den Endbenutzer."
+  },
   "contact": {
     "title": "Lass uns etwas zusammen bauen",
-    "subtitle": "Haben Sie ein Projekt im Sinn oder Interesse an einer Zusammenarbeit?",
+    "subtitle": "Haben Sie ein Projekt im Sinn oder Interesse an einer Zusammenarbeit? Nehmen Sie gerne Kontakt auf.",
     "email": "E-Mail",
     "github": "GitHub",
-    "googlePlay": "Google Play",
-    "sendMessage": "Nachricht senden"
+    "googlePlay": "Google Play Store",
+    "location": "Standort",
+    "locationValue": "Menia, Ägypten / Weltweit",
+    "nameLabel": "Ihr Name",
+    "emailLabel": "Ihre E-Mail",
+    "messageLabel": "Ihre Nachricht",
+    "sendButton": "Nachricht senden"
+  },
+  "footer": {
+    "copyright": "Pejoal Dev Studio. Alle Rechte vorbehalten.",
+    "privacy": "Datenschutz",
+    "imprint": "Impressum"
   }
 }

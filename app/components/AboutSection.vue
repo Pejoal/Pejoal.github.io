@@ -3,9 +3,9 @@
     <div class="max-w-7xl mx-auto">
       <!-- Section Header -->
       <div class="text-center mb-16" data-aos="fade-up" data-aos-delay="100">
-        <h2 class="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-linear-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300 mb-6 tracking-tight">Engineering with Purpose</h2>
+        <h2 class="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-linear-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300 mb-6 tracking-tight">{{ t('about.title') }}</h2>
         <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto font-light leading-relaxed" data-aos="fade-up" data-aos-delay="200">
-          I am driven by the intersection of sophisticated design and robust architecture. My core focus lies in architecting intuitive mobile ecosystems—particularly immersive educational platforms—while also engineering high-utility tools and interactive digital experiences.
+          {{ t('about.subtitle') }}
         </p>
       </div>
 
@@ -25,9 +25,9 @@
           <div class="w-20 h-20 bg-linear-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
             <Icon name="heroicons:device-phone-mobile" class="w-10 h-10 text-white" />
           </div>
-          <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">Mobile Architecture</h3>
+          <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">{{ t('about.card1Title') }}</h3>
           <p class="text-gray-600 dark:text-gray-300 leading-relaxed relative z-10">
-            Expertly crafted native and cross-platform applications, optimized for performance, scalability, and seamless user interaction.
+            {{ t('about.card1Desc') }}
           </p>
         </div>
 
@@ -41,9 +41,9 @@
           <div class="w-20 h-20 bg-linear-to-br from-purple-500 to-fuchsia-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
             <Icon name="heroicons:language" class="w-10 h-10 text-white" />
           </div>
-          <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">EdTech Platforms</h3>
+          <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">{{ t('about.card2Title') }}</h3>
           <p class="text-gray-600 dark:text-gray-300 leading-relaxed relative z-10">
-            Specialized in engineering immersive, comprehensive learning ecosystems that drive user retention and knowledge acquisition.
+            {{ t('about.card2Desc') }}
           </p>
         </div>
 
@@ -57,9 +57,9 @@
           <div class="w-20 h-20 bg-linear-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
             <Icon name="heroicons:puzzle-piece" class="w-10 h-10 text-white" />
           </div>
-          <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">Interactive Utilities</h3>
+          <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">{{ t('about.card3Title') }}</h3>
           <p class="text-gray-600 dark:text-gray-300 leading-relaxed relative z-10">
-            Developing sophisticated daily utility tools and engaging interactive experiences tailored to complex user needs.
+            {{ t('about.card3Desc') }}
           </p>
         </div>
       </div>
@@ -68,7 +68,7 @@
 </template>
 
 <script setup>
-// No props needed for this standalone section
+const { t } = useI18n();
 </script>
 
 <style scoped>

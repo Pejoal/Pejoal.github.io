@@ -8,9 +8,9 @@
           <Icon name="heroicons:code-bracket" class="w-5 h-5" />
           <span class="font-bold tracking-wide uppercase text-sm">Featured Work</span>
         </div>
-        <h2 class="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-linear-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300 mb-6 tracking-tight">Enterprise Web Systems</h2>
+        <h2 class="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-linear-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300 mb-6 tracking-tight">{{ t('webProjects.title') }}</h2>
         <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto font-light leading-relaxed">
-          Architecting robust, scalable, and responsive web applications for diverse industries.
+          {{ t('webProjects.subtitle') }}
         </p>
       </div>
 
@@ -58,7 +58,7 @@
               {{ proj.title }}
             </h3>
 
-            <p class="text-gray-600 dark:text-gray-300 text-sm mb-6 leading-relaxed flex-1" v-html="proj.description"></p>
+            <p class="text-gray-600 dark:text-gray-300 text-sm mb-6 leading-relaxed flex-1 whitespace-pre-line">{{ proj.description }}</p>
 
             <div class="flex gap-4 pt-4 border-t border-gray-100 dark:border-gray-700 mt-auto">
               <a
@@ -67,7 +67,7 @@
                 target="_blank"
                 class="flex items-center gap-1.5 text-sm font-semibold text-indigo-600 hover:text-indigo-700 dark:text-indigo-400 dark:hover:text-indigo-300 transition-colors"
               >
-                <Icon name="heroicons:globe-alt" class="w-5 h-5" /> Live Deployment
+                <Icon name="heroicons:globe-alt" class="w-5 h-5" /> {{ t('webProjects.viewProject') }}
               </a>
               <a
                 v-if="proj.github"
@@ -75,7 +75,7 @@
                 target="_blank"
                 class="flex items-center gap-1.5 text-sm font-semibold text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
               >
-                <Icon name="simple-icons:github" class="w-5 h-5" /> Source Code
+                <Icon name="simple-icons:github" class="w-5 h-5" /> {{ t('webProjects.sourceCode') }}
               </a>
             </div>
           </div>
@@ -86,44 +86,41 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { computed } from 'vue';
 
-const projects = ref([
+const { t } = useI18n();
+
+const projects = computed(() => [
   {
-    title: 'Enterprise Payroll & ERP',
-    description:
-      'A comprehensive ERP architecture developed with Laravel and Vue 3. Features highly secure role-based access, automated payroll processing, and deep analytics.<br /><br /><span class="text-xs opacity-70">Note: Cold-start deployment may take ~1 min.<br />Admin Credentials: <strong>pejoal</strong> / <strong>password</strong></span>',
+    title: t('webProjects.p1Title'),
+    description: t('webProjects.p1Desc'),
     live: 'https://project-manager-tvrw.onrender.com/payroll/dashboard',
     image: '/assets/erp.png',
     isNew: true,
     isSpecial: true,
   },
   {
-    title: 'Modern E-Commerce Engine',
-    description:
-      'A scalable e-commerce platform built with Vue.js and Laravel. Engineered for high conversion with real-time cart synchronization, secure payment gateways, and a comprehensive admin inventory management panel.',
+    title: t('webProjects.p2Title'),
+    description: t('webProjects.p2Desc'),
     github: 'https://github.com/Pejoal/ecommerce',
     image: '/assets/Screenshot2.png',
     isNew: true,
   },
   {
-    title: 'Automated Scheduling App',
-    description:
-      'A streamlined appointment coordination system designed specifically for educational institutions. Reduces administrative overhead by synchronizing instructor availability with student bookings in real-time.',
+    title: t('webProjects.p3Title'),
+    description: t('webProjects.p3Desc'),
     github: 'https://github.com/Pejoal/Termin',
     image: '/assets/appointments.png',
   },
   {
-    title: 'Real-Time Multiplayer Hub',
-    description:
-      'A highly concurrent multiplayer environment utilizing Laravel, Inertia, Vue 3, and WebSockets. Features sophisticated state-management for real-time card shuffling, dealing, and responsive animations across devices.',
+    title: t('webProjects.p4Title'),
+    description: t('webProjects.p4Desc'),
     github: 'https://github.com/Pejoal/Game',
     image: '/assets/game1.png',
   },
   {
-    title: 'Social Connectivity Platform',
-    description:
-      'A fully-featured social media ecosystem. Implements real-time messaging, dynamic news feeds, and intricate relational databases to support complex friend networking and content engagement.',
+    title: t('webProjects.p5Title'),
+    description: t('webProjects.p5Desc'),
     github: 'https://github.com/Pejoal/Social-Media-Platform',
     image: '/assets/social_media_logo.png',
   },

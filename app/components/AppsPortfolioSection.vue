@@ -3,9 +3,9 @@
     <div class="max-w-7xl mx-auto">
       <!-- Section Header -->
       <div class="text-center mb-10" data-aos="fade-up">
-        <h2 class="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-linear-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300 mb-6 tracking-tight">Global Mobile Portfolio</h2>
+        <h2 class="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-linear-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300 mb-6 tracking-tight">{{ t('apps.title') }}</h2>
         <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto font-light leading-relaxed mb-8">
-          An extensive showcase of published, high-impact mobile applications serving thousands of users worldwide.
+          {{ t('apps.subtitle') }}
         </p>
 
         <!-- Search and Sort Bar -->
@@ -18,7 +18,7 @@
               v-model="searchQuery" 
               type="text" 
               class="block w-full pl-14 pr-4 py-4 rounded-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:text-white transition-all outline-none" 
-              placeholder="Search for apps, categories, or keywords..." 
+              :placeholder="t('apps.searchPlaceholder')" 
             />
           </div>
           <div class="relative w-full md:w-56 shrink-0">
@@ -29,11 +29,11 @@
               v-model="sortOrder"
               class="block w-full pl-12 pr-10 py-4 rounded-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:text-white transition-all outline-none appearance-none cursor-pointer text-sm font-medium"
             >
-              <option value="relevance">Default (Relevance)</option>
-              <option value="installs">Most Installs</option>
-              <option value="rating">Highest Rated</option>
-              <option value="released">Newest Releases</option>
-              <option value="updated">Recently Updated</option>
+              <option value="relevance">{{ t('apps.relevance') }}</option>
+              <option value="installs">{{ t('apps.installs') }}</option>
+              <option value="rating">{{ t('apps.rating') }}</option>
+              <option value="released">{{ t('apps.released') }}</option>
+              <option value="updated">{{ t('apps.updated') }}</option>
             </select>
             <div class="absolute inset-y-0 right-0 pr-5 flex items-center pointer-events-none">
               <Icon name="heroicons:chevron-down" class="w-4 h-4 text-gray-400" />
@@ -47,7 +47,7 @@
             ]"
           >
             <Icon name="heroicons:shield-check" class="w-5 h-5" />
-            Ad-Free Only
+            {{ t('apps.adFreeOnly') }}
           </button>
         </div>
 
@@ -84,9 +84,9 @@
       <!-- Empty State -->
       <div v-if="filteredApps.length === 0" class="text-center py-20">
         <Icon name="heroicons:magnifying-glass" class="w-16 h-16 text-gray-300 dark:text-gray-600 mx-auto mb-4" />
-        <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">No apps found</h3>
+        <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">{{ t('apps.noAppsFound') }}</h3>
         <p class="text-gray-500 dark:text-gray-400">Try adjusting your search query or select a different category.</p>
-        <button @click="searchQuery = ''; activeCategory = 'All'" class="mt-6 px-6 py-2.5 bg-blue-600 text-white rounded-full font-medium hover:bg-blue-700 transition">Clear Filters</button>
+        <button @click="searchQuery = ''; activeCategory = 'All'" class="mt-6 px-6 py-2.5 bg-blue-600 text-white rounded-full font-medium hover:bg-blue-700 transition">{{ t('apps.clearFilters') }}</button>
       </div>
     </div>
 
@@ -102,6 +102,8 @@
 <script setup>
 import { ref, computed, onMounted, watch } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
+
+const { t } = useI18n();
 
 const props = defineProps({
   aiApps: Array,
@@ -151,7 +153,7 @@ const sortOrder = ref('relevance');
 
 const categories = computed(() => {
   return [
-    { id: 'All', name: 'All Apps', color: 'blue' },
+    { id: 'All', name: t('apps.allApps'), color: 'blue' },
     { id: 'AI', name: 'AI Apps', apps: props.aiApps || [], color: 'purple' },
     { id: 'German', name: 'German', apps: props.germanApps || [], color: 'blue' },
     { id: 'English', name: 'English', apps: props.englishApps || [], color: 'indigo' },

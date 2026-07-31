@@ -2,9 +2,9 @@
   <section id="contact" class="py-16 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-800">
     <div class="max-w-7xl mx-auto">
       <div class="text-center mb-16">
-        <h2 class="text-4xl font-bold text-gray-900 dark:text-white mb-6">Let's Connect</h2>
+        <h2 class="text-4xl font-bold text-gray-900 dark:text-white mb-6">{{ t('contact.title') }}</h2>
         <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-          Have a project in mind or want to collaborate? I'd love to hear from you!
+          {{ t('contact.subtitle') }}
         </p>
       </div>
 
@@ -60,3 +60,7 @@
     </div>
   </section>
 </template>
+
+<script setup>
+const { t } = useI18n();
+</script>

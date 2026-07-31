@@ -23,12 +23,13 @@
 
     <!-- Empty State -->
     <div v-else class="text-center py-8">
-      <div class="text-gray-400 text-lg">No apps in this category yet</div>
+      <div class="text-gray-400 text-lg">{{ t('apps.noAppsFound') }}</div>
     </div>
   </div>
 </template>
 
 <script setup>
+const { t } = useI18n();
 const props = defineProps({
   title: {
     type: String,

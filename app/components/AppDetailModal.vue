@@ -58,16 +58,16 @@
                       {{ size }}
                     </span>
                     <span v-if="updatedDate" class="shrink-0 px-2.5 py-1 sm:px-3 sm:py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 rounded-full text-xs sm:text-sm font-medium">
-                      Updated {{ updatedDate }}
+                      {{ t('modal.updated') }} {{ updatedDate }}
                     </span>
                     <span v-if="releasedDate" class="shrink-0 px-2.5 py-1 sm:px-3 sm:py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 rounded-full text-xs sm:text-sm font-medium">
-                      Released {{ releasedDate }}
+                      {{ t('modal.released') }} {{ releasedDate }}
                     </span>
                     <span v-if="adSupported === true" class="shrink-0 flex items-center gap-1 px-2.5 py-1 sm:px-3 sm:py-1 bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-400 rounded-full text-xs sm:text-sm font-medium">
-                      <Icon name="heroicons:speaker-wave" class="w-3 h-3 sm:w-4 sm:h-4" /> Ads
+                      <Icon name="heroicons:speaker-wave" class="w-3 h-3 sm:w-4 sm:h-4" /> {{ t('modal.ads') }}
                     </span>
                     <span v-if="adSupported === false" class="shrink-0 flex items-center gap-1 px-2.5 py-1 sm:px-3 sm:py-1 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 rounded-full text-xs sm:text-sm font-medium">
-                      <Icon name="heroicons:shield-check" class="w-3 h-3 sm:w-4 sm:h-4" /> Ad-Free
+                      <Icon name="heroicons:shield-check" class="w-3 h-3 sm:w-4 sm:h-4" /> {{ t('modal.adFree') }}
                     </span>
                   </div>
                 </div>
@@ -83,7 +83,7 @@
                     <Icon name="simple-icons:apple" class="w-5 h-5 sm:w-6 sm:h-6" />
                     <div class="flex flex-col items-start leading-none">
                       <span class="text-[8px] sm:text-[10px] uppercase font-medium opacity-80">Download</span>
-                      <span class="font-bold text-xs sm:text-base">App Store</span>
+                      <span class="font-bold text-xs sm:text-base">{{ t('modal.downloadAppStore') }}</span>
                     </div>
                   </a>
                   <a
@@ -95,7 +95,7 @@
                     <Icon name="simple-icons:googleplay" class="w-4 h-4 sm:w-5 sm:h-5" />
                     <div class="flex flex-col items-start leading-none">
                       <span class="text-[8px] sm:text-[10px] uppercase font-medium opacity-90">GET IT ON</span>
-                      <span class="font-bold text-xs sm:text-base tracking-wide">Google Play</span>
+                      <span class="font-bold text-xs sm:text-base tracking-wide">{{ t('modal.getItOnGooglePlay') }}</span>
                     </div>
                   </a>
                 </div>
@@ -119,7 +119,7 @@
               <div v-if="screenshots && screenshots.length > 0" class="mb-10">
                 <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
                   <Icon name="heroicons:photo" class="w-6 h-6 text-blue-500" />
-                  Screenshots
+                  {{ t('modal.screenshots') }}
                 </h3>
                 <div class="flex overflow-x-auto gap-4 pb-4 snap-x snap-mandatory custom-scrollbar hide-scrollbar-touch">
                   <img 
@@ -138,7 +138,7 @@
               <div v-if="longDescription" class="mb-10">
                 <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
                   <Icon name="heroicons:information-circle" class="w-6 h-6 text-blue-500" />
-                  About this app
+                  {{ t('modal.aboutThisApp') }}
                 </h3>
                 <div 
                   class="prose prose-blue dark:prose-invert max-w-none text-gray-600 dark:text-gray-300 leading-relaxed text-sm sm:text-base whitespace-pre-wrap"
@@ -150,7 +150,7 @@
               <div v-if="recentChanges" class="mb-6">
                 <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
                   <Icon name="heroicons:sparkles" class="w-6 h-6 text-blue-500" />
-                  What's New
+                  {{ t('modal.whatsNew') }}
                 </h3>
                 <div class="p-4 bg-gray-50 dark:bg-gray-800/50 rounded-2xl border border-gray-100 dark:border-gray-800">
                   <p class="text-gray-600 dark:text-gray-300 text-sm whitespace-pre-wrap">{{ recentChanges }}</p>
@@ -166,6 +166,8 @@
 
 <script setup>
 import { computed, watch, onMounted, onUnmounted } from 'vue';
+
+const { t } = useI18n();
 
 const props = defineProps({
   isOpen: Boolean,

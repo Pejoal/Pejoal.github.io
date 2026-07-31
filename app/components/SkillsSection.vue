@@ -2,15 +2,15 @@
   <section id="skills" class="py-20 px-4 bg-linear-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
     <div class="max-w-7xl mx-auto">
       <div class="text-center mb-16" data-aos="fade-up">
-        <h2 class="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-linear-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300 mb-6 tracking-tight">Technical Arsenal & Leadership</h2>
-        <p class="text-xl text-gray-600 dark:text-gray-300 font-light max-w-2xl mx-auto">A comprehensive blend of modern engineering practices, cloud infrastructure, and strategic problem-solving.</p>
+        <h2 class="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-linear-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300 mb-6 tracking-tight">{{ t('skills.title') }}</h2>
+        <p class="text-xl text-gray-600 dark:text-gray-300 font-light max-w-2xl mx-auto">{{ t('skills.subtitle') }}</p>
       </div>
 
       <!-- ==================== TECHNICAL SKILLS ==================== -->
       <div class="space-y-16 mb-20">
         <!-- Frontend -->
         <SkillCategory
-          title="Frontend Architecture"
+          :title="t('skills.frontend')"
           icon="heroicons:code-bracket"
           color="from-fuchsia-500 to-cyan-500"
           :skills="frontendSkills"
@@ -20,7 +20,7 @@
 
         <!-- Mobile -->
         <SkillCategory
-          title="Mobile Ecosystems"
+          :title="t('skills.mobile')"
           icon="heroicons:device-phone-mobile"
           color="from-indigo-500 via-purple-500 to-pink-500"
           :skills="mobileSkills"
@@ -30,7 +30,7 @@
 
         <!-- Backend -->
         <SkillCategory
-          title="Backend Engineering"
+          :title="t('skills.backend')"
           icon="heroicons:server"
           color="from-blue-600 to-cyan-400"
           :skills="backendSkills"
@@ -40,7 +40,7 @@
 
         <!-- Database & DevOps -->
         <SkillCategory
-          title="Database & Cloud Infrastructure"
+          :title="t('skills.database')"
           icon="heroicons:cog-6-tooth"
           color="from-orange-500 to-rose-500"
           :skills="dbDevOpsSkills"
@@ -50,7 +50,7 @@
 
         <!-- Testing & Tools -->
         <SkillCategory
-          title="Testing & Dev Workflow"
+          :title="t('skills.testing')"
           icon="heroicons:beaker"
           color="from-emerald-400 to-teal-500"
           :skills="testingToolsSkills"
@@ -62,7 +62,7 @@
       <!-- ==================== SOFT SKILLS ==================== -->
       <div>
         <h3 class="text-3xl font-extrabold text-center text-transparent bg-clip-text bg-linear-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300 mb-12 tracking-tight" data-aos="fade-up">
-          Strategic Leadership
+          {{ t('skills.leadership') }}
         </h3>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           <div
@@ -96,7 +96,9 @@
 </template>
 
 <script setup>
-import { nextTick, onMounted, ref } from 'vue';
+import { nextTick, onMounted, ref, computed } from 'vue';
+
+const { t } = useI18n();
 
 // ──────────────────────────────────────
 // Technical Skills – Categorized
@@ -146,14 +148,14 @@ const testingToolsSkills = [
 // ──────────────────────────────────────
 // Soft Skills
 // ──────────────────────────────────────
-const softSkills = [
-  { name: 'Architectural Vision', level: 94, desc: 'Designing resilient, scalable systems from the ground up.', icon: 'heroicons:puzzle-piece' },
-  { name: 'Executive Communication', level: 90, desc: 'Translating complex technical concepts for stakeholders.', icon: 'heroicons:chat-bubble-left-right' },
-  { name: 'Cross-Functional Leadership', level: 88, desc: 'Driving alignment between product, design, and engineering.', icon: 'heroicons:user-group' },
-  { name: 'Agile Delivery', level: 91, desc: 'Iterative, rapid shipping without compromising quality.', icon: 'heroicons:clock' },
-  { name: 'Strategic Adaptability', level: 89, desc: 'Pivoting effectively in fast-paced tech environments.', icon: 'heroicons:arrows-up-down' },
-  { name: 'UX-Driven Engineering', level: 87, desc: 'Engineering with a relentless focus on the end-user.', icon: 'heroicons:light-bulb' },
-];
+const softSkills = computed(() => [
+  { name: t('softSkills.s1Name'), level: 94, desc: t('softSkills.s1Desc'), icon: 'heroicons:puzzle-piece' },
+  { name: t('softSkills.s2Name'), level: 90, desc: t('softSkills.s2Desc'), icon: 'heroicons:chat-bubble-left-right' },
+  { name: t('softSkills.s3Name'), level: 88, desc: t('softSkills.s3Desc'), icon: 'heroicons:user-group' },
+  { name: t('softSkills.s4Name'), level: 91, desc: t('softSkills.s4Desc'), icon: 'heroicons:clock' },
+  { name: t('softSkills.s5Name'), level: 89, desc: t('softSkills.s5Desc'), icon: 'heroicons:arrows-up-down' },
+  { name: t('softSkills.s6Name'), level: 87, desc: t('softSkills.s6Desc'), icon: 'heroicons:light-bulb' },
+]);
 
 // ──────────────────────────────────────
 // Progress Refs (one per category)
@@ -185,6 +187,6 @@ onMounted(() => {
   setTimeout(() => animateProgress(backendProgress, backendSkills), 500);
   setTimeout(() => animateProgress(dbDevOpsProgress, dbDevOpsSkills), 600);
   setTimeout(() => animateProgress(testingToolsProgress, testingToolsSkills), 700);
-  setTimeout(() => animateProgress(softProgress, softSkills), 800);
+  setTimeout(() => animateProgress(softProgress, softSkills.value), 800);
 });
 </script>
