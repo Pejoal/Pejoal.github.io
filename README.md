@@ -28,6 +28,18 @@ The frontend is engineered to be as modern, responsive, and sleek as the apps it
 - **Rich App Cards**: Each card displays dynamic badges showing precise metrics (⭐ Rating, ⬇️ Installs, 📦 Size) at a glance, eliminating the need to click through for basic info.
 - **Flawless Dark Mode**: Deep system integration for instant light/dark mode toggling.
 
+## 🔗 Direct App Modal Linking via URL Parameters
+
+You can directly link to or open any app's detail modal using URL query parameters:
+
+- **Parameter options**: `app`, `id`, or `appId`
+- **Example Usage**:
+  - `https://pejoal.github.io/?app=autoscribe.chat`
+  - `https://pejoal.github.io/?id=autoscribe.chat`
+  - `https://pejoal.github.io/?appId=autoscribe.chat`
+
+When visiting the URL with a valid app ID parameter, the portfolio will automatically launch the corresponding app modal on load. Opening or closing an app modal also seamlessly updates the browser URL without page reload.
+
 ## 🛠️ Tech Stack
 
 - **Framework**: Nuxt 4 & Vue 3 (Composition API)
