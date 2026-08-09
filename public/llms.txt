@@ -28,5 +28,5 @@ Crawl-delay: 10
 
 # === CONTACT ===
 # For licensing, partnerships, or data usage:
-# Email: business@pejoal.us.kg
+# Email: business@pejoal.com
 # Website: https://pejoal.github.io

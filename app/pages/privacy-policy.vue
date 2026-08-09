@@ -4,97 +4,89 @@
     class="min-h-screen bg-linear-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-blue-900 dark:to-indigo-900 pt-24 px-4"
   >
     <div class="max-w-4xl mx-auto">
-      <NuxtLink to="/" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 mb-8">
+      <NuxtLink to="/" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 mb-8 font-medium">
         <Icon name="heroicons:arrow-left" class="w-5 h-5" />
-        Back to Portfolio
+        {{ t('legal.backToPortfolio') }}
       </NuxtLink>
 
-      <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-6">Privacy Policy</h1>
-      <p class="text-sm text-gray-500 dark:text-gray-400 mb-8">Last updated: July 07, 2026</p>
+      <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-6">{{ t('privacy.title') }}</h1>
+      <p class="text-sm text-gray-500 dark:text-gray-400 mb-8">
+        {{ t('legal.lastUpdated', { date: locale === 'de' ? '07. Juli 2026' : 'July 07, 2026' }) }}
+      </p>
 
       <div class="max-w-none space-y-7 prose prose-lg dark:prose-invert">
         <p class="dark:text-gray-300">
-          This Privacy Policy applies to <strong>all apps</strong> developed by
-          <strong>Pejoal Dev Studio</strong> ("we", "us", "our").
+          {{ t('privacy.intro') }}
         </p>
 
         <div class="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg border border-blue-100 dark:border-blue-800">
           <p class="text-sm text-blue-800 dark:text-blue-200 m-0">
-            <strong>Standard Privacy Commitment:</strong> This document outlines our baseline privacy practices. Because
-            our portfolio includes diverse tools, certain applications may require specific data handling disclosures.
-            For the most accurate information regarding a particular app's data usage, please refer to the
-            <strong>"Data Safety" section on its official store listing page</strong>.
+            <strong>{{ t('privacy.noticeTitle') }}</strong> {{ t('privacy.noticeText') }}
           </p>
         </div>
 
         <!-- 1. Personal Data -->
         <section>
-          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-3">1. Personal Data</h2>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-3">{{ t('privacy.s1Title') }}</h2>
           <ul class="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
-            <li><strong>No personal data is collected, stored, or shared</strong>.</li>
-            <li><strong>No login or registration is required</strong>.</li>
-            <li>We do <strong>not collect</strong> names, email addresses, device IDs, or any unique identifiers.</li>
-            <li>User activity is <strong>not tracked or monitored</strong>.</li>
+            <li>{{ t('privacy.s1Item1') }}</li>
+            <li>{{ t('privacy.s1Item2') }}</li>
+            <li>{{ t('privacy.s1Item3') }}</li>
+            <li>{{ t('privacy.s1Item4') }}</li>
           </ul>
         </section>
 
-        <!-- 2. Internet Access -->
+        <!-- 2. Connectivity -->
         <section>
-          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-3">2. Connectivity</h2>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-3">{{ t('privacy.s2Title') }}</h2>
           <p class="dark:text-gray-300">
-            While many of our applications operate <strong>entirely offline</strong>, some may require internet
-            connectivity for core features. Any such requirement, including the nature of the connection, is detailed
-            within the app's technical specifications in the store listing.
+            {{ t('privacy.s2Text') }}
           </p>
         </section>
 
         <!-- 3. Permissions -->
         <section>
-          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-3">3. Permissions</h2>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-3">{{ t('privacy.s3Title') }}</h2>
           <p class="dark:text-gray-300">
-            Our apps <strong>do not request access</strong> to sensitive device features such as:
+            {{ t('privacy.s3Text') }}
           </p>
           <ul class="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300 ml-6">
-            <li>Camera</li>
-            <li>Microphone</li>
-            <li>Location</li>
-            <li>Contacts</li>
-            <li>Storage</li>
+            <li>{{ t('privacy.s3Item1') }}</li>
+            <li>{{ t('privacy.s3Item2') }}</li>
+            <li>{{ t('privacy.s3Item3') }}</li>
+            <li>{{ t('privacy.s3Item4') }}</li>
+            <li>{{ t('privacy.s3Item5') }}</li>
           </ul>
         </section>
 
         <!-- 4. Ads & Analytics -->
         <section>
-          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-3">4. Advertising and Analytics</h2>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-3">{{ t('privacy.s4Title') }}</h2>
           <ul class="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
             <li>
-              We prioritize an ad-free experience; however, some apps may utilize
-              <strong>third-party advertising networks or basic analytics</strong> to support development.
+              {{ t('privacy.s4Item1') }}
             </li>
             <li>
-              If an app uses these services, they are <strong>explicitly listed in the store listing</strong> under the
-              "Data Collection" or "Ads" labels.
+              {{ t('privacy.s4Item2') }}
             </li>
           </ul>
         </section>
 
         <!-- 5. Children -->
         <section>
-          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-3">5. Children</h2>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-3">{{ t('privacy.s5Title') }}</h2>
           <p class="dark:text-gray-300">
-            Our apps are designed to be safe for all ages, including children under 13. Since
-            <strong>no personal data is collected by default</strong>, no parental consent is required.
+            {{ t('privacy.s5Text') }}
           </p>
         </section>
 
         <!-- 6. Contact -->
         <section>
-          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-3">6. Contact</h2>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-8 mb-3">{{ t('privacy.s6Title') }}</h2>
           <p class="dark:text-gray-300">
-            Have questions about this policy or a specific app?<br />
-            Contact <strong>Pejoal Dev Studio</strong> at:
-            <a href="mailto:business@pejoal.us.kg" class="text-blue-600 hover:underline font-medium">
-              business@pejoal.us.kg
+            {{ t('privacy.s6Text') }}<br />
+            <a href="mailto:business@pejoal.com" class="text-blue-600 hover:underline font-medium">
+              business@pejoal.com
             </a>
           </p>
         </section>
@@ -105,14 +97,14 @@
           to="/terms"
           class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium"
         >
-          Terms and Conditions
+          {{ t('footer.terms') }}
         </NuxtLink>
         <span class="text-gray-400">|</span>
         <NuxtLink
           to="/imprint"
           class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium"
         >
-          Imprint
+          {{ t('footer.imprint') }}
         </NuxtLink>
       </div>
     </div>
@@ -120,8 +112,12 @@
 </template>
 
 <script setup>
+import { computed } from 'vue';
+
+const { t, locale } = useI18n();
+
 useSeoMeta({
-  title: 'Privacy Policy - Pejoal Dev Studio, Owner: Pejoal Hanna',
-  description: 'No data collection by default. Fully offline. Safe for all ages. Flexible per-app disclosures.',
+  title: computed(() => t('privacy.seoTitle')),
+  description: computed(() => t('privacy.seoDescription')),
 });
 </script>

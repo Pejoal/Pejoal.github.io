@@ -9,59 +9,54 @@
         class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 mb-8 font-medium"
       >
         <Icon name="heroicons:arrow-left" class="w-5 h-5" />
-        Back to Portfolio
+        {{ t('legal.backToPortfolio') }}
       </NuxtLink>
 
-      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">Terms and Conditions</h1>
-      <p class="text-sm text-gray-500 dark:text-gray-400 mb-10">Last updated: <strong>July 28, 2026</strong></p>
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">{{ t('terms.title') }}</h1>
+      <p class="text-sm text-gray-500 dark:text-gray-400 mb-10">
+        {{ t('legal.lastUpdated', { date: locale === 'de' ? '28. Juli 2026' : 'July 28, 2026' }) }}
+      </p>
 
       <div class="max-w-none space-y-8 prose prose-lg dark:prose-invert">
         <div class="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg border border-blue-100 dark:border-blue-800">
           <p class="text-sm text-blue-800 dark:text-blue-200 m-0">
-            <strong>Application-Specific Terms:</strong> These general terms apply to all our services. Please note that
-            individual mobile applications may be subject to
-            <strong>supplemental terms or End User License Agreements (EULA)</strong>, which are provided directly on
-            the App Store or Google Play Store.
+            <strong>{{ t('terms.noticeTitle') }}</strong> {{ t('terms.noticeText') }}
           </p>
         </div>
 
         <section>
-          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">1. Acceptance of Terms</h2>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">{{ t('terms.s1Title') }}</h2>
           <p class="dark:text-gray-300">
-            By using any app or website created by <strong>Pejoal Dev Studio</strong> (the "Services"), you agree to
-            these Terms.
-            <em
-              >Usage of specific mobile applications constitutes agreement to both these general terms and any
-              app-specific disclosures found in the store listing.</em
-            >
+            {{ t('terms.s1Text') }}
+            <em>{{ t('terms.s1Note') }}</em>
           </p>
         </section>
 
         <section>
-          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">2. Use of Services</h2>
-          <p class="dark:text-gray-300">You agree to use the Services lawfully and not to:</p>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">{{ t('terms.s2Title') }}</h2>
+          <p class="dark:text-gray-300">{{ t('terms.s2Text') }}</p>
           <ul class="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300">
-            <li>Violate any laws</li>
-            <li>Interfere with the Services</li>
-            <li>Attempt unauthorized access</li>
-            <li>Scrape or extract data automatically</li>
+            <li>{{ t('terms.s2Item1') }}</li>
+            <li>{{ t('terms.s2Item2') }}</li>
+            <li>{{ t('terms.s2Item3') }}</li>
+            <li>{{ t('terms.s2Item4') }}</li>
           </ul>
         </section>
 
         <section>
-          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">3. Intellectual Property</h2>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">{{ t('terms.s3Title') }}</h2>
           <p class="dark:text-gray-300">
-            All content, code, and designs are owned by <strong>Pejoal Dev Studio</strong> and protected by copyright.
-            You may not copy, modify, or distribute without permission.
+            {{ t('terms.s3Text') }}
           </p>
         </section>
 
         <section>
-          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">4. Mobile Applications</h2>
-          <p class="dark:text-gray-300">Apps are distributed via:</p>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">{{ t('terms.s4Title') }}</h2>
+          <p class="dark:text-gray-300">{{ t('terms.s4Text') }}</p>
           <ul class="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300">
             <li>
-              <strong>Apple App Store</strong>: Subject to
+              <strong>{{ t('terms.s4Apple') }}</strong
+              >: {{ t('terms.s4AppleSub') }}
               <a
                 href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
                 target="_blank"
@@ -70,68 +65,62 @@
               >
             </li>
             <li>
-              <strong>Google Play</strong>: Subject to
+              <strong>{{ t('terms.s4Google') }}</strong
+              >: {{ t('terms.s4GoogleSub') }}
               <a href="https://play.google.com/about/play-terms/" target="_blank" class="text-blue-600 hover:underline"
                 >Google Play Terms</a
               >
             </li>
           </ul>
           <p class="dark:text-gray-300 mt-2 text-sm italic">
-            <em>Additional terms may apply if explicitly stated in the app.</em>
+            <em>{{ t('terms.s4Note') }}</em>
           </p>
         </section>
 
         <section>
-          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">5. No Warranties</h2>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">{{ t('terms.s5Title') }}</h2>
           <p class="dark:text-gray-300">
-            Services are provided "as is" without guarantees of availability, accuracy, or performance.
+            {{ t('terms.s5Text') }}
           </p>
         </section>
 
         <section>
-          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">6. AI Content Disclaimer</h2>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">{{ t('terms.s6Title') }}</h2>
           <p class="dark:text-gray-300">
-            Some content within our applications, including text, translations, and educational materials, may be
-            generated or assisted by Artificial Intelligence (AI) technologies. While we strive for high accuracy and
-            quality, AI-generated content may occasionally contain errors or inaccuracies. Users are encouraged to
-            verify critical information.
+            {{ t('terms.s6Text') }}
           </p>
         </section>
 
         <section>
-          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">7. Limitation of Liability</h2>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">{{ t('terms.s7Title') }}</h2>
           <p class="dark:text-gray-300">
-            To the fullest extent permitted by law, <strong>Pejoal Dev Studio</strong> is not liable for any damages
-            from use of the Services.
+            {{ t('terms.s7Text') }}
           </p>
         </section>
 
         <section>
-          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">8. Changes to Terms</h2>
-          <p class="dark:text-gray-300">We may update these Terms. Continued use after changes means acceptance.</p>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">{{ t('terms.s8Title') }}</h2>
+          <p class="dark:text-gray-300">{{ t('terms.s8Text') }}</p>
         </section>
 
         <section>
-          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">9. Data Deletion Requests</h2>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">{{ t('terms.s9Title') }}</h2>
           <p class="dark:text-gray-300">
-            You have the right to request the deletion of your personal data collected or stored by our Services. If you
-            find your data in our systems and wish to have it removed, please contact us using the information provided
-            below to submit a data deletion request. We will process your request promptly in accordance with applicable
-            privacy laws.
+            {{ t('terms.s9Text') }}
           </p>
         </section>
 
         <section>
-          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">10. Governing Law</h2>
-          <p class="dark:text-gray-300">Governed by the laws of <strong>Egypt</strong>.</p>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">{{ t('terms.s10Title') }}</h2>
+          <p class="dark:text-gray-300">{{ t('terms.s10Text') }}</p>
         </section>
 
         <section>
-          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">11. Contact</h2>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">{{ t('terms.s11Title') }}</h2>
           <p class="dark:text-gray-300">
-            Questions or data deletion requests? Contact <strong>Pejoal Dev Studio</strong> at:<br />
-            <a href="mailto:business@pejoal.us.kg" class="text-blue-600 hover:underline font-medium">
-              business@pejoal.us.kg
+            {{ t('terms.s11Text') }}<br />
+            <a href="mailto:business@pejoal.com" class="text-blue-600 hover:underline font-medium">
+              business@pejoal.com
             </a>
           </p>
         </section>
@@ -142,14 +131,14 @@
           to="/privacy-policy"
           class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium"
         >
-          Privacy Policy
+          {{ t('footer.privacy') }}
         </NuxtLink>
         <span class="text-gray-400">|</span>
         <NuxtLink
           to="/imprint"
           class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium"
         >
-          Imprint
+          {{ t('footer.imprint') }}
         </NuxtLink>
       </div>
     </div>
@@ -157,9 +146,13 @@
 </template>
 
 <script setup>
+import { computed } from 'vue';
+
+const { t, locale } = useI18n();
+
 useSeoMeta({
-  title: 'Terms and Conditions - Pejoal Dev Studio',
-  description: 'Legal terms for Pejoal Dev Studio apps and portfolio. Per-app overrides allowed.',
+  title: computed(() => t('terms.seoTitle')),
+  description: computed(() => t('terms.seoDescription')),
   robots: 'noindex',
 });
 </script>

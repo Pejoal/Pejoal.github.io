@@ -52,7 +52,7 @@ When visiting the URL with a valid app ID parameter, the portfolio will automati
 
 ## 📋 How to Add a New App
 
-Because of the automated data pipeline, adding a new app takes seconds. 
+Because of the automated data pipeline, adding a new app takes seconds.
 
 1. Open `app/data/appsData.json`.
 2. Locate the appropriate category array (e.g., `"germanApps"`, `"gameApps"`).
@@ -73,7 +73,7 @@ Because of the automated data pipeline, adding a new app takes seconds.
 
 - **Live Demo**: [Your GitHub Pages URL]
 - **Google Play Profile**: https://play.google.com/store/apps/dev?id=7584224843331524823
-- **Email**: business@pejoal.us.kg
+- **Email**: business@pejoal.com
 
 ---
 

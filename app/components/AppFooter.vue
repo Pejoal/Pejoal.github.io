@@ -15,6 +15,12 @@
       <!-- Legal Links -->
       <div class="flex justify-center gap-6 text-sm">
         <NuxtLink
+          to="/terms"
+          class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition"
+        >
+          {{ t('footer.terms') }}
+        </NuxtLink>
+        <NuxtLink
           to="/privacy-policy"
           class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition"
         >

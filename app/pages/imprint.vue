@@ -9,36 +9,37 @@
         class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 mb-8 font-medium"
       >
         <Icon name="heroicons:arrow-left" class="w-5 h-5" />
-        Back to Portfolio
+        {{ t('legal.backToPortfolio') }}
       </NuxtLink>
 
-      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">Imprint</h1>
-      <p class="text-sm text-gray-500 dark:text-gray-400 mb-10">Last updated: <strong>July 07, 2026</strong></p>
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">{{ t('imprint.title') }}</h1>
+      <p class="text-sm text-gray-500 dark:text-gray-400 mb-10">
+        {{ t('legal.lastUpdated', { date: locale === 'de' ? '07. Juli 2026' : 'July 07, 2026' }) }}
+      </p>
 
       <div class="max-w-none space-y-8 prose prose-lg dark:prose-invert">
         <section>
           <div class="dark:text-gray-300">
             <p class="mb-2"><strong>Pejoal Dev Studio</strong></p>
-            <p class="mb-2">Owner: Nagy Nageep</p>
+            <p class="mb-2">{{ t('imprint.owner') }}</p>
             <p class="mb-2">
-              Address:<br />
+              {{ t('imprint.addressLabel') }}<br />
               Menia <br />
-              Egypt
+              {{ t('terms.s10Egypt') }}
             </p>
             <p class="mb-2">
-              Contact:
-              <a href="mailto:business@pejoal.us.kg" class="text-blue-600 hover:underline"> business@pejoal.us.kg </a>
+              {{ t('imprint.contactLabel') }}
+              <a href="mailto:business@pejoal.com" class="text-blue-600 hover:underline"> business@pejoal.com </a>
             </p>
           </div>
         </section>
 
         <section>
-          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">Product Documentation</h2>
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">
+            {{ t('imprint.productDocTitle') }}
+          </h2>
           <p class="dark:text-gray-300">
-            For comprehensive legal, privacy, and technical disclosures regarding individual mobile
-            applications—including specific details on data collection, advertising, or analytics—please consult the
-            <strong>official product page on the Apple App Store or Google Play Store</strong>. The store listing serves
-            as the primary source for per-app regulatory and compliance information.
+            {{ t('imprint.productDocText') }}
           </p>
         </section>
       </div>
@@ -48,14 +49,14 @@
           to="/terms"
           class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium"
         >
-          Terms and Conditions
+          {{ t('footer.terms') }}
         </NuxtLink>
         <span class="text-gray-400">|</span>
         <NuxtLink
           to="/privacy-policy"
           class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium"
         >
-          Privacy Policy
+          {{ t('footer.privacy') }}
         </NuxtLink>
       </div>
     </div>
@@ -63,9 +64,13 @@
 </template>
 
 <script setup>
+import { computed } from 'vue';
+
+const { t, locale } = useI18n();
+
 useSeoMeta({
-  title: 'Imprint - Pejoal Dev Studio',
-  description: 'Legal Notice / Imprint for Pejoal Dev Studio.',
+  title: computed(() => t('imprint.seoTitle')),
+  description: computed(() => t('imprint.seoDescription')),
   robots: 'noindex',
 });
 </script>
