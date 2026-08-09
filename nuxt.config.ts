@@ -48,7 +48,7 @@ export default defineNuxtConfig({
         
         // Open Graph / Facebook
         { property: 'og:type', content: 'website' },
-        { property: 'og:site_name', content: 'Pejoal Hanna Portfolio' },
+        { property: 'og:site_name', content: 'Pejoal Dev Studio' },
         { property: 'og:url', content: 'https://pejoal.github.io/' },
         { property: 'og:title', content: 'Pejoal Hanna — Full-Stack Developer & Mobile App Engineer' },
         {

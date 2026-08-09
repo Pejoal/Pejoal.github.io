@@ -62,6 +62,7 @@ const {
 useSeoMeta({
   title: 'Pejoal Hanna — Full-Stack Developer & Mobile App Engineer',
   ogTitle: 'Pejoal Hanna — Full-Stack Developer & Mobile App Engineer',
+  ogSiteName: 'Pejoal Dev Studio',
   description:
     'Official portfolio of Pejoal Hanna, Full-Stack Developer & Mobile Application Engineer specializing in cross-platform iOS & Android apps, Web systems, React Native, Vue/Nuxt, and Node.js with 48+ published store applications.',
   ogDescription:
@@ -111,7 +112,8 @@ useHead({
             '@type': 'WebSite',
             '@id': 'https://pejoal.github.io/#website',
             url: 'https://pejoal.github.io/',
-            name: 'Pejoal Hanna - Global Mobile Portfolio',
+            name: 'Pejoal Dev Studio',
+            alternateName: 'Pejoal Hanna — Full-Stack Developer & Mobile App Engineer',
             publisher: {
               '@id': 'https://pejoal.github.io/#person',
             },
