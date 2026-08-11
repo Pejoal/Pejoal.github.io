@@ -10,7 +10,7 @@
   },
   "hero": {
     "badge": "Verfügbar für erstklassige Mobile- & Webprojekte",
-    "topBadge": "48+ Veröffentlichte Mobile- & Web-Apps",
+    "topBadge": "{count}+ Veröffentlichte Mobile- & Web-Apps",
     "greeting": "Hallo, ich bin ",
     "name": "Pejoal Hanna",
     "role": "Full-Stack-Entwickler & Mobile-App-Ingenieur",

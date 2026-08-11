@@ -10,7 +10,7 @@
   },
   "hero": {
     "badge": "Available for High-Impact Mobile & Web Projects",
-    "topBadge": "48+ Production Mobile & Web Apps",
+    "topBadge": "{count}+ Production Mobile & Web Apps",
     "greeting": "Hi, I'm ",
     "name": "Pejoal Hanna",
     "role": "Full-Stack Developer & Mobile App Engineer",

@@ -11,7 +11,7 @@
             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
             <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-blue-500"></span>
           </span>
-          <span class="tracking-wide uppercase text-[11px] font-bold">{{ t('hero.topBadge') }}</span>
+          <span class="tracking-wide uppercase text-[11px] font-bold">{{ t('hero.topBadge', { count: totalApps }) }}</span>
         </div>
 
         <!-- Profile Logo Badge with Multi-Layer Glow -->

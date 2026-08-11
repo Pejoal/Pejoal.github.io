@@ -11,14 +11,14 @@
     <div 
       v-if="index" 
       :class="[
-        'absolute z-20 flex items-center justify-center font-black rounded-full shadow-lg border-2 transition-transform group-hover:scale-110 group-hover:rotate-3 font-heading',
-        index === 1 ? '-top-3 -left-3 w-11 h-11 bg-linear-to-br from-amber-300 via-yellow-400 to-amber-500 text-slate-950 border-white text-lg shadow-amber-500/40 ring-4 ring-amber-400/20' : 
-        index === 2 ? '-top-3 -left-3 w-10 h-10 bg-linear-to-br from-slate-200 via-slate-300 to-slate-400 text-slate-950 border-white text-base shadow-slate-400/40 ring-4 ring-slate-300/20' : 
-        index === 3 ? '-top-3 -left-3 w-10 h-10 bg-linear-to-br from-amber-600 via-orange-500 to-amber-700 text-white border-white text-base shadow-orange-500/40 ring-4 ring-orange-500/20' : 
-        '-top-2.5 -left-2.5 w-8 h-8 bg-slate-900 dark:bg-white text-white dark:text-slate-950 text-xs border-white dark:border-slate-800'
+        'absolute top-4 right-4 z-20 flex items-center justify-center font-black rounded-full border shadow-md transition-transform group-hover:scale-110 font-heading',
+        index === 1 ? 'w-10 h-10 bg-linear-to-br from-amber-300 via-yellow-400 to-amber-500 text-slate-950 border-white text-sm shadow-amber-500/30' : 
+        index === 2 ? 'w-9 h-9 bg-linear-to-br from-slate-200 via-slate-300 to-slate-400 text-slate-950 border-white text-xs shadow-slate-400/30' : 
+        index === 3 ? 'w-9 h-9 bg-linear-to-br from-amber-600 via-orange-500 to-amber-700 text-white border-white text-xs shadow-orange-500/30' : 
+        'px-2.5 py-1 bg-slate-900/80 dark:bg-slate-800/90 text-white dark:text-slate-200 text-xs border-slate-700/50 backdrop-blur-sm'
       ]"
     >
-      <span v-if="index === 1" class="absolute -top-3.5 -right-2.5 text-xl drop-shadow-md rotate-12 origin-bottom-left animate-bounce" style="animation-duration: 2s;">👑</span>
+      <span v-if="index === 1" class="absolute -top-3 -right-2 text-lg drop-shadow-md rotate-12 origin-bottom-left animate-bounce" style="animation-duration: 2s;">👑</span>
       #{{ index }}
     </div>
 
@@ -95,7 +95,7 @@
           <!-- Title & Badges -->
           <div class="flex-1 min-w-0">
             <h4
-              class="text-lg sm:text-xl font-bold font-heading text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors line-clamp-1 mb-1"
+              class="text-lg sm:text-xl font-bold font-heading text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors line-clamp-1 mb-1 pr-12"
             >
               {{ app.title }}
             </h4>

@@ -69,7 +69,7 @@
 
         <!-- Portfolio Website Card -->
         <a
-          href="https://pejoal.github.io/"
+          href="https://pejoal.com/"
           target="_blank"
           class="glass-card glass-card-hover flex items-center gap-4 p-6 rounded-3xl group"
           data-aos="fade-up"
