@@ -1,43 +1,48 @@
 <template>
-  <section id="web-projects" class="py-20 px-4 bg-gray-50 dark:bg-gray-900">
-    <div class="max-w-7xl mx-auto">
+  <section id="web-projects" class="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <div class="max-w-7xl mx-auto relative z-10">
+      <!-- Section Header -->
       <div class="text-center mb-16" data-aos="fade-up">
         <div
-          class="inline-flex items-center gap-3 bg-linear-to-r from-purple-600 to-pink-600 text-white px-6 py-2 rounded-full mb-8 shadow-lg shadow-purple-500/30"
+          class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-100 dark:bg-indigo-900/40 text-indigo-700 dark:text-indigo-300 text-xs font-bold uppercase tracking-wider mb-4"
         >
-          <Icon name="heroicons:code-bracket" class="w-5 h-5" />
-          <span class="font-bold tracking-wide uppercase text-sm">Featured Work</span>
+          <Icon name="heroicons:code-bracket" class="w-4 h-4" />
+          <span>{{ t('webProjects.badge') }}</span>
         </div>
-        <h2 class="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-linear-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300 mb-6 tracking-tight">{{ t('webProjects.title') }}</h2>
-        <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto font-light leading-relaxed">
+        <h2 class="text-4xl sm:text-5xl font-extrabold font-heading text-slate-900 dark:text-white mb-6 tracking-tight">
+          {{ t('webProjects.headingMain') }}<span class="gradient-text-primary">{{ t('webProjects.headingGradient') }}</span>
+        </h2>
+        <p class="text-lg sm:text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto font-light leading-relaxed">
           {{ t('webProjects.subtitle') }}
         </p>
       </div>
 
+      <!-- Projects Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div
           v-for="(proj, index) in projects"
           :key="proj.title"
-          class="group bg-white dark:bg-gray-800 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100 dark:border-gray-700 hover:-translate-y-2 flex flex-col"
+          class="glass-card glass-card-hover group rounded-3xl overflow-hidden flex flex-col justify-between"
           data-aos="zoom-in"
           :data-aos-delay="(index + 1) * 100"
         >
-          <div class="h-56 relative overflow-hidden shrink-0">
+          <!-- Image Preview Header -->
+          <div class="h-56 relative overflow-hidden shrink-0 border-b border-slate-200/60 dark:border-slate-800">
             <!-- Badges -->
             <div class="absolute top-4 left-4 z-20 flex flex-col gap-2">
               <span
                 v-if="proj?.isSpecial"
-                class="bg-linear-to-r from-purple-500 to-indigo-500 text-white text-[10px] uppercase tracking-widest font-bold px-4 py-1.5 rounded-full shadow-lg backdrop-blur-sm"
+                class="bg-linear-to-r from-purple-600 to-indigo-600 text-white text-[10px] uppercase tracking-widest font-extrabold px-3.5 py-1 rounded-full shadow-lg shadow-purple-600/30"
               >
-                Featured
+                {{ t('webProjects.featuredBadge') }}
               </span>
             </div>
             
             <span
               v-if="proj.isNew"
-              class="absolute top-4 right-4 bg-linear-to-r from-emerald-400 to-teal-500 text-white text-[10px] uppercase tracking-widest font-bold px-4 py-1.5 rounded-full z-20 shadow-lg backdrop-blur-sm"
+              class="absolute top-4 right-4 bg-linear-to-r from-emerald-500 to-teal-600 text-white text-[10px] uppercase tracking-widest font-extrabold px-3.5 py-1 rounded-full z-20 shadow-lg shadow-emerald-500/30"
             >
-              Latest
+              {{ t('webProjects.latestBadge') }}
             </span>
 
             <img
@@ -46,36 +51,43 @@
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
             />
             
-            <!-- Hover Overlay -->
+            <!-- Gradient Hover Overlay -->
             <div
-              class="absolute inset-0 bg-linear-to-t from-gray-900/80 via-gray-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 backdrop-blur-[2px]"
+              class="absolute inset-0 bg-linear-to-t from-slate-950/80 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 backdrop-blur-[2px]"
             ></div>
           </div>
-          <div class="p-8 flex-1 flex flex-col">
-            <h3
-              class="text-2xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors"
-            >
-              {{ proj.title }}
-            </h3>
 
-            <p class="text-gray-600 dark:text-gray-300 text-sm mb-6 leading-relaxed flex-1 whitespace-pre-line">{{ proj.description }}</p>
+          <!-- Content Body -->
+          <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between">
+            <div>
+              <h3
+                class="text-xl sm:text-2xl font-bold font-heading text-slate-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors"
+              >
+                {{ proj.title }}
+              </h3>
 
-            <div class="flex gap-4 pt-4 border-t border-gray-100 dark:border-gray-700 mt-auto">
+              <p class="text-slate-600 dark:text-slate-300 text-xs sm:text-sm mb-6 leading-relaxed font-light whitespace-pre-line">
+                {{ proj.description }}
+              </p>
+            </div>
+
+            <!-- Action Links Footer -->
+            <div class="flex items-center gap-4 pt-4 border-t border-slate-200/60 dark:border-slate-800 mt-auto">
               <a
                 v-if="proj.live"
                 :href="proj.live"
                 target="_blank"
-                class="flex items-center gap-1.5 text-sm font-semibold text-indigo-600 hover:text-indigo-700 dark:text-indigo-400 dark:hover:text-indigo-300 transition-colors"
+                class="flex items-center gap-2 text-xs sm:text-sm font-bold px-4 py-2 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition shadow-md shadow-blue-600/30"
               >
-                <Icon name="heroicons:globe-alt" class="w-5 h-5" /> {{ t('webProjects.viewProject') }}
+                <Icon name="heroicons:globe-alt" class="w-4 h-4" /> {{ t('webProjects.viewProject') }}
               </a>
               <a
                 v-if="proj.github"
                 :href="proj.github"
                 target="_blank"
-                class="flex items-center gap-1.5 text-sm font-semibold text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
+                class="flex items-center gap-2 text-xs sm:text-sm font-bold px-4 py-2 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-xl hover:bg-slate-200 dark:hover:bg-slate-700 transition"
               >
-                <Icon name="simple-icons:github" class="w-5 h-5" /> {{ t('webProjects.sourceCode') }}
+                <Icon name="simple-icons:github" class="w-4 h-4" /> {{ t('webProjects.sourceCode') }}
               </a>
             </div>
           </div>

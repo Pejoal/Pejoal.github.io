@@ -1,26 +1,31 @@
 <template>
   <nav
-    class="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg border-b border-gray-200 dark:border-gray-700"
+    class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 glass-nav shadow-xs"
   >
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16">
-        <NuxtLink to="#home" class="flex items-center gap-2">
-          <div class="w-8 h-8 bg-linear-to-r from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
-            <span class="text-white font-bold text-sm">P</span>
+      <div class="flex items-center justify-between h-16 sm:h-20">
+        <!-- Logo -->
+        <NuxtLink to="#home" class="flex items-center gap-3 group">
+          <div class="w-10 h-10 bg-linear-to-br from-blue-600 via-indigo-600 to-purple-600 rounded-xl flex items-center justify-center shadow-lg shadow-blue-500/25 group-hover:scale-105 transition-transform duration-300">
+            <span class="text-white font-black text-lg tracking-wider">P</span>
           </div>
-          <span class="font-bold text-xl text-gray-900 dark:text-white">Pejoal</span>
+          <div class="flex flex-col">
+            <span class="font-bold text-xl tracking-tight text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">Pejoal</span>
+            <span class="text-[10px] font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-400 -mt-1">Dev Studio</span>
+          </div>
         </NuxtLink>
 
-        <div class="hidden md:flex items-center gap-8">
+        <!-- Desktop Navigation Links -->
+        <div class="hidden md:flex items-center gap-1 lg:gap-2 bg-slate-100/70 dark:bg-slate-800/60 p-1.5 rounded-full border border-slate-200/60 dark:border-slate-700/60 backdrop-blur-md">
           <NuxtLink
             v-for="link in navLinks"
             :key="link.to"
             :to="link.to"
             :class="[
-              'font-medium transition-colors',
+              'px-4 py-2 text-xs lg:text-sm font-semibold rounded-full transition-all duration-300 cursor-pointer',
               activeSection === link.to 
-                ? 'text-blue-600 dark:text-blue-400 font-bold' 
-                : 'text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400'
+                ? 'bg-blue-600 text-white shadow-md shadow-blue-600/30' 
+                : 'text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-white/60 dark:hover:bg-slate-700/50'
             ]"
             @click.prevent="
               scrollToSection(link.to);
@@ -29,13 +34,16 @@
           >
             {{ link.label }}
           </NuxtLink>
+        </div>
 
+        <!-- Right Action Controls (i18n + Theme) -->
+        <div class="hidden md:flex items-center gap-3">
           <ClientOnly>
-            <div class="flex items-center gap-3">
+            <div class="flex items-center gap-2">
               <LanguageSwitcher />
               <button
                 @click="$emit('toggle-dark-mode')"
-                class="p-2 cursor-pointer rounded-lg text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+                class="p-2.5 cursor-pointer rounded-xl bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-200 hover:bg-blue-50 hover:text-blue-600 dark:hover:bg-slate-700 dark:hover:text-blue-400 border border-slate-200/80 dark:border-slate-700/80 transition-all duration-300 shadow-xs active:scale-95"
                 aria-label="Toggle dark mode"
               >
                 <svg
@@ -45,7 +53,7 @@
                   viewBox="0 0 24 24"
                   stroke-width="2"
                   stroke="currentColor"
-                  class="w-5 h-5"
+                  class="w-5 h-5 text-amber-400 animate-pulse"
                 >
                   <path
                     stroke-linecap="round"
@@ -60,7 +68,7 @@
                   viewBox="0 0 24 24"
                   stroke-width="2"
                   stroke="currentColor"
-                  class="w-5 h-5"
+                  class="w-5 h-5 text-slate-700"
                 >
                   <path
                     stroke-linecap="round"
@@ -73,48 +81,49 @@
           </ClientOnly>
         </div>
 
-        <!-- NEW: Animated Hamburger Button -->
+        <!-- Animated Hamburger Button -->
         <button
           @click="mobileOpen = !mobileOpen"
-          class="md:hidden cursor-pointer p-2 w-10 h-10 relative focus:outline-none z-50"
+          class="md:hidden cursor-pointer p-2 w-10 h-10 relative focus:outline-none rounded-xl bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex items-center justify-center z-50"
           aria-label="Toggle menu"
         >
           <div class="w-6 h-6 relative flex items-center justify-center">
             <!-- Top bar -->
             <span
               aria-hidden="true"
-              class="block absolute h-0.5 w-6 bg-gray-900 dark:bg-gray-100 transform transition duration-300 ease-in-out"
-              :class="{ 'rotate-45': mobileOpen, 'top-0': !mobileOpen, 'top-1/2 -translate-y-1/2': mobileOpen }"
+              class="block absolute h-0.5 w-5 bg-slate-900 dark:bg-slate-100 transform transition duration-300 ease-in-out"
+              :class="{ 'rotate-45': mobileOpen, 'top-1': !mobileOpen, 'top-1/2 -translate-y-1/2': mobileOpen }"
             ></span>
             <!-- Middle bar -->
             <span
               aria-hidden="true"
-              class="block absolute h-0.5 w-6 bg-gray-900 dark:bg-gray-100 transform transition duration-300 ease-in-out top-1/2 -translate-y-1/2"
+              class="block absolute h-0.5 w-5 bg-slate-900 dark:bg-slate-100 transform transition duration-300 ease-in-out top-1/2 -translate-y-1/2"
               :class="{ 'opacity-0': mobileOpen }"
             ></span>
             <!-- Bottom bar -->
             <span
               aria-hidden="true"
-              class="block absolute h-0.5 w-6 bg-gray-900 dark:bg-gray-100 transform transition duration-300 ease-in-out"
-              :class="{ '-rotate-45': mobileOpen, 'bottom-0': !mobileOpen, 'top-1/2 -translate-y-1/2': mobileOpen }"
+              class="block absolute h-0.5 w-5 bg-slate-900 dark:bg-slate-100 transform transition duration-300 ease-in-out"
+              :class="{ '-rotate-45': mobileOpen, 'bottom-1': !mobileOpen, 'top-1/2 -translate-y-1/2': mobileOpen }"
             ></span>
           </div>
         </button>
       </div>
     </div>
 
-    <!-- Mobile Menu -->
-    <div v-if="mobileOpen" class="md:hidden border-t border-gray-200 dark:border-gray-700">
-      <div class="px-4 py-3 space-y-2">
+    <!-- Mobile Menu Drawer -->
+    <transition name="slide-fade">
+      <div v-if="mobileOpen" class="md:hidden glass-nav border-t border-slate-200/80 dark:border-slate-800">
+        <div class="px-4 py-4 space-y-2 max-h-[80vh] overflow-y-auto">
           <NuxtLink
             v-for="link in navLinks"
             :key="link.to"
             :to="link.to"
             :class="[
-              'block py-2 font-medium',
+              'block px-4 py-3 rounded-xl font-semibold text-sm transition-all',
               activeSection === link.to 
-                ? 'text-blue-600 dark:text-blue-400 font-bold' 
-                : 'text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400'
+                ? 'bg-blue-600 text-white shadow-md shadow-blue-600/30' 
+                : 'text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800'
             ]"
             @click.prevent="
               scrollToSection(link.to);
@@ -124,52 +133,53 @@
           >
             {{ link.label }}
           </NuxtLink>
-        <ClientOnly>
-          <div class="pt-2 pb-1 flex items-center justify-between border-t border-gray-100 dark:border-gray-800">
-            <LanguageSwitcher />
-            <button
-              @click="
-                $emit('toggle-dark-mode');
-                mobileOpen = false;
-              "
-              class="cursor-pointer py-2 px-3 rounded-lg flex items-center gap-2 text-sm text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition"
-            >
-              <svg
-                v-if="isDark"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="2"
-                stroke="currentColor"
-                class="w-5 h-5"
+          <ClientOnly>
+            <div class="pt-3 mt-2 flex items-center justify-between border-t border-slate-200/80 dark:border-slate-800">
+              <LanguageSwitcher />
+              <button
+                @click="
+                  $emit('toggle-dark-mode');
+                  mobileOpen = false;
+                "
+                class="cursor-pointer py-2 px-4 rounded-xl flex items-center gap-2 text-sm font-semibold bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-white border border-slate-200 dark:border-slate-700 transition"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-6.364-.386 1.591-1.591M3 12h2.25m.386-6.364 1.591 1.591M12 15.75a3.75 3.75 0 1 0 0-7.5 3.75 3.75 0 0 0 0 7.5Z"
-                />
-              </svg>
-              <svg
-                v-else
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="2"
-                stroke="currentColor"
-                class="w-5 h-5"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
-                />
-              </svg>
-              {{ isDark ? 'Light Mode' : 'Dark Mode' }}
-            </button>
-          </div>
-        </ClientOnly>
+                <svg
+                  v-if="isDark"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-4 h-4 text-amber-400"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-6.364-.386 1.591-1.591M3 12h2.25m.386-6.364 1.591 1.591M12 15.75a3.75 3.75 0 1 0 0-7.5 3.75 3.75 0 0 0 0 7.5Z"
+                  />
+                </svg>
+                <svg
+                  v-else
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+                  />
+                </svg>
+                {{ isDark ? 'Light Mode' : 'Dark Mode' }}
+              </button>
+            </div>
+          </ClientOnly>
+        </div>
       </div>
-    </div>
+    </transition>
   </nav>
 </template>
 
@@ -209,9 +219,8 @@ onMounted(() => {
       { rootMargin: '-20% 0px -60% 0px', threshold: 0 }
     );
 
-    // Give it a tiny delay to ensure elements are rendered
     setTimeout(() => {
-      navLinks.forEach((link) => {
+      navLinks.value.forEach((link) => {
         const targetId = link.to.substring(1);
         const element = document.getElementById(targetId);
         if (element) {
@@ -228,18 +237,15 @@ const scrollToSection = (to) => {
     const targetElement = document.getElementById(targetId);
 
     if (targetElement) {
-      // Calculate offset for fixed navbar (64px height + some padding)
       const navHeight = 80;
       const elementPosition = targetElement.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - navHeight;
 
-      // Use window.scrollTo for more reliable smooth scrolling
       window.scrollTo({
         top: offsetPosition,
         behavior: 'smooth',
       });
     } else {
-      // Fallback: try with querySelector if getElementById fails
       const el = document.querySelector(to);
       if (el) {
         const navHeight = 80;
@@ -255,3 +261,15 @@ const scrollToSection = (to) => {
   }
 };
 </script>
+
+<style scoped>
+.slide-fade-enter-active,
+.slide-fade-leave-active {
+  transition: all 0.3s ease-out;
+}
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateY(-10px);
+  opacity: 0;
+}
+</style>

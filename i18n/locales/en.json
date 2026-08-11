@@ -10,12 +10,15 @@
   },
   "hero": {
     "badge": "Available for High-Impact Mobile & Web Projects",
+    "topBadge": "48+ Production Mobile & Web Apps",
     "greeting": "Hi, I'm ",
     "name": "Pejoal Hanna",
     "role": "Full-Stack Developer & Mobile App Engineer",
     "bio": "Building high-performance cross-platform mobile apps and web systems serving thousands of users worldwide.",
     "ctaExplore": "Explore Portfolio",
     "ctaContact": "Get In Touch",
+    "downloadOnThe": "Download on the",
+    "getItOn": "GET IT ON",
     "appsPublished": "Published Apps",
     "totalDownloads": "Total Downloads",
     "averageRating": "Average Rating"
@@ -23,6 +26,8 @@
   "about": {
     "title": "Engineering with Purpose",
     "subtitle": "I am driven by the intersection of sophisticated design and robust architecture. My core focus lies in architecting intuitive mobile ecosystems—particularly immersive educational platforms—while also engineering high-utility tools and interactive digital experiences.",
+    "headingMain": "Crafting High-Performance ",
+    "headingGradient": "Digital Experiences",
     "card1Title": "Mobile Architecture",
     "card1Desc": "Expertly crafted native and cross-platform applications, optimized for performance, scalability, and seamless user interaction.",
     "card2Title": "EdTech Platforms",
@@ -33,6 +38,8 @@
   "services": {
     "title": "What I Do",
     "subtitle": "Comprehensive software engineering services from mobile app development to scalable web systems.",
+    "headingMain": "Comprehensive ",
+    "headingGradient": "Engineering Solutions",
     "s1Title": "Cross-Platform Mobile Apps",
     "s1Desc": "Building iOS & Android applications with React Native, Expo, and Flutter, featuring offline capability, store optimization, and biometrics.",
     "s2Title": "Full-Stack Web Systems",
@@ -45,6 +52,9 @@
   "apps": {
     "title": "Global Mobile Portfolio",
     "subtitle": "An extensive showcase of published, high-impact mobile applications serving thousands of users worldwide.",
+    "badge": "Portfolio Showcase",
+    "headingMain": "Published ",
+    "headingGradient": "Mobile Applications",
     "searchPlaceholder": "Search for apps, categories, or keywords...",
     "sortBy": "Sort By",
     "relevance": "Default (Relevance)",
@@ -55,7 +65,10 @@
     "adFreeOnly": "Ad-Free Only",
     "allApps": "All Apps",
     "noAppsFound": "No apps found",
-    "clearFilters": "Clear Filters"
+    "clearFilters": "Clear Filters",
+    "showingApps": "Showing {count} applications",
+    "ios": "iOS",
+    "android": "Android"
   },
   "modal": {
     "downloadAppStore": "App Store",
@@ -71,6 +84,11 @@
   "webProjects": {
     "title": "Web Projects & Systems",
     "subtitle": "A collection of full-stack web applications, landing pages, and administrative systems.",
+    "badge": "Featured Web Systems",
+    "headingMain": "Full-Stack ",
+    "headingGradient": "Web Projects",
+    "featuredBadge": "Featured System",
+    "latestBadge": "Latest",
     "viewProject": "View Live Project",
     "sourceCode": "Source Code",
     "p1Title": "Enterprise Payroll & ERP",
@@ -87,6 +105,10 @@
   "skills": {
     "title": "Technical Arsenal & Leadership",
     "subtitle": "A comprehensive blend of modern engineering practices, cloud infrastructure, and strategic problem-solving.",
+    "badge": "Technical Competencies",
+    "headingMain": "Skills & ",
+    "headingGradient": "Technologies",
+    "mastery": "Mastery",
     "frontend": "Frontend Architecture",
     "mobile": "Mobile Ecosystems",
     "backend": "Backend Engineering",
@@ -111,6 +133,13 @@
   "contact": {
     "title": "Let's Build Something Together",
     "subtitle": "Have a project in mind or interested in collaboration? Feel free to reach out.",
+    "badge": "Direct Connections",
+    "headingMain": "Let's Build ",
+    "headingGradient": "Together",
+    "iosDevProfile": "iOS Developer Profile",
+    "androidAppsProfile": "Android Apps Profile",
+    "openSourceCode": "Open Source Code",
+    "officialHub": "Official Hub",
     "email": "Email",
     "github": "GitHub",
     "googlePlay": "Google Play Store",
@@ -122,6 +151,7 @@
     "sendButton": "Send Message"
   },
   "footer": {
+    "studioName": "Pejoal Dev Studio",
     "copyright": "Pejoal Dev Studio. All rights reserved.",
     "terms": "Terms and Conditions",
     "privacy": "Privacy Policy",

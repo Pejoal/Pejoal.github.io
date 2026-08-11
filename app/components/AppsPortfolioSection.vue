@@ -1,49 +1,68 @@
 <template>
-  <section id="apps" class="py-16 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-7xl mx-auto">
+  <section id="apps" class="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <div class="max-w-7xl mx-auto relative z-10">
       <!-- Section Header -->
-      <div class="text-center mb-10" data-aos="fade-up">
-        <h2 class="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-linear-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300 mb-6 tracking-tight">{{ t('apps.title') }}</h2>
-        <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto font-light leading-relaxed mb-8">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 text-xs font-bold uppercase tracking-wider mb-4">
+          <Icon name="heroicons:squares-2x2" class="w-4 h-4" /> {{ t('apps.badge') }}
+        </div>
+        <h2 class="text-4xl sm:text-5xl font-extrabold font-heading text-slate-900 dark:text-white mb-6 tracking-tight">
+          {{ t('apps.headingMain') }}<span class="gradient-text-primary">{{ t('apps.headingGradient') }}</span>
+        </h2>
+        <p class="text-lg sm:text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto font-light leading-relaxed mb-8">
           {{ t('apps.subtitle') }}
         </p>
 
-        <!-- Search and Sort Bar -->
-        <div class="flex flex-col md:flex-row gap-4 max-w-3xl mx-auto mb-10">
+        <!-- Search and Sort Controls Bar -->
+        <div class="flex flex-col md:flex-row gap-4 max-w-4xl mx-auto mb-8">
+          <!-- Search Input -->
           <div class="relative flex-1">
-            <div class="absolute inset-y-0 left-0 pl-5 flex items-center pointer-events-none">
-              <Icon name="heroicons:magnifying-glass" class="w-6 h-6 text-gray-400" />
+            <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-slate-400">
+              <Icon name="heroicons:magnifying-glass" class="w-5 h-5" />
             </div>
             <input 
               v-model="searchQuery" 
               type="text" 
-              class="block w-full pl-14 pr-4 py-4 rounded-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:text-white transition-all outline-none" 
+              class="block w-full pl-11 pr-10 py-3.5 rounded-2xl glass-card text-slate-900 dark:text-white placeholder-slate-400 focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 transition-all outline-none text-sm sm:text-base" 
               :placeholder="t('apps.searchPlaceholder')" 
             />
+            <button 
+              v-if="searchQuery" 
+              @click="searchQuery = ''" 
+              class="absolute inset-y-0 right-0 pr-4 flex items-center text-slate-400 hover:text-slate-600 dark:hover:text-white"
+            >
+              <Icon name="heroicons:x-mark" class="w-5 h-5" />
+            </button>
           </div>
+
+          <!-- Sort Select Dropdown -->
           <div class="relative w-full md:w-56 shrink-0">
-            <div class="absolute inset-y-0 left-0 pl-5 flex items-center pointer-events-none">
-              <Icon name="heroicons:arrows-up-down" class="w-5 h-5 text-gray-400" />
+            <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-slate-400">
+              <Icon name="heroicons:arrows-up-down" class="w-5 h-5" />
             </div>
             <select 
               v-model="sortOrder"
-              class="block w-full pl-12 pr-10 py-4 rounded-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:text-white transition-all outline-none appearance-none cursor-pointer text-sm font-medium"
+              class="block w-full pl-11 pr-10 py-3.5 rounded-2xl glass-card text-slate-900 dark:text-white transition-all outline-none appearance-none cursor-pointer text-sm font-semibold focus:ring-2 focus:ring-blue-500/50"
             >
-              <option value="relevance">{{ t('apps.relevance') }}</option>
-              <option value="installs">{{ t('apps.installs') }}</option>
-              <option value="rating">{{ t('apps.rating') }}</option>
-              <option value="released">{{ t('apps.released') }}</option>
-              <option value="updated">{{ t('apps.updated') }}</option>
+              <option value="relevance" class="bg-slate-900 text-white">{{ t('apps.relevance') }}</option>
+              <option value="installs" class="bg-slate-900 text-white">{{ t('apps.installs') }}</option>
+              <option value="rating" class="bg-slate-900 text-white">{{ t('apps.rating') }}</option>
+              <option value="released" class="bg-slate-900 text-white">{{ t('apps.released') }}</option>
+              <option value="updated" class="bg-slate-900 text-white">{{ t('apps.updated') }}</option>
             </select>
-            <div class="absolute inset-y-0 right-0 pr-5 flex items-center pointer-events-none">
-              <Icon name="heroicons:chevron-down" class="w-4 h-4 text-gray-400" />
+            <div class="absolute inset-y-0 right-0 pr-4 flex items-center pointer-events-none text-slate-400">
+              <Icon name="heroicons:chevron-down" class="w-4 h-4" />
             </div>
           </div>
+
+          <!-- Ad Free Toggle Button -->
           <button 
             @click="filterNoAds = !filterNoAds"
             :class="[
-              'cursor-pointer shrink-0 px-6 py-4 rounded-full font-semibold transition-all duration-300 shadow-sm hover:shadow-md border flex items-center gap-2', 
-              filterNoAds ? 'bg-emerald-100 text-emerald-700 border-emerald-300 dark:bg-emerald-900/40 dark:text-emerald-300 dark:border-emerald-800' : 'bg-white text-gray-600 border-gray-200 dark:bg-gray-800 dark:text-gray-300 dark:border-gray-700 hover:border-emerald-300 dark:hover:border-gray-500'
+              'cursor-pointer shrink-0 px-5 py-3.5 rounded-2xl font-bold transition-all duration-300 shadow-xs flex items-center justify-center gap-2 text-sm border', 
+              filterNoAds 
+                ? 'bg-emerald-600 text-white border-emerald-500 shadow-md shadow-emerald-600/30' 
+                : 'glass-card text-slate-600 dark:text-slate-300 hover:border-emerald-500/50'
             ]"
           >
             <Icon name="heroicons:shield-check" class="w-5 h-5" />
@@ -51,21 +70,34 @@
           </button>
         </div>
 
-        <!-- Filter Pills -->
-        <div class="flex flex-wrap justify-center gap-3 pb-4">
+        <!-- Filter Category Pills -->
+        <div class="flex flex-wrap justify-center gap-2.5 pb-2">
           <button
             v-for="cat in categories"
             :key="cat.id"
             @click="activeCategory = cat.id"
             :class="[
-              'cursor-pointer px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 shadow-xs hover:shadow-md border',
+              'cursor-pointer px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition-all duration-300 shadow-xs flex items-center gap-1.5 border',
               activeCategory === cat.id 
-                ? 'bg-blue-600 text-white border-blue-600 dark:border-blue-500' 
-                : 'bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-gray-500'
+                ? 'bg-blue-600 text-white border-blue-500 shadow-md shadow-blue-600/30 scale-105' 
+                : 'glass-card text-slate-600 dark:text-slate-300 hover:border-blue-400/50'
             ]"
           >
-            {{ cat.name }} <span v-if="cat.id !== 'All'" class="ml-1 opacity-70 text-xs">({{ cat.apps.length }})</span>
+            <span>{{ cat.name }}</span>
+            <span 
+              :class="[
+                'px-1.5 py-0.5 rounded-full text-[10px] font-extrabold',
+                activeCategory === cat.id ? 'bg-white/20 text-white' : 'bg-slate-200 dark:bg-slate-800 text-slate-500 dark:text-slate-400'
+              ]"
+            >
+              {{ cat.id === 'All' ? allApps.length : cat.apps.length }}
+            </span>
           </button>
+        </div>
+
+        <!-- Active Filter Summary Count -->
+        <div class="mt-4 text-xs font-semibold uppercase tracking-widest text-slate-500 dark:text-slate-400">
+          {{ t('apps.showingApps', { count: filteredApps.length }) }}
         </div>
       </div>
 
@@ -82,11 +114,16 @@
       </transition-group>
 
       <!-- Empty State -->
-      <div v-if="filteredApps.length === 0" class="text-center py-20">
-        <Icon name="heroicons:magnifying-glass" class="w-16 h-16 text-gray-300 dark:text-gray-600 mx-auto mb-4" />
-        <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">{{ t('apps.noAppsFound') }}</h3>
-        <p class="text-gray-500 dark:text-gray-400">Try adjusting your search query or select a different category.</p>
-        <button @click="searchQuery = ''; activeCategory = 'All'" class="mt-6 px-6 py-2.5 bg-blue-600 text-white rounded-full font-medium hover:bg-blue-700 transition">{{ t('apps.clearFilters') }}</button>
+      <div v-if="filteredApps.length === 0" class="glass-card text-center py-16 px-6 rounded-3xl max-w-lg mx-auto my-10">
+        <Icon name="heroicons:magnifying-glass" class="w-16 h-16 text-slate-400 mx-auto mb-4 animate-bounce" />
+        <h3 class="text-2xl font-bold font-heading text-slate-900 dark:text-white mb-2">{{ t('apps.noAppsFound') }}</h3>
+        <p class="text-slate-500 dark:text-slate-400 text-sm mb-6">Try adjusting your search keywords or active category filters.</p>
+        <button 
+          @click="searchQuery = ''; activeCategory = 'All'; filterNoAds = false" 
+          class="px-6 py-3 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-600/30"
+        >
+          {{ t('apps.clearFilters') }}
+        </button>
       </div>
     </div>
 
@@ -145,7 +182,6 @@ const handleCloseModal = () => {
   }
 };
 
-// Search and Filter State
 const searchQuery = ref('');
 const activeCategory = ref('All');
 const filterNoAds = ref(false);
@@ -228,11 +264,10 @@ const filteredApps = computed(() => {
       if (app.playStoreData && typeof app.playStoreData.adSupported === 'boolean') {
         return !app.playStoreData.adSupported;
       }
-      return true; // Keep if we don't know
+      return true;
     });
   }
 
-  // Sorting Logic
   if (sortOrder.value === 'installs') {
     result.sort((a, b) => {
       const aInstalls = a.playStoreData?.maxInstalls || 0;
@@ -269,7 +304,6 @@ const filteredApps = computed(() => {
 </script>
 
 <style scoped>
-/* App Grid Transitions */
 .list-enter-active,
 .list-leave-active,
 .list-move {

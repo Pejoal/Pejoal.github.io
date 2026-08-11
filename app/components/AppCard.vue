@@ -2,10 +2,8 @@
 <template>
   <div
     :class="`
-      group transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] dark:hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.4)] relative cursor-pointer
+      glass-card glass-card-hover group relative cursor-pointer overflow-hidden rounded-3xl p-6 flex flex-col justify-between
       ${horizontal ? 'w-[280px] shrink-0' : 'w-full'}
-      bg-white/70 dark:bg-gray-800/70 backdrop-blur-lg rounded-2xl border border-gray-200/50 dark:border-gray-700/50
-      p-6 shadow-lg hover:border-blue-300 dark:hover:border-blue-700
     `"
     @click="$emit('open-modal', app)"
   >
@@ -13,21 +11,21 @@
     <div 
       v-if="index" 
       :class="[
-        'absolute z-20 flex items-center justify-center font-black rounded-full shadow-lg border-2 transition-transform group-hover:scale-110 group-hover:rotate-3',
-        index === 1 ? '-top-4 -left-4 w-12 h-12 bg-linear-to-br from-yellow-400 to-amber-500 text-white border-yellow-100 text-xl shadow-yellow-500/50 ring-4 ring-yellow-400/30' : 
-        index === 2 ? '-top-3 -left-3 w-10 h-10 bg-linear-to-br from-gray-300 to-gray-500 text-white border-white text-lg shadow-gray-400/50 ring-4 ring-gray-300/30' : 
-        index === 3 ? '-top-3 -left-3 w-10 h-10 bg-linear-to-br from-orange-400 to-orange-700 text-white border-orange-100 text-lg shadow-orange-500/50 ring-4 ring-orange-500/30' : 
-        '-top-3 -left-3 w-9 h-9 bg-linear-to-br from-gray-900 to-gray-800 dark:from-white dark:to-gray-200 text-white dark:text-black text-sm border-white dark:border-gray-800'
+        'absolute z-20 flex items-center justify-center font-black rounded-full shadow-lg border-2 transition-transform group-hover:scale-110 group-hover:rotate-3 font-heading',
+        index === 1 ? '-top-3 -left-3 w-11 h-11 bg-linear-to-br from-amber-300 via-yellow-400 to-amber-500 text-slate-950 border-white text-lg shadow-amber-500/40 ring-4 ring-amber-400/20' : 
+        index === 2 ? '-top-3 -left-3 w-10 h-10 bg-linear-to-br from-slate-200 via-slate-300 to-slate-400 text-slate-950 border-white text-base shadow-slate-400/40 ring-4 ring-slate-300/20' : 
+        index === 3 ? '-top-3 -left-3 w-10 h-10 bg-linear-to-br from-amber-600 via-orange-500 to-amber-700 text-white border-white text-base shadow-orange-500/40 ring-4 ring-orange-500/20' : 
+        '-top-2.5 -left-2.5 w-8 h-8 bg-slate-900 dark:bg-white text-white dark:text-slate-950 text-xs border-white dark:border-slate-800'
       ]"
     >
-      <span v-if="index === 1" class="absolute -top-4 -right-3 text-2xl drop-shadow-md rotate-12 origin-bottom-left animate-bounce" style="animation-duration: 2s;">👑</span>
+      <span v-if="index === 1" class="absolute -top-3.5 -right-2.5 text-xl drop-shadow-md rotate-12 origin-bottom-left animate-bounce" style="animation-duration: 2s;">👑</span>
       #{{ index }}
     </div>
 
     <!-- Horizontal Layout -->
     <div v-if="horizontal" class="text-center">
       <div
-        :class="`w-20 h-20 rounded-3xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 ${getColorClasses(color).bg} text-white shadow-lg group-hover:scale-110 overflow-hidden`"
+        :class="`w-20 h-20 rounded-3xl flex items-center justify-center mx-auto mb-4 transition-all duration-300 ${getColorClasses(color).bg} text-white shadow-xl group-hover:scale-110 overflow-hidden`"
       >
         <NuxtImg v-if="isUrl(app.icon)" :src="app.icon" :alt="app.title" class="w-full h-full object-cover" format="webp" loading="lazy" referrerpolicy="no-referrer" />
         <span v-else class="text-4xl">{{ app.icon }}</span>
@@ -35,119 +33,131 @@
 
       <div class="space-y-2">
         <h4
-          class="text-lg font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors"
+          class="text-lg font-bold font-heading text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors line-clamp-1"
         >
           {{ app.title }}
         </h4>
-        <p class="text-sm text-gray-600 dark:text-gray-300 line-clamp-3 leading-relaxed mb-3">
+        <p class="text-xs text-slate-600 dark:text-slate-300 line-clamp-3 leading-relaxed mb-3 font-light">
           {{ app.description }}
         </p>
 
-        <!-- Metrics -->
-        <div class="flex flex-wrap items-center justify-center gap-2">
-          <span v-if="rating && rating !== '0.0'" class="flex items-center gap-1 text-[10px] px-2 py-0.5 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400 rounded font-medium">
-            <Icon name="heroicons:star-solid" class="w-3 h-3" /> {{ rating }}
+        <!-- Metrics Row -->
+        <div class="flex flex-wrap items-center justify-center gap-1.5">
+          <span v-if="rating && rating !== '0.0'" class="flex items-center gap-1 text-[11px] px-2.5 py-0.5 bg-amber-100 dark:bg-amber-900/40 text-amber-800 dark:text-amber-300 rounded-full font-bold">
+            <Icon name="heroicons:star-solid" class="w-3 h-3 text-amber-500 fill-amber-500" /> {{ rating }}
           </span>
-          <span v-if="installs" class="flex items-center gap-1 text-[10px] px-2 py-0.5 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 rounded font-medium">
-            <Icon name="heroicons:arrow-down-tray" class="w-3 h-3" /> {{ installs }}
+          <span v-if="installs" class="flex items-center gap-1 text-[11px] px-2.5 py-0.5 bg-blue-100 dark:bg-blue-900/40 text-blue-800 dark:text-blue-300 rounded-full font-semibold">
+            <Icon name="heroicons:arrow-down-tray" class="w-3 h-3 text-blue-500" /> {{ installs }}
           </span>
-          <span v-if="size" class="text-[10px] px-2 py-0.5 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 rounded font-medium">
+          <span v-if="size" class="text-[10px] px-2 py-0.5 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 rounded-full font-medium">
             {{ size }}
           </span>
         </div>
       </div>
 
       <!-- Store Links -->
-      <div class="flex justify-center gap-3 mt-4 pt-4 border-t border-gray-100 dark:border-gray-700">
+      <div class="flex justify-center gap-2 mt-4 pt-3 border-t border-slate-200/60 dark:border-slate-800">
         <a
           v-if="app.iosId"
           :href="`https://apps.apple.com/app/id${app.iosId}`"
           target="_blank"
-          class="flex items-center gap-1.5 px-3 py-1.5 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-lg text-xs font-medium hover:bg-blue-200 dark:hover:bg-blue-800 transition"
+          @click.stop
+          class="flex items-center gap-1.5 px-3 py-1.5 bg-slate-900 dark:bg-slate-800 text-white rounded-xl text-xs font-bold hover:bg-blue-600 dark:hover:bg-blue-600 transition"
         >
-          <Icon name="simple-icons:appstore" class="w-4 h-4" />
+          <Icon name="simple-icons:appstore" class="w-3.5 h-3.5" />
           iOS
         </a>
         <a
           v-if="app.id"
           :href="`https://play.google.com/store/apps/details?id=com.pejoal.${app.id}`"
           target="_blank"
-          class="flex items-center gap-1.5 px-3 py-1.5 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-lg text-xs font-medium hover:bg-green-200 dark:hover:bg-green-800 transition"
+          @click.stop
+          class="flex items-center gap-1.5 px-3 py-1.5 bg-emerald-700 text-white rounded-xl text-xs font-bold hover:bg-emerald-600 transition"
         >
-          <Icon name="simple-icons:googleplay" class="w-4 h-4" />
+          <Icon name="simple-icons:googleplay" class="w-3.5 h-3.5" />
           Android
         </a>
       </div>
     </div>
 
-    <!-- Vertical Layout -->
-    <div v-else class="flex items-center space-x-4">
-      <div
-        :class="`w-16 h-16 rounded-2xl flex items-center justify-center shrink-0 transition-all duration-300 ${getColorClasses(color).bg} text-white shadow-lg group-hover:scale-110 overflow-hidden`"
-      >
-        <NuxtImg v-if="isUrl(app.icon)" :src="app.icon" :alt="app.title" class="w-full h-full object-cover" format="webp" loading="lazy" referrerpolicy="no-referrer" />
-        <span v-else class="text-3xl">{{ app.icon }}</span>
-      </div>
+    <!-- Vertical Standard Layout -->
+    <div v-else class="flex flex-col h-full justify-between">
+      <div>
+        <div class="flex items-start space-x-4 mb-4">
+          <!-- Icon Container -->
+          <div
+            :class="`w-16 h-16 rounded-2xl flex items-center justify-center shrink-0 transition-all duration-300 ${getColorClasses(color).bg} text-white shadow-lg group-hover:scale-105 overflow-hidden border border-white/20`"
+          >
+            <NuxtImg v-if="isUrl(app.icon)" :src="app.icon" :alt="app.title" class="w-full h-full object-cover" format="webp" loading="lazy" referrerpolicy="no-referrer" />
+            <span v-else class="text-3xl">{{ app.icon }}</span>
+          </div>
 
-      <div class="flex-1 min-w-0">
-        <h4
-          class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors mb-2"
-        >
-          {{ app.title }}
-        </h4>
-        <p class="text-gray-600 dark:text-gray-300 line-clamp-2 leading-relaxed mb-3">
-          {{ app.description }}
-        </p>
-
-        <!-- Metrics -->
-        <div class="flex flex-wrap items-center gap-2 mb-3">
-          <span v-if="rating && rating !== '0.0'" class="flex items-center gap-1 text-xs px-2 py-0.5 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400 rounded font-medium">
-            <Icon name="heroicons:star-solid" class="w-3 h-3" /> {{ rating }}
-          </span>
-          <span v-if="installs" class="flex items-center gap-1 text-xs px-2 py-0.5 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 rounded font-medium">
-            <Icon name="heroicons:arrow-down-tray" class="w-3 h-3" /> {{ installs }}
-          </span>
-          <span v-if="size" class="text-xs px-2 py-0.5 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 rounded font-medium">
-            {{ size }}
-          </span>
+          <!-- Title & Badges -->
+          <div class="flex-1 min-w-0">
+            <h4
+              class="text-lg sm:text-xl font-bold font-heading text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors line-clamp-1 mb-1"
+            >
+              {{ app.title }}
+            </h4>
+            
+            <!-- Metrics -->
+            <div class="flex flex-wrap items-center gap-1.5">
+              <span v-if="rating && rating !== '0.0'" class="flex items-center gap-1 text-xs px-2.5 py-0.5 bg-amber-100 dark:bg-amber-900/40 text-amber-800 dark:text-amber-300 rounded-full font-bold">
+                <Icon name="heroicons:star-solid" class="w-3.5 h-3.5 text-amber-500 fill-amber-500" /> {{ rating }}
+              </span>
+              <span v-if="installs" class="flex items-center gap-1 text-xs px-2.5 py-0.5 bg-blue-100 dark:bg-blue-900/40 text-blue-800 dark:text-blue-300 rounded-full font-semibold">
+                <Icon name="heroicons:arrow-down-tray" class="w-3.5 h-3.5 text-blue-500" /> {{ installs }}
+              </span>
+            </div>
+          </div>
         </div>
 
+        <!-- Description -->
+        <p class="text-slate-600 dark:text-slate-300 text-sm line-clamp-2 leading-relaxed font-light mb-4">
+          {{ app.description }}
+        </p>
+      </div>
+
+      <!-- Action Footer -->
+      <div class="flex items-center justify-between pt-3 border-t border-slate-200/60 dark:border-slate-800/80 mt-auto">
         <div class="flex gap-2">
           <a
             v-if="app.iosId"
             :href="`https://apps.apple.com/app/id${app.iosId}`"
             target="_blank"
-            class="flex items-center gap-1 text-xs px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded hover:bg-blue-200 dark:hover:bg-blue-800 transition"
+            @click.stop
+            class="flex items-center gap-1 text-xs px-3 py-1.5 bg-slate-900 dark:bg-slate-800 text-white rounded-xl font-bold hover:bg-blue-600 dark:hover:bg-blue-600 transition"
           >
-            <Icon name="simple-icons:appstore" class="w-3.5 h-3.5" />
-            iOS
+            <Icon name="simple-icons:apple" class="w-3.5 h-3.5" />
+            {{ t('apps.ios') }}
           </a>
           <a
             v-if="app.id"
             :href="`https://play.google.com/store/apps/details?id=com.pejoal.${app.id}`"
             target="_blank"
-            class="flex items-center gap-1 text-xs px-2 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded hover:bg-green-200 dark:hover:bg-green-800 transition"
+            @click.stop
+            class="flex items-center gap-1 text-xs px-3 py-1.5 bg-emerald-700 text-white rounded-xl font-bold hover:bg-emerald-600 transition"
           >
             <Icon name="simple-icons:googleplay" class="w-3.5 h-3.5" />
-            Android
+            {{ t('apps.android') }}
           </a>
         </div>
+
+        <div class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-400 group-hover:text-blue-600 group-hover:bg-blue-50 dark:group-hover:bg-blue-950 transition-colors">
+          <Icon
+            name="heroicons:arrow-up-right"
+            class="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"
+          />
+        </div>
       </div>
-
-      <Icon
-        name="heroicons:arrow-top-right-on-square"
-        class="w-6 h-6 text-gray-400 group-hover:text-blue-600 transition-colors"
-      />
     </div>
-
-    <div
-      class="absolute inset-0 bg-linear-to-r from-blue-600/10 to-indigo-600/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"
-    ></div>
   </div>
 </template>
 
 <script setup>
 import { computed } from 'vue';
+
+const { t } = useI18n();
 
 const props = defineProps({
   app: Object,
@@ -156,7 +166,7 @@ const props = defineProps({
   index: { type: Number, default: null },
 });
 
-const emit = defineEmits(['open-modal']);
+defineEmits(['open-modal']);
 
 const rating = computed(() => {
   if (props.app?.appStoreData?.score) return Number(props.app.appStoreData.score).toFixed(1);
@@ -165,10 +175,6 @@ const rating = computed(() => {
 });
 
 const installs = computed(() => {
-  // if (props.app?.playStoreData?.maxInstalls) {
-  //   const total = Math.floor(props.app.playStoreData.maxInstalls * 1.1);
-  //   return total.toLocaleString();
-  // }
   if (props.app?.playStoreData?.installs) return props.app.playStoreData.installs;
   return null;
 });
@@ -186,22 +192,29 @@ const isUrl = (str) => {
 
 const getColorClasses = (color) => {
   const colors = {
-    blue: { bg: 'bg-linear-to-br from-blue-500 to-cyan-400 shadow-blue-500/30' },
-    indigo: { bg: 'bg-linear-to-br from-indigo-500 to-purple-400 shadow-indigo-500/30' },
-    red: { bg: 'bg-linear-to-br from-red-500 to-orange-400 shadow-red-500/30' },
-    green: { bg: 'bg-linear-to-br from-green-500 to-emerald-400 shadow-green-500/30' },
-    purple: { bg: 'bg-linear-to-br from-purple-500 to-pink-400 shadow-purple-500/30' },
-    emerald: { bg: 'bg-linear-to-br from-emerald-500 to-teal-400 shadow-emerald-500/30' },
-    violet: { bg: 'bg-linear-to-br from-violet-500 to-fuchsia-400 shadow-violet-500/30' },
+    blue: { bg: 'bg-linear-to-br from-blue-500 to-cyan-500 shadow-blue-500/30' },
+    indigo: { bg: 'bg-linear-to-br from-indigo-500 to-purple-500 shadow-indigo-500/30' },
+    red: { bg: 'bg-linear-to-br from-red-500 to-rose-500 shadow-red-500/30' },
+    green: { bg: 'bg-linear-to-br from-green-500 to-emerald-500 shadow-green-500/30' },
+    purple: { bg: 'bg-linear-to-br from-purple-500 to-pink-500 shadow-purple-500/30' },
+    emerald: { bg: 'bg-linear-to-br from-emerald-500 to-teal-500 shadow-emerald-500/30' },
+    violet: { bg: 'bg-linear-to-br from-violet-500 to-fuchsia-500 shadow-violet-500/30' },
     pink: { bg: 'bg-linear-to-br from-pink-500 to-rose-400 shadow-pink-500/30' },
-    orange: { bg: 'bg-linear-to-br from-orange-500 to-yellow-400 shadow-orange-500/30' },
-    yellow: { bg: 'bg-linear-to-br from-yellow-500 to-amber-400 shadow-yellow-500/30' },
+    orange: { bg: 'bg-linear-to-br from-orange-500 to-amber-500 shadow-orange-500/30' },
+    yellow: { bg: 'bg-linear-to-br from-amber-400 to-yellow-500 shadow-amber-500/30' },
   };
   return colors[color] || colors.blue;
 };
 </script>
 
 <style scoped>
+.line-clamp-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 .line-clamp-2 {
   display: -webkit-box;
   -webkit-line-clamp: 2;

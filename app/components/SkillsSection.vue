@@ -1,18 +1,24 @@
 <template>
-  <section id="skills" class="py-20 px-4 bg-linear-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
-    <div class="max-w-7xl mx-auto">
+  <section id="skills" class="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <div class="max-w-7xl mx-auto relative z-10">
+      <!-- Section Header -->
       <div class="text-center mb-16" data-aos="fade-up">
-        <h2 class="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-linear-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300 mb-6 tracking-tight">{{ t('skills.title') }}</h2>
-        <p class="text-xl text-gray-600 dark:text-gray-300 font-light max-w-2xl mx-auto">{{ t('skills.subtitle') }}</p>
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 text-xs font-bold uppercase tracking-wider mb-4">
+          <Icon name="heroicons:cpu-chip" class="w-4 h-4" /> {{ t('skills.badge') }}
+        </div>
+        <h2 class="text-4xl sm:text-5xl font-extrabold font-heading text-slate-900 dark:text-white mb-6 tracking-tight">
+          {{ t('skills.headingMain') }}<span class="gradient-text-primary">{{ t('skills.headingGradient') }}</span>
+        </h2>
+        <p class="text-lg sm:text-xl text-slate-600 dark:text-slate-300 font-light max-w-2xl mx-auto">{{ t('skills.subtitle') }}</p>
       </div>
 
-      <!-- ==================== TECHNICAL SKILLS ==================== -->
-      <div class="space-y-16 mb-20">
+      <!-- TECHNICAL SKILLS CATEGORIES -->
+      <div class="space-y-10 mb-20">
         <!-- Frontend -->
         <SkillCategory
           :title="t('skills.frontend')"
           icon="heroicons:code-bracket"
-          color="from-fuchsia-500 to-cyan-500"
+          color="from-fuchsia-500 via-purple-500 to-cyan-500"
           :skills="frontendSkills"
           :progress-ref="frontendProgress"
           data-aos="fade-right"
@@ -32,7 +38,7 @@
         <SkillCategory
           :title="t('skills.backend')"
           icon="heroicons:server"
-          color="from-blue-600 to-cyan-400"
+          color="from-blue-600 via-indigo-500 to-cyan-400"
           :skills="backendSkills"
           :progress-ref="backendProgress"
           data-aos="fade-right"
@@ -42,7 +48,7 @@
         <SkillCategory
           :title="t('skills.database')"
           icon="heroicons:cog-6-tooth"
-          color="from-orange-500 to-rose-500"
+          color="from-orange-500 via-amber-500 to-rose-500"
           :skills="dbDevOpsSkills"
           :progress-ref="dbDevOpsProgress"
           data-aos="fade-left"
@@ -52,42 +58,43 @@
         <SkillCategory
           :title="t('skills.testing')"
           icon="heroicons:beaker"
-          color="from-emerald-400 to-teal-500"
+          color="from-emerald-400 via-teal-500 to-cyan-500"
           :skills="testingToolsSkills"
           :progress-ref="testingToolsProgress"
           data-aos="fade-right"
         />
       </div>
 
-      <!-- ==================== SOFT SKILLS ==================== -->
+      <!-- SOFT SKILLS -->
       <div>
-        <h3 class="text-3xl font-extrabold text-center text-transparent bg-clip-text bg-linear-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300 mb-12 tracking-tight" data-aos="fade-up">
+        <h3 class="text-3xl font-extrabold font-heading text-center text-slate-900 dark:text-white mb-12 tracking-tight" data-aos="fade-up">
           {{ t('skills.leadership') }}
         </h3>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           <div
             v-for="(skill, i) in softSkills"
             :key="skill.name"
-            class="flex flex-col items-center text-center p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300"
+            class="glass-card glass-card-hover flex flex-col items-center text-center p-8 rounded-3xl group"
             data-aos="zoom-in"
             :data-aos-delay="i * 100"
           >
             <div
-              class="w-20 h-20 mb-6 rounded-2xl bg-linear-to-br from-gray-900 to-gray-800 dark:from-gray-700 dark:to-gray-600 flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300 relative"
+              class="w-20 h-20 mb-6 rounded-2xl bg-linear-to-br from-slate-900 to-slate-800 dark:from-slate-800 dark:to-slate-700 flex items-center justify-center shadow-xl shadow-slate-900/20 group-hover:scale-110 transition-transform duration-300 relative"
             >
-              <div class="absolute inset-0 rounded-2xl bg-linear-to-br from-emerald-400 to-teal-500 opacity-0 group-hover:opacity-20 transition-opacity blur-md"></div>
+              <div class="absolute inset-0 rounded-2xl bg-linear-to-br from-emerald-400 to-teal-500 opacity-0 group-hover:opacity-30 transition-opacity blur-md"></div>
               <Icon :name="skill.icon" class="w-10 h-10 text-white relative z-10" />
             </div>
-            <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-2">{{ skill.name }}</h4>
-            <p class="text-sm text-gray-600 dark:text-gray-400 mb-3">{{ skill.desc }}</p>
-            <div class="w-full h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+            <h4 class="text-xl font-bold font-heading text-slate-900 dark:text-white mb-2">{{ skill.name }}</h4>
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mb-4 font-light leading-relaxed">{{ skill.desc }}</p>
+            
+            <div class="w-full h-2.5 bg-slate-200/80 dark:bg-slate-800 rounded-full overflow-hidden p-0.5">
               <div
                 ref="softProgress"
-                class="h-full bg-linear-to-r from-emerald-400 to-teal-500 rounded-full transition-all duration-1200 ease-out"
+                class="h-full bg-linear-to-r from-emerald-400 to-teal-500 rounded-full transition-all duration-1200 ease-out shadow-sm"
                 :style="{ width: '0%' }"
               ></div>
             </div>
-            <span class="mt-2 text-xs font-medium text-emerald-600 dark:text-emerald-400">{{ skill.level }}%</span>
+            <span class="mt-2 text-xs font-bold text-emerald-600 dark:text-emerald-400">{{ skill.level }}% {{ t('skills.mastery') }}</span>
           </div>
         </div>
       </div>
@@ -100,9 +107,6 @@ import { nextTick, onMounted, ref, computed } from 'vue';
 
 const { t } = useI18n();
 
-// ──────────────────────────────────────
-// Technical Skills – Categorized
-// ──────────────────────────────────────
 const frontendSkills = [
   { name: 'Vue / Nuxt.js', level: 88, icon: 'simple-icons:nuxtdotjs' },
   { name: 'React', level: 92, icon: 'simple-icons:react' },
@@ -145,9 +149,6 @@ const testingToolsSkills = [
   { name: 'Postman', level: 90, icon: 'simple-icons:postman' },
 ];
 
-// ──────────────────────────────────────
-// Soft Skills
-// ──────────────────────────────────────
 const softSkills = computed(() => [
   { name: t('softSkills.s1Name'), level: 94, desc: t('softSkills.s1Desc'), icon: 'heroicons:puzzle-piece' },
   { name: t('softSkills.s2Name'), level: 90, desc: t('softSkills.s2Desc'), icon: 'heroicons:chat-bubble-left-right' },
@@ -157,9 +158,6 @@ const softSkills = computed(() => [
   { name: t('softSkills.s6Name'), level: 87, desc: t('softSkills.s6Desc'), icon: 'heroicons:light-bulb' },
 ]);
 
-// ──────────────────────────────────────
-// Progress Refs (one per category)
-// ──────────────────────────────────────
 const frontendProgress = ref([]);
 const mobileProgress = ref([]);
 const backendProgress = ref([]);
@@ -167,9 +165,6 @@ const dbDevOpsProgress = ref([]);
 const testingToolsProgress = ref([]);
 const softProgress = ref([]);
 
-// ──────────────────────────────────────
-// Animate All Progress Bars
-// ──────────────────────────────────────
 const animateProgress = (refArray, skills) => {
   nextTick(() => {
     refArray.value.forEach((el, i) => {
@@ -181,7 +176,6 @@ const animateProgress = (refArray, skills) => {
 };
 
 onMounted(() => {
-  // Animate each category with slight delay
   setTimeout(() => animateProgress(frontendProgress, frontendSkills), 300);
   setTimeout(() => animateProgress(mobileProgress, mobileSkills), 400);
   setTimeout(() => animateProgress(backendProgress, backendSkills), 500);

@@ -10,12 +10,15 @@
   },
   "hero": {
     "badge": "Verfügbar für erstklassige Mobile- & Webprojekte",
+    "topBadge": "48+ Veröffentlichte Mobile- & Web-Apps",
     "greeting": "Hallo, ich bin ",
     "name": "Pejoal Hanna",
     "role": "Full-Stack-Entwickler & Mobile-App-Ingenieur",
     "bio": "Entwicklung leistungsstarker plattformübergreifender mobiler Apps und Websysteme für Tausende von Nutzern weltweit.",
     "ctaExplore": "Portfolio erkunden",
     "ctaContact": "Kontakt aufnehmen",
+    "downloadOnThe": "Laden im",
+    "getItOn": "JETZT BEI",
     "appsPublished": "Veröffentlichte Apps",
     "totalDownloads": "Gesamtdownloads",
     "averageRating": "Durchschnittsbewertung"
@@ -23,6 +26,8 @@
   "about": {
     "title": "Softwareentwicklung mit Zweck",
     "subtitle": "Mich begeistert die Verbindung von anspruchsvollem Design und robuster Architektur. Mein Kernfokus liegt in der Entwicklung intuitiver mobiler Ökosysteme – insbesondere interaktiver Lernplattformen – sowie nützlicher Werkzeuge und digitaler Erlebnisse.",
+    "headingMain": "Entwicklung Hochleistungsfähiger ",
+    "headingGradient": "Digitaler Erlebnisse",
     "card1Title": "Mobile Architektur",
     "card1Desc": "Meisterhaft entwickelte native und plattformübergreifende Anwendungen, optimiert für Leistung, Skalierbarkeit und nahtlose Benutzerinteraktion.",
     "card2Title": "Lernplattformen & EdTech",
@@ -33,6 +38,8 @@
   "services": {
     "title": "Was ich tue",
     "subtitle": "Umfassende Software-Engineering-Dienstleistungen von der mobilen App-Entwicklung bis hin zu skalierbaren Websystemen.",
+    "headingMain": "Umfassende ",
+    "headingGradient": "Engineering-Lösungen",
     "s1Title": "Plattformübergreifende Mobile Apps",
     "s1Desc": "Erstellung von iOS- & Android-Anwendungen mit React Native, Expo und Flutter, inklusive Offline-Fähigkeit, Store-Optimierung und Biometrie.",
     "s2Title": "Full-Stack Websysteme",
@@ -45,6 +52,9 @@
   "apps": {
     "title": "Globales App-Portfolio",
     "subtitle": "Eine umfangreiche Präsentation veröffentlichter, hochwirksamer mobiler Anwendungen.",
+    "badge": "Portfolio-Präsentation",
+    "headingMain": "Veröffentlichte ",
+    "headingGradient": "Mobile Anwendungen",
     "searchPlaceholder": "Nach Apps, Kategorien oder Begriffen suchen...",
     "sortBy": "Sortieren nach",
     "relevance": "Standard (Relevanz)",
@@ -55,7 +65,10 @@
     "adFreeOnly": "Nur werbefrei",
     "allApps": "Alle Apps",
     "noAppsFound": "Keine Apps gefunden",
-    "clearFilters": "Filter zurücksetzen"
+    "clearFilters": "Filter zurücksetzen",
+    "showingApps": "Zeige {count} Anwendungen",
+    "ios": "iOS",
+    "android": "Android"
   },
   "modal": {
     "downloadAppStore": "App Store",
@@ -71,6 +84,11 @@
   "webProjects": {
     "title": "Webprojekte & Systeme",
     "subtitle": "Eine Sammlung von Full-Stack-Webanwendungen, Landingpages und Verwaltungssystemen.",
+    "badge": "Ausgewählte Websysteme",
+    "headingMain": "Full-Stack ",
+    "headingGradient": "Webprojekte",
+    "featuredBadge": "Top-System",
+    "latestBadge": "Neuestes",
     "viewProject": "Live-Projekt ansehen",
     "sourceCode": "Quellcode",
     "p1Title": "Unternehmens-Personalabrechnung & ERP",
@@ -87,6 +105,10 @@
   "skills": {
     "title": "Technische Arsenal & Führungskompetenz",
     "subtitle": "Eine umfassende Mischung aus modernen Entwicklungsmethoden, Cloud-Infrastruktur und strategischer Problemlösung.",
+    "badge": "Technische Kompetenzen",
+    "headingMain": "Fähigkeiten & ",
+    "headingGradient": "Technologien",
+    "mastery": "Beherrschung",
     "frontend": "Frontend-Architektur",
     "mobile": "Mobile Ökosysteme",
     "backend": "Backend-Engineering",
@@ -111,6 +133,13 @@
   "contact": {
     "title": "Lass uns etwas zusammen bauen",
     "subtitle": "Haben Sie ein Projekt im Sinn oder Interesse an einer Zusammenarbeit? Nehmen Sie gerne Kontakt auf.",
+    "badge": "Direkte Verbindungen",
+    "headingMain": "Lass uns zusammen ",
+    "headingGradient": "Bauen",
+    "iosDevProfile": "iOS-Entwicklerprofil",
+    "androidAppsProfile": "Android-Apps-Profil",
+    "openSourceCode": "Open-Source-Code",
+    "officialHub": "Offizielles Hub",
     "email": "E-Mail",
     "github": "GitHub",
     "googlePlay": "Google Play Store",
@@ -122,6 +151,7 @@
     "sendButton": "Nachricht senden"
   },
   "footer": {
+    "studioName": "Pejoal Dev Studio",
     "copyright": "Pejoal Dev Studio. Alle Rechte vorbehalten.",
     "terms": "AGB",
     "privacy": "Datenschutz",

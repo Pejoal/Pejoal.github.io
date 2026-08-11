@@ -54,7 +54,7 @@ export default defineNuxtConfig({
         {
           property: 'og:description',
           content:
-            'Explore 48+ published production mobile applications and web projects built with modern cross-platform technologies.',
+            'Explore 49+ published production mobile applications and web projects built with modern cross-platform technologies.',
         },
         { property: 'og:locale', content: 'en_US' },
         { property: 'og:locale:alternate', content: 'de_DE' },
