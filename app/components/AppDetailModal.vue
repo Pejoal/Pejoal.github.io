@@ -75,6 +75,18 @@
                 <!-- Store Action Download Buttons -->
                 <div class="flex flex-row sm:flex-col gap-2.5 shrink-0 w-full sm:w-auto mt-2 sm:mt-0 justify-center">
                   <a
+                    v-if="app?.webUrl"
+                    :href="app?.webUrl"
+                    target="_blank"
+                    class="flex-1 sm:flex-none flex items-center justify-center gap-2.5 px-5 py-3 bg-linear-to-r from-blue-600 via-indigo-600 to-purple-600 text-white rounded-2xl hover:scale-105 transition shadow-lg shadow-blue-500/25 font-heading"
+                  >
+                    <Icon name="heroicons:globe-alt" class="w-5 h-5 sm:w-6 sm:h-6" />
+                    <div class="flex flex-col items-start leading-none">
+                      <span class="text-[9px] uppercase font-bold opacity-90">{{ t('modal.webPortal') }}</span>
+                      <span class="font-extrabold text-xs sm:text-sm tracking-wide">{{ t('modal.openPortal') }}</span>
+                    </div>
+                  </a>
+                  <a
                     v-if="app?.iosId"
                     :href="`https://apps.apple.com/app/id${app.iosId.match(/id(\d+)/) ? app.iosId.match(/id(\d+)/)[1] : app.iosId}`"
                     target="_blank"

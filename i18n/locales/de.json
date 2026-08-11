@@ -73,6 +73,8 @@
   "modal": {
     "downloadAppStore": "App Store",
     "getItOnGooglePlay": "Google Play",
+    "webPortal": "Online-Portal",
+    "openPortal": "Web-Anwendung",
     "aboutThisApp": "Über diese App",
     "screenshots": "Screenshots",
     "whatsNew": "Was gibt's Neues",
