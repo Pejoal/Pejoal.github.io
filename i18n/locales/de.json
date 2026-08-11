@@ -93,6 +93,8 @@
     "latestBadge": "Neuestes",
     "viewProject": "Live-Projekt ansehen",
     "sourceCode": "Quellcode",
+    "p0Title": "AutoScribe KI-Webportal",
+    "p0Desc": "Online KI-Sprachsekretär & Besprechungsnotizen. Transkribieren Sie Audio in strukturierte Zusammenfassungen in 9 spezialisierten Arbeitsbereichen.",
     "p1Title": "Unternehmens-Personalabrechnung & ERP",
     "p1Desc": "Eine umfassende ERP-Architektur, entwickelt mit Laravel und Vue 3. Bietet hochsicheren rollenbasierten Zugriff, automatisierte Gehaltsabrechnung und detaillierte Analysen.\n\nHinweis: Kaltstart-Deployment kann ca. 1 Min. dauern.\nAdmin-Zugangsdaten: pejoal / password",
     "p2Title": "Moderne E-Commerce-Engine",

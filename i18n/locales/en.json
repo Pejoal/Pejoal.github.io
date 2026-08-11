@@ -93,6 +93,8 @@
     "latestBadge": "Latest",
     "viewProject": "View Live Project",
     "sourceCode": "Source Code",
+    "p0Title": "AutoScribe AI Web Portal",
+    "p0Desc": "Online AI voice scribe & meeting note taker. Transcribe audio to structured summaries across 9 specialized workspaces.",
     "p1Title": "Enterprise Payroll & ERP",
     "p1Desc": "A comprehensive ERP architecture developed with Laravel and Vue 3. Features highly secure role-based access, automated payroll processing, and deep analytics.\n\nNote: Cold-start deployment may take ~1 min.\nAdmin Credentials: pejoal / password",
     "p2Title": "Modern E-Commerce Engine",

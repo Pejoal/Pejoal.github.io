@@ -104,8 +104,8 @@ const { t } = useI18n();
 
 const projects = computed(() => [
   {
-    title: 'AutoScribe AI Web Portal',
-    description: 'Online AI voice scribe & meeting note taker. Transcribe audio to structured summaries across 9 specialized workspaces.',
+    title: t('webProjects.p0Title'),
+    description: t('webProjects.p0Desc'),
     live: 'https://autoscribe.pejoal.com',
     image: 'https://play-lh.googleusercontent.com/POH4otUdQHtxYbMYzGDULbUB6IFyawGP_cMPhIRm2r_eEe-AU2gNVSyHRnEqRDPF4Q6F_LxCPescAozkk6I2zQ',
     isNew: true,
