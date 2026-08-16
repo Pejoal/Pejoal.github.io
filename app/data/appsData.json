@@ -44,8 +44,8 @@
         "4": 0,
         "5": 0
       },
-      "installs": "100+",
-      "maxInstalls": 404,
+      "installs": "500+",
+      "maxInstalls": 502,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -147,7 +147,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 2441,
+      "maxInstalls": 2661,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -249,7 +249,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 1787,
+      "maxInstalls": 1909,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -351,7 +351,7 @@
         "5": 0
       },
       "installs": "10,000+",
-      "maxInstalls": 14268,
+      "maxInstalls": 14460,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -453,7 +453,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 2673,
+      "maxInstalls": 2713,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -555,7 +555,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 1679,
+      "maxInstalls": 1714,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -657,7 +657,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 3847,
+      "maxInstalls": 3992,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -759,7 +759,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 215,
+      "maxInstalls": 221,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -851,17 +851,17 @@
       ],
       "score": 4.8,
       "scoreText": "4.8",
-      "ratings": 291,
+      "ratings": 300,
       "reviews": 1,
       "histogram": {
         "1": 0,
         "2": 0,
-        "3": 29,
+        "3": 30,
         "4": 0,
-        "5": 261
+        "5": 270
       },
       "installs": "10,000+",
-      "maxInstalls": 34496,
+      "maxInstalls": 36202,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -963,7 +963,7 @@
         "5": 0
       },
       "installs": "10,000+",
-      "maxInstalls": 48582,
+      "maxInstalls": 49738,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1065,7 +1065,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 3509,
+      "maxInstalls": 3588,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1160,7 +1160,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 2730,
+      "maxInstalls": 2892,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1252,17 +1252,17 @@
       ],
       "score": 5,
       "scoreText": "5.0",
-      "ratings": 359,
+      "ratings": 368,
       "reviews": 3,
       "histogram": {
         "1": 0,
         "2": 0,
         "3": 0,
         "4": 0,
-        "5": 359
+        "5": 368
       },
       "installs": "10,000+",
-      "maxInstalls": 31854,
+      "maxInstalls": 32857,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1364,7 +1364,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 2582,
+      "maxInstalls": 2659,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1466,7 +1466,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 3868,
+      "maxInstalls": 3984,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1568,7 +1568,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 1481,
+      "maxInstalls": 1549,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1670,7 +1670,7 @@
         "5": 0
       },
       "installs": "10,000+",
-      "maxInstalls": 12683,
+      "maxInstalls": 12825,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1761,17 +1761,17 @@
       ],
       "score": 4.6,
       "scoreText": "4.6",
-      "ratings": 169,
+      "ratings": 170,
       "reviews": 2,
       "histogram": {
         "1": 0,
         "2": 0,
-        "3": 33,
+        "3": 34,
         "4": 0,
-        "5": 135
+        "5": 136
       },
       "installs": "5,000+",
-      "maxInstalls": 7190,
+      "maxInstalls": 7261,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1873,7 +1873,7 @@
         "5": 0
       },
       "installs": "5,000+",
-      "maxInstalls": 5002,
+      "maxInstalls": 5123,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1975,7 +1975,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 2792,
+      "maxInstalls": 2974,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2077,7 +2077,7 @@
         "5": 0
       },
       "installs": "10,000+",
-      "maxInstalls": 28876,
+      "maxInstalls": 29723,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2179,7 +2179,7 @@
         "5": 0
       },
       "installs": "10,000+",
-      "maxInstalls": 14208,
+      "maxInstalls": 14522,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2369,7 +2369,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 1080,
+      "maxInstalls": 1109,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2471,7 +2471,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 134,
+      "maxInstalls": 137,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2554,19 +2554,19 @@
         "https://play-lh.googleusercontent.com/hg6Sl7rLDke9WQhvklMUhoddhXGIso96RK3cO-ZPTQbHjwR2eMqNMqewT_GHJrczmKMJ0Qe6IevzXHTmd-tXF3k",
         "https://play-lh.googleusercontent.com/88tR80nxW2id-XgpKBqKIxDw1Kpu11A4ugiTXb9DhFmko4rYYrCypu2z3Zy_LopMip8e__e4KWcEnwnje2wv"
       ],
-      "score": 4.8,
+      "score": 4.818182,
       "scoreText": "4.8",
-      "ratings": 67,
+      "ratings": 69,
       "reviews": 3,
       "histogram": {
         "1": 0,
         "2": 0,
         "3": 0,
-        "4": 13,
-        "5": 53
+        "4": 12,
+        "5": 56
       },
       "installs": "1,000+",
-      "maxInstalls": 3123,
+      "maxInstalls": 3233,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2605,8 +2605,8 @@
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b5/b4/d7/b5b4d770-8ce7-16db-bac2-e3cb383ff250/photo_6_2026-03-27_16-41-14_1.png/320x480bb.jpg",
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fd/ff/89/fdff8953-665e-f354-b176-48e3b1b8efc1/photo_7_2026-03-27_16-41-14_1.png/320x480bb.jpg"
       ],
-      "score": 4,
-      "reviews": 1,
+      "score": 3.5,
+      "reviews": 2,
       "price": 0,
       "free": true,
       "currency": "USD",
@@ -2667,7 +2667,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 2667,
+      "maxInstalls": 2860,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2759,17 +2759,17 @@
       ],
       "score": 5,
       "scoreText": "5.0",
-      "ratings": 67,
+      "ratings": 71,
       "reviews": 1,
       "histogram": {
         "1": 0,
         "2": 0,
         "3": 0,
         "4": 0,
-        "5": 67
+        "5": 71
       },
       "installs": "1,000+",
-      "maxInstalls": 3442,
+      "maxInstalls": 3588,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2871,7 +2871,7 @@
         "5": 70
       },
       "installs": "10,000+",
-      "maxInstalls": 17235,
+      "maxInstalls": 17568,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2973,7 +2973,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 170,
+      "maxInstalls": 265,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3105,7 +3105,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 185,
+      "maxInstalls": 190,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3188,19 +3188,19 @@
         "https://play-lh.googleusercontent.com/7TVyWoT659QeaIgUhMzDqId0IcbxB4Xm3LzniWk-OHkWOQp3LN5JS1_yASYwNKSDJcLwyO3zzndhYXS7cVgjSlA",
         "https://play-lh.googleusercontent.com/PY0BbWoAhlmVgwh3tgShYM0S4O2PTZk0b4Y1NWmtPsbEoccaYw2jF563drrf53DDckmyewTLkVhHUT0H1AIN5g"
       ],
-      "score": 4.5454545,
+      "score": 4.470588,
       "scoreText": "4.5",
-      "ratings": 101,
+      "ratings": 103,
       "reviews": 14,
       "histogram": {
         "1": 6,
-        "2": 0,
+        "2": 3,
         "3": 6,
         "4": 9,
-        "5": 79
+        "5": 78
       },
       "installs": "5,000+",
-      "maxInstalls": 5412,
+      "maxInstalls": 5497,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3330,8 +3330,8 @@
         "4": 0,
         "5": 0
       },
-      "installs": "100+",
-      "maxInstalls": 449,
+      "installs": "500+",
+      "maxInstalls": 518,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3506,7 +3506,7 @@
         "5": 0
       },
       "installs": "10+",
-      "maxInstalls": 24,
+      "maxInstalls": 27,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3608,7 +3608,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 140,
+      "maxInstalls": 147,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3710,7 +3710,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 134,
+      "maxInstalls": 137,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3794,7 +3794,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 233,
+      "maxInstalls": 237,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3896,7 +3896,7 @@
         "5": 0
       },
       "installs": "500+",
-      "maxInstalls": 546,
+      "maxInstalls": 548,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3998,7 +3998,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 169,
+      "maxInstalls": 171,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -4100,7 +4100,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 461,
+      "maxInstalls": 481,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -4304,7 +4304,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 129,
+      "maxInstalls": 134,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -4395,17 +4395,17 @@
       ],
       "score": 4.8333335,
       "scoreText": "4.8",
-      "ratings": 300,
+      "ratings": 308,
       "reviews": 0,
       "histogram": {
         "1": 0,
         "2": 0,
         "3": 0,
-        "4": 50,
-        "5": 250
+        "4": 51,
+        "5": 256
       },
       "installs": "10,000+",
-      "maxInstalls": 10515,
+      "maxInstalls": 11219,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -4507,7 +4507,7 @@
         "5": 0
       },
       "installs": "5,000+",
-      "maxInstalls": 5477,
+      "maxInstalls": 5760,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -4609,7 +4609,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 3362,
+      "maxInstalls": 3504,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -4711,7 +4711,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 3915,
+      "maxInstalls": 4125,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -4771,8 +4771,8 @@
     "id": "autoscribe.chat",
     "iosId": "6757652791",
     "webUrl": "https://autoscribe.pejoal.com",
-    "title": "Speech to Text AI",
-    "description": "AI voice scribe &amp; meeting note taker. Transcribe audio to structured summaries.",
+    "title": "AI Voice to Text & Dictation",
+    "description": "Transcribe audio to text, record meetings, and get AI summaries instantly.",
     "icon": "https://play-lh.googleusercontent.com/11NpPpp1EtkNZNMnrQDTJaaeS6uPag9MMcMGtSK_DamLviJLYwYwPReQZq66T3N6hmx6qgMw0Aghwhpyj5XB-g",
     "category": "ai",
     "playStoreData": {
@@ -4809,15 +4809,15 @@
         "4": 0,
         "5": 0
       },
-      "installs": "10+",
-      "maxInstalls": 32,
+      "installs": "100+",
+      "maxInstalls": 314,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
       "androidVersionText": "7.0",
       "developer": "Pejoal Dev Studio",
       "developerEmail": "business@pejoal.com",
-      "developerWebsite": "https://pejoal.com/",
+      "developerWebsite": "https://autoscribe.pejoal.com/",
       "privacyPolicy": "https://pejoal.github.io/privacy-policy",
       "genre": "Productivity",
       "genreId": "PRODUCTIVITY",
@@ -4830,11 +4830,11 @@
       "contentRatingDescription": "",
       "adSupported": false,
       "released": "Jul 26, 2026",
-      "updated": 1786309425000,
-      "version": "2.4.5",
+      "updated": 1786736417000,
+      "version": "2.4.7",
       "recentChanges": "• Welcome to AutoScribe 2.0! AI-powered audio scribe &amp; smart meeting summaries.<br>• 8 Specialized Workspaces: Medical SOAP notes, Sales discovery, Legal proceedings, Content repurposing, Education, UX Research, Real Estate &amp; General.<br>• 65+ Built-In AI System Templates with 1:1 English &amp; German parity.<br>• Custom Onboarding Workflows: Personalize your transcription output for your domain.<br>• Private &amp; Secure: Offline-first storage with local database sync.",
       "comments": [],
-      "descriptionHTML": "AutoScribe is the ultimate AI voice scribe and intelligent note-taking platform designed for professionals, teams, and students. Powered by advanced transcription and domain-aware AI models, AutoScribe turns lectures, sales calls, consultations, and brain dumps into crystal-clear structured documentation.<br>​CONTINUOUS BACKGROUND RECORDING<br>Never miss a word, even when you are multitasking. AutoScribe safely continues to record and transcribe audio in the background. You can start recording a meeting or lecture, minimize the app to check your emails, or lock your phone screen to save battery—AutoScribe will keep capturing your audio uninterrupted.<br>​9 SPECIALIZED AI WORKSPACES<br>​POPULAR &amp; TRENDING ⭐: Cross-domain quick notes, executive summaries, and smart meeting minutes.<br>​<br>​SALES &amp; MEETINGS: Extract key buyer pain points, action items, and follow-ups from calls.<br>​LEGAL &amp; COMPLIANCE: Structure depositions, witness testimonies, and risk logs.<br>​CONTENT CREATION: Repurpose audio into blog posts, LinkedIn captions, and show notes.<br>​EDUCATION &amp; STUDY: Create Cornell study guides, summaries, and flashcards.<br>​UX RESEARCH &amp; INTERVIEWS: Capture user friction, direct quotes, and feature requests.<br>​REAL ESTATE &amp; PROPERTY: Dictate property walk-throughs, defect logs, and lead notes.<br>​GENERAL BUSINESS: Instant meeting summaries and bulleted task lists.<br>​BIOMETRIC SECURITY &amp; PRIVACY<br>​Fingerprint &amp; Face ID Biometric Login for instant, secure access.<br>​Offline-First Architecture: Local database storage — works without internet.<br>​GDPR &amp; HIPAA Aligned: Transcripts can be automatically purged after AI processing. Zero data selling, zero AI training on your data.<br>​<br>​65+ BUILT-IN SYSTEM TEMPLATES<br>Switch between English and German templates seamlessly. Create custom templates tailored to your team&#39;s workflow.<br>​NOTIFICATIONS CENTER<br>Stay informed with in-app system announcements, legal notices, and feature updates via the built-in notifications center.<br>​Download AutoScribe today and master your daily productivity!"
+      "descriptionHTML": "Stop typing what you can just say.<br>Convert your voice, meetings, lectures, and interviews into perfectly formatted text in seconds. Whether you need to dictate an email, transcribe audio, or generate professional meeting minutes, this AI Voice to Text app does the hard work for you.<br>​Powered by advanced speech-to-text AI, it doesn’t just give you a messy transcript—it understands context, cleans up filler words, and structures your thoughts into ready-to-use documents.<br>​🎙️ KEY FEATURES<br>​• Flawless Speech to Text Dictation<br>Speak naturally and watch your words turn into text instantly. High accuracy speech recognition handles different accents, fast talkers, and complex terminology with ease.<br>​• Transcribe Audio &amp; Meetings<br>Never manually type meeting minutes again. Record your business meetings, sales calls, or lectures, and let the AI generate word-for-word transcripts.<br>​• Smart AI Note Taker &amp; Summaries<br>Don&#39;t have time to read a 1-hour transcript? Our AI note taker instantly extracts key insights, action items, buyer pain points, and decisions, creating a concise summary of any conversation.<br>​• Built-In Professional Templates<br>Turn raw dictation into structured formats automatically. Apply one of 60+ templates to format your audio into:<br>​Sales Follow-ups &amp; BANT frameworks<br>​Legal Risk Logs &amp; Case Memos<br>​Construction Daily Logs<br>​Real Estate Walk-throughs<br>​HR Interviews &amp; Candidate Reviews<br>​• Record in the Background<br>Keep recording and transcribing even when your phone is locked or you are using other apps. Perfect for long lectures, interviews, and hands-free dictation while driving or walking.<br>​• High-Privacy &amp; Secure<br>Your data belongs to you. Built with offline-first local storage, biometric login (Face ID/Fingerprint), and strict privacy controls to ensure your professional data remains secure.<br>​• Multi-Language Support<br>Seamlessly transcribe and switch between English, German, and other major languages with high accuracy.<br>​WHO IS THIS FOR?<br>​Entrepreneurs &amp; Managers: Get instant meeting minutes and action items.<br>​Sales Teams: Dictate CRM updates and client follow-ups instantly after a call.<br>​Students &amp; Researchers: Transcribe lectures and qualitative interviews into searchable text.<br>​Writers &amp; Creators: Capture ideas on the go and turn voice memos into structured drafts.<br>​Why choose this over basic voice typing?<br>Standard keyboard dictation just writes down exactly what you say, including mistakes and pauses. This AI app understands what you meant to say—cleaning up grammar, organizing paragraphs, and delivering a polished final result.<br>​Download the ultimate audio to text and dictation assistant today and save hours of manual typing!"
     }
   }
 ]

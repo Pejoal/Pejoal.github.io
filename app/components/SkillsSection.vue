@@ -73,7 +73,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           <div
             v-for="(skill, i) in softSkills"
-            :key="skill.name"
+            :key="i"
             class="glass-card glass-card-hover flex flex-col items-center text-center p-8 rounded-3xl group"
             data-aos="zoom-in"
             :data-aos-delay="i * 100"
@@ -103,9 +103,9 @@
 </template>
 
 <script setup>
-import { nextTick, onMounted, ref, computed } from 'vue';
+import { nextTick, onMounted, ref, computed, watch } from 'vue';
 
-const { t } = useI18n();
+const { t, locale } = useI18n();
 
 const frontendSkills = [
   { name: 'Vue / Nuxt.js', level: 88, icon: 'simple-icons:nuxtdotjs' },
@@ -175,12 +175,18 @@ const animateProgress = (refArray, skills) => {
   });
 };
 
-onMounted(() => {
-  setTimeout(() => animateProgress(frontendProgress, frontendSkills), 300);
-  setTimeout(() => animateProgress(mobileProgress, mobileSkills), 400);
-  setTimeout(() => animateProgress(backendProgress, backendSkills), 500);
-  setTimeout(() => animateProgress(dbDevOpsProgress, dbDevOpsSkills), 600);
-  setTimeout(() => animateProgress(testingToolsProgress, testingToolsSkills), 700);
-  setTimeout(() => animateProgress(softProgress, softSkills.value), 800);
+const runAllAnimations = (baseDelay = 0) => {
+  setTimeout(() => animateProgress(frontendProgress, frontendSkills), baseDelay + 300);
+  setTimeout(() => animateProgress(mobileProgress, mobileSkills), baseDelay + 400);
+  setTimeout(() => animateProgress(backendProgress, backendSkills), baseDelay + 500);
+  setTimeout(() => animateProgress(dbDevOpsProgress, dbDevOpsSkills), baseDelay + 600);
+  setTimeout(() => animateProgress(testingToolsProgress, testingToolsSkills), baseDelay + 700);
+  setTimeout(() => animateProgress(softProgress, softSkills.value), baseDelay + 800);
+};
+
+onMounted(() => runAllAnimations());
+
+watch(locale, () => {
+  nextTick(() => runAllAnimations(50));
 });
 </script>
