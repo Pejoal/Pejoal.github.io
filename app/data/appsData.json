@@ -45,7 +45,7 @@
         "5": 0
       },
       "installs": "500+",
-      "maxInstalls": 502,
+      "maxInstalls": 520,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -147,7 +147,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 2661,
+      "maxInstalls": 2684,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -249,7 +249,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 1909,
+      "maxInstalls": 1961,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -351,7 +351,7 @@
         "5": 0
       },
       "installs": "10,000+",
-      "maxInstalls": 14460,
+      "maxInstalls": 14485,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -453,7 +453,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 2713,
+      "maxInstalls": 2724,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -555,7 +555,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 1714,
+      "maxInstalls": 1731,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -657,7 +657,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 3992,
+      "maxInstalls": 4010,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -759,7 +759,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 221,
+      "maxInstalls": 223,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -861,7 +861,7 @@
         "5": 270
       },
       "installs": "10,000+",
-      "maxInstalls": 36202,
+      "maxInstalls": 36831,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -962,8 +962,8 @@
         "4": 0,
         "5": 0
       },
-      "installs": "10,000+",
-      "maxInstalls": 49738,
+      "installs": "50,000+",
+      "maxInstalls": 50150,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1065,7 +1065,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 3588,
+      "maxInstalls": 3604,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1160,7 +1160,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 2892,
+      "maxInstalls": 2951,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1252,17 +1252,17 @@
       ],
       "score": 5,
       "scoreText": "5.0",
-      "ratings": 368,
+      "ratings": 370,
       "reviews": 3,
       "histogram": {
         "1": 0,
         "2": 0,
         "3": 0,
         "4": 0,
-        "5": 368
+        "5": 370
       },
       "installs": "10,000+",
-      "maxInstalls": 32857,
+      "maxInstalls": 33052,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1364,7 +1364,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 2659,
+      "maxInstalls": 2671,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1466,7 +1466,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 3984,
+      "maxInstalls": 4007,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1568,7 +1568,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 1549,
+      "maxInstalls": 1568,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1670,7 +1670,7 @@
         "5": 0
       },
       "installs": "10,000+",
-      "maxInstalls": 12825,
+      "maxInstalls": 12895,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1728,7 +1728,7 @@
   {
     "id": "a1_a2_italian_grammar",
     "iosId": "a1-a2-italian-grammar/id6754820225",
-    "title": "Learn Italian Grammar offline",
+    "title": "Learn Italian Grammar",
     "description": "Master Italian grammar basics for A1 and A2 levels with clear lessons!",
     "icon": "https://play-lh.googleusercontent.com/HRc3EIAc93VtDBgBdzhFWMjTe-cHC9wfcANtBM8CmhxRE62fu29YnvEmY_AWqgeN94WktGSriHjsbqOG9yAv",
     "category": "italian",
@@ -1771,7 +1771,7 @@
         "5": 136
       },
       "installs": "5,000+",
-      "maxInstalls": 7261,
+      "maxInstalls": 7313,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1873,7 +1873,7 @@
         "5": 0
       },
       "installs": "5,000+",
-      "maxInstalls": 5123,
+      "maxInstalls": 5182,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -1975,7 +1975,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 2974,
+      "maxInstalls": 3059,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2077,7 +2077,7 @@
         "5": 0
       },
       "installs": "10,000+",
-      "maxInstalls": 29723,
+      "maxInstalls": 29876,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2179,7 +2179,7 @@
         "5": 0
       },
       "installs": "10,000+",
-      "maxInstalls": 14522,
+      "maxInstalls": 14583,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2369,7 +2369,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 1109,
+      "maxInstalls": 1115,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2471,7 +2471,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 137,
+      "maxInstalls": 138,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2523,7 +2523,7 @@
   {
     "id": "genius",
     "iosId": "cortexa-adaptive-braintraining/id6760778618",
-    "title": "IQ Test offline",
+    "title": "IQ Test",
     "description": "Adaptive IQ brain training w/ Elo: logic, math, memory &amp; spatial drills.",
     "icon": "https://play-lh.googleusercontent.com/ppTKNTQJo1EBB7p5aZ1aSdIkFd0UK5R8uOhtmiZyJSLcnmAFd0I9GIJayTdjb9opA7dFLY4UQbq8nZjv-Wex",
     "category": "test",
@@ -2556,17 +2556,17 @@
       ],
       "score": 4.818182,
       "scoreText": "4.8",
-      "ratings": 69,
+      "ratings": 68,
       "reviews": 3,
       "histogram": {
         "1": 0,
         "2": 0,
         "3": 0,
         "4": 12,
-        "5": 56
+        "5": 55
       },
       "installs": "1,000+",
-      "maxInstalls": 3233,
+      "maxInstalls": 3250,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2667,7 +2667,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 2860,
+      "maxInstalls": 2935,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2757,19 +2757,19 @@
         "https://play-lh.googleusercontent.com/hQKyd7ywesB2A5TGpjdsA4YEio3oGbzh2DeOu9QpZCdRpNLzUjFI0lZerY_lwmFOZ7N0vHiT4hRini1fu2C3",
         "https://play-lh.googleusercontent.com/CxBaSthJFQvuTqoWWpAZUEYGn4rXhAFotY1Jz6ih_PZZt1HHRAo5eMeJxo4Rsmm-g-ctSrsBrIdJJgUgCJ9JZQ"
       ],
-      "score": 5,
-      "scoreText": "5.0",
-      "ratings": 71,
-      "reviews": 1,
+      "score": 4.875,
+      "scoreText": "4.9",
+      "ratings": 72,
+      "reviews": 2,
       "histogram": {
         "1": 0,
         "2": 0,
         "3": 0,
-        "4": 0,
-        "5": 71
+        "4": 9,
+        "5": 63
       },
       "installs": "1,000+",
-      "maxInstalls": 3588,
+      "maxInstalls": 3693,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2871,7 +2871,7 @@
         "5": 70
       },
       "installs": "10,000+",
-      "maxInstalls": 17568,
+      "maxInstalls": 17643,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -2973,7 +2973,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 265,
+      "maxInstalls": 278,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3105,7 +3105,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 190,
+      "maxInstalls": 191,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3200,7 +3200,7 @@
         "5": 78
       },
       "installs": "5,000+",
-      "maxInstalls": 5497,
+      "maxInstalls": 5510,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3331,7 +3331,7 @@
         "5": 0
       },
       "installs": "500+",
-      "maxInstalls": 518,
+      "maxInstalls": 539,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3404,7 +3404,7 @@
         "5": 0
       },
       "installs": "10+",
-      "maxInstalls": 24,
+      "maxInstalls": 26,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3506,7 +3506,7 @@
         "5": 0
       },
       "installs": "10+",
-      "maxInstalls": 27,
+      "maxInstalls": 30,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3710,7 +3710,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 137,
+      "maxInstalls": 139,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3794,7 +3794,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 237,
+      "maxInstalls": 238,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3896,7 +3896,7 @@
         "5": 0
       },
       "installs": "500+",
-      "maxInstalls": 548,
+      "maxInstalls": 549,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -3998,7 +3998,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 171,
+      "maxInstalls": 172,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -4100,7 +4100,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 481,
+      "maxInstalls": 492,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -4202,7 +4202,7 @@
         "5": 0
       },
       "installs": "50+",
-      "maxInstalls": 65,
+      "maxInstalls": 68,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -4395,17 +4395,17 @@
       ],
       "score": 4.8333335,
       "scoreText": "4.8",
-      "ratings": 308,
+      "ratings": 312,
       "reviews": 0,
       "histogram": {
         "1": 0,
         "2": 0,
         "3": 0,
-        "4": 51,
-        "5": 256
+        "4": 52,
+        "5": 260
       },
       "installs": "10,000+",
-      "maxInstalls": 11219,
+      "maxInstalls": 11331,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -4507,7 +4507,7 @@
         "5": 0
       },
       "installs": "5,000+",
-      "maxInstalls": 5760,
+      "maxInstalls": 5884,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -4609,7 +4609,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 3504,
+      "maxInstalls": 3568,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -4711,7 +4711,7 @@
         "5": 0
       },
       "installs": "1,000+",
-      "maxInstalls": 4125,
+      "maxInstalls": 4167,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
@@ -4810,7 +4810,7 @@
         "5": 0
       },
       "installs": "100+",
-      "maxInstalls": 314,
+      "maxInstalls": 333,
       "priceText": "Free",
       "currency": "USD",
       "size": "",
