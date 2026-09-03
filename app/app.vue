@@ -26,11 +26,11 @@
 
       <NuxtPage />
 
-      <!-- "Let's Build Together" CTA + Footer: only on the home page -->
-      <template v-if="isHomePage">
-        <ContactSection />
-        <AppFooter />
-      </template>
+      <!-- "Let's Build Together" CTA: only on the home page -->
+      <ContactSection v-if="isHomePage" />
+
+      <!-- Footer: always visible -->
+      <AppFooter />
     </div>
   </div>
 </template>
