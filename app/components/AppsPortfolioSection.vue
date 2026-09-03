@@ -1,5 +1,5 @@
 <template>
-  <section id="apps" class="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
+  <section id="apps" class="relative pb-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
     <div class="max-w-7xl mx-auto relative z-10">
       <!-- Section Header -->
       <div class="text-center mb-12" data-aos="fade-up">
@@ -105,7 +105,7 @@
       <transition-group name="list" tag="div" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative min-h-[400px]">
         <AppCard
           v-for="(app, idx) in filteredApps"
-          :key="app.id"
+          :key="app.id || app.iosId || app.title || `app-card-${idx}`"
           :app="app"
           :index="idx + 1"
           :color="app.color"
@@ -206,11 +206,21 @@ const categories = computed(() => {
 });
 
 const allApps = computed(() => {
+  const seen = new Set();
   const all = [];
   categories.value.forEach(cat => {
     if (cat.id !== 'All') {
-      cat.apps.forEach(app => {
-        all.push({ ...app, category: cat.id, color: cat.color });
+      cat.apps.forEach((app, appIdx) => {
+        const appId = app.id || app.iosId || app.title || `app-${cat.id}-${appIdx}`;
+        if (!seen.has(appId)) {
+          seen.add(appId);
+          all.push({
+            ...app,
+            id: appId,
+            category: cat.id,
+            color: cat.color,
+          });
+        }
       });
     }
   });
