@@ -28,6 +28,9 @@
         <NuxtPage />
       </main>
 
+      <!-- Connect Section -->
+      <ContactSection />
+
       <!-- Global Footer: rendered once across all pages -->
       <AppFooter />
     </div>
