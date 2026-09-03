@@ -1,5 +1,6 @@
 User-Agent: *
 Allow: /
+Sitemap: https://pejoal.com/sitemap.xml
 
 # AI & LLM Guidelines
 User-Agent: GPTBot

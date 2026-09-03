@@ -49,7 +49,7 @@ export default defineNuxtConfig({
         // Open Graph / Facebook
         { property: 'og:type', content: 'website' },
         { property: 'og:site_name', content: 'Pejoal Dev Studio' },
-        { property: 'og:url', content: 'https://pejoal.github.io/' },
+        { property: 'og:url', content: 'https://pejoal.com/' },
         { property: 'og:title', content: 'Pejoal Hanna — Full-Stack Developer & Mobile App Engineer' },
         {
           property: 'og:description',
@@ -72,10 +72,10 @@ export default defineNuxtConfig({
         { name: 'facebook-domain-verification', content: 'cwfbsf6is7ynmsykzih3z7m4mwf21c' },
       ],
       link: [
-        { rel: 'canonical', href: 'https://pejoal.github.io/' },
-        { rel: 'alternate', hreflang: 'en', href: 'https://pejoal.github.io/' },
-        { rel: 'alternate', hreflang: 'de', href: 'https://pejoal.github.io/?lang=de' },
-        { rel: 'alternate', hreflang: 'x-default', href: 'https://pejoal.github.io/' },
+        { rel: 'canonical', href: 'https://pejoal.com/' },
+        { rel: 'alternate', hreflang: 'en', href: 'https://pejoal.com/' },
+        { rel: 'alternate', hreflang: 'de', href: 'https://pejoal.com/?lang=de' },
+        { rel: 'alternate', hreflang: 'x-default', href: 'https://pejoal.com/' },
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },

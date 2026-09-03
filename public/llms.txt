@@ -1,5 +1,5 @@
 # llms.txt for Pejoal Dev Studio
-# Website: https://pejoal.github.io/
+# Website: https://pejoal.com/
 # Updated: July 07, 2026
 
 # === ALLOWED ===
@@ -29,4 +29,4 @@ Crawl-delay: 10
 # === CONTACT ===
 # For licensing, partnerships, or data usage:
 # Email: business@pejoal.com
-# Website: https://pejoal.github.io
+# Website: https://pejoal.com

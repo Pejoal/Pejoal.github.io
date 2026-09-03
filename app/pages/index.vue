@@ -72,7 +72,7 @@ useSeoMeta({
   twitterDescription:
     'Explore 48+ published production mobile apps and full-stack web platforms serving thousands of users globally.',
   ogType: 'website',
-  ogUrl: 'https://pejoal.github.io/',
+  ogUrl: 'https://pejoal.com/',
 });
 
 // JSON-LD Structured Data for Search Engines
@@ -85,14 +85,11 @@ useHead({
         '@graph': [
           {
             '@type': 'Person',
-            '@id': 'https://pejoal.github.io/#person',
+            '@id': 'https://pejoal.com/#person',
             name: 'Pejoal Hanna',
             jobTitle: 'Full-Stack Developer & Mobile App Engineer',
-            url: 'https://pejoal.github.io/',
-            sameAs: [
-              'https://play.google.com/store/apps/dev?id=7584224843331524823',
-              'https://github.com/Pejoal',
-            ],
+            url: 'https://pejoal.com/',
+            sameAs: ['https://play.google.com/store/apps/dev?id=7584224843331524823', 'https://github.com/Pejoal'],
             worksFor: {
               '@type': 'Organization',
               name: 'Pejoal Dev Studio',
@@ -110,19 +107,20 @@ useHead({
           },
           {
             '@type': 'WebSite',
-            '@id': 'https://pejoal.github.io/#website',
-            url: 'https://pejoal.github.io/',
+            '@id': 'https://pejoal.com/#website',
+            url: 'https://pejoal.com/',
             name: 'Pejoal Dev Studio',
             alternateName: 'Pejoal Hanna — Full-Stack Developer & Mobile App Engineer',
             publisher: {
-              '@id': 'https://pejoal.github.io/#person',
+              '@id': 'https://pejoal.com/#person',
             },
             inLanguage: ['en', 'de'],
           },
           {
             '@type': 'ItemList',
             name: 'Featured Published Mobile Applications',
-            description: 'Production mobile applications published on Google Play and Apple App Store by Pejoal Dev Studio',
+            description:
+              'Production mobile applications published on Google Play and Apple App Store by Pejoal Dev Studio',
             itemListElement: [
               {
                 '@type': 'ListItem',
@@ -132,8 +130,8 @@ useHead({
                   name: 'AutoScribe: AI Voice Scribe',
                   applicationCategory: 'BusinessApplication',
                   operatingSystem: 'ANDROID, IOS',
-                  url: 'https://pejoal.github.io/?app=autoscribe.chat',
-                  author: { '@id': 'https://pejoal.github.io/#person' },
+                  url: 'https://pejoal.com/?app=autoscribe.chat',
+                  author: { '@id': 'https://pejoal.com/#person' },
                 },
               },
               {
@@ -144,8 +142,8 @@ useHead({
                   name: 'Learn German offline beginners',
                   applicationCategory: 'EducationalApplication',
                   operatingSystem: 'ANDROID, IOS',
-                  url: 'https://pejoal.github.io/?app=myapp',
-                  author: { '@id': 'https://pejoal.github.io/#person' },
+                  url: 'https://pejoal.com/?app=myapp',
+                  author: { '@id': 'https://pejoal.com/#person' },
                 },
               },
               {
@@ -156,8 +154,8 @@ useHead({
                   name: 'Learn Arabic offline',
                   applicationCategory: 'EducationalApplication',
                   operatingSystem: 'ANDROID, IOS',
-                  url: 'https://pejoal.github.io/?app=arabic_master',
-                  author: { '@id': 'https://pejoal.github.io/#person' },
+                  url: 'https://pejoal.com/?app=arabic_master',
+                  author: { '@id': 'https://pejoal.com/#person' },
                 },
               },
             ],

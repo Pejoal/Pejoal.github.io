@@ -34,9 +34,9 @@ You can directly link to or open any app's detail modal using URL query paramete
 
 - **Parameter options**: `app`, `id`, or `appId`
 - **Example Usage**:
-  - `https://pejoal.github.io/?app=autoscribe.chat`
-  - `https://pejoal.github.io/?id=autoscribe.chat`
-  - `https://pejoal.github.io/?appId=autoscribe.chat`
+  - `https://pejoal.com/?app=autoscribe.chat`
+  - `https://pejoal.com/?id=autoscribe.chat`
+  - `https://pejoal.com/?appId=autoscribe.chat`
 
 When visiting the URL with a valid app ID parameter, the portfolio will automatically launch the corresponding app modal on load. Opening or closing an app modal also seamlessly updates the browser URL without page reload.
 

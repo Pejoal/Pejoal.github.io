@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Home / Portfolio -->
+  <url>
+    <loc>https://pejoal.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pejoal.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pejoal.com/?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pejoal.com/"/>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Privacy Policy -->
+  <url>
+    <loc>https://pejoal.com/privacy-policy</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Terms of Service -->
+  <url>
+    <loc>https://pejoal.com/terms</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Imprint / Legal Notice -->
+  <url>
+    <loc>https://pejoal.com/imprint</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>

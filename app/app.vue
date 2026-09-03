@@ -26,12 +26,19 @@
 
       <NuxtPage />
 
-      <ContactSection />
-
-      <!-- Footer -->
-      <AppFooter />
+      <!-- "Let's Build Together" CTA + Footer: only on the home page -->
+      <template v-if="isHomePage">
+        <ContactSection />
+        <AppFooter />
+      </template>
     </div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { computed } from 'vue';
+
+const route = useRoute();
+const isHomePage = computed(() => route.path === '/');
+</script>
+
