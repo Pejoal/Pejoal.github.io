@@ -1,7 +1,7 @@
 <!-- pages/privacy-policy.vue -->
 <template>
   <div
-    class="bg-linear-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-blue-900 dark:to-indigo-900 pt-24 px-4"
+    class="min-h-screen bg-linear-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-blue-900 dark:to-indigo-900 pt-24 px-4 pb-16"
   >
     <div class="max-w-4xl mx-auto">
       <NuxtLink to="/" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 mb-8 font-medium">
@@ -92,9 +92,23 @@
         </section>
       </div>
 
+      <div class="mt-12 pb-4 text-center space-x-4">
+        <NuxtLink
+          to="/terms"
+          class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium text-sm"
+        >
+          {{ t('footer.terms') }}
+        </NuxtLink>
+        <span class="text-gray-400">|</span>
+        <NuxtLink
+          to="/imprint"
+          class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium text-sm"
+        >
+          {{ t('footer.imprint') }}
+        </NuxtLink>
+      </div>
     </div>
   </div>
-  <AppFooter />
 </template>
 
 <script setup>

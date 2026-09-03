@@ -21,16 +21,15 @@
     </div>
 
     <!-- Main Content Flow -->
-    <div class="relative z-10">
+    <div class="relative z-10 flex flex-col min-h-screen">
       <NuxtRouteAnnouncer />
 
-      <NuxtPage />
+      <main class="grow">
+        <NuxtPage />
+      </main>
 
-      <!-- "Let's Build Together" CTA + Footer: hidden on legal pages (they have their own) -->
-      <template>
-        <ContactSection />
-        <AppFooter />
-      </template>
+      <!-- Global Footer: rendered once across all pages -->
+      <AppFooter />
     </div>
   </div>
 </template>

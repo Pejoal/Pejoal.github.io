@@ -25,6 +25,7 @@
 
   <WebProjectsSection />
   <SkillsSection />
+  <ContactSection />
 </template>
 
 <script setup>
