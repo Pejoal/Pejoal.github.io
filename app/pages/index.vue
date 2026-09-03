@@ -35,10 +35,14 @@ import { useAppData, useDarkMode } from '~/composables/useApp';
 const { isDark, toggleDarkMode } = useDarkMode();
 
 onMounted(() => {
-  AOS.init({
-    duration: 800,
-    once: true,
-    easing: 'ease-out-cubic',
+  // Defer AOS init until after first paint so PerformanceObserver entries
+  // are populated — prevents "Cannot read properties of undefined (reading 'startTime')"
+  requestAnimationFrame(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+      easing: 'ease-out-cubic',
+    });
   });
 });
 

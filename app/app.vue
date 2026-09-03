@@ -26,8 +26,8 @@
 
       <NuxtPage />
 
-      <!-- "Let's Build Together" CTA: only on the home page -->
-      <ContactSection v-if="isHomePage" />
+      <!-- "Let's Build Together" CTA: hidden only on legal pages -->
+      <ContactSection v-if="showContact" />
 
       <!-- Footer: always visible -->
       <AppFooter />
@@ -39,6 +39,10 @@
 import { computed } from 'vue';
 
 const route = useRoute();
-const isHomePage = computed(() => route.path === '/');
+
+// Hide the "Let's Build Together" CTA only on standalone legal pages.
+// It should show on the home page and any other non-legal page.
+const LEGAL_PATHS = ['/privacy-policy', '/terms', '/imprint'];
+const showContact = computed(() => !LEGAL_PATHS.includes(route.path));
 </script>
 
