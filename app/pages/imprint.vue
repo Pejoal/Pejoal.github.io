@@ -1,7 +1,7 @@
 <!-- pages/imprint.vue -->
 <template>
   <div
-    class="min-h-screen bg-linear-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-blue-900 dark:to-indigo-900 pt-24 px-4"
+    class="bg-linear-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-blue-900 dark:to-indigo-900 pt-24 px-4"
   >
     <div class="max-w-4xl mx-auto">
       <NuxtLink
@@ -44,23 +44,9 @@
         </section>
       </div>
 
-      <div class="mt-10 pb-4 text-center space-x-4">
-        <NuxtLink
-          to="/terms"
-          class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium"
-        >
-          {{ t('footer.terms') }}
-        </NuxtLink>
-        <span class="text-gray-400">|</span>
-        <NuxtLink
-          to="/privacy-policy"
-          class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium"
-        >
-          {{ t('footer.privacy') }}
-        </NuxtLink>
-      </div>
     </div>
   </div>
+  <AppFooter />
 </template>
 
 <script setup>

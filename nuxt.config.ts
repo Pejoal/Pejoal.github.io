@@ -111,7 +111,7 @@ export default defineNuxtConfig({
     payloadExtraction: false,
   },
 
-  modules: ['@nuxt/eslint', '@nuxt/image', '@nuxt/scripts', '@nuxt/test-utils', '@nuxt/ui', '@nuxtjs/i18n'],
+  modules: ['@nuxt/eslint', '@nuxt/image', '@nuxt/test-utils', '@nuxt/ui', '@nuxtjs/i18n'],
 
   // Internationalization i18n Configuration
   i18n: {
