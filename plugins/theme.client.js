@@ -13,5 +13,25 @@ export default defineNuxtPlugin(() => {
     // Initialize immediately and also after DOM is ready
     initializeTheme();
     document.addEventListener('DOMContentLoaded', initializeTheme);
+
+    // Guard against third-party / extension web-vitals observer errors (e.g. reportAllChanges startTime) on SPA navigations
+    window.addEventListener('error', (event) => {
+      if (
+        event?.message?.includes("reading 'startTime'") ||
+        event?.message?.includes('reportAllChanges')
+      ) {
+        event.preventDefault();
+        event.stopImmediatePropagation();
+      }
+    }, true);
+
+    window.addEventListener('unhandledrejection', (event) => {
+      if (
+        event?.reason?.message?.includes("reading 'startTime'") ||
+        event?.reason?.message?.includes('reportAllChanges')
+      ) {
+        event.preventDefault();
+      }
+    });
   }
 });

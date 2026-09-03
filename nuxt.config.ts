@@ -95,6 +95,15 @@ export default defineNuxtConfig({
               if (isDark) {
                 document.documentElement.classList.add('dark');
               }
+
+              // Suppress third-party / extension web-vitals observer errors (e.g. reportAllChanges startTime) on SPA navigations
+              window.addEventListener('error', function(e) {
+                if (e && e.message && (e.message.indexOf('startTime') !== -1 || e.message.indexOf('reportAllChanges') !== -1)) {
+                  e.preventDefault();
+                  e.stopImmediatePropagation();
+                  return true;
+                }
+              }, true);
             })();
           `,
           type: 'text/javascript',
