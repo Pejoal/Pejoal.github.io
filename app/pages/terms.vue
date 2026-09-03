@@ -143,12 +143,10 @@
       </div>
     </div>
   </div>
-  <ContactSection />
 </template>
 
 <script setup>
 import { computed } from 'vue';
-import ContactSection from '~/components/ContactSection.vue';
 
 const { t, locale } = useI18n();
 
