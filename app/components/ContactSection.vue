@@ -1,5 +1,5 @@
 <template>
-  <section id="contact" class="relative pb-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
+  <section id="contact" class="relative pt-4 pb-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
     <div class="max-w-7xl mx-auto relative z-10">
       <!-- Section Header -->
       <div class="text-center mb-16">
