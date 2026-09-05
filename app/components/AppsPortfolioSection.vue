@@ -137,7 +137,7 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted, watch } from 'vue';
+import { ref, computed, onMounted, onUnmounted, watch } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 
 const { t } = useI18n();
@@ -166,19 +166,25 @@ const selectedApp = ref(null);
 const handleOpenModal = (app) => {
   selectedApp.value = app;
   isModalOpen.value = true;
-  if (route.query.app !== app.id && route.query.id !== app.id && route.query.appId !== app.id) {
-    router.replace({ query: { ...route.query, app: app.id } });
+  if (typeof window !== 'undefined' && window.history) {
+    const url = new URL(window.location.href);
+    if (url.searchParams.get('app') !== app.id) {
+      url.searchParams.set('app', app.id);
+      window.history.replaceState(window.history.state, '', url.toString());
+    }
   }
 };
 
 const handleCloseModal = () => {
   isModalOpen.value = false;
-  if (route.query.app || route.query.id || route.query.appId) {
-    const newQuery = { ...route.query };
-    delete newQuery.app;
-    delete newQuery.id;
-    delete newQuery.appId;
-    router.replace({ query: newQuery });
+  if (typeof window !== 'undefined' && window.history) {
+    const url = new URL(window.location.href);
+    if (url.searchParams.has('app') || url.searchParams.has('id') || url.searchParams.has('appId')) {
+      url.searchParams.delete('app');
+      url.searchParams.delete('id');
+      url.searchParams.delete('appId');
+      window.history.replaceState(window.history.state, '', url.toString());
+    }
   }
 };
 
@@ -228,7 +234,12 @@ const allApps = computed(() => {
 });
 
 const checkUrlParam = () => {
-  const targetId = String(route.query.app || route.query.id || route.query.appId || '').toLowerCase().trim();
+  let paramApp = route.query.app || route.query.id || route.query.appId;
+  if (!paramApp && typeof window !== 'undefined') {
+    const params = new URLSearchParams(window.location.search);
+    paramApp = params.get('app') || params.get('id') || params.get('appId');
+  }
+  const targetId = String(paramApp || '').toLowerCase().trim();
   if (targetId && allApps.value.length > 0) {
     const found = allApps.value.find(app => 
       app.id.toLowerCase() === targetId || 
@@ -240,11 +251,22 @@ const checkUrlParam = () => {
       selectedApp.value = found;
       isModalOpen.value = true;
     }
+  } else if (!targetId && isModalOpen.value) {
+    isModalOpen.value = false;
   }
 };
 
 onMounted(() => {
   checkUrlParam();
+  if (typeof window !== 'undefined') {
+    window.addEventListener('popstate', checkUrlParam);
+  }
+});
+
+onUnmounted(() => {
+  if (typeof window !== 'undefined') {
+    window.removeEventListener('popstate', checkUrlParam);
+  }
 });
 
 watch(

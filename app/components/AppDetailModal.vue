@@ -275,12 +275,19 @@ const recentChanges = computed(() => {
   return null;
 });
 
+let savedScrollY = 0;
+
 watch(() => props.isOpen, (newVal) => {
   if (process.client) {
     if (newVal) {
+      savedScrollY = window.scrollY || window.pageYOffset || document.documentElement.scrollTop || 0;
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = '';
+      const currentScrollY = window.scrollY || window.pageYOffset || document.documentElement.scrollTop || 0;
+      if (currentScrollY !== savedScrollY) {
+        window.scrollTo({ top: savedScrollY, behavior: 'instant' });
+      }
     }
   }
 });
