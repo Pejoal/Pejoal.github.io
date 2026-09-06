@@ -20,7 +20,7 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
         <!-- App Store Card -->
         <a
-          href="https://apps.apple.com/developer/nagy-solaiman/id1848573493"
+          href="https://apps.apple.com/developer/nagy-solaiman/id6809016106"
           target="_blank"
           class="glass-card glass-card-hover flex items-center gap-4 p-6 rounded-3xl group"
         >
