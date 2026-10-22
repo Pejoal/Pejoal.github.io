@@ -1,3 +1,4 @@
+cas.ai, 331a550a-6d6f-4e57-8133-4333d14d2c7d, DIRECT
 # CAS.ai Updated Oct 20, 2026
 OwnerDomain=cas.ai
 cas.ai, 922e6092, DIRECT
