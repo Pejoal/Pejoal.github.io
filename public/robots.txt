@@ -1,0 +1,12 @@
+User-Agent: *
+Allow: /
+Sitemap: https://pejoal.com/sitemap.xml
+
+# AI & LLM Guidelines
+User-Agent: GPTBot
+User-Agent: ClaudeBot
+User-Agent: GeminiBot
+User-Agent: PerplexityBot
+Disallow: /
+
+# See llms.txt for full AI policy
