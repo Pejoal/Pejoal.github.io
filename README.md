@@ -1,8 +1,8 @@
-# Pejoal Hanna - Global Mobile Portfolio
+# Pejoal Dev Studio - Global Mobile Portfolio
 
 > **🔒 Proprietary Repository**: This repository contains proprietary code, automation scripts, and data. It is strictly private and closed-source. Unauthorized copying, modification, or distribution is strictly prohibited.
 
-Welcome to the engineering backbone of my professional mobile app portfolio. This project isn't just a static website; it is a highly optimized, automated platform built to showcase **48+ production mobile applications** deployed globally across the Google Play Store and Apple App Store.
+Welcome to the engineering backbone of Pejoal Dev Studio's mobile app portfolio. This project isn't just a static website; it is a highly optimized, automated platform built to showcase **50+ production mobile applications** deployed globally across the Google Play Store and Apple App Store.
 
 ## 🚀 The Architecture: Automated & Zero-Latency
 
@@ -77,4 +77,4 @@ Because of the automated data pipeline, adding a new app takes seconds.
 
 ---
 
-Made with ❤️ by Pejoal Hanna
+Made with ❤️ by Pejoal Dev Studio

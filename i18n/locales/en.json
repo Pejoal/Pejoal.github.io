@@ -1,7 +1,7 @@
 {
   "nav": {
     "home": "Home",
-    "about": "About",
+    "about": "About Us",
     "services": "Services",
     "horizon": "AppOps Suite",
     "apps": "Apps",
@@ -42,10 +42,10 @@
   "hero": {
     "badge": "Available for High-Impact Mobile & Web Projects",
     "topBadge": "{count}+ Production Mobile & Web Apps",
-    "greeting": "Hi, I'm ",
-    "name": "Pejoal Hanna",
-    "role": "Full-Stack Developer & Mobile App Engineer",
-    "bio": "Building high-performance cross-platform mobile apps and web systems serving thousands of users worldwide.",
+    "greeting": "Empowering Ideas with ",
+    "name": "Pejoal Dev Studio",
+    "role": "Mobile & Web Engineering Studio",
+    "bio": "Engineering high-performance cross-platform mobile ecosystems and scalable web platforms serving thousands of users worldwide.",
     "ctaExplore": "Explore Portfolio",
     "ctaContact": "Get In Touch",
     "downloadOnThe": "Download on the",
@@ -56,7 +56,7 @@
   },
   "about": {
     "title": "Engineering with Purpose",
-    "subtitle": "I am driven by the intersection of sophisticated design and robust architecture. My core focus lies in architecting intuitive mobile ecosystems—particularly immersive educational platforms—while also engineering high-utility tools and interactive digital experiences.",
+    "subtitle": "We are driven by the intersection of sophisticated design and robust architecture. Our core focus lies in architecting intuitive mobile ecosystems—particularly immersive educational platforms—while also engineering high-utility tools and interactive digital experiences.",
     "headingMain": "Crafting High-Performance ",
     "headingGradient": "Digital Experiences",
     "card1Title": "Mobile Architecture",
@@ -67,7 +67,7 @@
     "card3Desc": "Building scalable backend APIs, web dashboards, and web automation tools using modern stacks like Vue, Nuxt, Laravel, and Node.js."
   },
   "services": {
-    "title": "What I Do",
+    "title": "What We Deliver",
     "subtitle": "Comprehensive software engineering services from mobile app development to scalable web systems.",
     "headingMain": "Comprehensive ",
     "headingGradient": "Engineering Solutions",
@@ -238,7 +238,7 @@
   },
   "privacy": {
     "title": "Privacy Policy",
-    "seoTitle": "Privacy Policy - Pejoal Dev Studio, Owner: Pejoal Hanna",
+    "seoTitle": "Privacy Policy - Pejoal Dev Studio",
     "seoDescription": "No data collection by default. Fully offline. Safe for all ages. Flexible per-app disclosures.",
     "intro": "This Privacy Policy applies to all apps developed by Pejoal Dev Studio (\"we\", \"us\", \"our\").",
     "noticeTitle": "Standard Privacy Commitment:",

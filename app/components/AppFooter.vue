@@ -9,7 +9,7 @@
           alt="Pejoal Dev Studio Logo"
           class="w-9 h-9 rounded-xl object-cover shadow-md shadow-blue-500/20 ring-1 ring-blue-500/30"
         />
-        <span class="font-bold font-heading text-xl text-slate-900 dark:text-white">Pejoal</span>
+        <span class="font-bold font-heading text-xl text-slate-900 dark:text-white">Pejoal Dev Studio</span>
       </div>
 
       <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 max-w-xl mx-auto font-light leading-relaxed">{{ t('hero.bio') }}</p>

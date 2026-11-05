@@ -1,7 +1,7 @@
 {
   "nav": {
     "home": "Startseite",
-    "about": "Über mich",
+    "about": "Über uns",
     "services": "Leistungen",
     "horizon": "AppOps Suite",
     "apps": "Apps",
@@ -42,10 +42,10 @@
   "hero": {
     "badge": "Verfügbar für erstklassige Mobile- & Webprojekte",
     "topBadge": "{count}+ Veröffentlichte Mobile- & Web-Apps",
-    "greeting": "Hallo, ich bin ",
-    "name": "Pejoal Hanna",
-    "role": "Full-Stack-Entwickler & Mobile-App-Ingenieur",
-    "bio": "Entwicklung leistungsstarker plattformübergreifender mobiler Apps und Websysteme für Tausende von Nutzern weltweit.",
+    "greeting": "Ideen verwirklichen mit ",
+    "name": "Pejoal Dev Studio",
+    "role": "Mobile- & Web-Engineering-Studio",
+    "bio": "Entwicklung leistungsstarker plattformübergreifender mobiler Ökosysteme und skalierbarer Websysteme für Tausende von Nutzern weltweit.",
     "ctaExplore": "Portfolio erkunden",
     "ctaContact": "Kontakt aufnehmen",
     "downloadOnThe": "Laden im",
@@ -56,7 +56,7 @@
   },
   "about": {
     "title": "Softwareentwicklung mit Zweck",
-    "subtitle": "Mich begeistert die Verbindung von anspruchsvollem Design und robuster Architektur. Mein Kernfokus liegt in der Entwicklung intuitiver mobiler Ökosysteme – insbesondere interaktiver Lernplattformen – sowie nützlicher Werkzeuge und digitaler Erlebnisse.",
+    "subtitle": "Uns begeistert die Verbindung von anspruchsvollem Design und robuster Architektur. Unser Kernfokus liegt in der Entwicklung intuitiver mobiler Ökosysteme – insbesondere interaktiver Lernplattformen – sowie nützlicher Werkzeuge und digitaler Erlebnisse.",
     "headingMain": "Entwicklung Hochleistungsfähiger ",
     "headingGradient": "Digitaler Erlebnisse",
     "card1Title": "Mobile Architektur",
@@ -67,7 +67,7 @@
     "card3Desc": "Entwicklung skalierbarer Backend-APIs, Web-Dashboards und Automatisierungswerkzeuge mit modernen Stacks wie Vue, Nuxt, Laravel und Node.js."
   },
   "services": {
-    "title": "Was ich tue",
+    "title": "Unsere Leistungen",
     "subtitle": "Umfassende Software-Engineering-Dienstleistungen von der mobilen App-Entwicklung bis hin zu skalierbaren Websystemen.",
     "headingMain": "Umfassende ",
     "headingGradient": "Engineering-Lösungen",
@@ -237,7 +237,7 @@
   },
   "privacy": {
     "title": "Datenschutzerklärung",
-    "seoTitle": "Datenschutzerklärung - Pejoal Dev Studio, Inhaber: Pejoal Hanna",
+    "seoTitle": "Datenschutzerklärung - Pejoal Dev Studio",
     "seoDescription": "Keine Datenerfassung standardmäßig. Vollständig offline. Sicher für alle Altersgruppen. Flexible Angaben pro App.",
     "intro": "Diese Datenschutzerklärung gilt für alle von Pejoal Dev Studio (\"wir\", \"uns\", \"unser\") entwickelten Apps.",
     "noticeTitle": "Standard-Datenschutzverpflichtung:",

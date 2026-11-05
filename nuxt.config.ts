@@ -29,43 +29,43 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'en',
       },
-      title: 'Pejoal Hanna — Full-Stack Developer & Mobile App Engineer',
+      title: 'Pejoal Dev Studio — Mobile Apps & Web Engineering',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=5' },
         {
           name: 'description',
           content:
-            'Official portfolio of Pejoal Hanna, Full-Stack Developer & Mobile Application Engineer specializing in cross-platform iOS & Android apps, Web systems, React Native, Vue/Nuxt, and Node.js with 48+ published store applications.',
+            'Official portfolio of Pejoal Dev Studio, specializing in high-performance cross-platform iOS & Android apps, scalable web systems, React Native, Vue/Nuxt, and Node.js with 50+ published store applications.',
         },
         {
           name: 'keywords',
           content:
-            'Pejoal Hanna, Full Stack Developer, Mobile App Developer, React Native, Vue.js, Nuxt.js, Node.js, Android Apps, iOS Apps, Mobile Portfolio, Software Engineer, Germany, Egypt, AutoScribe',
+            'Pejoal Dev Studio, Pejoal, Mobile App Development, Cross-Platform Apps, React Native, Vue.js, Nuxt.js, Node.js, Android Apps, iOS Apps, Mobile Portfolio, Software Engineering, AutoScribe',
         },
-        { name: 'author', content: 'Pejoal Hanna' },
+        { name: 'author', content: 'Pejoal Dev Studio' },
         { name: 'robots', content: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' },
 
         // Open Graph / Facebook
         { property: 'og:type', content: 'website' },
         { property: 'og:site_name', content: 'Pejoal Dev Studio' },
         { property: 'og:url', content: 'https://pejoal.com/' },
-        { property: 'og:title', content: 'Pejoal Hanna — Full-Stack Developer & Mobile App Engineer' },
+        { property: 'og:title', content: 'Pejoal Dev Studio — Mobile Apps & Web Engineering' },
         {
           property: 'og:description',
           content:
-            'Explore 49+ published production mobile applications and web projects built with modern cross-platform technologies.',
+            'Explore 50+ published production mobile applications and web projects built with modern cross-platform technologies.',
         },
         { property: 'og:locale', content: 'en_US' },
         { property: 'og:locale:alternate', content: 'de_DE' },
 
         // Twitter
         { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:title', content: 'Pejoal Hanna — Mobile & Web Software Engineer' },
+        { name: 'twitter:title', content: 'Pejoal Dev Studio — Mobile Apps & Web Engineering' },
         {
           name: 'twitter:description',
           content:
-            'Explore 48+ published production mobile apps and full-stack web platforms serving thousands of users globally.',
+            'Explore 50+ published production mobile apps and full-stack web platforms serving thousands of users globally.',
         },
 
         // Verification

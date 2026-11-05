@@ -55,7 +55,7 @@ const goBack = () => {
 
 // SEO
 useSeoMeta({
-  title: '404 - Page Not Found | Pejoal Hanna',
+  title: '404 - Page Not Found | Pejoal Dev Studio',
   description: 'The page you are looking for does not exist.',
   robots: 'noindex',
 });

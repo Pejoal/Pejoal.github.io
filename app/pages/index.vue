@@ -66,15 +66,15 @@ const {
 
 // SEO Meta & Structured Data
 useSeoMeta({
-  title: 'Pejoal Hanna — Full-Stack Developer & Mobile App Engineer',
-  ogTitle: 'Pejoal Hanna — Full-Stack Developer & Mobile App Engineer',
+  title: 'Pejoal Dev Studio — Mobile Apps & Web Engineering',
+  ogTitle: 'Pejoal Dev Studio — Mobile Apps & Web Engineering',
   ogSiteName: 'Pejoal Dev Studio',
   description:
-    'Official portfolio of Pejoal Hanna, Full-Stack Developer & Mobile Application Engineer specializing in cross-platform iOS & Android apps, Web systems, React Native, Vue/Nuxt, and Node.js with 50+ published store applications.',
+    'Official portfolio of Pejoal Dev Studio, specializing in high-performance cross-platform iOS & Android apps, scalable web systems, React Native, Vue/Nuxt, and Node.js with 50+ published store applications.',
   ogDescription:
-    'Explore 50+ published production mobile applications and full-stack web projects built by Pejoal Hanna.',
+    'Explore 50+ published production mobile applications and full-stack web projects built by Pejoal Dev Studio.',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Pejoal Hanna — Mobile & Web Software Engineer',
+  twitterTitle: 'Pejoal Dev Studio — Mobile & Web Engineering',
   twitterDescription:
     'Explore 50+ published production mobile apps and full-stack web platforms serving thousands of users globally.',
   ogType: 'website',
@@ -90,16 +90,16 @@ useHead({
         '@context': 'https://schema.org',
         '@graph': [
           {
-            '@type': 'Person',
-            '@id': 'https://pejoal.com/#person',
-            name: 'Pejoal Hanna',
-            jobTitle: 'Full-Stack Developer & Mobile App Engineer',
+            '@type': 'Organization',
+            '@id': 'https://pejoal.com/#organization',
+            name: 'Pejoal Dev Studio',
             url: 'https://pejoal.com/',
-            sameAs: ['https://play.google.com/store/apps/dev?id=7584224843331524823', 'https://github.com/Pejoal'],
-            worksFor: {
-              '@type': 'Organization',
-              name: 'Pejoal Dev Studio',
-            },
+            logo: 'https://pejoal.com/logo.jpg',
+            sameAs: [
+              'https://play.google.com/store/apps/dev?id=8062598971207894089',
+              'https://apps.apple.com/developer/nagy-solaiman/id6809016106',
+              'https://github.com/Pejoal',
+            ],
             knowsAbout: [
               'Mobile Application Development',
               'Cross-Platform Apps',
@@ -116,9 +116,8 @@ useHead({
             '@id': 'https://pejoal.com/#website',
             url: 'https://pejoal.com/',
             name: 'Pejoal Dev Studio',
-            alternateName: 'Pejoal Hanna — Full-Stack Developer & Mobile App Engineer',
             publisher: {
-              '@id': 'https://pejoal.com/#person',
+              '@id': 'https://pejoal.com/#organization',
             },
             inLanguage: ['en', 'de'],
           },
@@ -137,7 +136,7 @@ useHead({
                   applicationCategory: 'BusinessApplication',
                   operatingSystem: 'ANDROID, IOS',
                   url: 'https://pejoal.com/?app=autoscribe.chat',
-                  author: { '@id': 'https://pejoal.com/#person' },
+                  author: { '@id': 'https://pejoal.com/#organization' },
                 },
               },
               {
@@ -149,7 +148,7 @@ useHead({
                   applicationCategory: 'EducationalApplication',
                   operatingSystem: 'ANDROID, IOS',
                   url: 'https://pejoal.com/?app=myapp',
-                  author: { '@id': 'https://pejoal.com/#person' },
+                  author: { '@id': 'https://pejoal.com/#organization' },
                 },
               },
               {
@@ -161,7 +160,7 @@ useHead({
                   applicationCategory: 'EducationalApplication',
                   operatingSystem: 'ANDROID, IOS',
                   url: 'https://pejoal.com/?app=arabic_master',
-                  author: { '@id': 'https://pejoal.com/#person' },
+                  author: { '@id': 'https://pejoal.com/#organization' },
                 },
               },
             ],
