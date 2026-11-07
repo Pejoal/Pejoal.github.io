@@ -399,6 +399,7 @@ yieldmo.com, 3746143199094055132, RESELLER
 yieldmo.com, 2719019867620450718, RESELLER
 zetaglobal.net, 546, RESELLER
 cas.ai, 331a550a-6d6f-4e57-8133-4333d14d2c7d, DIRECT
+cas.ai, 32633762-da39-4490-8dad-2a4e947f0f7c, DIRECT
 
 # CAS.ai Updated Nov 05, 2026
 OwnerDomain=cas.ai
