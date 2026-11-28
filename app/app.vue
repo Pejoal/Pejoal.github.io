@@ -29,7 +29,7 @@
       </main>
 
       <!-- Connect Section -->
-      <ContactSection />
+      <!-- <ContactSection /> -->
 
       <!-- Global Footer: rendered once across all pages -->
       <AppFooter />

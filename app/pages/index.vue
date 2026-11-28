@@ -4,11 +4,11 @@
 
   <HeroSection />
 
-  <AboutSection />
+  <!-- <AboutSection />
 
   <ServicesSection />
 
-  <HorizonShowcaseSection />
+  <HorizonShowcaseSection /> -->
 
   <AppsPortfolioSection
     :ai-apps="aiApps"
@@ -25,8 +25,8 @@
     :programming-apps="programmingApps"
   />
 
-  <WebProjectsSection />
-  <SkillsSection />
+  <!-- <WebProjectsSection /> -->
+  <!-- <SkillsSection /> -->
 </template>
 
 <script setup>

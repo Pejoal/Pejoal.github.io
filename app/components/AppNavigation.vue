@@ -200,13 +200,13 @@ const activeSection = ref('#home');
 
 const navLinks = computed(() => [
   { label: t('nav.home'), to: '#home' },
-  { label: t('nav.about'), to: '#about' },
-  { label: t('nav.services'), to: '#services' },
-  { label: t('nav.horizon'), to: '#horizon' },
+  // { label: t('nav.about'), to: '#about' },
+  // { label: t('nav.services'), to: '#services' },
+  // { label: t('nav.horizon'), to: '#horizon' },
   { label: t('nav.apps'), to: '#apps' },
-  { label: t('nav.webProjects'), to: '#web-projects' },
-  { label: t('nav.skills'), to: '#skills' },
-  { label: t('nav.contact'), to: '#contact' },
+  // { label: t('nav.webProjects'), to: '#web-projects' },
+  // { label: t('nav.skills'), to: '#skills' },
+  // { label: t('nav.contact'), to: '#contact' },
 ]);
 
 onMounted(() => {
